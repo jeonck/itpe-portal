@@ -41,6 +41,7 @@ export interface Topic {
   relatedTopics: string[]; // 연관 토픽 ID들
   importance: number; // 1-5 중요도
   trends?: string[]; // 최신 트렌드 정보
+  tags?: string[]; // 토픽 태그 (예: 2025, 신규 등)
 }
 
 // 학습 로드맵 단계

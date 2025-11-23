@@ -50,7 +50,8 @@ files.forEach((filePath) => { // 'file' -> 'filePath' since globSync returns ful
     characteristics,
     relatedTopics: data.relatedTopics || [],
     importance: data.importance,
-    ...(data.trends && { trends: data.trends })
+    ...(data.trends && { trends: data.trends }),
+    ...(data.tags && { tags: data.tags })
   };
 
   topics.push(topic);
