@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { BookOpen, Map, Network, Timer as TimerIcon, Home } from 'lucide-react';
+import { BookOpen, Map, Network, Timer as TimerIcon, Home, FileText } from 'lucide-react';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -13,6 +13,7 @@ export default function Layout({ children }: LayoutProps) {
     { path: '/topics', label: '토픽 위키', icon: BookOpen },
     { path: '/roadmap', label: '학습 로드맵', icon: Map },
     { path: '/mindmap', label: '마인드맵', icon: Network },
+    { path: '/answer-examples', label: '답안 예시', icon: FileText },
     { path: '/timer', label: '타이머', icon: TimerIcon },
   ];
 
