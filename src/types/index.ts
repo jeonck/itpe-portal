@@ -14,7 +14,7 @@ export type SubjectCategory =
   | 'DB'  // Database (데이터베이스)
   | 'NW'  // Network (네트워크)
   | 'IS'  // Information Security (정보보안)
-  | 'IM'  // Information Management (정보관리)
+  | 'IM'  // IT Management (IT경영)
   | 'PM'  // Project Management (프로젝트 관리)
   | 'CA'  // Computer Architecture (컴퓨터 구조)
   | 'OS'  // Operating System (운영체제)

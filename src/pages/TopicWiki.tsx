@@ -26,7 +26,7 @@ export default function TopicWiki() {
     { value: 'DB', label: 'DB (데이터베이스)' },
     { value: 'NW', label: 'NW (네트워크)' },
     { value: 'IS', label: 'IS (정보보안)' },
-    { value: 'IM', label: 'IM (정보관리)' },
+    { value: 'IM', label: 'IM (IT경영)' },
     { value: 'PM', label: 'PM (프로젝트관리)' },
     { value: 'CA', label: 'CA (컴퓨터구조)' },
     { value: 'OS', label: 'OS (운영체제)' },
