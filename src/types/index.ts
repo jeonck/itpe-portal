@@ -76,7 +76,7 @@ export interface MindMapEdge {
 }
 
 // 타이머 모드
-export type TimerMode = 'short' | 'long'; // 10분 or 25분
+export type TimerMode = 'short' | 'long' | 'hundred_minutes'; // 10분, 25분 or 100분
 
 // 타이머 상태
 export interface TimerState {

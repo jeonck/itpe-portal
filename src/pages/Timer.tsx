@@ -3,19 +3,21 @@ import { Play, Pause, RotateCcw, Clock, FileText, AlertCircle } from 'lucide-rea
 import type { TimerMode } from '../types';
 
 export default function Timer() {
-  const [mode, setMode] = useState<TimerMode>('short');
-  const [timeLeft, setTimeLeft] = useState(10 * 60); // 10 minutes in seconds
+  const [mode, setMode] = useState<TimerMode>('long');
+  const [timeLeft, setTimeLeft] = useState(durations['long']); // Use initial duration for 'long' mode
   const [isRunning, setIsRunning] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
 
   const durations: Record<TimerMode, number> = {
     short: 10 * 60, // 10 minutes for 1교시
     long: 25 * 60, // 25 minutes for 2~4교시
+    hundred_minutes: 100 * 60, // 100 minutes for real exam simulation
   };
 
   const labels: Record<TimerMode, string> = {
     short: '1교시 용어형',
     long: '2~4교시 논술형',
+    hundred_minutes: '실전 모의고사 (100분)',
   };
 
   // Timer logic
@@ -86,7 +88,7 @@ export default function Timer() {
       </div>
 
       {/* Mode Selection */}
-      <div className="grid md:grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-3 gap-4">
         <button
           onClick={() => handleModeChange('short')}
           className={`card text-left transition-all ${
@@ -132,6 +134,32 @@ export default function Timer() {
               </p>
             </div>
             {mode === 'long' && (
+              <div className="w-6 h-6 rounded-full bg-primary-600 flex items-center justify-center">
+                <div className="w-3 h-3 rounded-full bg-white" />
+              </div>
+            )}
+          </div>
+        </button>
+
+        <button
+          onClick={() => handleModeChange('hundred_minutes')}
+          className={`card text-left transition-all ${
+            mode === 'hundred_minutes'
+              ? 'ring-2 ring-primary-500 bg-primary-50'
+              : 'hover:shadow-lg'
+          }`}
+        >
+          <div className="flex items-start gap-4">
+            <div className="p-3 bg-green-100 text-green-600 rounded-lg">
+              <Clock className="w-6 h-6" />
+            </div>
+            <div className="flex-1">
+              <h3 className="text-lg font-bold text-gray-900 mb-1">100분 - 실전 모의고사</h3>
+              <p className="text-sm text-gray-600">
+                전체 시험 시간 관리 연습, 100분 동안 집중력 유지 훈련
+              </p>
+            </div>
+            {mode === 'hundred_minutes' && (
               <div className="w-6 h-6 rounded-full bg-primary-600 flex items-center justify-center">
                 <div className="w-3 h-3 rounded-full bg-white" />
               </div>
