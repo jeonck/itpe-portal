@@ -31,7 +31,7 @@ export default function TopicWiki() {
     { value: 'CA', label: 'CA (컴퓨터구조)' },
     { value: 'OS', label: 'OS (운영체제)' },
     { value: 'AL', label: 'AL (알고리즘)' },
-    { value: 'DS', label: 'DS (데이터사이언스/분산시스템)' },
+    { value: 'DS', label: 'DS (디지털 서비스)' },
   ];
 
   const difficulties: { value: DifficultyLevel | 'all'; label: string }[] = [
