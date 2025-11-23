@@ -3,11 +3,6 @@ import { Play, Pause, RotateCcw, Clock, FileText, AlertCircle } from 'lucide-rea
 import type { TimerMode } from '../types';
 
 export default function Timer() {
-  const [mode, setMode] = useState<TimerMode>('long');
-  const [timeLeft, setTimeLeft] = useState(durations['long']); // Use initial duration for 'long' mode
-  const [isRunning, setIsRunning] = useState(false);
-  const [isPaused, setIsPaused] = useState(false);
-
   const durations: Record<TimerMode, number> = {
     short: 10 * 60, // 10 minutes for 1교시
     long: 25 * 60, // 25 minutes for 2~4교시
@@ -19,6 +14,11 @@ export default function Timer() {
     long: '2~4교시 논술형',
     hundred_minutes: '실전 모의고사 (100분)',
   };
+
+  const [mode, setMode] = useState<TimerMode>('long');
+  const [timeLeft, setTimeLeft] = useState(durations['long']); // Use initial duration for 'long' mode
+  const [isRunning, setIsRunning] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
 
   // Timer logic
   useEffect(() => {
