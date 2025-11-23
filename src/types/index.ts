@@ -19,7 +19,7 @@ export type SubjectCategory =
   | 'CA'  // Computer Architecture (컴퓨터 구조)
   | 'OS'  // Operating System (운영체제)
   | 'AL'  // Algorithm (알고리즘)
-  | 'DS'; // Data Science / Distributed System (데이터 사이언스/분산 시스템)
+  | 'DS'; // Digital Service (디지털 서비스)
 
 // 토픽 난이도
 export type DifficultyLevel = 'basic' | 'intermediate' | 'advanced';
