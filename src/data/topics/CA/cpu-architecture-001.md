@@ -1,6 +1,6 @@
 ---
 id: cpu-architecture-001
-title: 'CPU 구조 (Pipeline, Cache)'
+title: 컴퓨터 구조
 category: technical-focus
 subcategory: 컴퓨터 구조
 subjectCategories:
@@ -9,23 +9,28 @@ difficulty: advanced
 certifications:
   - computer-systems
 keywords:
+  - 폰노이만
+  - 하버드
   - 파이프라인
-  - 캐시
+  - 해저드
   - 명령어 사이클
-  - 하자드
 importance: 5
 relatedTopics:
-  - memory-hierarchy-001
-  - parallel-processing-001
-  - interrupt-001
+  - cache-memory-001
+  - process-scheduling-001
+trends:
+  - RISC-V 오픈소스 아키텍처
+  - ARM 기반 서버/PC
+  - 이기종 컴퓨팅
+  - 뉴로모픽 칩
 ---
 
 # 정의
-중앙처리장치의 내부 구조와 동작 원리로, 명령어 처리 효율을 높이기 위한 기법들을 포함합니다.
+컴퓨터 시스템의 하드웨어 구성과 동작 원리를 정의하는 체계로, CPU 구조와 명령어 처리 방식을 포함합니다.
 
 ## 특징
-- Pipeline: 명령어를 단계별로 동시 처리하여 성능 향상
-- Cache: 자주 사용되는 데이터를 고속 메모리에 저장
-- Branch Prediction: 분기 예측으로 파이프라인 효율 향상
-- Hazard 해결: 데이터/제어/구조적 해저드 처리
+- 폰노이만 vs 하버드 아키텍처: 폰노이만은 명령어와 데이터가 같은 메모리/버스 사용(단순, 병목), 하버드는 명령어/데이터 메모리 분리(빠름, 복잡). 현대 CPU는 Modified Harvard (L1 캐시 분리, 메인 메모리 통합)
+- 파이프라인: Fetch(인출) → Decode(해독) → Execute(실행) → Memory(메모리 접근) → Write-back(쓰기) 5단계를 동시 처리하여 처리량 향상
+- 파이프라인 해저드(Hazard): 1) 데이터 해저드 - RAW(Read After Write), Forwarding으로 해결 2) 제어 해저드 - 분기 명령어, Branch Prediction으로 해결 3) 구조적 해저드 - 자원 충돌, 하드웨어 중복으로 해결
+- 명령어 세트: CISC (복잡, x86), RISC (단순, ARM), VLIW (명시적 병렬)
 
