@@ -193,11 +193,6 @@ export default function TopicWiki() {
         </div>
       </div>
 
-      {/* Results Count */}
-      <div className="text-sm text-gray-600">
-        {filteredTopics.length}개의 토픽
-      </div>
-
       {/* Topics Grid or Detail View */}
       {selectedTopic ? (
         /* Topic Detail View */
@@ -304,8 +299,15 @@ export default function TopicWiki() {
           </div>
         </div>
       ) : (
-        /* Topics Grid */
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        /* Topics List */
+        <>
+          {/* Results Count */}
+          <div className="text-sm text-gray-600">
+            {filteredTopics.length}개의 토픽
+          </div>
+
+          {/* Topics Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredTopics.map((topic) => {
             const diffBadge = getDifficultyBadge(topic.difficulty);
             return (
@@ -345,7 +347,8 @@ export default function TopicWiki() {
               </button>
             );
           })}
-        </div>
+          </div>
+        </>
       )}
 
       {filteredTopics.length === 0 && (
