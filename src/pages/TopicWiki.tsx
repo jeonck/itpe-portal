@@ -238,6 +238,14 @@ export default function TopicWiki() {
               </div>
             </div>
 
+            {/* Mnemonic */}
+            {selectedTopic.mnemonic && (
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">암기 두음</h3>
+                <p className="text-gray-700 leading-relaxed">{selectedTopic.mnemonic}</p>
+              </div>
+            )}
+
             {/* Definition */}
             <div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">정의</h3>

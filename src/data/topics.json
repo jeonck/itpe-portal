@@ -414,6 +414,7 @@
       "반복적",
       "점진적"
     ],
+    "mnemonic": "계분설구테유 (계획-분석-설계-구현-테스트-유지보수)",
     "definition": "소프트웨어 개발의 전체 과정을 체계적으로 관리하기 위한 프레임워크로, 계획-분석-설계-구현-테스트-유지보수 단계로 구성됩니다.",
     "characteristics": [
       "체계적인 단계별 접근",
@@ -1871,6 +1872,7 @@
       "Graph",
       "BST"
     ],
+    "mnemonic": "선트그",
     "definition": "데이터를 효율적으로 저장하고 접근하기 위한 구조로, 각 자료구조는 특정 연산에 최적화되어 있습니다.",
     "characteristics": [
       "선형 자료구조: Stack(LIFO, push/pop O(1), 함수 호출, 괄호 검사), Queue(FIFO, enqueue/dequeue O(1), BFS, 스케줄링), Linked List(동적 크기, 삽입/삭제 O(1), 탐색 O(n), 단방향/양방향/원형)",
@@ -1910,6 +1912,7 @@
       "Hashing",
       "시간복잡도"
     ],
+    "mnemonic": "정탐해",
     "definition": "문제를 해결하기 위한 체계적이고 효율적인 절차로, 정렬과 탐색 알고리즘이 대표적입니다.",
     "characteristics": [
       "정렬 알고리즘: Quick Sort(평균 O(n log n), 최악 O(n²), 불안정, 제자리), Merge Sort(O(n log n), 안정, 추가 메모리), Heap Sort(O(n log n), 불안정, 제자리), Bubble/Selection/Insertion(O(n²), 간단)",

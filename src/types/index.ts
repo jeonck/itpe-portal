@@ -34,6 +34,7 @@ export interface Topic {
   difficulty: DifficultyLevel;
   certifications: CertificationType[]; // 어느 기술사에 해당하는지
   keywords: string[];
+  mnemonic?: string; // 암기 두음
   definition: string;
   characteristics: string[];
   diagram?: string; // 구성도 URL 또는 설명

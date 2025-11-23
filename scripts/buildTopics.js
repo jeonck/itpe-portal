@@ -19,7 +19,11 @@ files.forEach((filePath) => { // 'file' -> 'filePath' since globSync returns ful
   const fileContent = fs.readFileSync(filePath, 'utf-8');
   const { data, content } = matter(fileContent);
 
-  // 정의 추출
+  // 암기 두음 추출 (## 암기 두음이 먼저 나옴)
+  const mnemonicMatch = content.match(/## 암기 두음\n(.+?)(?=\n#|\n##|\n$)/s);
+  const mnemonic = mnemonicMatch ? mnemonicMatch[1].trim() : '';
+
+  // 정의 추출 (# 정의가 암기 두음 다음에 나옴)
   const definitionMatch = content.match(/# 정의\n(.+?)(?=\n##|\n$)/s);
   const definition = definitionMatch ? definitionMatch[1].trim() : '';
 
@@ -41,6 +45,7 @@ files.forEach((filePath) => { // 'file' -> 'filePath' since globSync returns ful
     difficulty: data.difficulty,
     certifications: data.certifications,
     keywords: data.keywords,
+    ...(mnemonic && { mnemonic }),
     definition,
     characteristics,
     relatedTopics: data.relatedTopics || [],
