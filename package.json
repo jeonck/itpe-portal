@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@xyflow/react": "^12.9.3",
+    "glob": "^13.0.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.554.0",
     "react": "^19.2.0",

@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import matter from 'gray-matter';
+import { globSync } from 'glob'; // Import globSync
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -9,13 +10,12 @@ const __dirname = path.dirname(__filename);
 const topicsDir = path.join(__dirname, '../src/data/topics');
 const outputJsonPath = path.join(__dirname, '../src/data/topics.json');
 
-// 마크다운 파일 읽기
-const files = fs.readdirSync(topicsDir).filter(f => f.endsWith('.md') && f !== 'README.md');
+// 마크다운 파일 읽기 (재귀적으로 검색)
+const files = globSync(`${topicsDir}/**/*.md`, { ignore: '**/README.md' });
 
 const topics = [];
 
-files.forEach((file) => {
-  const filePath = path.join(topicsDir, file);
+files.forEach((filePath) => { // 'file' -> 'filePath' since globSync returns full paths
   const fileContent = fs.readFileSync(filePath, 'utf-8');
   const { data, content } = matter(fileContent);
 

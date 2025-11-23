@@ -2,7 +2,7 @@ import matter from 'gray-matter';
 import type { Topic } from '../types';
 
 // Vite의 import.meta.glob을 사용하여 모든 마크다운 파일을 가져옴
-const topicFiles = import.meta.glob<string>('../data/topics/*.md', {
+const topicFiles = import.meta.glob<string>('../data/topics/**/*.md', {
   query: '?raw',
   import: 'default',
   eager: true
