@@ -117,7 +117,10 @@ export default function TopicWiki() {
               {categories.map((cat) => (
                 <button
                   key={cat.value}
-                  onClick={() => setSelectedCategory(cat.value)}
+                  onClick={() => {
+                    setSelectedCategory(cat.value);
+                    setSelectedTopic(null);
+                  }}
                   className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${
                     selectedCategory === cat.value
                       ? cat.color + ' ring-2 ring-offset-2 ring-primary-500'
@@ -140,7 +143,10 @@ export default function TopicWiki() {
               {subjects.map((subj) => (
                 <button
                   key={subj.value}
-                  onClick={() => setSelectedSubject(subj.value)}
+                  onClick={() => {
+                    setSelectedSubject(subj.value);
+                    setSelectedTopic(null);
+                  }}
                   className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${
                     selectedSubject === subj.value
                       ? 'bg-indigo-100 text-indigo-700 ring-2 ring-offset-2 ring-indigo-500'
@@ -161,7 +167,10 @@ export default function TopicWiki() {
               </label>
               <select
                 value={selectedDifficulty}
-                onChange={(e) => setSelectedDifficulty(e.target.value as DifficultyLevel | 'all')}
+                onChange={(e) => {
+                  setSelectedDifficulty(e.target.value as DifficultyLevel | 'all');
+                  setSelectedTopic(null);
+                }}
                 className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
               >
                 {difficulties.map((diff) => (
@@ -179,7 +188,10 @@ export default function TopicWiki() {
               </label>
               <select
                 value={selectedCertification}
-                onChange={(e) => setSelectedCertification(e.target.value as CertificationType | 'all')}
+                onChange={(e) => {
+                  setSelectedCertification(e.target.value as CertificationType | 'all');
+                  setSelectedTopic(null);
+                }}
                 className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
               >
                 {certifications.map((cert) => (
