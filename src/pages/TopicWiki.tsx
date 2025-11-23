@@ -57,6 +57,15 @@ export default function TopicWiki() {
 
       const matchesCategory = selectedCategory === 'all' || topic.category === selectedCategory;
       const matchesSubject = selectedSubject === 'all' || (topic.subjectCategories && topic.subjectCategories.includes(selectedSubject));
+
+      // Debugging logs
+      if (topic.id === 'pmbok-001' || topic.id === 'ea-001') {
+        console.log(`--- Debug Topic: ${topic.id} ---`);
+        console.log(`Selected Subject: ${selectedSubject}`);
+        console.log(`Topic Subject Categories: ${topic.subjectCategories}`);
+        console.log(`matchesSubject evaluation: ${matchesSubject}`);
+        console.log(`-----------------------------`);
+      }
       const matchesDifficulty = selectedDifficulty === 'all' || topic.difficulty === selectedDifficulty;
       const matchesCertification =
         selectedCertification === 'all' || topic.certifications.includes(selectedCertification);
