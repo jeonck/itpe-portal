@@ -49,7 +49,7 @@ files.forEach((filePath) => { // 'file' -> 'filePath' since globSync returns ful
   };
 
   topics.push(topic);
-  console.log(`Processed: ${file}`);
+  console.log(`Processed: ${path.basename(filePath)}`);
 });
 
 // JSON 파일로 저장
