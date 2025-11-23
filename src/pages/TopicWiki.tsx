@@ -5,7 +5,6 @@ import type { Topic, DomainCategory, SubjectCategory, DifficultyLevel, Certifica
 
 export default function TopicWiki() {
   const topics = topicsData as Topic[];
-  console.log("Initial topics array:", topics); // Debug log
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<DomainCategory | 'all'>('all');
   const [selectedSubject, setSelectedSubject] = useState<SubjectCategory | 'all'>('all');
@@ -58,15 +57,6 @@ export default function TopicWiki() {
 
       const matchesCategory = selectedCategory === 'all' || topic.category === selectedCategory;
       const matchesSubject = selectedSubject === 'all' || (topic.subjectCategories && topic.subjectCategories.includes(selectedSubject));
-
-      // Debugging logs
-      if (topic.id === 'pmbok-001' || topic.id === 'ea-001') {
-        console.log(`--- Debug Topic: ${topic.id} ---`);
-        console.log(`Selected Subject: ${selectedSubject}`);
-        console.log(`Topic Subject Categories: ${topic.subjectCategories}`);
-        console.log(`matchesSubject evaluation: ${matchesSubject}`);
-        console.log(`-----------------------------`);
-      }
       const matchesDifficulty = selectedDifficulty === 'all' || topic.difficulty === selectedDifficulty;
       const matchesCertification =
         selectedCertification === 'all' || topic.certifications.includes(selectedCertification);
@@ -335,7 +325,6 @@ export default function TopicWiki() {
           <div className="text-sm text-gray-600">
             {filteredTopics.length}개의 토픽
           </div>
-          {console.log("Filtered topics for rendering:", filteredTopics)} {/* Debug log */}
 
           {/* Topics Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
