@@ -29,6 +29,7 @@ export function loadTopics(): Topic[] {
         title: data.title,
         category: data.category,
         subcategory: data.subcategory,
+        subjectCategories: data.subjectCategories || [],
         difficulty: data.difficulty,
         certifications: data.certifications,
         keywords: data.keywords,
