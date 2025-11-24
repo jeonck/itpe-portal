@@ -2027,6 +2027,54 @@
     ]
   },
   {
+    "id": "vector-db-001",
+    "title": "Vector DB (벡터 데이터베이스)",
+    "category": "digital-service",
+    "subcategory": "AI & 데이터",
+    "subjectCategories": [
+      "DB",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "Vector Database",
+      "Embedding",
+      "임베딩",
+      "유사도 검색",
+      "Pinecone",
+      "Chroma",
+      "Milvus"
+    ],
+    "definition": "AI 모델이 생성한 고차원 벡터(임베딩)를 효율적으로 저장하고 유사도 기반 검색을 수행하는 특수 목적 데이터베이스로, RAG 및 의미 검색의 핵심 인프라입니다.",
+    "characteristics": [
+      "임베딩 저장: 텍스트, 이미지, 오디오를 벡터로 변환하여 저장",
+      "유사도 검색: 코사인 유사도, 유클리드 거리, 내적 기반 검색",
+      "인덱싱: ANN(Approximate Nearest Neighbor) 알고리즘 (HNSW, IVF, PQ)",
+      "주요 제품: Pinecone, Weaviate, Milvus, Chroma, Qdrant, pgvector",
+      "RAG 파이프라인: 문서 임베딩 → Vector DB 저장 → 유사 문서 검색 → LLM 컨텍스트",
+      "Hybrid Search: 벡터 검색 + 키워드 검색 결합",
+      "멀티모달 검색: 이미지-텍스트 교차 검색"
+    ],
+    "relatedTopics": [
+      "rag-001",
+      "llm-001",
+      "ai-deep-learning-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Multimodal Vector Search",
+      "Hybrid Search (Vector + Keyword)",
+      "Vector DB as a Service"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
     "id": "transaction-001",
     "title": "트랜잭션 (Transaction)",
     "category": "fundamental",
@@ -2060,6 +2108,187 @@
       "nosql-001"
     ],
     "importance": 5
+  },
+  {
+    "id": "timeseries-db-001",
+    "title": "Time-Series DB (시계열 데이터베이스)",
+    "category": "digital-service",
+    "subcategory": "NoSQL",
+    "subjectCategories": [
+      "DB",
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "Time-Series",
+      "시계열",
+      "InfluxDB",
+      "TimescaleDB",
+      "IoT",
+      "메트릭"
+    ],
+    "definition": "시간을 기준으로 연속적으로 발생하는 데이터를 효율적으로 저장, 조회, 분석하는 데 최적화된 데이터베이스입니다.",
+    "characteristics": [
+      "데이터 특성: 타임스탬프 중심, Append-Only, 높은 쓰기 처리량",
+      "주요 제품: InfluxDB, TimescaleDB, Prometheus, OpenTSDB",
+      "사용 사례: IoT 센서 데이터, 모니터링 메트릭, 금융 시계열, 로그 분석",
+      "데이터 압축: 시간 기반 압축, Downsampling",
+      "쿼리 최적화: 시간 범위 쿼리, Rollup, Aggregation",
+      "Retention Policy: 오래된 데이터 자동 삭제",
+      "Continuous Query: 실시간 집계 및 다운샘플링"
+    ],
+    "relatedTopics": [
+      "nosql-001",
+      "edge-computing-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "IoT 데이터 관리",
+      "Real-time Analytics"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "sql-injection-001",
+    "title": "SQL Injection 방어",
+    "category": "fundamental",
+    "subcategory": "데이터베이스 보안",
+    "subjectCategories": [
+      "DB",
+      "IS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "SQL Injection",
+      "Prepared Statement",
+      "Parameterized Query",
+      "ORM",
+      "OWASP Top 10"
+    ],
+    "definition": "악의적인 SQL 쿼리를 주입하여 DB를 조작하는 공격 기법과 이를 방어하는 보안 대책입니다.",
+    "characteristics": [
+      "공격 원리: 사용자 입력을 SQL 쿼리에 직접 결합, 쿼리 구조 변경",
+      "공격 유형: Union-based, Error-based, Blind SQL Injection",
+      "OWASP Top 10: 1위 위험 (Injection)",
+      "Prepared Statement: 쿼리 구조와 데이터 분리, 플레이스홀더 사용",
+      "Parameterized Query: 파라미터 바인딩으로 안전한 쿼리 실행",
+      "ORM 사용: Hibernate, JPA, Django ORM으로 자동 이스케이프",
+      "입력 검증: Whitelist 기반 검증, 특수문자 필터링",
+      "최소 권한 원칙: DB 계정 권한 최소화",
+      "WAF: 웹 방화벽으로 패턴 탐지 및 차단"
+    ],
+    "relatedTopics": [
+      "db-security-001",
+      "security-attack-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "WAF (Web Application Firewall)",
+      "Runtime Application Self-Protection"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "query-optimization-001",
+    "title": "쿼리 최적화 (Query Optimization)",
+    "category": "fundamental",
+    "subcategory": "데이터베이스",
+    "subjectCategories": [
+      "DB"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "Optimizer",
+      "실행 계획",
+      "Hint",
+      "Index Scan",
+      "Full Table Scan",
+      "Cost-Based"
+    ],
+    "definition": "SQL 쿼리의 실행 계획을 분석하고 최적의 데이터 접근 경로를 선택하여 응답 시간과 리소스 사용을 최소화하는 기법입니다.",
+    "characteristics": [
+      "Optimizer: Rule-Based(규칙 기반), Cost-Based(비용 기반) 최적화",
+      "실행 계획(Execution Plan): EXPLAIN으로 확인, 테이블 스캔 방식 분석",
+      "Index Scan vs Full Table Scan: 인덱스 활용 여부",
+      "조인 최적화: Nested Loop, Hash Join, Sort Merge Join",
+      "Hint: 개발자가 실행 계획 강제 지정 (/*+ INDEX(t1) */)",
+      "서브쿼리 최적화: 상관 서브쿼리 제거, EXISTS vs IN",
+      "통계 정보: 카디널리티, 히스토그램 기반 비용 추정",
+      "WHERE 절 최적화: Sargable 조건, 인덱스 컬럼 가공 회피"
+    ],
+    "relatedTopics": [
+      "index-001",
+      "transaction-001",
+      "denormalization-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "AI-Powered Query Optimization",
+      "Adaptive Query Execution"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "open-data-001",
+    "title": "공공 데이터 개방 전략",
+    "category": "management-focus",
+    "subcategory": "데이터 정책",
+    "subjectCategories": [
+      "DB",
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "공공 데이터",
+      "Open Data",
+      "Open API",
+      "공공데이터포털",
+      "5-Star Open Data"
+    ],
+    "definition": "정부 및 공공기관이 보유한 데이터를 국민에게 개방하여 투명성을 높이고 데이터 경제를 활성화하는 정책입니다.",
+    "characteristics": [
+      "공공데이터법: 공공데이터의 제공 및 이용 활성화에 관한 법률 (2013년)",
+      "공공데이터포털: data.go.kr, Open API 제공",
+      "5-Star Open Data: ★ PDF → ★★ Excel → ★★★ CSV → ★★★★ URI → ★★★★★ Linked Data",
+      "제공 방식: 파일 다운로드, Open API, 시각화",
+      "데이터 유형: 행정, 교통, 보건의료, 환경, 문화 등",
+      "활용: 민간 서비스 개발, 연구, 정책 분석",
+      "개인정보 보호: 비식별화 후 제공",
+      "G-Cloud: 공공 클라우드, 데이터 통합 관리"
+    ],
+    "relatedTopics": [
+      "data-governance-001",
+      "mydata-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Data as a Service",
+      "Open Government Data"
+    ],
+    "tags": [
+      "2025"
+    ]
   },
   {
     "id": "nosql-001",
@@ -2103,6 +2332,187 @@
     ]
   },
   {
+    "id": "mydata-001",
+    "title": "마이데이터 & 데이터 3법",
+    "category": "management-focus",
+    "subcategory": "데이터 법규",
+    "subjectCategories": [
+      "DB",
+      "IM",
+      "IS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "마이데이터",
+      "데이터 3법",
+      "개인정보보호법",
+      "신용정보법",
+      "정보통신망법",
+      "가명정보"
+    ],
+    "definition": "개인이 자신의 데이터를 관리하고 활용할 수 있도록 하는 마이데이터와, 데이터 경제 활성화를 위한 데이터 3법 개정을 통해 개인정보 보호와 활용의 균형을 추구합니다.",
+    "characteristics": [
+      "마이데이터: 본인 정보 전송 요구권, 금융/의료/통신 등 분산된 데이터 통합",
+      "데이터 3법: 개인정보보호법, 신용정보법, 정보통신망법 개정 (2020년)",
+      "가명정보: 개인 식별 불가하도록 처리, 통계/연구 목적 활용 허용",
+      "익명정보: 재식별 불가, 개인정보보호법 적용 제외",
+      "개인정보처리자 책임 강화: 정보주체 권리 보장",
+      "마이데이터 사업자: 본인신용정보관리업, 데이터 중개",
+      "활용 사례: 금융 자산 통합 관리, 맞춤형 서비스"
+    ],
+    "relatedTopics": [
+      "data-anonymization-001",
+      "data-governance-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Open Banking",
+      "Data Portability"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "mvcc-001",
+    "title": "MVCC (다중 버전 동시성 제어)",
+    "category": "fundamental",
+    "subcategory": "데이터베이스",
+    "subjectCategories": [
+      "DB"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "MVCC",
+      "Multi-Version Concurrency Control",
+      "스냅샷 격리",
+      "동시성 제어",
+      "Lock-Free"
+    ],
+    "definition": "트랜잭션마다 데이터의 여러 버전을 유지하여 읽기 작업 시 Lock 없이 높은 동시성을 제공하는 동시성 제어 기법입니다.",
+    "characteristics": [
+      "원리: 데이터 수정 시 새 버전 생성, 이전 버전 유지",
+      "읽기: Lock 없이 트랜잭션 시작 시점의 스냅샷 읽기",
+      "쓰기: 새 버전 생성, 다른 트랜잭션의 읽기 블로킹 없음",
+      "장점: 읽기-쓰기 충돌 없음, 높은 동시성, 일관된 읽기",
+      "단점: 저장 공간 증가, 버전 정리(Vacuum) 필요",
+      "구현: PostgreSQL, MySQL InnoDB, Oracle",
+      "Snapshot Isolation: 트랜잭션별 일관된 스냅샷 제공",
+      "Write Skew: MVCC에서 발생 가능한 이상 현상"
+    ],
+    "relatedTopics": [
+      "transaction-001",
+      "distributed-db-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Distributed MVCC"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "kafka-streaming-001",
+    "title": "Kafka & Event Streaming",
+    "category": "digital-service",
+    "subcategory": "이벤트 스트리밍",
+    "subjectCategories": [
+      "DB",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "Kafka",
+      "Event Streaming",
+      "Pub/Sub",
+      "Producer",
+      "Consumer",
+      "Topic"
+    ],
+    "definition": "대용량 실시간 데이터 스트림을 안정적으로 수집, 저장, 처리하는 분산 이벤트 스트리밍 플랫폼으로, MSA와 실시간 데이터 파이프라인의 핵심입니다.",
+    "characteristics": [
+      "구성: Producer(생산자) → Topic(메시지 큐) → Consumer(소비자)",
+      "Topic & Partition: 메시지를 파티션으로 분산 저장, 병렬 처리",
+      "Offset: 각 Consumer의 읽기 위치 추적",
+      "Broker: 메시지 저장 서버, Cluster로 구성",
+      "Replication: 파티션 복제로 고가용성 보장",
+      "Kafka Connect: 외부 시스템 연동 (CDC, DB, S3)",
+      "Kafka Streams: 스트림 처리 라이브러리",
+      "ksqlDB: SQL로 스트림 처리",
+      "사용 사례: 로그 수집, 이벤트 소싱, 실시간 분석, MSA 메시징"
+    ],
+    "relatedTopics": [
+      "cdc-001",
+      "bigdata-platform-001",
+      "msa-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Kafka Streams",
+      "ksqlDB",
+      "Event-Driven Microservices"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "inmemory-db-001",
+    "title": "In-Memory DB (인메모리 데이터베이스)",
+    "category": "digital-service",
+    "subcategory": "NoSQL",
+    "subjectCategories": [
+      "DB",
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "Redis",
+      "Memcached",
+      "캐시",
+      "Key-Value",
+      "인메모리"
+    ],
+    "definition": "데이터를 디스크가 아닌 메모리(RAM)에 저장하여 초고속 읽기/쓰기를 제공하는 데이터베이스로, 캐시 및 세션 저장소로 널리 사용됩니다.",
+    "characteristics": [
+      "주요 제품: Redis, Memcached, Hazelcast, Apache Ignite",
+      "데이터 구조: Key-Value, Hash, List, Set, Sorted Set (Redis)",
+      "사용 사례: 캐싱, 세션 스토어, 실시간 순위표, Pub/Sub, 메시지 큐",
+      "성능: 디스크 DB 대비 100~1000배 빠른 응답 시간",
+      "영속성: RDB(스냅샷), AOF(Append-Only File)로 데이터 보존",
+      "Redis 고급 기능: Lua 스크립팅, Streams, Geospatial",
+      "분산: Redis Cluster, Sentinel(고가용성)"
+    ],
+    "relatedTopics": [
+      "nosql-001",
+      "cache-memory-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Redis Stack",
+      "Persistent In-Memory"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
     "id": "index-001",
     "title": "인덱스 (Index)",
     "category": "fundamental",
@@ -2136,6 +2546,52 @@
       "query-optimization-001"
     ],
     "importance": 5
+  },
+  {
+    "id": "graph-db-001",
+    "title": "Graph DB (그래프 데이터베이스)",
+    "category": "digital-service",
+    "subcategory": "NoSQL",
+    "subjectCategories": [
+      "DB",
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "Graph Database",
+      "Neo4j",
+      "Node",
+      "Edge",
+      "Cypher",
+      "관계 중심"
+    ],
+    "definition": "노드(Node)와 간선(Edge)로 데이터를 모델링하여 복잡한 관계를 효율적으로 표현하고 탐색하는 NoSQL 데이터베이스입니다.",
+    "characteristics": [
+      "데이터 모델: 노드(개체), 간선(관계), 속성(Property)",
+      "쿼리 언어: Cypher(Neo4j), Gremlin, SPARQL",
+      "주요 제품: Neo4j, Amazon Neptune, ArangoDB, JanusGraph",
+      "사용 사례: 소셜 네트워크, 추천 시스템, 지식 그래프, 사기 탐지",
+      "관계 탐색: 다단계 관계 쿼리, 최단 경로 찾기",
+      "RDBMS와 차이: 조인 없이 관계 탐색, 스키마 유연성",
+      "성능: 관계 중심 쿼리에서 RDBMS보다 우수"
+    ],
+    "relatedTopics": [
+      "nosql-001",
+      "data-modeling-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Knowledge Graph",
+      "Graph Neural Networks",
+      "Fraud Detection"
+    ],
+    "tags": [
+      "2025"
+    ]
   },
   {
     "id": "dw-dm-etl-001",
@@ -2178,6 +2634,191 @@
     ]
   },
   {
+    "id": "distributed-transaction-001",
+    "title": "분산 트랜잭션 (2PC & Saga Pattern)",
+    "category": "digital-service",
+    "subcategory": "분산 시스템",
+    "subjectCategories": [
+      "DB",
+      "DS",
+      "SE"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "분산 트랜잭션",
+      "2PC",
+      "Two-Phase Commit",
+      "Saga Pattern",
+      "보상 트랜잭션"
+    ],
+    "definition": "여러 데이터베이스나 서비스에 걸친 트랜잭션의 원자성을 보장하기 위한 기법으로, 2PC와 Saga Pattern이 대표적입니다.",
+    "characteristics": [
+      "2PC (Two-Phase Commit): Prepare → Commit 2단계 프로토콜",
+      "2PC 단점: 블로킹, 코디네이터 장애 시 전체 실패",
+      "Saga Pattern: 로컬 트랜잭션 체인 + 보상 트랜잭션",
+      "Saga 종류: Choreography(이벤트 기반), Orchestration(중앙 조정)",
+      "보상 트랜잭션: 실패 시 이전 단계 롤백",
+      "CAP 이론: 일관성 vs 가용성 트레이드오프",
+      "BASE: Basically Available, Soft state, Eventually consistent",
+      "사용 사례: MSA 주문 처리, 결제 시스템"
+    ],
+    "relatedTopics": [
+      "transaction-001",
+      "distributed-db-001",
+      "msa-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Event-Driven Saga",
+      "Transactional Outbox Pattern"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "distributed-db-001",
+    "title": "분산 DB (Sharding & Partitioning)",
+    "category": "digital-service",
+    "subcategory": "데이터베이스",
+    "subjectCategories": [
+      "DB",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "Sharding",
+      "Partitioning",
+      "분산 데이터베이스",
+      "Horizontal Scaling",
+      "Consistent Hashing"
+    ],
+    "definition": "대규모 데이터를 여러 서버에 분산 저장하여 수평 확장성과 고가용성을 확보하는 데이터베이스 아키텍처입니다.",
+    "characteristics": [
+      "Sharding: 데이터를 여러 DB 서버(Shard)에 수평 분할",
+      "Partitioning: 테이블을 논리적/물리적으로 분할 (Range, Hash, List)",
+      "Sharding Key: 데이터 분산 기준 (예: user_id, region)",
+      "Consistent Hashing: 샤드 추가/제거 시 재분배 최소화",
+      "장점: 수평 확장, 성능 향상, 장애 격리",
+      "단점: 복잡한 조인, 분산 트랜잭션 어려움, 샤드 재조정",
+      "Replication: Master-Slave, Multi-Master 복제",
+      "주요 제품: Vitess, Citus, CockroachDB, TiDB"
+    ],
+    "relatedTopics": [
+      "nosql-001",
+      "transaction-001",
+      "distributed-transaction-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Serverless Database",
+      "Multi-Region Replication"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "denormalization-001",
+    "title": "반정규화 (De-normalization)",
+    "category": "fundamental",
+    "subcategory": "데이터베이스",
+    "subjectCategories": [
+      "DB"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "반정규화",
+      "성능 최적화",
+      "중복 허용",
+      "테이블 통합",
+      "컬럼 중복"
+    ],
+    "definition": "정규화된 데이터베이스에서 의도적으로 중복을 허용하여 조인 연산을 줄이고 조회 성능을 향상시키는 설계 기법입니다.",
+    "characteristics": [
+      "목적: 조회 성능 향상, 복잡한 조인 감소, 응답 시간 단축",
+      "기법: 테이블 통합, 컬럼 중복, 파생 컬럼 추가, 테이블 분할",
+      "테이블 통합: 1:1, 1:N 관계의 테이블 병합",
+      "컬럼 중복: 자주 조인되는 컬럼을 여러 테이블에 중복 저장",
+      "파생 컬럼: 계산 값을 미리 저장 (예: 합계, 평균)",
+      "트레이드오프: 조회 성능 향상 vs 저장 공간 증가, 갱신 이상 위험",
+      "데이터 일관성 관리: 트리거, 애플리케이션 로직으로 동기화",
+      "적용 시점: Read-Heavy 워크로드, 복잡한 조인, 성능 병목"
+    ],
+    "relatedTopics": [
+      "db-normalization-001",
+      "index-001",
+      "transaction-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Read-Heavy 워크로드 최적화",
+      "NoSQL 비정규화 전략"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "db-security-001",
+    "title": "DB 보안 (접근제어 & 암호화)",
+    "category": "fundamental",
+    "subcategory": "데이터베이스 보안",
+    "subjectCategories": [
+      "DB",
+      "IS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "데이터베이스 보안",
+      "접근제어",
+      "암호화",
+      "TDE",
+      "감사 로그",
+      "DB 방화벽"
+    ],
+    "definition": "데이터베이스의 기밀성, 무결성, 가용성을 보장하기 위한 접근제어, 암호화, 감사 등의 보안 대책입니다.",
+    "characteristics": [
+      "접근제어: 사용자 인증, 권한 관리 (GRANT/REVOKE), 역할 기반 접근제어(RBAC)",
+      "TDE (Transparent Data Encryption): 데이터 파일/백업 자동 암호화",
+      "컬럼 암호화: 민감 데이터 컬럼 암호화 (주민번호, 카드번호)",
+      "네트워크 암호화: SSL/TLS로 통신 구간 암호화",
+      "감사 로그: 모든 DB 활동 기록, 이상 행위 탐지",
+      "DB 방화벽: SQL 트래픽 모니터링 및 차단",
+      "최소 권한 원칙: 필요한 최소 권한만 부여",
+      "데이터 마스킹: 운영 환경 외 민감 데이터 마스킹"
+    ],
+    "relatedTopics": [
+      "sql-injection-001",
+      "encryption-001",
+      "auth-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Zero Trust Database Security",
+      "Database Activity Monitoring (DAM)"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
     "id": "db-normalization-001",
     "title": "정규화 (Database Normalization)",
     "category": "fundamental",
@@ -2210,6 +2851,368 @@
       "dw-dm-etl-001"
     ],
     "importance": 5
+  },
+  {
+    "id": "data-quality-001",
+    "title": "데이터 품질 (Data Quality)",
+    "category": "management-focus",
+    "subcategory": "데이터 관리",
+    "subjectCategories": [
+      "DB",
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "데이터 품질",
+      "Dahama 6원칙",
+      "정확성",
+      "완전성",
+      "일관성",
+      "유효성"
+    ],
+    "definition": "데이터가 사용 목적에 적합한 품질을 갖추도록 정확성, 완전성, 일관성 등을 관리하는 활동으로, Dahama의 6원칙이 기준입니다.",
+    "characteristics": [
+      "Dahama 6원칙: 정확성(Accuracy), 완전성(Completeness), 일관성(Consistency), 유효성(Validity), 적시성(Timeliness), 유일성(Uniqueness)",
+      "정확성: 데이터가 실제 값과 일치",
+      "완전성: 필요한 모든 데이터가 존재",
+      "일관성: 서로 다른 시스템 간 데이터가 동일",
+      "유효성: 비즈니스 규칙과 제약 조건 준수",
+      "데이터 프로파일링: 품질 이슈 발견, 통계 분석",
+      "데이터 클렌징: 오류 수정, 중복 제거, 표준화",
+      "DQ 도구: Talend, Informatica, Great Expectations"
+    ],
+    "relatedTopics": [
+      "data-governance-001",
+      "dw-dm-etl-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "AI-Powered Data Quality",
+      "Data Observability"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "data-literacy-001",
+    "title": "데이터 리터러시 (Data Literacy)",
+    "category": "management-focus",
+    "subcategory": "데이터 역량",
+    "subjectCategories": [
+      "DB",
+      "IM"
+    ],
+    "difficulty": "basic",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "데이터 리터러시",
+      "데이터 문해력",
+      "Data-Driven",
+      "데이터 분석",
+      "데이터 활용"
+    ],
+    "definition": "데이터를 읽고, 이해하고, 분석하여 의사결정에 활용할 수 있는 능력으로, 데이터 기반 조직 문화의 핵심 역량입니다.",
+    "characteristics": [
+      "4단계 역량: 데이터 읽기 → 이해 → 분석 → 의사결정 활용",
+      "데이터 읽기: 차트, 그래프, 대시보드 이해",
+      "데이터 이해: 맥락, 한계, 편향 파악",
+      "데이터 분석: 패턴 발견, 가설 검증, 인사이트 도출",
+      "데이터 활용: 의사결정, 문제 해결, 전략 수립",
+      "Citizen Data Scientist: 비전문가의 데이터 분석 능력 향상",
+      "교육: SQL, Excel, Tableau, Python 기초",
+      "조직 문화: Data-Driven Culture, Data Democracy"
+    ],
+    "relatedTopics": [
+      "data-governance-001",
+      "data-quality-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Citizen Data Scientist",
+      "Data Democracy"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "data-lake-lakehouse-001",
+    "title": "Data Lake & Lakehouse",
+    "category": "digital-service",
+    "subcategory": "데이터 아키텍처",
+    "subjectCategories": [
+      "DB",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Data Lake",
+      "Lakehouse",
+      "Delta Lake",
+      "Apache Iceberg",
+      "Parquet",
+      "S3"
+    ],
+    "definition": "원시 데이터를 비정형 그대로 저장하는 Data Lake와, DW의 ACID 트랜잭션 기능을 결합한 Lakehouse 아키텍처를 통해 분석 유연성과 데이터 품질을 동시에 확보합니다.",
+    "characteristics": [
+      "Data Lake: 모든 형식의 원시 데이터 저장 (정형, 반정형, 비정형)",
+      "저장소: S3, ADLS, HDFS, Parquet/ORC 파일 포맷",
+      "Data Lakehouse: Data Lake + DW 기능 (ACID, Schema Enforcement, Time Travel)",
+      "주요 기술: Delta Lake, Apache Iceberg, Apache Hudi",
+      "Schema-on-Read: 읽을 때 스키마 적용 (유연성)",
+      "메타데이터 관리: AWS Glue, Hive Metastore",
+      "사용 사례: 빅데이터 분석, ML/AI 데이터 준비, 로그 저장",
+      "DW와 비교: 유연성 높음, 비용 낮음, 쿼리 성능 상대적 낮음"
+    ],
+    "relatedTopics": [
+      "dw-dm-etl-001",
+      "bigdata-platform-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Open Table Formats",
+      "Data Lakehouse Architecture"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "data-governance-001",
+    "title": "데이터 거버넌스 & 메타데이터",
+    "category": "management-focus",
+    "subcategory": "데이터 관리",
+    "subjectCategories": [
+      "DB",
+      "IM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "데이터 거버넌스",
+      "메타데이터",
+      "Data Catalog",
+      "데이터 스튜어드",
+      "DAMA-DMBOK"
+    ],
+    "definition": "조직의 데이터 자산을 효과적으로 관리하고 활용하기 위한 정책, 프로세스, 조직 체계로, 메타데이터 관리가 핵심입니다.",
+    "characteristics": [
+      "목적: 데이터 품질, 보안, 규정 준수, 활용성 향상",
+      "DAMA-DMBOK: 데이터 관리 지식 체계",
+      "핵심 구성: 데이터 정책, 표준, 조직(CDO, 스튜어드), 프로세스",
+      "메타데이터: 데이터에 대한 데이터 (기술, 비즈니스, 운영 메타데이터)",
+      "Data Catalog: 메타데이터 저장소, 데이터 검색/발견",
+      "Data Steward: 데이터 품질 책임자",
+      "Data Lineage: 데이터 계보 추적",
+      "주요 도구: Collibra, Alation, Apache Atlas"
+    ],
+    "relatedTopics": [
+      "data-quality-001",
+      "mydata-001",
+      "data-fabric-mesh-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Active Metadata Management",
+      "Data Governance Automation"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "data-fabric-mesh-001",
+    "title": "Data Fabric & Data Mesh",
+    "category": "digital-service",
+    "subcategory": "데이터 아키텍처",
+    "subjectCategories": [
+      "DB",
+      "DS",
+      "IM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Data Fabric",
+      "Data Mesh",
+      "Domain-Oriented",
+      "Self-Serve",
+      "Federated Governance"
+    ],
+    "definition": "Data Fabric은 통합된 데이터 관리 플랫폼, Data Mesh는 도메인 중심의 분산 데이터 소유권 모델로, 대규모 조직의 데이터 아키텍처를 혁신합니다.",
+    "characteristics": [
+      "Data Fabric: 중앙집중형, AI 기반 메타데이터 관리, 자동화된 데이터 통합",
+      "Data Mesh: 4대 원칙 - Domain Ownership, Data as a Product, Self-Serve Platform, Federated Governance",
+      "Domain-Oriented: 도메인 팀이 데이터 소유 및 관리",
+      "Data Product: 데이터를 제품처럼 관리 (품질, SLA, 문서화)",
+      "Self-Serve Platform: 데이터 엔지니어링 플랫폼 제공",
+      "Federated Governance: 분산 거버넌스, 중앙 정책 + 도메인 자율성",
+      "비교: Fabric은 통합, Mesh는 분산"
+    ],
+    "relatedTopics": [
+      "data-governance-001",
+      "dw-dm-etl-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Decentralized Data Architecture",
+      "Data Product Thinking"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "data-anonymization-001",
+    "title": "데이터 비식별화 (가명처리 & 익명처리)",
+    "category": "management-focus",
+    "subcategory": "데이터 보안",
+    "subjectCategories": [
+      "DB",
+      "IS",
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "비식별화",
+      "가명처리",
+      "익명처리",
+      "K-익명성",
+      "L-다양성",
+      "마스킹"
+    ],
+    "definition": "개인을 식별할 수 없도록 데이터를 처리하여 프라이버시를 보호하면서 데이터 활용성을 유지하는 기법입니다.",
+    "characteristics": [
+      "가명처리: 추가 정보 없이 개인 식별 불가, 재식별 가능",
+      "익명처리: 재식별 불가능, 개인정보보호법 제외",
+      "4단계 프로세스: 사전검토 → 비식별 조치 → 적정성 평가 → 사후관리",
+      "비식별 기법: 가명화, 총계처리, 데이터 삭제, 범주화, 마스킹",
+      "K-익명성: 동일 속성 조합 최소 K명 이상",
+      "L-다양성: 민감 속성 최소 L개 다양한 값",
+      "T-근접성: 민감 속성 분포가 전체와 유사",
+      "Differential Privacy: 개인 기여 정보 보호"
+    ],
+    "relatedTopics": [
+      "mydata-001",
+      "db-security-001",
+      "data-governance-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Differential Privacy",
+      "Synthetic Data"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "cdc-001",
+    "title": "CDC (Change Data Capture)",
+    "category": "digital-service",
+    "subcategory": "데이터 통합",
+    "subjectCategories": [
+      "DB",
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "CDC",
+      "Change Data Capture",
+      "Debezium",
+      "실시간 동기화",
+      "Event Streaming"
+    ],
+    "definition": "데이터베이스의 변경 사항(INSERT, UPDATE, DELETE)을 실시간으로 감지하고 캡처하여 다른 시스템에 전달하는 기술입니다.",
+    "characteristics": [
+      "목적: 실시간 데이터 동기화, ETL 대체, 이벤트 스트리밍",
+      "캡처 방식: 로그 기반(트랜잭션 로그), 트리거 기반, 스냅샷 비교",
+      "주요 도구: Debezium, Oracle GoldenGate, AWS DMS, Confluent",
+      "Log-Based CDC: MySQL Binlog, PostgreSQL WAL, Oracle Redo Log",
+      "사용 사례: DW 실시간 동기화, 마이크로서비스 이벤트 소싱, 캐시 무효화",
+      "Debezium: Kafka Connect 기반, 여러 DB 지원",
+      "장점: 낮은 지연 시간, 소스 DB 부하 최소화"
+    ],
+    "relatedTopics": [
+      "kafka-streaming-001",
+      "distributed-db-001",
+      "dw-dm-etl-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Real-time Data Pipelines",
+      "Event-Driven Architecture"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "bigdata-platform-001",
+    "title": "빅데이터 플랫폼 (Hadoop & Spark)",
+    "category": "digital-service",
+    "subcategory": "빅데이터",
+    "subjectCategories": [
+      "DB",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "Hadoop",
+      "Spark",
+      "MapReduce",
+      "HDFS",
+      "YARN",
+      "RDD"
+    ],
+    "definition": "대용량 데이터를 분산 처리하는 오픈소스 프레임워크로, Hadoop(배치 처리)과 Spark(실시간/배치 통합)가 핵심입니다.",
+    "characteristics": [
+      "Hadoop: HDFS(분산 저장) + MapReduce(분산 처리) + YARN(리소스 관리)",
+      "HDFS: 블록 단위 분산 저장, Replication을 통한 고가용성",
+      "MapReduce: Map(분할) → Shuffle → Reduce(집계) 패러다임",
+      "Spark: 인메모리 연산, RDD(Resilient Distributed Dataset), DAG 최적화",
+      "Spark 구성: Spark SQL, Spark Streaming, MLlib, GraphX",
+      "Spark vs Hadoop: Spark가 100배 빠름 (메모리 활용)",
+      "Ecosystem: Hive(SQL), Pig, HBase, Kafka",
+      "클라우드: EMR, Dataproc, Databricks"
+    ],
+    "relatedTopics": [
+      "data-lake-lakehouse-001",
+      "kafka-streaming-001",
+      "distributed-db-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Cloud-Native Big Data",
+      "Databricks"
+    ],
+    "tags": [
+      "2025"
+    ]
   },
   {
     "id": "storage-raid-001",
