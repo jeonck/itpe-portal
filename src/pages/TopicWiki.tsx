@@ -6,18 +6,19 @@ import type { Topic, DomainCategory, SubjectCategory, DifficultyLevel, Certifica
 export default function TopicWiki() {
   const topics = topicsData as Topic[];
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState<DomainCategory | 'all'>('all');
+  const [selectedCategory, setSelectedCategory] = useState<DomainCategory | 'all' | '2025'>('all');
   const [selectedSubject, setSelectedSubject] = useState<SubjectCategory | 'all'>('all');
   const [selectedDifficulty, setSelectedDifficulty] = useState<DifficultyLevel | 'all'>('all');
   const [selectedCertification, setSelectedCertification] = useState<CertificationType | 'all'>('all');
   const [selectedTopic, setSelectedTopic] = useState<Topic | null>(null);
 
-  const categories: { value: DomainCategory | 'all'; label: string; color: string }[] = [
+  const categories: { value: DomainCategory | 'all' | '2025'; label: string; color: string }[] = [
     { value: 'all', label: '전체', color: 'bg-gray-100 text-gray-700' },
     { value: 'fundamental', label: '공통 필수', color: 'bg-blue-100 text-blue-700' },
     { value: 'management-focus', label: '정보관리 집중', color: 'bg-green-100 text-green-700' },
     { value: 'technical-focus', label: '컴퓨터시스템 집중', color: 'bg-purple-100 text-purple-700' },
     { value: 'digital-service', label: '최신 트렌드', color: 'bg-orange-100 text-orange-700' },
+    { value: '2025', label: '2025 신규', color: 'bg-pink-100 text-pink-700' },
   ];
 
   const subjects: { value: SubjectCategory | 'all'; label: string }[] = [
@@ -55,7 +56,9 @@ export default function TopicWiki() {
         topic.keywords.some((k) => k.toLowerCase().includes(searchQuery.toLowerCase())) ||
         topic.definition.toLowerCase().includes(searchQuery.toLowerCase());
 
-      const matchesCategory = selectedCategory === 'all' || topic.category === selectedCategory;
+      const matchesCategory =
+        selectedCategory === 'all' ||
+        (selectedCategory === '2025' ? topic.tags?.includes('2025') : topic.category === selectedCategory);
       const matchesSubject = selectedSubject === 'all' || (topic.subjectCategories && topic.subjectCategories.includes(selectedSubject));
       const matchesDifficulty = selectedDifficulty === 'all' || topic.difficulty === selectedDifficulty;
       const matchesCertification =
@@ -235,6 +238,11 @@ export default function TopicWiki() {
                 <span className={`px-3 py-1 rounded-full text-sm font-medium ${getDifficultyBadge(selectedTopic.difficulty).color}`}>
                   {getDifficultyBadge(selectedTopic.difficulty).label}
                 </span>
+                {selectedTopic.tags?.includes('2025') && (
+                  <span className="px-3 py-1 rounded-full text-sm font-medium bg-pink-100 text-pink-700">
+                    2025 신규
+                  </span>
+                )}
               </div>
             </div>
 
@@ -355,6 +363,11 @@ export default function TopicWiki() {
                     <span className={`px-2 py-1 rounded text-xs font-medium ${diffBadge.color}`}>
                       {diffBadge.label}
                     </span>
+                    {topic.tags?.includes('2025') && (
+                      <span className="px-2 py-1 rounded text-xs font-medium bg-pink-100 text-pink-700">
+                        2025 신규
+                      </span>
+                    )}
                   </div>
 
                   <p className="text-sm text-gray-600 line-clamp-2">{topic.definition}</p>
