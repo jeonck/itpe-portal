@@ -594,6 +594,16 @@
       "분산 시스템"
     ],
     "definition": "애플리케이션을 작고 독립적인 서비스들로 분해하여 개발, 배포, 확장하는 아키텍처 패턴입니다.",
+    "functions": [
+      "독립적 배포: 각 서비스를 개별적으로 빌드, 테스트, 배포 가능",
+      "서비스 디스커버리: 동적으로 서비스 위치 탐색 및 로드 밸런싱 (Consul, Eureka)",
+      "API 게이트웨이: 단일 진입점을 통한 라우팅, 인증, Rate Limiting",
+      "분산 트랜잭션 관리: Saga 패턴을 통한 장기 트랜잭션 처리",
+      "이벤트 기반 통신: 메시지 큐(Kafka, RabbitMQ)를 통한 비동기 통신",
+      "분산 추적: 서비스 간 호출 추적 및 성능 모니터링 (Zipkin, Jaeger)",
+      "Circuit Breaker: 장애 서비스 격리 및 연쇄 장애 방지 (Hystrix, Resilience4j)",
+      "중앙화된 설정 관리: Config Server를 통한 환경별 설정 관리"
+    ],
     "characteristics": [
       "서비스 단위로 독립적 개발/배포",
       "기술 스택의 다양성 허용",
@@ -900,6 +910,16 @@
       "Sidecar Pattern"
     ],
     "definition": "MSA 환경에서 API 라우팅/보안/모니터링을 담당하는 API Gateway와 서비스 간 통신을 관리하는 Service Mesh를 통해 분산 시스템의 복잡도를 관리합니다.",
+    "technicalElements": [
+      "API Gateway 계층: 외부 클라이언트 요청의 단일 진입점, North-South 트래픽 처리",
+      "Service Mesh 계층: 서비스 간 내부 통신 관리, East-West 트래픽 처리",
+      "데이터 플레인(Data Plane): Envoy 프록시 기반의 실제 트래픽 전달 계층",
+      "컨트롤 플레인(Control Plane): Istio Pilot, Citadel 등의 정책 및 설정 관리 계층",
+      "Sidecar Proxy: 각 서비스 Pod에 배치되는 경량 프록시 (Envoy)",
+      "서비스 레지스트리: 동적 서비스 디스커버리 및 헬스 체크",
+      "mTLS (Mutual TLS): 서비스 간 암호화 통신 및 상호 인증",
+      "Circuit Breaker: 장애 전파 방지를 위한 회로 차단 메커니즘"
+    ],
     "characteristics": [
       "API Gateway: 외부 요청의 단일 진입점, 라우팅, 인증/인가, Rate Limiting, 캐싱",
       "API Gateway 제품: Kong, AWS API Gateway, NGINX, Apigee",
@@ -1038,6 +1058,7 @@
       "스프린트"
     ],
     "definition": "변화에 빠르게 대응하는 Agile 방법론과 개발-운영 통합을 통한 DevOps 문화로, 지속적 개선과 자동화를 추구합니다.",
+    "operatingPrinciple": "DevOps의 CI/CD 파이프라인은 다음과 같은 단계로 동작합니다:\n\n1. 코드 커밋 (Commit)\n   개발자가 Git에 코드를 푸시하면 자동으로 파이프라인이 트리거됩니다.\n\n2. 지속적 통합 (Continuous Integration)\n   - 소스 코드 빌드 (컴파일)\n   - 단위 테스트 자동 실행\n   - 코드 품질 분석 (SonarQube 등)\n   - 정적 분석 및 보안 스캔\n\n3. 지속적 배포 (Continuous Deployment)\n   - 컨테이너 이미지 빌드 (Docker)\n   - 아티팩트 저장소에 업로드\n   - 통합 테스트 실행 (Staging 환경)\n   - 운영 환경으로 자동 배포\n\n4. 모니터링 및 피드백\n   - 애플리케이션 성능 모니터링\n   - 로그 수집 및 분석\n   - 이슈 발견 시 롤백 또는 긴급 패치\n\n이 과정은 하루에도 수십 번 반복되며, 피드백 루프를 통해 지속적으로 개선됩니다.",
     "characteristics": [
       "Agile: Scrum (스프린트, 데일리 스탠드업), XP (페어 프로그래밍), Kanban (시각화, WIP 제한)",
       "DevOps: CI/CD 파이프라인, 인프라의 코드화(IaC), 자동화된 테스트",
