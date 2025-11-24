@@ -6,6 +6,7 @@ import Roadmap from './pages/Roadmap';
 import MindMap from './pages/MindMap';
 import Timer from './pages/Timer';
 import AnswerExamples from './pages/AnswerExamples';
+import ExamTrends from './pages/ExamTrends';
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
           <Route path="/topics" element={<TopicWiki />} />
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/mindmap" element={<MindMap />} />
-          <Route path="/timer" element={<Timer />} />
           <Route path="/answer-examples" element={<AnswerExamples />} />
+          <Route path="/exam-trends" element={<ExamTrends />} />
+          <Route path="/timer" element={<Timer />} />
         </Routes>
       </Layout>
     </Router>
