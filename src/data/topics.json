@@ -2406,6 +2406,52 @@
     ]
   },
   {
+    "id": "vpn-001",
+    "title": "VPN (Virtual Private Network)",
+    "category": "digital-service",
+    "subcategory": "네트워크 보안",
+    "subjectCategories": [
+      "NW",
+      "IS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "information-security"
+    ],
+    "keywords": [
+      "VPN",
+      "IPsec",
+      "SSL VPN",
+      "WireGuard",
+      "암호화",
+      "Tunneling"
+    ],
+    "definition": "공용 네트워크를 통해 암호화된 터널을 생성하여 안전한 사설 네트워크 연결을 제공하는 기술입니다.",
+    "characteristics": [
+      "목적: 원격 접속, 데이터 암호화, IP 주소 우회",
+      "프로토콜: IPsec, SSL/TLS VPN, PPTP, L2TP, WireGuard",
+      "IPsec: 네트워크 계층 암호화, Site-to-Site VPN",
+      "SSL VPN: 웹 브라우저 기반, 클라이언트 간편",
+      "WireGuard: 최신 프로토콜, 단순하고 빠름, 강력한 암호화",
+      "터널링: 데이터를 암호화하여 캡슐화",
+      "Split Tunneling: VPN 트래픽과 일반 트래픽 분리",
+      "사용 사례: 원격 근무, 본사-지사 연결, 보안 접속"
+    ],
+    "relatedTopics": [
+      "sd-wan-sase-001",
+      "security-solution-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Zero Trust Network Access (ZTNA)",
+      "WireGuard 확산"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
     "id": "tcpip-001",
     "title": "TCP / IP",
     "category": "fundamental",
@@ -2613,6 +2659,52 @@
     "importance": 5
   },
   {
+    "id": "quantum-cryptography-001",
+    "title": "양자 암호 통신 (QKD)",
+    "category": "digital-service",
+    "subcategory": "네트워크 보안",
+    "subjectCategories": [
+      "NW",
+      "IS",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Quantum Cryptography",
+      "QKD",
+      "Quantum Key Distribution",
+      "양자 암호",
+      "양자 통신",
+      "Post-Quantum"
+    ],
+    "definition": "양자역학 원리를 활용하여 도청이 불가능한 암호키를 분배하는 차세대 보안 통신 기술입니다.",
+    "characteristics": [
+      "QKD (Quantum Key Distribution): 양자 상태로 암호키 안전 분배",
+      "핵심 원리: 양자 중첩, 양자 얽힘, 불확정성 원리",
+      "보안성: 도청 시 양자 상태 변화로 즉시 감지",
+      "프로토콜: BB84, E91, B92",
+      "양자 컴퓨팅 위협: 기존 RSA, ECC 등 공개키 암호 위협",
+      "PQC (Post-Quantum Cryptography): 양자 컴퓨터 공격 대비 암호",
+      "상용화: 한국, 중국, 미국 등에서 실험 네트워크 구축",
+      "사용 사례: 금융, 국방, 정부 기관 통신"
+    ],
+    "relatedTopics": [
+      "security-solution-001",
+      "quantum-computing-001"
+    ],
+    "importance": 3,
+    "trends": [
+      "양자 내성 암호 (PQC)",
+      "양자 인터넷"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
     "id": "osi-7layer-001",
     "title": "OSI 7 Layer",
     "category": "fundamental",
@@ -2647,6 +2739,52 @@
       "network-protocol-001"
     ],
     "importance": 5
+  },
+  {
+    "id": "load-balancing-001",
+    "title": "L4/L7 Load Balancing",
+    "category": "digital-service",
+    "subcategory": "네트워크 인프라",
+    "subjectCategories": [
+      "NW",
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Load Balancing",
+      "L4",
+      "L7",
+      "ALB",
+      "NLB",
+      "Round Robin",
+      "Health Check"
+    ],
+    "definition": "여러 서버에 네트워크 트래픽을 분산하여 가용성과 성능을 향상시키는 기술로, L4와 L7 계층에서 동작합니다.",
+    "characteristics": [
+      "L4 Load Balancing: 전송 계층 (TCP/UDP), IP/포트 기반 분산",
+      "L7 Load Balancing: 응용 계층 (HTTP/HTTPS), URL/헤더/쿠키 기반 분산",
+      "알고리즘: Round Robin, Least Connections, IP Hash, Weighted",
+      "Health Check: 서버 상태 모니터링, 장애 서버 자동 제외",
+      "Session Persistence (Sticky Session): 세션 유지",
+      "AWS: ALB (L7), NLB (L4), CLB (Classic)",
+      "기타: NGINX, HAProxy, F5",
+      "사용 사례: 대규모 웹 서비스, MSA, Auto Scaling"
+    ],
+    "relatedTopics": [
+      "cloud-infra-001",
+      "osi-7layer-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Service Mesh",
+      "Global Load Balancing"
+    ],
+    "tags": [
+      "2025"
+    ]
   },
   {
     "id": "ipv4-ipv6-001",
@@ -2693,6 +2831,52 @@
     ]
   },
   {
+    "id": "iot-network-001",
+    "title": "IoT 네트워크 (LoRa, NB-IoT, Zigbee)",
+    "category": "digital-service",
+    "subcategory": "무선 통신",
+    "subjectCategories": [
+      "NW",
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "IoT",
+      "LoRa",
+      "LoRaWAN",
+      "NB-IoT",
+      "Zigbee",
+      "LPWAN",
+      "저전력"
+    ],
+    "definition": "저전력, 광역 통신을 목표로 하는 IoT 전용 네트워크 기술로, LoRa, NB-IoT, Zigbee 등이 대표적입니다.",
+    "characteristics": [
+      "LPWAN (Low Power Wide Area Network): 저전력, 장거리, 저속",
+      "LoRa: 비면허 대역 (ISM), 장거리 (수 km~15km), 저전력",
+      "LoRaWAN: LoRa 기반 프로토콜, Class A/B/C, 게이트웨이 방식",
+      "NB-IoT: 3GPP 표준, 면허 대역, 통신사 인프라 활용",
+      "Zigbee: 저전력, 짧은 거리 (10~100m), 메쉬 네트워크",
+      "사용 사례: 스마트 미터, 자산 추적, 농업 센서, 스마트 시티",
+      "Matter: IoT 통합 표준 (Apple, Google, Amazon 등 주도)",
+      "비교: WiFi (고속, 근거리), Bluetooth (저전력, 근거리), Cellular (광역, 고비용)"
+    ],
+    "relatedTopics": [
+      "5g-001",
+      "wireless-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "LoRaWAN 확산",
+      "Matter 표준"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
     "id": "http-quic-001",
     "title": "HTTP/2 & HTTP/3 (QUIC)",
     "category": "fundamental",
@@ -2731,6 +2915,98 @@
     "trends": [
       "HTTP/3 채택 확산",
       "0-RTT Connection"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "dns-security-001",
+    "title": "DNS Security (DNSSEC, DoH, DoT)",
+    "category": "digital-service",
+    "subcategory": "네트워크 보안",
+    "subjectCategories": [
+      "NW",
+      "IS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "information-security"
+    ],
+    "keywords": [
+      "DNS",
+      "DNSSEC",
+      "DoH",
+      "DoT",
+      "DNS over HTTPS",
+      "DNS over TLS",
+      "DNS 보안"
+    ],
+    "definition": "DNS 쿼리와 응답의 무결성, 기밀성, 인증을 보장하기 위한 보안 기술로 DNSSEC, DoH, DoT 등이 있습니다.",
+    "characteristics": [
+      "DNS 취약점: Cache Poisoning, Spoofing, DDoS, 스누핑",
+      "DNSSEC: DNS 응답 서명으로 위변조 방지, 공개키 암호화",
+      "DoT (DNS over TLS): TLS로 DNS 쿼리 암호화 (포트 853)",
+      "DoH (DNS over HTTPS): HTTPS로 DNS 쿼리 암호화 (포트 443)",
+      "DoH vs DoT: DoH는 HTTPS 트래픽처럼 보여 우회 어려움",
+      "DNS Filtering: 악성 도메인 차단, 유해 콘텐츠 필터링",
+      "Public DNS: Cloudflare (1.1.1.1), Google (8.8.8.8), Quad9",
+      "사용 사례: 프라이버시 보호, 중간자 공격 방지, 콘텐츠 필터링"
+    ],
+    "relatedTopics": [
+      "security-solution-001",
+      "http-quic-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "DNS over HTTPS (DoH) 확산",
+      "DNS Filtering"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "cdn-001",
+    "title": "CDN (Content Delivery Network)",
+    "category": "digital-service",
+    "subcategory": "웹 기술",
+    "subjectCategories": [
+      "NW",
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "CDN",
+      "Edge Server",
+      "Caching",
+      "CloudFront",
+      "Akamai",
+      "CloudFlare"
+    ],
+    "definition": "지리적으로 분산된 서버 네트워크를 통해 콘텐츠를 사용자와 가까운 위치에서 제공하여 속도와 가용성을 향상시키는 서비스입니다.",
+    "characteristics": [
+      "동작 원리: 엣지 서버에 콘텐츠 캐싱, 가장 가까운 서버에서 제공",
+      "장점: 지연 시간 감소, 대역폭 절감, 가용성 향상, DDoS 방어",
+      "캐싱 전략: TTL (Time to Live), Cache-Control 헤더",
+      "주요 업체: Cloudflare, AWS CloudFront, Akamai, Fastly",
+      "PoP (Point of Presence): CDN 엣지 서버 위치",
+      "Origin Server: 원본 콘텐츠 서버",
+      "Purge/Invalidation: 캐시 무효화",
+      "사용 사례: 동영상 스트리밍, 정적 파일 배포, API 가속"
+    ],
+    "relatedTopics": [
+      "http-quic-001",
+      "dns-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Edge Computing",
+      "CDN-as-Code"
     ],
     "tags": [
       "2025"
@@ -2944,6 +3220,80 @@
     ]
   },
   {
+    "id": "sso-oauth-oidc-001",
+    "title": "SSO & OAuth 2.0 & OIDC",
+    "category": "digital-service",
+    "subcategory": "인증 기술",
+    "subjectCategories": [
+      "IS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "SSO",
+      "OAuth 2.0",
+      "OIDC",
+      "인증",
+      "권한 부여",
+      "토큰"
+    ],
+    "definition": "SSO(Single Sign-On)는 한 번의 로그인으로 여러 개의 애플리케이션이나 서비스에 접근할 수 있도록 하는 인증 방식입니다. OAuth 2.0은 사용자 대신 특정 서비스(클라이언트 애플리케이션)가 다른 서비스(리소스 서버)에 접근할 수 있도록 '권한을 위임'하는 프레임워크이며, OIDC(OpenID Connect)는 OAuth 2.0 위에 구축되어 사용자 '인증'을 위한 신원 레이어를 추가한 프로토콜입니다. 이들은 웹 및 모바일 환경에서 사용자 경험과 보안을 향상시키는 데 필수적인 기술입니다.",
+    "characteristics": [
+      "**SSO (Single Sign-On)**:"
+    ],
+    "relatedTopics": [
+      "auth-001",
+      "cryptography-001",
+      "digital-signature-pki-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "CIAM (Customer Identity and Access Management)",
+      "분산 신원 (Decentralized Identity)",
+      "API 보안 강화"
+    ]
+  },
+  {
+    "id": "social-engineering-001",
+    "title": "사회공학적 해킹 (Phishing, Smishing)",
+    "category": "digital-service",
+    "subcategory": "공격 기법",
+    "subjectCategories": [
+      "IS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "사회공학",
+      "피싱",
+      "스미싱",
+      "스피어 피싱",
+      "보이스 피싱",
+      "악성코드"
+    ],
+    "definition": "사회공학적 해킹(Social Engineering)은 인간의 심리적 취약점이나 신뢰를 이용하여 개인이나 조직의 정보 시스템에 대한 접근 권한을 얻거나 기밀 정보를 탈취하는 비기술적인 공격 기법입니다. 대표적인 유형으로는 피싱(Phishing)과 스미싱(Smishing)이 있으며, 이는 단순히 기술적 취약점을 넘어 인간의 실수를 유도하여 보안을 침해합니다.",
+    "characteristics": [
+      "**목표**: 사용자 심리를 이용하여 비밀번호, 개인 정보, 금융 정보 등을 탈취하거나 악성코드를 설치.",
+      "**주요 원리**:"
+    ],
+    "relatedTopics": [
+      "security-attack-001",
+      "auth-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "AI 기반 피싱 공격",
+      "다중 채널 공격",
+      "CEO 사기 (BEC)"
+    ]
+  },
+  {
     "id": "security-solution-001",
     "title": "보안 솔루션 (Security Solution)",
     "category": "fundamental",
@@ -2983,6 +3333,43 @@
       "Zero Trust Architecture",
       "Cloud Security",
       "XDR"
+    ]
+  },
+  {
+    "id": "security-operations-siem-soar-001",
+    "title": "보안 관제 (SIEM & SOAR)",
+    "category": "digital-service",
+    "subcategory": "보안 운영",
+    "subjectCategories": [
+      "IS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "보안 관제",
+      "SIEM",
+      "SOAR",
+      "위협 탐지",
+      "침해 대응",
+      "자동화"
+    ],
+    "definition": "보안 관제는 정보 시스템에 대한 사이버 위협을 실시간으로 탐지하고 분석하며, 적절히 대응하여 시스템을 보호하는 활동입니다. SIEM(Security Information and Event Management)은 다양한 보안 시스템과 네트워크 장비에서 발생하는 로그 및 이벤트를 통합 수집, 분석하여 위협을 탐지하는 솔루션이며, SOAR(Security Orchestration, Automation and Response)는 SIEM에서 탐지된 위협에 대한 대응 프로세스를 자동화하고 오케스트레이션하여 보안 운영의 효율성과 대응 속도를 높이는 플랫폼입니다.",
+    "characteristics": [
+      "**보안 관제 (Security Operations)**:"
+    ],
+    "relatedTopics": [
+      "security-attack-001",
+      "security-solution-001",
+      "cyber-resilience-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "XDR (Extended Detection and Response)",
+      "AI 기반 보안 관제",
+      "위협 인텔리전스 통합"
     ]
   },
   {
@@ -3027,6 +3414,42 @@
     ]
   },
   {
+    "id": "ransomware-apt-001",
+    "title": "랜섬웨어 & APT 공격",
+    "category": "digital-service",
+    "subcategory": "공격 기법",
+    "subjectCategories": [
+      "IS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "랜섬웨어",
+      "APT 공격",
+      "다중 협박",
+      "제로데이",
+      "지능형 지속 위협"
+    ],
+    "definition": "랜섬웨어(Ransomware)는 사용자 또는 조직의 시스템 접근을 제한하거나 데이터를 암호화한 후, 이를 해제하는 대가로 금전(랜섬)을 요구하는 악성코드 공격입니다. APT(Advanced Persistent Threat, 지능형 지속 위협) 공격은 특정 목표를 설정하여 다양한 공격 기법과 제로데이 취약점 등을 활용, 장기간에 걸쳐 은밀하게 정보를 탈취하거나 시스템을 파괴하는 고도화된 공격입니다.",
+    "characteristics": [
+      "**랜섬웨어 (Ransomware)**:"
+    ],
+    "relatedTopics": [
+      "security-attack-001",
+      "security-solution-001",
+      "supply-chain-security-sbom-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "RaaS (Ransomware-as-a-Service)",
+      "AI 기반 APT 공격",
+      "OT/ICS 대상 공격 증가"
+    ]
+  },
+  {
     "id": "pqc-001",
     "title": "양자 내성 암호 (PQC)",
     "category": "digital-service",
@@ -3062,6 +3485,152 @@
       "NIST 표준화",
       "하이브리드 모드",
       "PQC 마이그레이션"
+    ]
+  },
+  {
+    "id": "personal-information-impact-assessment-001",
+    "title": "개인정보 영향평가 (PIA)",
+    "category": "management-focus",
+    "subcategory": "정보보호 관리",
+    "subjectCategories": [
+      "IS",
+      "IM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "PIA",
+      "개인정보 영향평가",
+      "개인정보보호법",
+      "위험 분석",
+      "침해 예방"
+    ],
+    "definition": "개인정보 영향평가(PIA, Privacy Impact Assessment)는 새로운 정보시스템의 구축 또는 기존 정보시스템의 변경 시, 해당 시스템이 개인정보에 미치는 영향 요인을 분석하고 평가하여 개인정보 침해 위험 요인을 사전에 발굴하고 개선 방안을 도출하는 일련의 과정입니다. '개인정보보호법'에 따라 일정 기준 이상(대량의 민감 정보 처리 등)의 개인정보를 처리하는 공공기관은 의무적으로 수행해야 합니다.",
+    "characteristics": [
+      "**목표**: 개인정보 침해 위험 요소를 사전에 식별하고 완화하여 개인정보보호 수준을 향상시키고, 정보주체의 권리를 보호.",
+      "**근거 법률**: 개인정보보호법 제33조.",
+      "**평가 시점**:"
+    ],
+    "relatedTopics": [
+      "isms-p-certification-001",
+      "it-governance-001",
+      "differential-privacy-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "AI 시스템 개인정보 영향평가",
+      "클라우드 서비스 개인정보 영향평가"
+    ]
+  },
+  {
+    "id": "owasp-top10-001",
+    "title": "OWASP Top 10 (웹 보안 취약점)",
+    "category": "digital-service",
+    "subcategory": "웹 보안",
+    "subjectCategories": [
+      "IS",
+      "SE"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "OWASP Top 10",
+      "웹 보안",
+      "취약점",
+      "웹 애플리케이션",
+      "시큐어 코딩"
+    ],
+    "definition": "OWASP(Open Web Application Security Project) Top 10은 웹 애플리케이션 보안에서 가장 중요하고 심각한 10가지 취약점 목록을 의미합니다. OWASP 재단에서 전 세계 웹 보안 전문가들의 경험과 데이터를 바탕으로 주기적으로 발표하며, 개발자와 보안 담당자들이 웹 애플리케이션의 보안을 강화하는 데 우선순위를 두고 집중해야 할 영역을 제시합니다.",
+    "characteristics": [
+      "**목표**: 웹 애플리케이션 보안 취약점에 대한 인식을 높이고, 보안 개발 프로세스를 개선하여 안전한 웹 애플리케이션을 구축하도록 지원.",
+      "**주요 10가지 취약점 (2021년 기준)**:"
+    ],
+    "relatedTopics": [
+      "security-attack-001",
+      "security-solution-001",
+      "sql-injection-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "API 보안 취약점",
+      "서버리스 보안",
+      "AI 기반 취약점 분석"
+    ]
+  },
+  {
+    "id": "ot-ics-security-001",
+    "title": "OT/ICS 보안 (산업제어시스템)",
+    "category": "digital-service",
+    "subcategory": "산업 보안",
+    "subjectCategories": [
+      "IS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "OT 보안",
+      "ICS 보안",
+      "산업제어시스템",
+      "SCADA",
+      "DCS",
+      "PLC"
+    ],
+    "definition": "OT(Operational Technology, 운영 기술) 보안은 산업 시설 및 인프라의 운영을 제어하고 모니터링하는 하드웨어 및 소프트웨어(예: ICS, Industrial Control Systems)를 사이버 위협으로부터 보호하는 분야입니다. ICS는 SCADA(Supervisory Control And Data Acquisition), DCS(Distributed Control System), PLC(Programmable Logic Controller) 등을 포함하며, 물리적 시스템의 안전하고 안정적인 운영을 보장하는 것이 최우선 목표입니다.",
+    "characteristics": [
+      "**OT/ICS 환경의 특성**:"
+    ],
+    "relatedTopics": [
+      "security-attack-001",
+      "network-security-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "스마트 팩토리 보안",
+      "융합 보안",
+      "제로 트러스트 OT"
+    ]
+  },
+  {
+    "id": "isms-p-certification-001",
+    "title": "ISMS-P 인증",
+    "category": "management-focus",
+    "subcategory": "정보보호 관리",
+    "subjectCategories": [
+      "IS",
+      "IM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "ISMS-P",
+      "정보보호 관리체계",
+      "개인정보보호",
+      "인증",
+      "KISA"
+    ],
+    "definition": "ISMS-P(Information Security Management System - Personal Information) 인증은 기업이나 기관이 정보보호 및 개인정보보호 관리체계를 수립, 운영, 유지보수하는지를 종합적으로 평가하여 부여하는 국내 최고 수준의 정보보호 및 개인정보보호 관리체계 인증 제도입니다. 한국인터넷진흥원(KISA)이 운영하며, 정보통신망법 및 개인정보보호법에 따라 일정 규모 이상의 기업/기관은 의무적으로 취득해야 합니다.",
+    "characteristics": [
+      "**목표**: 조직의 정보보호 및 개인정보보호 역량을 강화하고, 고객 및 이해관계자에게 신뢰할 수 있는 정보보호 수준을 제공.",
+      "**두 가지 영역 통합**: 기존의 정보보호 관리체계(ISMS)와 개인정보보호 관리체계(PIMS)가 통합된 형태입니다."
+    ],
+    "relatedTopics": [
+      "it-governance-001",
+      "personal-information-impact-assessment-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "클라우드 서비스 ISMS-P",
+      "개인정보보호 규제 강화"
     ]
   },
   {
@@ -3174,6 +3743,43 @@
     "importance": 5
   },
   {
+    "id": "digital-forensics-001",
+    "title": "디지털 포렌식 (절차, 원칙)",
+    "category": "digital-service",
+    "subcategory": "침해사고 대응",
+    "subjectCategories": [
+      "IS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "디지털 포렌식",
+      "증거 보전",
+      "침해사고 분석",
+      "무결성",
+      "정당성",
+      "신뢰성"
+    ],
+    "definition": "디지털 포렌식(Digital Forensics)은 사이버 범죄나 보안 침해 사고 발생 시, 디지털 기기 및 저장 매체(컴퓨터, 스마트폰, 서버 등)에 남아있는 전자적 증거를 과학적이고 법률적인 절차와 방법론에 따라 수집, 분석, 보존하여 법정에서 효력을 갖도록 하는 기술 및 절차를 의미합니다. 이는 침해 사고의 원인 규명, 범인 추적, 피해 규모 산정 등에 활용됩니다.",
+    "characteristics": [
+      "**목표**: 침해 사고의 진실 규명, 전자적 증거의 확보 및 분석, 법적 증거 능력 확보.",
+      "**디지털 포렌식의 5대 원칙**:"
+    ],
+    "relatedTopics": [
+      "security-attack-001",
+      "cyber-resilience-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "클라우드 포렌식",
+      "모바일 포렌식",
+      "AI 기반 포렌식 분석"
+    ]
+  },
+  {
     "id": "differential-privacy-001",
     "title": "차분 프라이버시 (Differential Privacy)",
     "category": "digital-service",
@@ -3245,6 +3851,41 @@
       "IoT Botnet",
       "HTTP/3 기반 DDoS",
       "AI 기반 DDoS 공격 방어"
+    ]
+  },
+  {
+    "id": "darkweb-osint-001",
+    "title": "다크웹 & OSINT (위협 정보 분석)",
+    "category": "digital-service",
+    "subcategory": "위협 정보 분석",
+    "subjectCategories": [
+      "IS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "다크웹",
+      "OSINT",
+      "오픈소스 인텔리전스",
+      "위협 인텔리전스",
+      "사이버 범죄"
+    ],
+    "definition": "다크웹(Dark Web)은 특정 소프트웨어(예: Tor)를 통해서만 접근 가능한 인터넷의 한 부분으로, 익명성이 보장되어 합법적인 활동 외에 마약 거래, 해킹 도구 판매, 개인 정보 유출 등 불법적인 사이버 범죄 활동이 은밀하게 이루어지는 공간입니다. OSINT(Open Source INTelligence)는 공개된 출처(인터넷 검색 엔진, 소셜 미디어, 뉴스 기사, 웹사이트 등)에서 정보를 수집, 분석하여 유의미한 위협 정보를 도출하는 기법입니다. 이 두 가지는 사이버 위협 탐지 및 대응에 있어 중요한 정보원의 역할을 합니다.",
+    "characteristics": [
+      "**다크웹 (Dark Web)**:"
+    ],
+    "relatedTopics": [
+      "security-attack-001",
+      "security-operations-siem-soar-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "AI 기반 OSINT 분석",
+      "블록체인 기반 다크웹 거래 추적",
+      "위협 인텔리전스 플랫폼 고도화"
     ]
   },
   {
@@ -3320,6 +3961,44 @@
     "importance": 5
   },
   {
+    "id": "cloud-security-001",
+    "title": "클라우드 보안 (CASB, CSPM, CWPP)",
+    "category": "digital-service",
+    "subcategory": "클라우드 보안",
+    "subjectCategories": [
+      "IS",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "클라우드 보안",
+      "CASB",
+      "CSPM",
+      "CWPP",
+      "클라우드 보안 모델",
+      "책임 공유 모델"
+    ],
+    "definition": "클라우드 보안은 클라우드 환경에서 데이터, 애플리케이션, 인프라를 안전하게 보호하는 일련의 기술, 정책, 절차를 의미합니다. 클라우드 컴퓨팅의 특성상 전통적인 온프레미스 환경과는 다른 보안 위협과 도전 과제가 존재하며, CASB, CSPM, CWPP와 같은 전문화된 솔루션들이 클라우드 환경의 복잡한 보안 요구사항을 충족시키기 위해 활용됩니다.",
+    "characteristics": [
+      "**클라우드 책임 공유 모델 (Shared Responsibility Model)**:"
+    ],
+    "relatedTopics": [
+      "cloud-infra-001",
+      "zero-trust-architecture-001",
+      "security-solution-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "CNAPP (Cloud Native Application Protection Platform)",
+      "SASE (Secure Access Service Edge)",
+      "클라우드 워크로드 보안 자동화"
+    ]
+  },
+  {
     "id": "cia-001",
     "title": "CIA (기밀성, 무결성, 가용성)",
     "category": "digital-service",
@@ -3351,6 +4030,79 @@
       "security-solution-001"
     ],
     "importance": 5
+  },
+  {
+    "id": "blockchain-security-001",
+    "title": "블록체인 보안 (Smart Contract 취약점)",
+    "category": "digital-service",
+    "subcategory": "블록체인",
+    "subjectCategories": [
+      "IS",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "블록체인 보안",
+      "스마트 컨트랙트",
+      "취약점",
+      "재진입 공격",
+      "프라이버시"
+    ],
+    "definition": "블록체인 보안은 블록체인 네트워크와 분산원장기술(DLT)의 고유한 특성을 보호하고, 스마트 컨트랙트의 취약점을 포함하여 다양한 공격으로부터 블록체인 기반 시스템을 안전하게 유지하는 분야입니다. 블록체인 자체의 암호화 기술과 분산 합의 메커니즘은 높은 수준의 보안을 제공하지만, 스마트 컨트랙트의 코드 오류나 구현상의 취약점은 치명적인 손실을 야기할 수 있습니다.",
+    "characteristics": [
+      "**블록체인 자체 보안 특성**:"
+    ],
+    "relatedTopics": [
+      "blockchain-001",
+      "encryption-001",
+      "security-attack-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "DeFi 보안",
+      "NFT 보안",
+      "블록체인 감사"
+    ]
+  },
+  {
+    "id": "biometric-authentication-001",
+    "title": "생체 인증 (FIDO, Passkey)",
+    "category": "digital-service",
+    "subcategory": "인증 기술",
+    "subjectCategories": [
+      "IS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "생체 인증",
+      "FIDO",
+      "Passkey",
+      "패스워드 없는 인증",
+      "MFA",
+      "핀테크 보안"
+    ],
+    "definition": "생체 인증(Biometric Authentication)은 지문, 얼굴, 홍채, 음성 등 개인 고유의 신체적, 행동적 특징을 활용하여 사용자 신원을 확인하는 기술입니다. FIDO(Fast IDentity Online)는 빠르고 안전하며 편리한 패스워드 없는 인증 표준을 제공하며, 패스키(Passkey)는 FIDO 기술을 기반으로 사용자 계정 정보 없이 웹사이트나 앱에 로그인할 수 있도록 하는 차세대 인증 기술입니다.",
+    "characteristics": [
+      "**생체 인식 기술**:"
+    ],
+    "relatedTopics": [
+      "auth-001",
+      "encryption-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "온디바이스 AI 인증",
+      "블록체인 기반 분산 신원",
+      "양자 내성 FIDO"
+    ]
   },
   {
     "id": "auth-001",
