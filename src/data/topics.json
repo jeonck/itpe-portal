@@ -3599,6 +3599,82 @@
     ]
   },
   {
+    "id": "network-separation-interconnection-001",
+    "title": "망분리 & 망연계",
+    "category": "digital-service",
+    "subcategory": "네트워크 보안",
+    "subjectCategories": [
+      "IS",
+      "NW"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "망분리",
+      "망연계",
+      "물리적 망분리",
+      "논리적 망분리",
+      "자료전송",
+      "보안성"
+    ],
+    "definition": "망분리는 외부 인터넷망과 업무망을 분리하여 외부로부터의 위협이 내부 업무망으로 침투하는 것을 원천적으로 차단하는 보안 기술입니다. 망연계는 분리된 망(인터넷망과 업무망) 간에 필요한 데이터만을 안전하게 전송할 수 있도록 하는 기술입니다. 이 두 가지는 특히 금융, 공공 등 높은 수준의 보안이 요구되는 기관에서 내부 정보 유출 및 외부 공격 방어를 위한 핵심적인 보안 인프라로 활용됩니다.",
+    "characteristics": [
+      "**망분리 (Network Separation)**:"
+    ],
+    "relatedTopics": [
+      "network-security-001",
+      "access-control-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "클라우드 환경의 망분리/망연계",
+      "제로 트러스트 기반 망분리 대체",
+      "가상 데스크톱 환경 (VDI)"
+    ]
+  },
+  {
+    "id": "network-security-001",
+    "title": "네트워크 보안 (F/W, IPS, WAF, NAC)",
+    "category": "digital-service",
+    "subcategory": "네트워크 보안",
+    "subjectCategories": [
+      "IS",
+      "NW"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "방화벽",
+      "IPS",
+      "WAF",
+      "NAC",
+      "네트워크 보안",
+      "침입 탐지",
+      "접근 제어"
+    ],
+    "definition": "네트워크 보안은 데이터가 전송되는 네트워크 인프라와 자원을 무단 접근, 오용, 변경, 파괴로부터 보호하기 위한 일련의 정책, 절차, 기술을 의미합니다. 다양한 네트워크 보안 솔루션이 계층별로 존재하며, 방화벽(Firewall), 침입 방지 시스템(IPS), 웹 방화벽(WAF), 네트워크 접근 제어(NAC)는 네트워크 경계 및 내부 트래픽을 통제하고 위협을 탐지 및 차단하는 대표적인 기술입니다.",
+    "characteristics": [
+      "**방화벽 (Firewall)**:"
+    ],
+    "relatedTopics": [
+      "security-solution-001",
+      "osi-7layer-001",
+      "access-control-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "SASE (Secure Access Service Edge)",
+      "Zero Trust Network Access (ZTNA)",
+      "AI 기반 침입 탐지"
+    ]
+  },
+  {
     "id": "isms-p-certification-001",
     "title": "ISMS-P 인증",
     "category": "management-focus",
@@ -3712,6 +3788,42 @@
     ]
   },
   {
+    "id": "drm-dlp-001",
+    "title": "DRM & DLP (내부정보 유출방지)",
+    "category": "digital-service",
+    "subcategory": "내부정보 유출방지",
+    "subjectCategories": [
+      "IS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "DRM",
+      "DLP",
+      "내부정보 유출방지",
+      "데이터 암호화",
+      "접근 제어",
+      "민감 정보"
+    ],
+    "definition": "DRM(Digital Rights Management)은 디지털 콘텐츠의 저작권을 보호하고 불법 복제 및 유통을 방지하기 위한 기술 및 정책입니다. DLP(Data Loss Prevention)는 조직 내부의 중요 정보(민감 정보, 기밀 데이터)가 외부로 유출되는 것을 탐지하고 차단하여 정보 유출 사고를 예방하는 솔루션입니다. 두 기술 모두 데이터 및 정보 자산의 기밀성과 무결성을 보호하는 데 중점을 둡니다.",
+    "characteristics": [
+      "**DRM (Digital Rights Management)**:"
+    ],
+    "relatedTopics": [
+      "encryption-001",
+      "access-control-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "클라우드 DLP",
+      "AI 기반 DLP",
+      "제로 트러스트 DLP"
+    ]
+  },
+  {
     "id": "digital-signature-pki-001",
     "title": "전자서명 & PKI (Public Key Infrastructure)",
     "category": "digital-service",
@@ -3816,6 +3928,42 @@
       "AI/ML 데이터셋 구축",
       "개인정보 활용 규제 준수",
       "클라우드 기반 프라이버시 강화 기술"
+    ]
+  },
+  {
+    "id": "deepfake-detection-001",
+    "title": "딥페이크 탐지 기술",
+    "category": "digital-service",
+    "subcategory": "AI 보안",
+    "subjectCategories": [
+      "IS",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "딥페이크",
+      "딥페이크 탐지",
+      "AI 보안",
+      "미디어 위변조",
+      "포렌식"
+    ],
+    "definition": "딥페이크(Deepfake)는 딥러닝 기술을 활용하여 기존의 이미지나 영상, 음성 데이터를 조작하여 마치 실제처럼 보이는 가짜 콘텐츠를 생성하는 기술입니다. 딥페이크 탐지 기술은 이러한 딥페이크 콘텐츠의 위변조 여부를 식별하고 진위성을 판별하여 허위 정보 확산, 사기, 명예 훼손 등으로부터 개인과 사회를 보호하는 기술입니다.",
+    "characteristics": [
+      "**딥페이크 생성 기술**:"
+    ],
+    "relatedTopics": [
+      "ai-security-001",
+      "digital-forensics-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "실시간 딥페이크 탐지",
+      "멀티모달 딥페이크 분석",
+      "블록체인 기반 미디어 진위 확인"
     ]
   },
   {
@@ -3996,6 +4144,41 @@
       "CNAPP (Cloud Native Application Protection Platform)",
       "SASE (Secure Access Service Edge)",
       "클라우드 워크로드 보안 자동화"
+    ]
+  },
+  {
+    "id": "ciso-001",
+    "title": "정보보호 최고책임자 (CISO)",
+    "category": "management-focus",
+    "subcategory": "정보보호 관리",
+    "subjectCategories": [
+      "IS",
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "CISO",
+      "정보보호 최고책임자",
+      "정보보호 거버넌스",
+      "정보보호 조직",
+      "ISMS-P"
+    ],
+    "definition": "CISO(Chief Information Security Officer, 정보보호 최고책임자)는 조직의 정보보호 전략, 정책, 계획 수립 및 실행을 총괄하고, 정보보호 관련 리스크를 관리하며, 법규 준수 및 조직의 정보보호 수준을 총체적으로 책임지는 최고 경영진입니다. 국내에서는 '정보통신망 이용촉진 및 정보보호 등에 관한 법률' 및 '개인정보보호법'에 따라 일정 규모 이상의 기업/기관은 CISO를 지정하도록 의무화하고 있습니다.",
+    "characteristics": [
+      "**역할 및 책임**:"
+    ],
+    "relatedTopics": [
+      "it-governance-001",
+      "isms-p-certification-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "CISO의 역할 확대",
+      "법적 책임 강화",
+      "비즈니스 전략과의 연계"
     ]
   },
   {
