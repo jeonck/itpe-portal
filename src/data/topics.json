@@ -1092,6 +1092,118 @@
     ]
   },
   {
+    "id": "tech-negotiation-contract-types-001",
+    "title": "기술협상 & 계약 방식 (확정/실비)",
+    "category": "management-focus",
+    "subcategory": "SW 사업 계약",
+    "subjectCategories": [
+      "PM",
+      "IM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "기술협상",
+      "계약 방식",
+      "확정 계약",
+      "실비 정산",
+      "시간 및 재료 계약"
+    ],
+    "definition": "기술협상(Technical Negotiation)은 SW 사업자 선정 후 발주기관과 우선협상대상자가 제안서 내용을 기반으로 기술적 요구사항, 구현 방안, 품질 기준 등을 구체화하고 조율하는 과정입니다. 계약 방식은 이러한 협상 결과를 바탕으로 프로젝트의 리스크 분담, 대가 지급 방식 등을 결정하는 것으로, 주로 확정 계약(Fixed-Price) 방식과 실비 정산 계약(Cost-Reimbursable) 방식으로 나뉩니다.",
+    "characteristics": [
+      "**기술협상**:"
+    ],
+    "relatedTopics": [
+      "rfp-proposal-001",
+      "sw-project-pricing-guide-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "애자일 계약",
+      "성과 기반 계약",
+      "클라우드 서비스 계약"
+    ]
+  },
+  {
+    "id": "sw-safety-review-audit-001",
+    "title": "SW 안전성 검토 (감리 관점)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 품질 관리",
+    "subjectCategories": [
+      "PM",
+      "SE",
+      "IS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "SW 안전성",
+      "감리",
+      "안전성 분석",
+      "위험 평가",
+      "안전 생명 주기"
+    ],
+    "definition": "SW 안전성 검토는 소프트웨어 시스템이 오작동하거나 실패했을 때 인명 손실, 환경 오염, 재산 피해 등 치명적인 사고를 유발할 수 있는 잠재적 위험을 식별하고, 이를 분석 및 평가하여 허용 가능한 수준으로 관리하기 위한 활동입니다. 특히 감리 관점에서는 정보시스템 감리의 일환으로 SW 개발 생애주기 전반에 걸쳐 안전 관련 요구사항이 적절히 반영되고 구현되었는지 독립적으로 점검하고 평가합니다.",
+    "characteristics": [
+      "**SW 안전성 (Safety)**: 시스템의 고장이나 오작동이 허용 불가능한 위험을 야기하지 않도록 보장하는 특성. 보안(Security)은 외부의 악의적인 공격으로부터 시스템을 보호하는 것이라면, 안전성은 시스템 자체의 오작동으로부터 발생하는 위험을 관리하는 것.",
+      "**SW 안전 생명 주기 (Software Safety Life Cycle)**: SW 안전성 확보를 위한 체계적인 절차로, 안전 요구사항 정의, 안전 분석, 안전 설계, 안전 구현, 안전 테스트, 안전성 검증 및 유효성 확인, 유지보수 등을 포함합니다.",
+      "**안전성 분석 기법**:"
+    ],
+    "relatedTopics": [
+      "it-audit-standards-001",
+      "quality-001",
+      "risk-management-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "AI 시스템 안전성",
+      "자율주행 SW 안전성",
+      "의료기기 SW 안전 규제 강화"
+    ]
+  },
+  {
+    "id": "sw-project-pricing-guide-001",
+    "title": "SW 사업 대가 산정 가이드",
+    "category": "management-focus",
+    "subcategory": "SW 원가 산정",
+    "subjectCategories": [
+      "PM",
+      "IM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "SW 사업 대가",
+      "SW 원가",
+      "기능점수",
+      "직접 인건비",
+      "제경비",
+      "기술료"
+    ],
+    "definition": "SW 사업 대가 산정 가이드는 공공 부문 SW 개발 및 운영/유지보수 사업에서 사업의 유형과 특성을 고려하여 적정 사업비를 산정하기 위한 기준과 절차를 제시하는 지침입니다. 이는 SW 진흥법에 따라 SW 사업자의 수익성을 보장하고 품질 향상을 유도하며, 발주자와 사업자 간의 투명하고 합리적인 계약 관계를 형성하는 데 목적이 있습니다.",
+    "characteristics": [
+      "**목표**: SW 사업의 적정 대가 보장, 발주 및 계약 과정의 투명성 확보, SW 산업의 건전한 발전 도모.",
+      "**주요 구성 요소**:"
+    ],
+    "relatedTopics": [
+      "function-point-analysis-001",
+      "public-sw-procurement-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "클라우드 SW 대가 산정",
+      "AI 개발 사업 대가 기준",
+      "품질 기반 대가 산정"
+    ]
+  },
+  {
     "id": "schedule-compression-001",
     "title": "일정 단축 (Crashing, Fast Tracking)",
     "category": "management-focus",
@@ -1152,6 +1264,149 @@
     "importance": 5
   },
   {
+    "id": "rfp-proposal-001",
+    "title": "제안요청서(RFP) & 제안서",
+    "category": "management-focus",
+    "subcategory": "SW 사업 계약",
+    "subjectCategories": [
+      "PM",
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "RFP",
+      "제안요청서",
+      "제안서",
+      "사업자 선정",
+      "기술성 평가",
+      "협상"
+    ],
+    "definition": "RFP(Request for Proposal)는 발주기관이 특정 사업을 수행하기 위해 필요한 솔루션, 서비스, 기술 등을 명확히 정의하고, 사업 수행을 희망하는 사업자에게 제안을 요청하는 공식 문서입니다. 제안서는 이러한 RFP에 대한 응답으로, 사업자가 발주기관의 요구사항을 어떻게 충족시킬 것인지, 어떤 기술과 방법론을 사용하여 사업을 수행할 것인지 등을 상세하게 기술한 문서입니다. 이 두 문서는 SW 사업자 선정 및 계약의 핵심적인 기반이 됩니다.",
+    "characteristics": [
+      "**RFP (Request for Proposal)**:"
+    ],
+    "relatedTopics": [
+      "public-sw-procurement-001",
+      "sw-project-pricing-guide-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "애자일 RFP",
+      "클라우드 서비스 RFP",
+      "AI 기반 제안서 평가"
+    ]
+  },
+  {
+    "id": "requirements-traceability-matrix-001",
+    "title": "요구사항 추적표 (RTM)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 범위 관리",
+    "subjectCategories": [
+      "PM",
+      "SE"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "RTM",
+      "요구사항 추적표",
+      "요구사항 관리",
+      "추적성",
+      "프로젝트 품질"
+    ],
+    "definition": "요구사항 추적표(RTM, Requirements Traceability Matrix)는 프로젝트 생애주기 동안 요구사항과 다른 프로젝트 산출물(설계 요소, 코드, 테스트 케이스, 비즈니스 목표 등) 간의 양방향 연결을 문서화하는 표입니다. 이를 통해 요구사항이 프로젝트의 모든 단계에서 일관되게 구현되고 검증되었는지 확인할 수 있으며, 변경 발생 시 그 영향을 파악하고 관리하는 데 중요한 도구로 활용됩니다.",
+    "characteristics": [
+      "**목표**:"
+    ],
+    "relatedTopics": [
+      "pmbok-10-knowledge-areas-001",
+      "quality-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "애자일 요구사항 관리 도구",
+      "ALM (Application Lifecycle Management)",
+      "AI 기반 요구사항 추적 분석"
+    ]
+  },
+  {
+    "id": "qa-qc-001",
+    "title": "품질 보증(QA) vs 품질 통제(QC)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 품질 관리",
+    "subjectCategories": [
+      "PM",
+      "SE"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "품질 보증",
+      "품질 통제",
+      "QA",
+      "QC",
+      "예방",
+      "발견"
+    ],
+    "definition": "품질 보증(QA, Quality Assurance)은 제품이나 서비스가 특정 품질 표준 및 요구사항을 충족할 것이라는 확신을 제공하기 위해 프로젝트 프로세스를 검토하고 개선하는 예방 중심의 활동입니다. 반면, 품질 통제(QC, Quality Control)는 제품이나 서비스의 품질을 측정하고 검증하여 결함을 식별하고 수정하는 발견 중심의 활동입니다. QA가 '제대로 만드는 과정'을 다룬다면, QC는 '제대로 만들어졌는지'를 확인하는 것입니다.",
+    "characteristics": [
+      "**품질 보증 (QA, Quality Assurance)**:"
+    ],
+    "relatedTopics": [
+      "quality-001",
+      "test-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "지속적 품질 보증 (Continuous QA)",
+      "Shift-Left QA",
+      "AI 기반 품질 분석"
+    ]
+  },
+  {
+    "id": "project-closure-lessons-learned-001",
+    "title": "프로젝트 종료 및 교훈 (Lessons Learned)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 통제",
+    "subjectCategories": [
+      "PM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "프로젝트 종료",
+      "교훈",
+      "Lessons Learned",
+      "프로젝트 관리",
+      "지식 관리"
+    ],
+    "definition": "프로젝트 종료는 프로젝트 또는 프로젝트 단계의 모든 활동을 공식적으로 완료하고, 최종 산출물을 이해관계자에게 이관하며, 계약을 종료하는 프로세스입니다. 이 과정에서 '교훈(Lessons Learned)'을 도출하고 기록하는 활동은 프로젝트 관리 지식을 축적하고 조직의 프로젝트 관리 성숙도를 높이는 데 매우 중요합니다.",
+    "characteristics": [
+      "**프로젝트 종료 프로세스**:"
+    ],
+    "relatedTopics": [
+      "pmbok-10-knowledge-areas-001",
+      "it-governance-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "애자일 회고",
+      "AI 기반 교훈 분석",
+      "지식 관리 시스템 (KMS)"
+    ]
+  },
+  {
     "id": "project-5-processes-001",
     "title": "프로젝트 5대 프로세스 (착수-기획-실행-감시및통제-종료)",
     "category": "digital-service",
@@ -1180,6 +1435,41 @@
       "sdlc-001"
     ],
     "importance": 5
+  },
+  {
+    "id": "pmo-001",
+    "title": "PMO (Project Management Office)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 조직",
+    "subjectCategories": [
+      "PM",
+      "IM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "PMO",
+      "프로젝트 관리 사무국",
+      "표준화",
+      "자원 관리",
+      "PMBOK"
+    ],
+    "definition": "PMO(Project Management Office)는 조직 내 프로젝트 관리 역량을 강화하고, 프로젝트의 성공률을 높이기 위해 프로젝트 관리 관련 표준, 프로세스, 도구, 기술 및 인력을 집중적으로 관리하고 지원하는 조직 단위입니다. PMO는 조직의 프로젝트 관리 성숙도를 높이고, 여러 프로젝트 간의 시너지를 창출하며, 자원 배분과 리스크 관리를 최적화하는 역할을 수행합니다.",
+    "characteristics": [
+      "**주요 기능**:"
+    ],
+    "relatedTopics": [
+      "pmbok-7th-001",
+      "it-governance-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "애자일 PMO",
+      "전략적 PMO",
+      "가상 PMO"
+    ]
   },
   {
     "id": "pmbok-7th-001",
@@ -1293,6 +1583,298 @@
     "importance": 5
   },
   {
+    "id": "okr-001",
+    "title": "OKR (Objectives and Key Results)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 성과 관리",
+    "subjectCategories": [
+      "PM",
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "OKR",
+      "목표 및 핵심 결과",
+      "성과 관리",
+      "목표 설정",
+      "정렬",
+      "투명성"
+    ],
+    "definition": "OKR(Objectives and Key Results)은 조직의 전략적 목표를 설정하고, 그 목표 달성 여부를 측정 가능한 핵심 결과(Key Results)로 정의하여, 조직과 팀, 개인의 목표를 투명하게 정렬하고 추적하는 성과 관리 프레임워크입니다. 구글(Google) 등 실리콘밸리 기업들이 성장하는 데 핵심적인 역할을 한 것으로 알려져 있습니다.",
+    "characteristics": [
+      "**O (Objective, 목표)**:"
+    ],
+    "relatedTopics": [
+      "bsc-it-bsc-001",
+      "agile-project-management-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "AI 기반 OKR 관리",
+      "애자일 조직의 OKR",
+      "전사적 OKR 도입"
+    ]
+  },
+  {
+    "id": "motivation-theories-001",
+    "title": "동기 부여 이론 (Maslow, Herzberg)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 팀 관리",
+    "subjectCategories": [
+      "PM",
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "동기 부여",
+      "매슬로우",
+      "허즈버그",
+      "욕구 단계 이론",
+      "2요인 이론",
+      "프로젝트 팀 관리"
+    ],
+    "definition": "동기 부여 이론은 개인이 특정 목표를 향해 노력하고 행동하도록 만드는 내적, 외적 요인들을 설명하는 이론입니다. 프로젝트 팀 관리에서 동기 부여는 팀원들의 생산성, 만족도, 몰입도를 높여 프로젝트 성공에 기여하는 핵심적인 요소입니다. 매슬로우(Maslow)의 욕구 5단계 이론과 허즈버그(Herzberg)의 2요인 이론은 대표적인 동기 부여 이론으로 널리 알려져 있습니다.",
+    "characteristics": [
+      "**매슬로우 (Maslow)의 욕구 5단계 이론**: 인간의 욕구를 5가지 계층으로 분류하고, 하위 단계의 욕구가 충족되어야 상위 단계의 욕구가 발생한다고 주장합니다."
+    ],
+    "relatedTopics": [
+      "leadership-theories-001",
+      "okr-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "AI 기반 성과 관리",
+      "유연 근무 환경 동기 부여",
+      "개인 맞춤형 동기 부여"
+    ]
+  },
+  {
+    "id": "man-month-001",
+    "title": "투입공수 방식 (Man-Month)",
+    "category": "management-focus",
+    "subcategory": "SW 원가 산정",
+    "subjectCategories": [
+      "PM",
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "맨먼스",
+      "투입공수",
+      "SW 개발비",
+      "원가 산정",
+      "인건비"
+    ],
+    "definition": "투입공수 방식(Man-Month Method)은 SW 개발 프로젝트의 원가를 산정하는 가장 전통적이고 보편적인 방법 중 하나입니다. 프로젝트를 완료하는 데 필요한 총 작업량(Man-Month, 인월)을 예측하고, 여기에 참여 인력의 평균 인건비(노임 단가)를 곱하여 총 사업비를 산정하는 방식입니다. 여기서 Man-Month는 한 사람이 한 달 동안 일한 노동량을 의미합니다.",
+    "characteristics": [
+      "**산정 공식**:"
+    ],
+    "relatedTopics": [
+      "sw-project-pricing-guide-001",
+      "function-point-analysis-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "애자일 환경에서의 맨먼스 활용",
+      "클라우드 기반 SW 개발 비용 산정"
+    ]
+  },
+  {
+    "id": "leadership-theories-001",
+    "title": "리더십 이론 (서번트 리더십)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 팀 관리",
+    "subjectCategories": [
+      "PM",
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "리더십",
+      "서번트 리더십",
+      "변혁적 리더십",
+      "거래적 리더십",
+      "프로젝트 리더"
+    ],
+    "definition": "리더십 이론은 조직의 목표 달성을 위해 구성원들에게 영향력을 행사하고 동기를 부여하는 리더의 역할과 행동을 설명하는 학문입니다. 다양한 리더십 이론 중 서번트 리더십(Servant Leadership)은 리더가 구성원의 성장과 발전을 최우선으로 돕고, 그들을 섬김으로써 조직 전체의 성과 향상을 추구하는 접근 방식입니다.",
+    "characteristics": [
+      "**리더십의 유형**:"
+    ],
+    "relatedTopics": [
+      "motivation-theories-001",
+      "communication-stakeholder-mgt-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "애자일 리더십",
+      "디지털 리더십",
+      "AI 기반 리더십 지원"
+    ]
+  },
+  {
+    "id": "it-audit-standards-001",
+    "title": "감리 (정보시스템 감리기준)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 품질 관리",
+    "subjectCategories": [
+      "PM",
+      "IM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "정보시스템 감리",
+      "감리 기준",
+      "SW 진흥법",
+      "감리 절차",
+      "감리 영역"
+    ],
+    "definition": "정보시스템 감리는 정보시스템의 구축 및 운영 전반에 걸쳐 독립적인 제3의 전문가가 사업자의 사업 수행 내용 또는 산출물에 대해 검토하고 효율성, 안정성, 보안성 등을 종합적으로 평가하여 문제점을 개선하도록 지원하는 활동입니다. 이는 '소프트웨어 진흥법'에 근거하여 정보시스템의 품질 향상과 투자 효과를 제고하는 데 목적이 있습니다.",
+    "characteristics": [
+      "**목표**: 정보시스템 개발 사업의 품질, 효율성, 안전성, 적법성 확보. 발주기관의 정보화 사업 역량 강화.",
+      "**근거 법률**: 소프트웨어 진흥법 (구 소프트웨어산업 진흥법).",
+      "**감리 주체**: 발주기관으로부터 독립적인 공인된 감리법인 또는 감리원.",
+      "**감리 대상**: 공공기관의 정보화 사업 중 SW 개발 사업, 정보시스템 구축 사업 등.",
+      "**감리 단계 및 유형**:"
+    ],
+    "relatedTopics": [
+      "pmbok-10-knowledge-areas-001",
+      "it-governance-001",
+      "quality-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "클라우드 시스템 감리",
+      "AI/빅데이터 시스템 감리",
+      "애자일 감리 방법론"
+    ]
+  },
+  {
+    "id": "hybrid-project-management-001",
+    "title": "하이브리드 프로젝트 관리",
+    "category": "digital-service",
+    "subcategory": "프로젝트 관리 방법론",
+    "subjectCategories": [
+      "PM",
+      "SE"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "하이브리드 프로젝트 관리",
+      "애자일",
+      "폭포수",
+      "상황 적응",
+      "예측형",
+      "적응형"
+    ],
+    "definition": "하이브리드 프로젝트 관리는 예측형(Predictive, 전통적인 폭포수 방식) 접근 방식과 적응형(Adaptive, 애자일 방식) 접근 방식의 장점을 결합하여 프로젝트의 특성과 상황에 가장 적합한 관리 방법을 적용하는 방식입니다. 이는 프로젝트의 불확실성 정도, 요구사항의 안정성, 기술의 성숙도 등을 고려하여 최적의 유연성과 통제력을 확보하는 것을 목표로 합니다.",
+    "characteristics": [
+      "**통합적 접근**: 프로젝트의 일부는 예측형으로, 다른 일부는 적응형으로 관리하거나, 프로젝트의 특정 단계는 예측형으로, 다른 단계는 적응형으로 관리하는 등 다양한 방식으로 두 접근 방식을 혼합합니다.",
+      "**유연성과 통제력**: 예측형 접근 방식의 강력한 계획 및 통제력과 애자일 접근 방식의 유연하고 빠른 변화 대응 능력을 모두 활용할 수 있습니다.",
+      "**적용 기준**:"
+    ],
+    "relatedTopics": [
+      "agile-project-management-001",
+      "pmbok-7th-001",
+      "sdlc-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "조직의 애자일 성숙도",
+      "디지털 트랜스포메이션과 하이브리드 PM"
+    ]
+  },
+  {
+    "id": "function-point-analysis-001",
+    "title": "기능점수(FP) 측정 및 검증",
+    "category": "management-focus",
+    "subcategory": "SW 원가 산정",
+    "subjectCategories": [
+      "PM",
+      "SE"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "기능점수",
+      "FP",
+      "IFPUG",
+      "SW 원가 산정",
+      "소프트웨어 규모 측정"
+    ],
+    "definition": "기능점수(FP, Function Point)는 소프트웨어의 기능적 요구사항을 기반으로 소프트웨어의 규모를 객관적으로 측정하는 방법론입니다. IFPUG(International Function Point Users Group)에서 정의한 표준화된 절차에 따라 소프트웨어 기능을 사용자 관점에서 측정하며, 이를 통해 SW 개발 프로젝트의 원가, 일정, 생산성 등을 추정하는 데 활용됩니다.",
+    "characteristics": [
+      "**사용자 관점 측정**: 소프트웨어가 사용자에게 제공하는 기능(입력, 출력, 조회, 파일 등)을 중심으로 규모를 측정합니다. 특정 기술이나 구현 방식에 독립적입니다.",
+      "**측정 요소**:"
+    ],
+    "relatedTopics": [
+      "sw-cost-estimation-001",
+      "pmbok-10-knowledge-areas-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "애자일 환경에서의 FP",
+      "자동화된 FP 측정 도구",
+      "데이터 기반 SW 규모 예측"
+    ]
+  },
+  {
+    "id": "financial-feasibility-analysis-001",
+    "title": "재무 타당성 분석 (BEP, Payback Period)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 원가 관리",
+    "subjectCategories": [
+      "PM",
+      "IM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "재무 타당성",
+      "BEP",
+      "손익분기점",
+      "Payback Period",
+      "회수 기간",
+      "IT 투자"
+    ],
+    "definition": "재무 타당성 분석은 프로젝트나 투자안의 경제적 가치를 평가하여 투자를 결정하기 위한 과정입니다. 이는 주로 화폐의 시간 가치를 고려하거나 고려하지 않는 다양한 기법을 사용하여 투자로부터 얻을 수 있는 수익과 비용을 비교 분석합니다. BEP(Break-Even Point)와 Payback Period(회수 기간)는 특히 프로젝트의 위험성과 수익성을 직관적으로 평가하는 데 유용한 기법입니다.",
+    "characteristics": [
+      "**BEP (Break-Even Point, 손익분기점)**:"
+    ],
+    "relatedTopics": [
+      "it-investment-evaluation-001",
+      "evm-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "AI 기반 재무 예측",
+      "클라우드 투자 재무 분석"
+    ]
+  },
+  {
     "id": "evm-001",
     "title": "EVM (획득가치 관리 - SPI, CPI 계산)",
     "category": "management-focus",
@@ -1328,6 +1910,185 @@
     "importance": 5
   },
   {
+    "id": "conflict-management-001",
+    "title": "갈등 관리 기법",
+    "category": "management-focus",
+    "subcategory": "프로젝트 팀 관리",
+    "subjectCategories": [
+      "PM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "갈등 관리",
+      "회피",
+      "타협",
+      "강요",
+      "협력",
+      "양보"
+    ],
+    "definition": "갈등 관리 기법은 프로젝트 팀 내외부에서 발생하는 다양한 갈등 상황을 효과적으로 해결하고, 긍정적인 방향으로 전환하여 프로젝트 목표 달성에 기여하도록 하는 방법론입니다. 프로젝트 환경에서 갈등은 필연적으로 발생하며, 이를 어떻게 관리하느냐에 따라 프로젝트 성과에 큰 영향을 미칩니다.",
+    "characteristics": [
+      "**갈등의 원인**:"
+    ],
+    "relatedTopics": [
+      "communication-stakeholder-mgt-001",
+      "leadership-theories-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "원격 근무 환경에서의 갈등 관리",
+      "AI 기반 갈등 분석 도구"
+    ]
+  },
+  {
+    "id": "configuration-management-001",
+    "title": "형상 관리 (Configuration Management)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 품질 관리",
+    "subjectCategories": [
+      "PM",
+      "SE"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "형상 관리",
+      "SCM",
+      "형상 식별",
+      "형상 통제",
+      "형상 감사",
+      "형상 기록"
+    ],
+    "definition": "형상 관리(Configuration Management)는 소프트웨어 및 시스템의 전체 생명주기 동안 생성되는 산출물(코드, 문서, 설계도 등)의 변경 사항을 체계적으로 식별, 통제, 기록 및 감사하여 일관성과 무결성을 유지하는 활동입니다. SCM(Software Configuration Management)은 소프트웨어 개발에 특화된 형상 관리를 의미합니다.",
+    "characteristics": [
+      "**목표**: 프로젝트 산출물의 무결성 유지, 변경 이력 관리, 버전 관리, 병행 개발 지원, 재사용성 증대.",
+      "**주요 활동**:"
+    ],
+    "relatedTopics": [
+      "quality-001",
+      "sdlc-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "DevOps와 형상 관리",
+      "Git 기반 형상 관리",
+      "자동화된 형상 관리"
+    ]
+  },
+  {
+    "id": "communication-stakeholder-mgt-001",
+    "title": "의사소통 관리 & 이해관계자 관리",
+    "category": "management-focus",
+    "subcategory": "프로젝트 이해관계자 관리",
+    "subjectCategories": [
+      "PM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "의사소통 관리",
+      "이해관계자 관리",
+      "의사소통 계획",
+      "이해관계자 참여",
+      "프로젝트 성공"
+    ],
+    "definition": "의사소통 관리(Communications Management)는 프로젝트 정보의 생성, 수집, 배포, 저장, 검색, 최종 처리를 시기적절하고 적절하게 계획, 관리, 통제하는 프로세스입니다. 이해관계자 관리(Stakeholder Management)는 프로젝트에 영향을 미치거나 영향을 받는 개인, 그룹, 조직을 식별하고, 그들의 참여를 분석 및 계획하며, 프로젝트 성공에 기여하도록 관리하는 프로세스입니다. 두 가지 모두 프로젝트 팀과 외부 이해관계자 간의 효과적인 상호작용을 통해 프로젝트 성공을 지원하는 핵심적인 관리 영역입니다.",
+    "characteristics": [
+      "**의사소통 관리**:"
+    ],
+    "relatedTopics": [
+      "pmbok-10-knowledge-areas-001",
+      "risk-management-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "애자일 의사소통",
+      "비대면 협업 툴 활용",
+      "AI 기반 이해관계자 분석"
+    ]
+  },
+  {
+    "id": "code-peer-review-001",
+    "title": "코드 리뷰 & 동료 검토",
+    "category": "management-focus",
+    "subcategory": "프로젝트 품질 관리",
+    "subjectCategories": [
+      "PM",
+      "SE"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "코드 리뷰",
+      "동료 검토",
+      "정적 분석",
+      "결함 발견",
+      "품질 향상"
+    ],
+    "definition": "코드 리뷰(Code Review)는 소프트웨어 개발 과정에서 작성된 코드를 다른 개발자가 검토하여 잠재적인 오류, 버그, 취약점, 비효율적인 코드 등을 발견하고 개선하는 활동입니다. 동료 검토(Peer Review)는 코드 리뷰를 포함하여 설계 문서, 요구사항 명세서 등 프로젝트의 다양한 산출물을 동료들이 상호 검토하여 품질을 향상시키는 포괄적인 활동을 의미합니다.",
+    "characteristics": [
+      "**목표**:"
+    ],
+    "relatedTopics": [
+      "quality-001",
+      "test-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "CI/CD 파이프라인 통합",
+      "AI 기반 코드 분석",
+      "원격 코드 리뷰 도구"
+    ]
+  },
+  {
+    "id": "change-control-001",
+    "title": "변경 관리 (Change Control)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 통제",
+    "subjectCategories": [
+      "PM",
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "변경 관리",
+      "변경 통제",
+      "변경 통제 위원회",
+      "CCB",
+      "변경 요청",
+      "형상 관리"
+    ],
+    "definition": "변경 관리(Change Control)는 프로젝트의 범위, 일정, 원가, 품질, 리스크 등 프로젝트 관리 계획의 승인된 기준선에 대한 변경 요청을 식별하고, 평가하며, 승인 또는 거부하고, 승인된 변경 사항을 관리하는 프로세스입니다. 프로젝트 관리에서 변경은 불가피하게 발생하지만, 이러한 변경이 프로젝트 목표에 미치는 영향을 최소화하고 통제된 방식으로 관리하는 것이 중요합니다.",
+    "characteristics": [
+      "**목표**: 프로젝트 관리 계획의 무결성을 유지하고, 불필요한 변경으로 인한 프로젝트 실패를 방지하며, 승인된 변경만 통제된 방식으로 적용.",
+      "**변경 통제 프로세스**:"
+    ],
+    "relatedTopics": [
+      "configuration-management-001",
+      "pmbok-10-knowledge-areas-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "애자일 환경의 변경 관리",
+      "자동화된 변경 승인",
+      "DevOps와 변경 관리 통합"
+    ]
+  },
+  {
     "id": "ccm-001",
     "title": "CCM (Critical Chain Method)",
     "category": "management-focus",
@@ -1361,6 +2122,42 @@
     "trends": [
       "애자일 환경에서의 버퍼 관리",
       "멀티프로젝트 환경 CCM"
+    ]
+  },
+  {
+    "id": "agile-project-management-001",
+    "title": "애자일 프로젝트 관리 (Burn-down chart)",
+    "category": "digital-service",
+    "subcategory": "애자일 방법론",
+    "subjectCategories": [
+      "PM",
+      "SE"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management",
+      "computer-systems"
+    ],
+    "keywords": [
+      "애자일",
+      "스크럼",
+      "번다운 차트",
+      "스프린트",
+      "백로그"
+    ],
+    "definition": "애자일(Agile) 프로젝트 관리는 변화에 대한 유연한 대응, 반복적이고 점진적인 개발, 고객과의 긴밀한 협업, 그리고 작동하는 소프트웨어 제공을 핵심 가치로 삼는 프로젝트 관리 방법론입니다. 전통적인 폭포수 모델과 달리 예측 불가능한 요구사항 변화에 효과적으로 대응하며, 번다운 차트(Burn-down Chart)는 애자일 프로젝트, 특히 스크럼 스프린트의 진행 상황을 시각적으로 추적하는 데 사용되는 도구입니다.",
+    "characteristics": [
+      "**애자일 선언문 (Agile Manifesto) 4대 가치**:"
+    ],
+    "relatedTopics": [
+      "agile-devops-001",
+      "pmbok-7th-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "스케일드 애자일",
+      "애자일 코칭",
+      "애자일 성숙도 모델"
     ]
   },
   {
