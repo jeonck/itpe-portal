@@ -6064,6 +6064,270 @@
     ]
   },
   {
+    "id": "xr-arvrmr-001",
+    "title": "AR/VR/MR/XR",
+    "category": "digital-service",
+    "subcategory": "New Tech",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "AR",
+      "VR",
+      "MR",
+      "XR",
+      "Spatial Computing",
+      "Headset"
+    ],
+    "definition": "현실과 가상을 융합하는 확장현실 기술로, AR(증강현실), VR(가상현실), MR(혼합현실)을 포괄합니다.",
+    "characteristics": [
+      "AR (Augmented Reality): 현실에 가상 오버레이, 스마트폰, 스마트글래스 (포켓몬GO, AR 네비게이션)",
+      "VR (Virtual Reality): 완전 가상 환경, HMD (헤드셋), Meta Quest, PSVR2",
+      "MR (Mixed Reality): 현실+가상 상호작용, HoloLens, Magic Leap",
+      "XR (Extended Reality): AR/VR/MR 통칭",
+      "Spatial Computing: 공간 인식, 3D 인터페이스, Apple Vision Pro",
+      "핵심 기술: SLAM (위치 추적), Hand Tracking, Eye Tracking, Haptic Feedback",
+      "활용: 게임, 교육/훈련, 원격 협업, 의료(수술 시뮬레이션), 부동산",
+      "WebXR: 웹 브라우저 기반 XR, A-Frame, Three.js"
+    ],
+    "relatedTopics": [
+      "metaverse-001",
+      "digital-twin-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Apple Vision Pro",
+      "WebXR"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "xaas-001",
+    "title": "XaaS (Everything as a Service)",
+    "category": "digital-service",
+    "subcategory": "Cloud/Infra",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "XaaS",
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "BaaS",
+      "FaaS",
+      "Cloud Service"
+    ],
+    "definition": "모든 IT 자원과 서비스를 온디맨드 방식으로 클라우드를 통해 제공하는 비즈니스 모델입니다.",
+    "characteristics": [
+      "IaaS (Infrastructure as a Service): 가상 서버, 스토리지, 네트워크, AWS EC2, Azure VM",
+      "PaaS (Platform as a Service): 개발 플랫폼, 런타임, Heroku, Google App Engine",
+      "SaaS (Software as a Service): 완성된 애플리케이션, Salesforce, Gmail, Slack",
+      "BaaS (Backend as a Service): 백엔드 API, Firebase, AWS Amplify",
+      "FaaS (Function as a Service): 서버리스 함수, AWS Lambda, Azure Functions",
+      "DaaS (Data as a Service): 데이터 제공 플랫폼, Snowflake",
+      "AIaaS (AI as a Service): OpenAI API, AWS SageMaker, Azure AI",
+      "장점: 초기 비용 절감, 빠른 배포, 유연한 확장, 운영 부담 감소"
+    ],
+    "relatedTopics": [
+      "cloud-infra-001",
+      "serverless-001",
+      "cloud-native-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "AIaaS",
+      "DaaS (Data as a Service)"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "web3-dao-001",
+    "title": "Web 3.0 & DAO",
+    "category": "digital-service",
+    "subcategory": "Blockchain",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Web3",
+      "DAO",
+      "Decentralization",
+      "Smart Contract",
+      "DApp",
+      "Tokenomics"
+    ],
+    "definition": "블록체인 기반의 탈중앙화된 차세대 웹으로, 사용자가 데이터를 소유하고 DAO(분산 자율 조직)를 통해 거버넌스에 참여합니다.",
+    "characteristics": [
+      "Web 1.0 (읽기), Web 2.0 (읽기+쓰기), Web 3.0 (읽기+쓰기+소유)",
+      "탈중앙화: 중앙 서버 없이 P2P 네트워크, IPFS, Arweave",
+      "DApp (Decentralized App): 스마트 컨트랙트 기반 애플리케이션",
+      "Wallet: MetaMask, WalletConnect, 개인 키로 디지털 자산 관리",
+      "DAO (Decentralized Autonomous Organization): 스마트 컨트랙트로 운영, 토큰 기반 투표",
+      "Tokenomics: 거버넌스 토큰, 유틸리티 토큰, 인센티브 설계",
+      "사례: Uniswap DAO, MakerDAO, GitcoinDAO",
+      "과제: 확장성(TPS), 사용자 경험(UX), 규제, 환경 문제"
+    ],
+    "relatedTopics": [
+      "blockchain-001",
+      "nft-sto-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "DeSoc (Decentralized Society)",
+      "Account Abstraction"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "uam-001",
+    "title": "UAM (Urban Air Mobility)",
+    "category": "digital-service",
+    "subcategory": "Mobility",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "UAM",
+      "eVTOL",
+      "Air Taxi",
+      "Drone",
+      "Urban Air Mobility"
+    ],
+    "definition": "전기 수직 이착륙기(eVTOL)를 활용한 도심 항공 교통 시스템으로, 하늘길을 통한 새로운 이동 수단입니다.",
+    "characteristics": [
+      "eVTOL (Electric Vertical Take-Off and Landing): 전기 동력, 수직 이착륙, 저소음",
+      "형태: 멀티콥터, 틸트로터, 틸트윙, Lift+Cruise",
+      "주요 업체: Joby Aviation, Lilium, Volocopter, Hyundai (S-A1)",
+      "운영 모델: Air Taxi (에어택시), 화물 배송, 긴급 구조",
+      "Vertiport (버티포트): 이착륙장, 충전 인프라",
+      "UTM (UAM Traffic Management): 공역 관리, 충돌 방지, AI 기반 라우팅",
+      "기술 과제: 배터리 용량, 안전성, 소음, 인증(FAA, EASA)",
+      "상용화: 2025~2030년 목표, 한국 K-UAM"
+    ],
+    "relatedTopics": [
+      "autonomous-driving-001",
+      "ai-deep-learning-001"
+    ],
+    "importance": 3,
+    "trends": [
+      "AAM (Advanced Air Mobility)",
+      "Vertiport Infrastructure"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "sovereign-ai-001",
+    "title": "소버린 AI (Sovereign AI)",
+    "category": "digital-service",
+    "subcategory": "AI/ML",
+    "subjectCategories": [
+      "DS",
+      "MG"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Sovereign AI",
+      "National AI",
+      "AI Sovereignty",
+      "Local LLM",
+      "Data Sovereignty"
+    ],
+    "definition": "국가 또는 지역이 자체 AI 인프라와 모델을 보유하여 데이터 주권과 기술 독립성을 확보하는 개념입니다.",
+    "characteristics": [
+      "배경: 빅테크 의존도 감소, 데이터 주권, 안보, 경제적 독립",
+      "구성 요소: 자국 데이터, 자국 컴퓨팅 인프라, 자국 AI 모델",
+      "국가별 LLM: GPT-J (독일), Bloom (프랑스), HyperCLOVA X (한국), Ernie (중국)",
+      "AI Infrastructure: GPU 클러스터, 데이터센터, 슈퍼컴퓨터",
+      "Data Sovereignty: 자국 내 데이터 저장/처리, GDPR, 개인정보보호법",
+      "목적: 국가 안보, 언어/문화 반영, 산업 경쟁력, 기술 종속 탈피",
+      "과제: 막대한 투자 비용, 인재 확보, 오픈소스 vs 폐쇄",
+      "정책: AI 주권 확보 전략, 국가 AI 로드맵"
+    ],
+    "relatedTopics": [
+      "llm-001",
+      "ai-governance-ethics-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "국가별 LLM 개발",
+      "AI Infrastructure 투자"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "smart-city-grid-001",
+    "title": "스마트 시티 & 스마트 그리드",
+    "category": "digital-service",
+    "subcategory": "Smart City",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Smart City",
+      "Smart Grid",
+      "IoT",
+      "Digital Twin",
+      "V2G"
+    ],
+    "definition": "IoT, AI, 빅데이터를 활용하여 도시 인프라를 지능화하고, 전력망을 효율적으로 관리하는 기술입니다.",
+    "characteristics": [
+      "스마트 시티: IoT 센서, 데이터 분석, 시민 서비스 향상",
+      "주요 분야: 스마트 교통(신호 최적화), 에너지, 안전(CCTV 분석), 환경(대기질 모니터링)",
+      "플랫폼: 통합 운영센터, 디지털 트윈, AI 의사결정",
+      "사례: 싱가포르, 바르셀로나, 송도, 세종",
+      "스마트 그리드: 전력망 지능화, 양방향 통신, 신재생 에너지 통합",
+      "AMI (Advanced Metering Infrastructure): 스마트 미터, 실시간 전력 사용량",
+      "V2G (Vehicle to Grid): 전기차 배터리를 전력망에 연결, 에너지 저장",
+      "기술: IoT, 5G, Edge Computing, Blockchain (에너지 거래)"
+    ],
+    "relatedTopics": [
+      "digital-twin-001",
+      "ai-deep-learning-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "AI 기반 도시 운영",
+      "Net Zero City"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
     "id": "serverless-001",
     "title": "Serverless",
     "category": "digital-service",
@@ -6101,6 +6365,50 @@
       "Edge Functions",
       "Serverless Framework",
       "WASM 런타임"
+    ]
+  },
+  {
+    "id": "robotics-amr-001",
+    "title": "로보틱스 (AMR, 협동로봇)",
+    "category": "digital-service",
+    "subcategory": "Robotics",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Robotics",
+      "AMR",
+      "Cobot",
+      "ROS",
+      "SLAM",
+      "Collaborative Robot"
+    ],
+    "definition": "자율적으로 작업을 수행하는 로봇 기술로, AMR(자율주행 로봇)과 협동로봇(Cobot)이 대표적입니다.",
+    "characteristics": [
+      "AMR (Autonomous Mobile Robot): 자율 주행, 물류/창고 자동화, SLAM (Localization + Mapping)",
+      "예시: Amazon Kiva, Geek+ (물류), 배달 로봇, 청소 로봇",
+      "Cobot (Collaborative Robot): 사람과 협업, 안전 센서, 힘 제어, 쉬운 프로그래밍",
+      "예시: Universal Robots (UR), ABB YuMi, Doosan Robotics",
+      "ROS (Robot Operating System): 로봇 소프트웨어 프레임워크, 오픈소스",
+      "SLAM: Simultaneous Localization and Mapping, LiDAR, 카메라 기반",
+      "AI 통합: 비전 AI (물체 인식), 강화학습 (작업 최적화)",
+      "활용: 제조(조립, 검사), 물류(피킹, 운반), 서비스(안내, 배달)"
+    ],
+    "relatedTopics": [
+      "ai-deep-learning-001",
+      "autonomous-driving-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Humanoid Robot",
+      "AI + Robotics"
+    ],
+    "tags": [
+      "2025"
     ]
   },
   {
@@ -6142,6 +6450,49 @@
     ]
   },
   {
+    "id": "quantum-sensing-001",
+    "title": "양자 센싱 (Quantum Sensing)",
+    "category": "digital-service",
+    "subcategory": "New Tech",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Quantum Sensing",
+      "Quantum Sensor",
+      "Quantum Entanglement",
+      "Atomic Clock",
+      "Magnetometer"
+    ],
+    "definition": "양자역학 원리를 활용하여 극도로 정밀한 측정을 수행하는 차세대 센싱 기술입니다.",
+    "characteristics": [
+      "원리: 양자 중첩, 양자 얽힘으로 고감도 측정",
+      "기존 센서 대비 장점: 초고감도, 초정밀, 노이즈 억제",
+      "종류: 양자 자력계, 양자 중력계, 양자 원자시계",
+      "Atomic Clock: 시간 측정, GPS 정확도 향상, 초당 10⁻¹⁸ 정확도",
+      "양자 자력계: 뇌 신호 측정 (MEG), 지하 자원 탐사",
+      "양자 중력계: 미세 중력 변화 감지, 지하수 탐지, 재난 예측",
+      "양자 레이더: 스텔스 기체 탐지, 저피탐 센싱",
+      "활용: 의료 진단, 자율주행 (정밀 위치), 국방, 과학 연구"
+    ],
+    "relatedTopics": [
+      "quantum-cryptography-001",
+      "ai-deep-learning-001"
+    ],
+    "importance": 3,
+    "trends": [
+      "양자 레이더",
+      "의료 양자 센서"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
     "id": "prompt-engineering-001",
     "title": "Prompt Engineering",
     "category": "digital-service",
@@ -6177,6 +6528,226 @@
       "Prompt Compression",
       "Adversarial Prompting",
       "Constitutional AI"
+    ]
+  },
+  {
+    "id": "payment-cbdc-001",
+    "title": "간편결제 & CBDC",
+    "category": "digital-service",
+    "subcategory": "Finance",
+    "subjectCategories": [
+      "DS",
+      "MG"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Mobile Payment",
+      "CBDC",
+      "Digital Currency",
+      "QR Code",
+      "NFC",
+      "Central Bank"
+    ],
+    "definition": "스마트폰 기반 간편결제와 중앙은행이 발행하는 디지털 화폐(CBDC)로 금융 거래를 혁신합니다.",
+    "characteristics": [
+      "간편결제: QR 코드, NFC (Apple Pay, Samsung Pay), 생체인증",
+      "종류: 앱 간편결제 (Toss, Kakao Pay), 모바일 지갑, 무인 결제 (Amazon Go)",
+      "기술: Tokenization (카드번호 암호화), MST, EMV",
+      "CBDC (Central Bank Digital Currency): 중앙은행 발행 디지털 법정화폐",
+      "Retail CBDC: 개인/기업용, 현금 대체, 중국 디지털 위안화(e-CNY)",
+      "Wholesale CBDC: 금융기관 간 거래, 결제 효율화",
+      "블록체인 기반: 분산원장, 스마트 컨트랙트, 프로그래머블 머니",
+      "한국: 디지털 원화 파일럿, 2025년 이후 도입 검토"
+    ],
+    "relatedTopics": [
+      "fintech-techfin-001",
+      "blockchain-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Retail CBDC",
+      "Programmable Money"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "ott-streaming-001",
+    "title": "OTT & 스트리밍 기술",
+    "category": "digital-service",
+    "subcategory": "Media",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "OTT",
+      "Streaming",
+      "CDN",
+      "ABR",
+      "Video Codec",
+      "Live Streaming"
+    ],
+    "definition": "인터넷을 통해 영상 콘텐츠를 실시간으로 전송하는 OTT(Over-The-Top) 서비스와 스트리밍 기술입니다.",
+    "characteristics": [
+      "OTT: 인터넷 기반 동영상 서비스, Netflix, YouTube, Disney+, Tving",
+      "스트리밍 프로토콜: HLS (HTTP Live Streaming), DASH, RTMP (실시간)",
+      "ABR (Adaptive Bitrate): 네트워크 상황에 따라 화질 자동 조정",
+      "Video Codec: H.264 (AVC), H.265 (HEVC), AV1 (오픈소스, 고효율)",
+      "CDN: 전 세계 엣지 서버에 콘텐츠 분산, 지연시간 감소",
+      "Live Streaming: 실시간 방송, 낮은 지연(Low Latency), WebRTC",
+      "DRM (Digital Rights Management): 콘텐츠 보호, Widevine, FairPlay",
+      "AI 활용: 추천 알고리즘, 콘텐츠 제작, 자막 생성"
+    ],
+    "relatedTopics": [
+      "cdn-001",
+      "cloud-infra-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "FAST (Free Ad-Supported TV)",
+      "Interactive Content"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "on-device-ai-001",
+    "title": "온디바이스 AI (On-device AI)",
+    "category": "digital-service",
+    "subcategory": "AI/ML",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "On-device AI",
+      "Edge AI",
+      "TinyML",
+      "Model Compression",
+      "Quantization",
+      "NPU"
+    ],
+    "definition": "클라우드 서버 없이 스마트폰, IoT 기기 등 엔드 디바이스에서 직접 AI 추론을 수행하는 기술입니다.",
+    "characteristics": [
+      "장점: 낮은 지연시간, 프라이버시 보호, 오프라인 작동, 통신 비용 절감",
+      "Model Compression: 양자화(Quantization), 프루닝(Pruning), 지식 증류(Knowledge Distillation)",
+      "경량 모델: MobileNet, EfficientNet, TinyBERT, DistilBERT",
+      "sLLM (Small LLM): Phi-3, Gemma, Llama 3.2, 1B~7B 파라미터",
+      "하드웨어 가속: NPU (Neural Processing Unit), Apple Neural Engine, Qualcomm Hexagon",
+      "TinyML: 초소형 기기(마이크로컨트롤러)에서 실행, 밀리와트 소비",
+      "프레임워크: TensorFlow Lite, Core ML, ONNX Runtime, PyTorch Mobile",
+      "사용 사례: 스마트폰 AI 카메라, 음성 인식, 웨어러블, 스마트 홈"
+    ],
+    "relatedTopics": [
+      "edge-computing-001",
+      "ai-deep-learning-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "sLLM (Small Language Model)",
+      "AI Smartphone"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "nft-sto-001",
+    "title": "NFT & STO",
+    "category": "digital-service",
+    "subcategory": "Blockchain",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "NFT",
+      "STO",
+      "Tokenization",
+      "ERC-721",
+      "Digital Asset",
+      "RWA"
+    ],
+    "definition": "NFT는 블록체인 기반의 대체 불가능한 고유 디지털 자산이며, STO는 증권형 토큰으로 실물 자산을 디지털화합니다.",
+    "characteristics": [
+      "NFT (Non-Fungible Token): 고유성, 소유권 증명, ERC-721, ERC-1155",
+      "활용: 디지털 아트, 게임 아이템, 메타버스 부동산, 멤버십, 티켓",
+      "마켓플레이스: OpenSea, Rarible, Blur",
+      "Metadata: IPFS에 저장, 이미지/속성 정보",
+      "STO (Security Token Offering): 증권형 토큰, 규제 준수",
+      "RWA (Real World Asset): 부동산, 미술품, 채권 등 실물 자산 토큰화",
+      "장점: 소유권 투명성, 분할 소유, 유동성 증대, 글로벌 거래",
+      "과제: 저작권, 세금, 환경(에너지 소비), 투기"
+    ],
+    "relatedTopics": [
+      "blockchain-001",
+      "web3-dao-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "RWA (Real World Asset) Tokenization",
+      "Dynamic NFT"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "multimodal-ai-001",
+    "title": "멀티모달 AI (Multi-modal AI)",
+    "category": "digital-service",
+    "subcategory": "AI/ML",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Multimodal",
+      "Vision-Language",
+      "CLIP",
+      "GPT-4V",
+      "Gemini",
+      "Cross-Modal"
+    ],
+    "definition": "텍스트, 이미지, 오디오, 비디오 등 여러 모달리티(형태)의 데이터를 통합적으로 이해하고 생성하는 AI 기술입니다.",
+    "characteristics": [
+      "입력 통합: 텍스트+이미지, 오디오+비디오 등 다양한 조합",
+      "Vision-Language Model: CLIP, GPT-4V (Vision), Gemini, LLaVA",
+      "출력 생성: 이미지 생성(DALL-E, Midjourney), 오디오 생성(MusicGen)",
+      "Cross-Modal Retrieval: 텍스트로 이미지 검색, 이미지로 텍스트 검색",
+      "Alignment: 서로 다른 모달리티 간 정렬, Contrastive Learning",
+      "Fusion 방식: Early Fusion, Late Fusion, Hybrid Fusion",
+      "사용 사례: 이미지 캡셔닝, VQA (Visual Question Answering), 비디오 요약, 의료 진단"
+    ],
+    "relatedTopics": [
+      "llm-001",
+      "ai-deep-learning-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Video Understanding",
+      "Audio-Visual AI"
+    ],
+    "tags": [
+      "2025"
     ]
   },
   {
@@ -6298,6 +6869,181 @@
     ]
   },
   {
+    "id": "hologram-001",
+    "title": "홀로그램 & 공간 디스플레이",
+    "category": "digital-service",
+    "subcategory": "New Tech",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Hologram",
+      "Light Field",
+      "Volumetric Display",
+      "Holographic Display"
+    ],
+    "definition": "3차원 입체 영상을 공중에 투영하여 현실감 있는 디스플레이를 구현하는 기술입니다.",
+    "characteristics": [
+      "원리: 레이저 간섭, 빛의 진폭과 위상 기록, 3D 재생",
+      "유형: 광학 홀로그램 (기록+재생), 디지털 홀로그램 (CGH, Computer-Generated Holography)",
+      "Volumetric Display: 3D 공간에 픽셀 표현, 회전 스크린, Light Field",
+      "Light Field Display: 빛의 방향/강도 제어, 안경 없이 3D",
+      "활용: 홀로그램 콘서트, 의료 영상, 제품 전시, 텔레프레전스",
+      "과제: 해상도, 시야각, 컬러 재현, 실시간 생성 연산량",
+      "기술 발전: AI 기반 홀로그램 생성, 5G/6G 연동 실시간 전송",
+      "사례: Looking Glass, HoloLens (MR), 홀로그램 팬"
+    ],
+    "relatedTopics": [
+      "xr-arvrmr-001",
+      "metaverse-001"
+    ],
+    "importance": 3,
+    "trends": [
+      "Holographic Telepresence",
+      "Light Field Display"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "healthcare-it-001",
+    "title": "헬스케어 IT (EHR, PACS, 원격의료)",
+    "category": "digital-service",
+    "subcategory": "Healthcare",
+    "subjectCategories": [
+      "DS",
+      "MG"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Healthcare IT",
+      "EHR",
+      "PACS",
+      "Telemedicine",
+      "EMR",
+      "HL7",
+      "DICOM"
+    ],
+    "definition": "의료 정보를 디지털화하고 원격으로 의료 서비스를 제공하는 헬스케어 IT 시스템입니다.",
+    "characteristics": [
+      "EHR (Electronic Health Record): 전자건강기록, 병원 간 공유, 통합 진료 정보",
+      "EMR (Electronic Medical Record): 전자의무기록, 병원 내부 기록",
+      "PACS (Picture Archiving and Communication System): 의료 영상 저장/전송, DICOM 표준",
+      "HL7: 의료 정보 교환 표준, FHIR (Fast Healthcare Interoperability Resources)",
+      "원격의료 (Telemedicine): 화상 진료, 모바일 헬스, 웨어러블 연동",
+      "AI 진단: 영상 분석 (X-ray, CT, MRI), 병리 진단, 신약 개발",
+      "디지털 치료제 (DTx): 앱/게임 기반 치료, FDA 승인, 당뇨/우울증",
+      "PHR (Personal Health Record): 개인 건강 기록, Apple Health, 삼성 헬스"
+    ],
+    "relatedTopics": [
+      "ai-deep-learning-001",
+      "cloud-infra-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "AI 진단 보조",
+      "디지털 치료제 (DTx)"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "fintech-techfin-001",
+    "title": "핀테크 & 테크핀",
+    "category": "digital-service",
+    "subcategory": "Finance",
+    "subjectCategories": [
+      "DS",
+      "MG"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "FinTech",
+      "TechFin",
+      "Digital Banking",
+      "Open Banking",
+      "Embedded Finance"
+    ],
+    "definition": "핀테크는 금융+기술 융합, 테크핀은 빅테크 기업의 금융 서비스 진출로, 디지털 금융 혁신을 의미합니다.",
+    "characteristics": [
+      "핀테크: 금융 회사가 기술 도입, 간편결제, 송금, 자산관리",
+      "테크핀: 빅테크(네이버, 카카오, 알리바바)가 금융 진출",
+      "주요 분야: 간편결제, P2P 대출, 로보어드바이저, 크라우드펀딩, 보험테크",
+      "Open Banking: API로 금융 데이터 공유, PSD2 (유럽), 금융 플랫폼",
+      "Embedded Finance: 비금융 서비스에 금융 내재화 (우버 결제, 쇼피파이 대출)",
+      "AI 활용: 신용평가, 사기 탐지, 챗봇 고객 지원, 투자 추천",
+      "규제: 핀테크 샌드박스, 혁신금융서비스, 마이데이터",
+      "사례: Stripe, PayPal, Toss, Kakao Pay, Revolut"
+    ],
+    "relatedTopics": [
+      "blockchain-001",
+      "ai-deep-learning-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Embedded Finance",
+      "Open Banking"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "edutech-001",
+    "title": "에듀테크 (EduTech)",
+    "category": "digital-service",
+    "subcategory": "Education",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "EduTech",
+      "E-Learning",
+      "LMS",
+      "Adaptive Learning",
+      "AI Tutor"
+    ],
+    "definition": "교육과 기술의 융합으로, AI, 데이터, 플랫폼을 활용하여 학습 경험을 혁신하는 분야입니다.",
+    "characteristics": [
+      "LMS (Learning Management System): 학습 관리, Moodle, Canvas, Google Classroom",
+      "E-Learning: 온라인 강의, MOOC (Coursera, edX, K-MOOC)",
+      "Adaptive Learning (적응형 학습): AI 기반 개인화, 학습자 수준 맞춤 콘텐츠",
+      "AI Tutor: 챗봇 학습 도우미, 자동 채점, 학습 분석",
+      "Gamification: 게임 요소 도입, 배지, 리더보드, 몰입감 증대",
+      "VR/AR 교육: 가상 실험실, 역사 체험, 의료 시뮬레이션",
+      "메타버스 교실: 아바타로 협업 학습, Gather Town, Roblox Education",
+      "사례: Khan Academy, Duolingo, Quizlet, 대교, 웅진씽크빅"
+    ],
+    "relatedTopics": [
+      "ai-deep-learning-001",
+      "metaverse-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "AI 개인화 학습",
+      "메타버스 교육"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
     "id": "edge-computing-001",
     "title": "Edge Computing",
     "category": "digital-service",
@@ -6336,6 +7082,140 @@
       "5G MEC",
       "WebAssembly at Edge",
       "Confidential Edge Computing"
+    ]
+  },
+  {
+    "id": "digital-twin-001",
+    "title": "디지털 트윈 (Digital Twin)",
+    "category": "digital-service",
+    "subcategory": "New Tech",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Digital Twin",
+      "Simulation",
+      "IoT",
+      "3D Modeling",
+      "Real-time Sync"
+    ],
+    "definition": "물리적 자산, 시스템, 프로세스를 가상 공간에 실시간으로 복제하여 시뮬레이션, 모니터링, 최적화하는 기술입니다.",
+    "characteristics": [
+      "구성 요소: 물리 객체, 디지털 모델, 데이터 연결(IoT 센서), 분석 엔진",
+      "실시간 동기화: IoT 센서로 실시간 데이터 수집, 디지털 모델 업데이트",
+      "Simulation & Prediction: What-if 시나리오 테스트, 예측 유지보수",
+      "활용 분야: 스마트 팩토리(생산 최적화), 스마트 시티(교통, 에너지), 헬스케어(환자 시뮬레이션), 자동차(자율주행 테스트)",
+      "기술 스택: 3D 모델링(Unity, Unreal), IoT 플랫폼, AI/ML (예측), Cloud Computing",
+      "Level: Descriptive (현상태), Informative (진단), Predictive (예측), Prescriptive (최적화)",
+      "사례: Tesla (차량 Fleet), Siemens (공장), Singapore (City Twin)"
+    ],
+    "relatedTopics": [
+      "metaverse-001",
+      "ai-deep-learning-001",
+      "smart-factory-industry-4-5-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "AI + Digital Twin",
+      "City Digital Twin"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "deepfake-watermarking-001",
+    "title": "딥페이크 & 워터마킹",
+    "category": "digital-service",
+    "subcategory": "AI/ML",
+    "subjectCategories": [
+      "DS",
+      "IS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Deepfake",
+      "GAN",
+      "Face Swap",
+      "Watermarking",
+      "Synthetic Media",
+      "C2PA"
+    ],
+    "definition": "AI로 생성한 가짜 영상/이미지(딥페이크)와 이를 탐지하거나 진위를 보장하는 워터마킹 기술입니다.",
+    "characteristics": [
+      "Deepfake: GAN (Generative Adversarial Network), Face Swap, Voice Cloning",
+      "기술: Autoencoder, Diffusion Model, StyleGAN",
+      "악용: 가짜 뉴스, 사기, 명예훼손, 선거 개입",
+      "탐지: 얼굴 불일치, 깜빡임 패턴, 시간적 일관성, AI 탐지 모델",
+      "Watermarking: 원본 증명, 보이지 않는 디지털 서명, 변조 방지",
+      "C2PA (Coalition for Content Provenance and Authenticity): 콘텐츠 출처 표준",
+      "AI Watermark: AI 생성 콘텐츠에 워터마크 삽입, SynthID (Google)",
+      "법적 대응: 딥페이크 처벌법, 플랫폼 규제",
+      "활용: 영화 특수효과, 교육, 역사 복원 (긍정적 활용)"
+    ],
+    "relatedTopics": [
+      "ai-deep-learning-001",
+      "digital-signature-pki-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Deepfake Detection",
+      "Content Authenticity"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "cloud-native-001",
+    "title": "클라우드 네이티브 (Cloud Native)",
+    "category": "digital-service",
+    "subcategory": "Cloud/Infra",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Cloud Native",
+      "Microservices",
+      "Container",
+      "Kubernetes",
+      "DevOps",
+      "12-Factor App"
+    ],
+    "definition": "클라우드 환경에서 동적이고 확장 가능한 애플리케이션을 구축하고 실행하기 위한 설계 방식과 문화입니다.",
+    "characteristics": [
+      "핵심 원칙: 마이크로서비스, 컨테이너화, 동적 오케스트레이션, DevOps/CI/CD",
+      "12-Factor App: 코드베이스, 의존성, 설정, 백엔드 서비스 등 베스트 프랙티스",
+      "컨테이너: Docker, 경량, 이식성, 불변 인프라",
+      "오케스트레이션: Kubernetes, 자동 배포, 확장, 복구",
+      "서비스 메시: Istio, Linkerd, 트래픽 관리, 보안, 관찰성",
+      "Observability: 로깅(ELK), 메트릭(Prometheus), 트레이싱(Jaeger)",
+      "Infrastructure as Code: Terraform, Helm, GitOps (ArgoCD, Flux)",
+      "사용 사례: SaaS 애플리케이션, 대규모 웹 서비스, 금융 플랫폼"
+    ],
+    "relatedTopics": [
+      "kubernetes-001",
+      "serverless-001",
+      "msa-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Platform Engineering",
+      "FinOps"
+    ],
+    "tags": [
+      "2025"
     ]
   },
   {
@@ -6460,6 +7340,92 @@
     ]
   },
   {
+    "id": "ambient-computing-001",
+    "title": "앰비언트 컴퓨팅 (Ambient Computing)",
+    "category": "digital-service",
+    "subcategory": "New Tech",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Ambient Computing",
+      "Ubiquitous Computing",
+      "IoT",
+      "Context Aware",
+      "Invisible UI"
+    ],
+    "definition": "컴퓨팅이 환경에 녹아들어 사용자가 의식하지 않아도 자연스럽게 서비스를 제공하는 차세대 컴퓨팅 패러다임입니다.",
+    "characteristics": [
+      "개념: 유비쿼터스 컴퓨팅, 보이지 않는 UI, 자동화된 경험",
+      "핵심: Context Awareness (상황 인식), IoT 센서, AI, 음성 인터페이스",
+      "무의식적 상호작용: 명시적 입력 없이 자동 동작, 스마트 홈 자동화",
+      "예시: 집에 들어서면 자동으로 조명 켜짐, 알람 없이 일어날 시간 알림",
+      "기술: 센서 융합, Edge AI, 음성 비서 (Alexa, Google Assistant, Siri)",
+      "스마트 홈: Matter 프로토콜 (통합 표준), Thread, Zigbee",
+      "웨어러블: 스마트워치, AR 글래스, 헬스 모니터링",
+      "과제: 프라이버시, 보안, 배터리, 상호운용성"
+    ],
+    "relatedTopics": [
+      "edge-computing-001",
+      "ai-deep-learning-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "AI Assistant Everywhere",
+      "Matter Protocol"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "ai-human-001",
+    "title": "AI 휴먼 (Digital Human)",
+    "category": "digital-service",
+    "subcategory": "AI/ML",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "AI Human",
+      "Digital Human",
+      "Virtual Influencer",
+      "Metahuman",
+      "Avatar"
+    ],
+    "definition": "AI 기술로 생성된 가상 인간으로, 실제 사람처럼 말하고 행동하며 다양한 서비스를 제공합니다.",
+    "characteristics": [
+      "구성 요소: 3D 모델링, 음성 합성(TTS), 립싱크, 표정 생성, LLM 기반 대화",
+      "유형: Virtual Influencer (로지, 릴 미켈라), AI 아나운서, AI 상담원",
+      "Metahuman: Unreal Engine, 초고사실 3D 캐릭터",
+      "Real-time Interaction: 실시간 대화, 웹캠 얼굴 인식, 감정 반응",
+      "음성: AI 보이스, 다국어 지원, 감정 표현",
+      "활용: 고객 서비스, 교육, 광고/마케팅, 엔터테인먼트",
+      "윤리: 딥페이크 악용, 초상권, 저작권, 투명성",
+      "사례: 로지(신한라이프), 릴 미켈라, 김래아, Neon (삼성)"
+    ],
+    "relatedTopics": [
+      "ai-deep-learning-001",
+      "metaverse-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Generative AI Human",
+      "Real-time Interaction"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
     "id": "ai-deep-learning-001",
     "title": "AI/딥러닝",
     "category": "digital-service",
@@ -6496,6 +7462,51 @@
       "Diffusion Models",
       "Neural Architecture Search",
       "TinyML"
+    ]
+  },
+  {
+    "id": "agentic-ai-001",
+    "title": "Agentic AI (에이전트 AI)",
+    "category": "digital-service",
+    "subcategory": "AI/ML",
+    "subjectCategories": [
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Agentic AI",
+      "AI Agent",
+      "Autonomous AI",
+      "Multi-Agent",
+      "Tool Use",
+      "Function Calling"
+    ],
+    "definition": "자율적으로 목표를 설정하고, 계획을 수립하며, 도구를 사용하여 복잡한 작업을 수행하는 AI 시스템입니다.",
+    "characteristics": [
+      "자율성 (Autonomy): 최소한의 인간 개입으로 작업 수행",
+      "계획 수립 (Planning): 목표 달성을 위한 단계별 계획, ReAct, Plan-and-Execute",
+      "도구 사용 (Tool Use): Function Calling, API 호출, 외부 도구 활용",
+      "기억 (Memory): 대화 이력, 장기 기억(Vector DB), 작업 상태 유지",
+      "Multi-Agent System: 여러 에이전트 협업, 역할 분담, 상호작용",
+      "주요 패턴: ReAct (Reasoning + Acting), Chain-of-Thought, Self-Reflection",
+      "프레임워크: LangChain, LangGraph, AutoGen, CrewAI",
+      "사용 사례: 고객 지원, 데이터 분석, 코드 생성, 업무 자동화"
+    ],
+    "relatedTopics": [
+      "llm-001",
+      "rag-001",
+      "prompt-engineering-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Multi-Agent System",
+      "AI Agent Framework (LangGraph, AutoGen)"
+    ],
+    "tags": [
+      "2025"
     ]
   },
   {
