@@ -260,6 +260,19 @@ export default function TopicWiki() {
               <p className="text-gray-700 leading-relaxed">{selectedTopic.definition}</p>
             </div>
 
+            {/* Characteristics */}
+            <div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">특징</h3>
+              <ul className="space-y-2">
+                {selectedTopic.characteristics.map((char, idx) => (
+                  <li key={idx} className="flex items-start gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 flex-shrink-0" />
+                    <span className="text-gray-700">{char}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             {/* Technical Elements */}
             {selectedTopic.technicalElements && selectedTopic.technicalElements.length > 0 && (
               <div>
@@ -297,19 +310,6 @@ export default function TopicWiki() {
                 </ul>
               </div>
             )}
-
-            {/* Characteristics */}
-            <div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">특징</h3>
-              <ul className="space-y-2">
-                {selectedTopic.characteristics.map((char, idx) => (
-                  <li key={idx} className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 flex-shrink-0" />
-                    <span className="text-gray-700">{char}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             {/* Keywords */}
             <div>
