@@ -2161,6 +2161,52 @@
     ]
   },
   {
+    "id": "virtualization-hypervisor-001",
+    "title": "가상화 & Hypervisor (Type 1/2)",
+    "category": "technical-focus",
+    "subcategory": "운영체제",
+    "subjectCategories": [
+      "OS",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "Virtualization",
+      "Hypervisor",
+      "Type 1",
+      "Type 2",
+      "KVM",
+      "VMware",
+      "Xen"
+    ],
+    "definition": "물리적 하드웨어 위에 가상 머신(VM)을 생성하여 여러 OS를 독립적으로 실행할 수 있게 하는 기술과 이를 관리하는 Hypervisor입니다.",
+    "characteristics": [
+      "Type 1 (Bare-Metal): 하드웨어 직접 실행, 성능 우수, 데이터센터용",
+      "예시: VMware ESXi, Xen, KVM, Hyper-V",
+      "Type 2 (Hosted): 호스트 OS 위에 실행, 개발/테스트용, 성능 낮음",
+      "예시: VirtualBox, VMware Workstation, Parallels",
+      "가상화 기술: 전가상화 (Full), 반가상화 (Para), 하드웨어 지원 (Intel VT-x, AMD-V)",
+      "장점: 자원 효율, 격리성, 이식성, 스냅샷, 마이그레이션",
+      "Live Migration: 실행 중인 VM을 다른 호스트로 무중단 이동",
+      "사용 사례: 클라우드 컴퓨팅, 서버 통합, 개발 환경"
+    ],
+    "relatedTopics": [
+      "cloud-infra-001",
+      "kubernetes-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Confidential Computing",
+      "Nested Virtualization"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
     "id": "virtual-memory-001",
     "title": "가상 메모리",
     "category": "technical-focus",
@@ -2196,6 +2242,134 @@
       "NVDIMM 기반 메모리",
       "CXL 메모리 확장",
       "메모리 압축"
+    ]
+  },
+  {
+    "id": "thrashing-workingset-001",
+    "title": "Thrashing & Working Set",
+    "category": "technical-focus",
+    "subcategory": "운영체제",
+    "subjectCategories": [
+      "OS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "Thrashing",
+      "Working Set",
+      "Page Fault",
+      "Locality",
+      "Demand Paging"
+    ],
+    "definition": "프로세스가 필요한 페이지를 메모리에 유지하지 못해 과도한 페이지 부재가 발생하는 현상과 이를 방지하기 위한 Working Set 모델입니다.",
+    "characteristics": [
+      "Thrashing: 페이지 교체가 너무 빈번하여 CPU 이용률 급격히 감소, 시스템 성능 저하",
+      "발생 원인: 다중 프로그래밍 수준 과도, 메모리 부족, 지역성(Locality) 부족",
+      "Working Set: 특정 시간 동안 프로세스가 참조하는 페이지 집합",
+      "Working Set Model: Δ(델타) 시간 윈도우 내 참조된 페이지, 충분한 Working Set 크기 보장",
+      "Locality (지역성): Temporal (시간), Spatial (공간) 지역성 활용",
+      "해결 방법: 다중 프로그래밍 수준 감소, 메모리 증설, 페이지 교체 알고리즘 개선",
+      "PFF (Page Fault Frequency): 페이지 부재율 모니터링하여 프로세스 할당 메모리 조정"
+    ],
+    "relatedTopics": [
+      "virtual-memory-001",
+      "process-scheduling-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "NUMA 인식 메모리 관리",
+      "Transparent Huge Pages"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "system-call-boot-001",
+    "title": "System Call & 부팅 과정",
+    "category": "technical-focus",
+    "subcategory": "운영체제",
+    "subjectCategories": [
+      "OS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "System Call",
+      "Kernel",
+      "Shell",
+      "BIOS",
+      "UEFI",
+      "Bootloader"
+    ],
+    "definition": "사용자 프로그램이 커널 기능을 요청하는 System Call과 컴퓨터가 전원 투입 후 OS를 메모리에 적재하는 부팅 과정입니다.",
+    "characteristics": [
+      "System Call: 사용자 모드 → 커널 모드 전환, open(), read(), write(), fork(), exec()",
+      "동작: 라이브러리 함수 호출 → Trap (인터럽트) → 커널 처리 → 결과 반환",
+      "Shell vs Kernel: Shell은 사용자 인터페이스(bash, zsh), Kernel은 OS 핵심",
+      "부팅 과정: 1) 전원 → 2) BIOS/UEFI (하드웨어 초기화) → 3) MBR/GPT 읽기 → 4) Bootloader (GRUB) → 5) Kernel 로드 → 6) Init (systemd) → 7) 사용자 로그인",
+      "BIOS vs UEFI: BIOS(레거시, 16비트, MBR), UEFI(최신, 32/64비트, GPT, Secure Boot)",
+      "Kernel Load: 압축 해제, 메모리 초기화, 드라이버 로드",
+      "Init System: SysVinit, Upstart, systemd (최신, 병렬 시작)"
+    ],
+    "relatedTopics": [
+      "kernel-architecture-001",
+      "process-thread-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Secure Boot",
+      "Unified Kernel Image"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "synchronization-001",
+    "title": "동기화 (Mutex, Semaphore, Monitor)",
+    "category": "technical-focus",
+    "subcategory": "운영체제",
+    "subjectCategories": [
+      "OS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "Mutex",
+      "Semaphore",
+      "Monitor",
+      "Critical Section",
+      "Race Condition",
+      "동기화"
+    ],
+    "definition": "여러 프로세스/스레드가 공유 자원에 동시 접근할 때 데이터 일관성을 보장하기 위한 기법입니다.",
+    "characteristics": [
+      "Critical Section (임계 영역): 공유 자원에 접근하는 코드 영역, 한 번에 하나만 실행",
+      "Race Condition (경쟁 상태): 여러 스레드가 동시에 공유 데이터 접근, 결과가 실행 순서에 따라 달라짐",
+      "Mutex (Mutual Exclusion): 상호 배제, 잠금(Lock) 기반, 소유자만 해제 가능",
+      "Semaphore: 정수형 변수로 자원 개수 관리, Binary(0/1), Counting(N), P(wait), V(signal) 연산",
+      "Monitor: 고수준 동기화, 공유 자원과 연산을 캡슐화, Condition Variable 사용",
+      "Spinlock: 바쁜 대기(Busy Waiting), 짧은 임계 영역에 적합",
+      "해결 조건: Mutual Exclusion, Progress, Bounded Waiting"
+    ],
+    "relatedTopics": [
+      "process-thread-001",
+      "process-scheduling-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Lock-Free Programming",
+      "RCU (Read-Copy-Update)"
+    ],
+    "tags": [
+      "2025"
     ]
   },
   {
@@ -2277,6 +2451,268 @@
     ]
   },
   {
+    "id": "mobile-os-001",
+    "title": "모바일 OS (Android Runtime, iOS)",
+    "category": "technical-focus",
+    "subcategory": "운영체제",
+    "subjectCategories": [
+      "OS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "Android",
+      "iOS",
+      "ART",
+      "Dalvik",
+      "Mobile OS"
+    ],
+    "definition": "스마트폰과 태블릿을 위해 최적화된 운영체제로, 터치 인터페이스, 전력 관리, 모바일 앱 생태계를 지원합니다.",
+    "characteristics": [
+      "Android: Linux 커널 기반, 오픈소스 (AOSP), Google Play",
+      "Android 구조: Linux Kernel → HAL → ART/Native Libraries → Framework → Apps",
+      "ART (Android Runtime): Dalvik 후속, AOT 컴파일, JIT 병행, 성능 향상",
+      "Dalvik: 과거 Android VM, DEX 파일, JIT 컴파일",
+      "iOS: XNU 커널 (Mach + BSD), 폐쇄 생태계, App Store",
+      "iOS 특징: Objective-C/Swift, Metal API, 강력한 보안 (Secure Enclave)",
+      "모바일 OS 특징: 터치 UI, 센서 통합, 배터리 관리, 샌드박스, 백그라운드 제한",
+      "기타 OS: HarmonyOS (Huawei), Fuchsia (Google, Zircon 커널)"
+    ],
+    "relatedTopics": [
+      "process-thread-001",
+      "kernel-architecture-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Fuchsia OS",
+      "HarmonyOS"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "lvm-001",
+    "title": "LVM (Logical Volume Manager)",
+    "category": "technical-focus",
+    "subcategory": "운영체제",
+    "subjectCategories": [
+      "OS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "LVM",
+      "Logical Volume",
+      "Volume Group",
+      "Physical Volume",
+      "Snapshot"
+    ],
+    "definition": "물리적 디스크를 논리적 볼륨으로 추상화하여 유연한 디스크 관리를 가능하게 하는 Linux 스토리지 관리 기술입니다.",
+    "characteristics": [
+      "구조: Physical Volume (PV) → Volume Group (VG) → Logical Volume (LV)",
+      "PV (물리 볼륨): 실제 디스크 또는 파티션 (/dev/sda1 등)",
+      "VG (볼륨 그룹): 여러 PV를 묶은 스토리지 풀",
+      "LV (논리 볼륨): VG에서 할당된 가상 파티션, 파일 시스템 생성",
+      "장점: 동적 크기 조정, 디스크 추가 용이, 스냅샷, 여러 디스크 통합",
+      "Snapshot: 특정 시점의 LV 상태 저장, 백업 및 복구",
+      "명령어: pvcreate, vgcreate, lvcreate, lvextend, lvreduce",
+      "사용 사례: 서버 스토리지 관리, 데이터베이스 볼륨, 백업"
+    ],
+    "relatedTopics": [
+      "file-system-001",
+      "storage-raid-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Thin Provisioning",
+      "LVM Cache"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "linux-file-permissions-001",
+    "title": "Linux 파일 권한 (chmod, chown, ACL)",
+    "category": "technical-focus",
+    "subcategory": "운영체제",
+    "subjectCategories": [
+      "OS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "Linux",
+      "chmod",
+      "chown",
+      "File Permissions",
+      "ACL",
+      "umask"
+    ],
+    "definition": "Linux/Unix 시스템에서 파일과 디렉토리에 대한 접근 권한을 관리하는 보안 메커니즘입니다.",
+    "characteristics": [
+      "권한 구조: User(소유자), Group(그룹), Others(기타), rwx (읽기/쓰기/실행)",
+      "표기: -rwxr-xr-- (파일 타입 + User(rwx) + Group(r-x) + Others(r--))",
+      "숫자 모드: r=4, w=2, x=1, 예: chmod 755 (rwxr-xr-x)",
+      "chmod (Change Mode): 권한 변경, chmod 644 file.txt, chmod u+x script.sh",
+      "chown (Change Owner): 소유자 변경, chown user:group file.txt",
+      "umask: 기본 권한 마스크, 파일 생성 시 기본 권한 결정 (예: 022)",
+      "특수 권한: SUID (Set User ID), SGID (Set Group ID), Sticky Bit",
+      "ACL (Access Control List): 세밀한 권한 제어, getfacl, setfacl",
+      "보안: SELinux (Mandatory Access Control), AppArmor"
+    ],
+    "relatedTopics": [
+      "file-system-001",
+      "system-call-boot-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "SELinux",
+      "AppArmor"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "kernel-architecture-001",
+    "title": "커널 아키텍처 (모놀리식 vs 마이크로 vs Unikernel)",
+    "category": "technical-focus",
+    "subcategory": "운영체제",
+    "subjectCategories": [
+      "OS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "Monolithic Kernel",
+      "Microkernel",
+      "Unikernel",
+      "Hybrid Kernel",
+      "Kernel Architecture"
+    ],
+    "definition": "운영체제 커널의 설계 방식으로, 기능의 배치와 통신 방식에 따라 모놀리식, 마이크로, Unikernel로 분류됩니다.",
+    "characteristics": [
+      "Monolithic Kernel (모놀리식): 모든 OS 서비스가 커널 공간에서 실행, 빠름, 복잡",
+      "예시: Linux, Unix, FreeBSD",
+      "장점: 성능 우수 (직접 호출), 단점: 오류 시 전체 시스템 장애",
+      "Microkernel (마이크로): 최소 기능만 커널에, 나머지는 사용자 공간, 안정적",
+      "예시: Minix, QNX, L4",
+      "장점: 모듈성, 안정성, 단점: IPC 오버헤드",
+      "Hybrid Kernel: 절충안, Windows NT, macOS (XNU)",
+      "Unikernel: 단일 주소 공간, 애플리케이션과 OS 통합, 클라우드/엣지 최적화",
+      "장점: 빠른 부팅, 작은 크기, 보안, 단점: 범용성 부족"
+    ],
+    "relatedTopics": [
+      "process-thread-001",
+      "virtualization-hypervisor-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Unikernel",
+      "Rust Kernel"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "ipc-001",
+    "title": "IPC (프로세스 간 통신)",
+    "category": "technical-focus",
+    "subcategory": "운영체제",
+    "subjectCategories": [
+      "OS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "IPC",
+      "Pipe",
+      "Message Queue",
+      "Shared Memory",
+      "Socket",
+      "Signal"
+    ],
+    "definition": "독립적인 프로세스들이 데이터를 교환하고 동작을 조정하기 위한 통신 메커니즘입니다.",
+    "characteristics": [
+      "Pipe (파이프): 단방향 통신, 부모-자식 프로세스, Anonymous/Named Pipe (FIFO)",
+      "Message Queue: 메시지 단위 송수신, FIFO, 비동기, POSIX/System V",
+      "Shared Memory (공유 메모리): 가장 빠른 IPC, 동일 메모리 영역 공유, 동기화 필요",
+      "Semaphore: 프로세스 간 동기화, 카운터 기반, System V/POSIX",
+      "Socket: 네트워크 기반 IPC, TCP/UDP, 프로세스 간/머신 간 통신",
+      "Signal: 이벤트 통지, 비동기, SIGKILL, SIGTERM, SIGUSR1 등",
+      "Memory-Mapped File: 파일을 메모리에 매핑하여 공유",
+      "선택 기준: 속도(공유메모리 > 메시지큐 > 파이프), 용도, 동기화 필요성"
+    ],
+    "relatedTopics": [
+      "process-thread-001",
+      "synchronization-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "gRPC",
+      "D-Bus"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "file-system-001",
+    "title": "파일 시스템 (Inode, FAT, NTFS, EXT4)",
+    "category": "technical-focus",
+    "subcategory": "운영체제",
+    "subjectCategories": [
+      "OS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "File System",
+      "Inode",
+      "FAT",
+      "NTFS",
+      "EXT4",
+      "Journaling"
+    ],
+    "definition": "디스크에 파일을 저장, 관리, 검색하는 체계로, 메타데이터와 데이터 블록을 효율적으로 구조화합니다.",
+    "characteristics": [
+      "Inode (Index Node): Unix/Linux 파일 메타데이터 (권한, 소유자, 크기, 블록 주소), 파일명은 디렉토리에 저장",
+      "FAT (File Allocation Table): MS-DOS/Windows, 간단한 구조, 플래시 메모리 호환",
+      "NTFS (New Technology FS): Windows, 저널링, ACL, 압축/암호화, 대용량 지원",
+      "EXT4 (Extended FS): Linux 표준, 저널링, Extent 기반, 최대 1EB 지원",
+      "Journaling: 메타데이터 변경 사항을 로그에 기록, 시스템 장애 시 복구 빠름",
+      "VFS (Virtual File System): OS가 다양한 파일 시스템을 통합 인터페이스로 제공",
+      "최신 FS: Btrfs (CoW, 스냅샷), ZFS (데이터 무결성), XFS (대용량)"
+    ],
+    "relatedTopics": [
+      "virtual-memory-001",
+      "storage-raid-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Copy-on-Write FS (Btrfs, ZFS)",
+      "F2FS (Flash-Friendly)"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
     "id": "embedded-rtos-001",
     "title": "임베디드/RTOS",
     "category": "technical-focus",
@@ -2312,6 +2748,138 @@
       "안전 인증(Safety-Critical) RTOS",
       "Rust 기반 RTOS",
       "Edge AI 임베디드"
+    ]
+  },
+  {
+    "id": "ebpf-001",
+    "title": "eBPF (extended Berkeley Packet Filter)",
+    "category": "technical-focus",
+    "subcategory": "운영체제",
+    "subjectCategories": [
+      "OS",
+      "NW"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "eBPF",
+      "BPF",
+      "Kernel Programming",
+      "Observability",
+      "Cilium"
+    ],
+    "definition": "Linux 커널을 안전하게 확장할 수 있는 프로그래밍 기술로, 커널 재컴파일 없이 커널 공간에서 코드를 실행합니다.",
+    "characteristics": [
+      "동작 원리: 사용자 공간에서 eBPF 프로그램 작성 → 검증(Verifier) → JIT 컴파일 → 커널 실행",
+      "안전성: Verifier가 무한 루프, 메모리 침범 등 검증, 샌드박스 환경",
+      "활용 영역: 네트워킹, 보안, 트레이싱, 모니터링, 성능 분석",
+      "BPF Maps: 사용자-커널 간 데이터 공유, Array, Hash, LRU, Ring Buffer 등",
+      "XDP (eXpress Data Path): 패킷이 NIC에서 바로 처리, DDoS 방어",
+      "도구: bpftrace, bpfcc, Cilium (CNI), Falco (보안), Pixie (APM)",
+      "사용 사례: Kubernetes 네트워킹, 성능 프로파일링, 침입 탐지"
+    ],
+    "relatedTopics": [
+      "kernel-architecture-001",
+      "container-docker-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "eBPF 기반 네트워킹 (Cilium)",
+      "eBPF 보안 (Falco, Tetragon)"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "distributed-os-001",
+    "title": "분산 운영체제 & 클라우드 OS",
+    "category": "technical-focus",
+    "subcategory": "운영체제",
+    "subjectCategories": [
+      "OS",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "Distributed OS",
+      "OpenStack",
+      "Cloud OS",
+      "Cluster",
+      "분산 시스템"
+    ],
+    "definition": "여러 컴퓨터를 하나의 통합된 시스템처럼 관리하는 운영체제와 클라우드 인프라를 관리하는 OS 플랫폼입니다.",
+    "characteristics": [
+      "분산 OS: 여러 노드를 단일 시스템처럼 운영, 투명한 자원 공유",
+      "목표: 투명성 (위치, 이주, 복제), 확장성, 가용성",
+      "예시: Amoeba, Plan 9, Google Borg (Kubernetes의 전신)",
+      "OpenStack: 오픈소스 클라우드 OS, IaaS 구축, Nova(컴퓨팅), Neutron(네트워크), Cinder(스토리지)",
+      "클라우드 OS 구성: 가상화, 스토리지 풀, 네트워크 가상화, 오케스트레이션",
+      "Kubernetes: 컨테이너 오케스트레이션, 클라우드 네이티브 OS 역할",
+      "분산 파일 시스템: GFS, HDFS, Ceph",
+      "사용 사례: 프라이빗 클라우드, 대규모 데이터센터, HPC"
+    ],
+    "relatedTopics": [
+      "cloud-infra-001",
+      "virtualization-hypervisor-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Kubernetes as OS",
+      "Serverless OS"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "container-docker-001",
+    "title": "컨테이너 (Docker, cgroups, namespace)",
+    "category": "technical-focus",
+    "subcategory": "운영체제",
+    "subjectCategories": [
+      "OS",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "Docker",
+      "Container",
+      "cgroups",
+      "namespace",
+      "OCI",
+      "containerd"
+    ],
+    "definition": "OS 수준 가상화로 프로세스와 리소스를 격리하여 애플리케이션을 독립적으로 실행하는 경량 기술입니다.",
+    "characteristics": [
+      "VM vs Container: VM은 전체 OS 포함(무겁고 느림), 컨테이너는 커널 공유(가볍고 빠름)",
+      "namespace: 프로세스 격리 (PID, Network, Mount, UTS, IPC, User, Cgroup)",
+      "cgroups (Control Groups): 리소스 제한 (CPU, 메모리, I/O, 네트워크)",
+      "Docker: 이미지 기반 컨테이너 플랫폼, Dockerfile, 레이어 방식",
+      "OCI (Open Container Initiative): 컨테이너 표준 (Image Spec, Runtime Spec)",
+      "Container Runtime: containerd, CRI-O, runc",
+      "Union File System: AUFS, OverlayFS, 레이어 공유로 저장 효율",
+      "사용 사례: 마이크로서비스, CI/CD, 개발 환경 일관성"
+    ],
+    "relatedTopics": [
+      "kubernetes-001",
+      "virtualization-hypervisor-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Rootless Container",
+      "WebAssembly Container"
+    ],
+    "tags": [
+      "2025"
     ]
   },
   {
@@ -7232,6 +7800,43 @@
       "Non-Volatile 캐시",
       "AI 가속기용 캐시",
       "CXL(Compute Express Link) 메모리"
+    ]
+  },
+  {
+    "id": "ai-semiconductor-001",
+    "title": "AI 반도체 (NPU, TPU, FPGA, ASIC)",
+    "category": "digital-service",
+    "subcategory": "AI 가속기",
+    "subjectCategories": [
+      "CA",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "AI 반도체",
+      "NPU",
+      "TPU",
+      "FPGA",
+      "ASIC",
+      "AI 가속기"
+    ],
+    "definition": "AI 반도체는 인공지능(AI) 연산에 특화되어 고성능, 저전력, 병렬 처리를 효율적으로 수행하도록 설계된 반도체입니다. CPU나 GPU와 같은 범용 프로세서의 한계를 극복하고 AI 모델의 학습 및 추론 속도를 가속화하여 AI 기술의 발전과 상용화를 이끄는 핵심 하드웨어 기술입니다. NPU, TPU, FPGA, ASIC 등이 대표적인 AI 반도체 유형입니다.",
+    "characteristics": [
+      "**목표**: AI 모델 학습(Training) 및 추론(Inference)의 효율성 극대화 (속도, 전력 효율).",
+      "**NPU (Neural Processing Unit)**:"
+    ],
+    "relatedTopics": [
+      "gpu-architecture-001",
+      "ai-deep-learning-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "온디바이스 AI 칩",
+      "저전력 AI 반도체",
+      "시스템 반도체 경쟁 심화"
     ]
   },
   {
