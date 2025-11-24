@@ -9106,6 +9106,690 @@
     ]
   },
   {
+    "id": "xai-001",
+    "title": "XAI (SHAP, LIME)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "XAI",
+      "Explainable AI",
+      "SHAP",
+      "LIME",
+      "Interpretability",
+      "Model Explainability"
+    ],
+    "definition": "블랙박스 AI 모델의 예측 과정을 설명하고 해석 가능하게 만드는 설명 가능한 AI 기술입니다.",
+    "characteristics": [
+      "필요성: 신뢰성, 책임성, 규제 준수 (GDPR), 디버깅",
+      "Model-agnostic: 모델 종류와 무관하게 적용 가능",
+      "LIME (Local Interpretable Model-agnostic Explanations): 지역적 설명",
+      "동작: 예측 주변 데이터 샘플링 → 단순 모델 학습 → 해석",
+      "SHAP (SHapley Additive exPlanations): Shapley Value (게임 이론)",
+      "각 특징의 기여도 계산, 공정한 분배, 전역+지역 설명",
+      "Feature Importance: 특징 중요도, 트리 기반 모델",
+      "Attention Visualization: Transformer, CNN의 주의 집중 영역",
+      "Saliency Map: 이미지에서 중요 영역 시각화",
+      "Grad-CAM: CNN 예측 근거 시각화",
+      "활용: 의료 진단, 금융 대출, 자율주행, 법률"
+    ],
+    "relatedTopics": [
+      "ai-deep-learning-001",
+      "ensemble-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Attention Visualization",
+      "Causal AI"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "transformer-001",
+    "title": "Transformer (Self-Attention)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Transformer",
+      "Self-Attention",
+      "Multi-Head Attention",
+      "Positional Encoding",
+      "Encoder-Decoder"
+    ],
+    "definition": "Self-Attention 메커니즘으로 시퀀스 전체의 관계를 병렬로 학습하는 혁신적인 신경망 아키텍처입니다.",
+    "characteristics": [
+      "\"Attention is All You Need\" (2017), RNN 없이 순차 데이터 처리",
+      "Self-Attention: 입력 시퀀스 내 모든 위치 간 관계 계산",
+      "Query, Key, Value: Attention(Q, K, V) = softmax(QKᵀ/√d)V",
+      "Multi-Head Attention: 여러 Attention을 병렬로, 다양한 관점 학습",
+      "Positional Encoding: 위치 정보 추가 (sin/cos 함수)",
+      "Encoder-Decoder: Encoder (입력 이해), Decoder (출력 생성)",
+      "Feed-Forward Network: Position-wise, 각 위치 독립적으로 처리",
+      "Layer Normalization, Residual Connection: 학습 안정화",
+      "장점: 병렬 처리, 장거리 의존성, 단점: 메모리 많이 소비 (O(n²))",
+      "활용: BERT, GPT, T5, Vision Transformer, 번역, 요약, 생성"
+    ],
+    "relatedTopics": [
+      "llm-001",
+      "bert-gpt-001",
+      "rnn-lstm-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Efficient Transformers",
+      "Sparse Attention"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "time-space-complexity-001",
+    "title": "시간복잡도 & 공간복잡도 (Big-O)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "Big-O",
+      "Time Complexity",
+      "Space Complexity",
+      "Algorithm Analysis",
+      "Asymptotic Notation"
+    ],
+    "definition": "알고리즘의 효율성을 분석하는 척도로, 입력 크기에 따른 실행 시간과 메모리 사용량을 표기합니다.",
+    "characteristics": [
+      "Big-O 표기법: 최악의 경우 성능, O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ) < O(n!)",
+      "Big-Ω (Omega): 최선의 경우, Big-Θ (Theta): 평균의 경우",
+      "시간복잡도: 입력 크기 n에 대한 연산 횟수",
+      "공간복잡도: 알고리즘이 사용하는 메모리 양",
+      "O(1): 상수 시간 (배열 인덱스 접근, 해시 테이블 조회)",
+      "O(log n): 로그 시간 (이진 탐색, 균형 트리)",
+      "O(n): 선형 시간 (배열 순회, 선형 탐색)",
+      "O(n log n): 효율적 정렬 (Merge Sort, Quick Sort, Heap Sort)",
+      "O(n²): 이중 루프 (Bubble Sort, Selection Sort)",
+      "Amortized Analysis: 분할 상환 분석, 평균적으로 보장되는 성능"
+    ],
+    "relatedTopics": [
+      "algorithms-001",
+      "data-structures-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Amortized Analysis",
+      "Cache Complexity"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "string-algorithms-001",
+    "title": "문자열 알고리즘 (KMP, Boyer-Moore)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "KMP",
+      "Boyer-Moore",
+      "String Matching",
+      "Pattern Search",
+      "Rabin-Karp"
+    ],
+    "definition": "텍스트에서 패턴을 효율적으로 찾는 문자열 검색 알고리즘입니다.",
+    "characteristics": [
+      "Naive 알고리즘: 모든 위치에서 비교, O(nm), n=텍스트 길이, m=패턴 길이",
+      "KMP (Knuth-Morris-Pratt): 실패 함수로 불필요한 비교 생략, O(n+m)",
+      "Failure Function: 패턴의 접두사-접미사 일치 정보 사전 계산",
+      "Boyer-Moore: 뒤에서부터 비교, Bad Character/Good Suffix Rule, 평균 O(n/m)",
+      "Rabin-Karp: 해싱 기반, 여러 패턴 동시 검색, 평균 O(n+m)",
+      "Aho-Corasick: Trie 기반, 여러 패턴 동시 검색, O(n+m+z)",
+      "Suffix Array/Tree: 접미사 배열/트리, 빠른 패턴 검색",
+      "활용: 텍스트 에디터, 검색 엔진, DNA 시퀀싱, 컴파일러"
+    ],
+    "relatedTopics": [
+      "algorithms-001",
+      "data-structures-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Approximate String Matching",
+      "DNA Sequence Matching"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "rnn-lstm-001",
+    "title": "RNN & LSTM (순환 신경망)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "RNN",
+      "LSTM",
+      "GRU",
+      "Sequence Model",
+      "Time Series",
+      "NLP"
+    ],
+    "definition": "시퀀스 데이터의 시간적 의존성을 학습하는 순환 신경망으로, 자연어와 시계열 처리에 사용됩니다.",
+    "characteristics": [
+      "RNN (Recurrent Neural Network): 이전 상태를 현재 입력에 반영, 순환 구조",
+      "문제점: Vanishing Gradient (기울기 소실), Long-term Dependency 학습 어려움",
+      "LSTM (Long Short-Term Memory): Cell State와 Gate로 장기 의존성 해결",
+      "LSTM Gates: Forget Gate (잊기), Input Gate (입력), Output Gate (출력)",
+      "GRU (Gated Recurrent Unit): LSTM 단순화, 2개 Gate, 빠름",
+      "Bidirectional RNN: 양방향 처리, 과거+미래 정보 활용",
+      "Seq2Seq: Encoder-Decoder 구조, 기계 번역, 챗봇",
+      "Attention Mechanism: 중요한 부분 집중, Transformer의 기초",
+      "활용: 언어 모델, 번역, 음성 인식, 주가 예측, 비디오 분석"
+    ],
+    "relatedTopics": [
+      "transformer-001",
+      "ai-deep-learning-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Transformer 대체",
+      "Bidirectional RNN"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "recursion-divide-conquer-001",
+    "title": "재귀 & 분할정복 (Recursion & Divide and Conquer)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "Recursion",
+      "Divide and Conquer",
+      "Merge Sort",
+      "Quick Sort",
+      "Binary Search",
+      "Master Theorem"
+    ],
+    "definition": "함수가 자기 자신을 호출하는 재귀와, 문제를 작은 부분으로 나누어 해결하는 분할정복 기법입니다.",
+    "characteristics": [
+      "재귀 (Recursion): 함수가 자기 자신을 호출, 기저 조건(Base Case) 필수",
+      "재귀 구조: Base Case + Recursive Case",
+      "스택 오버플로우: 깊은 재귀 시 스택 메모리 초과",
+      "Tail Recursion: 마지막에 자신 호출, 컴파일러 최적화 가능",
+      "분할정복 (Divide and Conquer): 문제를 작게 나눔 → 해결 → 합침",
+      "대표 알고리즘: Merge Sort (O(n log n)), Quick Sort (평균 O(n log n)), Binary Search (O(log n))",
+      "Master Theorem: 재귀 시간복잡도 분석 공식",
+      "예시: 팩토리얼, 피보나치, 하노이 탑, 트리 순회",
+      "장점: 코드 간결, 직관적, 단점: 메모리 사용, 중복 계산"
+    ],
+    "relatedTopics": [
+      "algorithms-001",
+      "dynamic-programming-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Tail Recursion Optimization",
+      "Parallel Divide and Conquer"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "ml-learning-types-001",
+    "title": "머신러닝 학습 (지도/비지도/강화학습)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Reinforcement Learning",
+      "Classification",
+      "Regression",
+      "Clustering"
+    ],
+    "definition": "데이터로부터 패턴을 학습하는 머신러닝의 세 가지 주요 학습 방식입니다.",
+    "characteristics": [
+      "지도 학습 (Supervised Learning): 레이블된 데이터로 학습, 입력→출력 매핑",
+      "분류 (Classification): 범주 예측, Logistic Regression, SVM, Decision Tree, Random Forest",
+      "회귀 (Regression): 연속값 예측, Linear Regression, Polynomial Regression",
+      "비지도 학습 (Unsupervised Learning): 레이블 없이 패턴 발견",
+      "군집화 (Clustering): K-Means, DBSCAN, Hierarchical Clustering",
+      "차원 축소: PCA, t-SNE, UMAP",
+      "강화 학습 (Reinforcement Learning): 보상 기반, 시행착오 학습",
+      "구성: Agent, Environment, State, Action, Reward",
+      "알고리즘: Q-Learning, DQN, Policy Gradient, PPO, A3C",
+      "활용: 지도(이미지 분류, 번역), 비지도(고객 세분화), 강화(게임 AI, 로봇 제어)"
+    ],
+    "relatedTopics": [
+      "ai-deep-learning-001",
+      "gradient-descent-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Self-Supervised Learning",
+      "Meta-Learning"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "greedy-algorithm-001",
+    "title": "탐욕 알고리즘 (Greedy Algorithm)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "Greedy Algorithm",
+      "Optimal Choice",
+      "Activity Selection",
+      "Huffman Coding",
+      "Dijkstra"
+    ],
+    "definition": "매 단계에서 현재 최선의 선택을 하여 전체 최적해를 구하는 알고리즘 설계 기법입니다.",
+    "characteristics": [
+      "핵심: 매 순간 지역적 최적 선택 (Local Optimal) → 전역 최적 (Global Optimal)",
+      "조건: Greedy Choice Property (탐욕 선택 속성), Optimal Substructure (최적 부분 구조)",
+      "장점: 구현 간단, 빠른 실행 시간, 단점: 항상 최적해 보장 못함",
+      "대표 알고리즘: Activity Selection (활동 선택), Huffman Coding (압축), Dijkstra (최단 경로), Kruskal/Prim (MST)",
+      "동전 거스름돈: 큰 단위부터 선택 (특정 화폐 체계에서만 최적)",
+      "Fractional Knapsack: 부분 선택 가능, Greedy로 해결",
+      "0/1 Knapsack: 부분 선택 불가, DP 필요",
+      "증명: Greedy가 최적임을 수학적으로 증명 필요"
+    ],
+    "relatedTopics": [
+      "dynamic-programming-001",
+      "graph-algorithms-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Online Greedy Algorithms",
+      "Approximation Algorithms"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "graph-algorithms-001",
+    "title": "그래프 알고리즘 (BFS, DFS, 최단경로, MST)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "BFS",
+      "DFS",
+      "Dijkstra",
+      "Floyd-Warshall",
+      "Bellman-Ford",
+      "Kruskal",
+      "Prim",
+      "MST"
+    ],
+    "definition": "그래프 자료구조에서 탐색, 최단 경로, 최소 신장 트리를 구하는 핵심 알고리즘들입니다.",
+    "characteristics": [
+      "BFS (너비 우선 탐색): 큐 사용, 최단 거리 (가중치 없음), O(V+E)",
+      "DFS (깊이 우선 탐색): 스택/재귀, 연결 요소, 사이클 탐지, O(V+E)",
+      "Dijkstra: 단일 시작점 최단 경로, 우선순위 큐, 양수 가중치, O((V+E) log V)",
+      "Bellman-Ford: 음수 가중치 허용, 음수 사이클 탐지, O(VE)",
+      "Floyd-Warshall: 모든 쌍 최단 경로, DP 기반, O(V³)",
+      "MST (Minimum Spanning Tree): 최소 비용으로 모든 정점 연결",
+      "Kruskal: 간선 정렬 후 선택, Union-Find, O(E log E)",
+      "Prim: 정점 기반, 우선순위 큐, O((V+E) log V)",
+      "활용: 네트워크 라우팅, 지도 내비게이션, SNS 추천"
+    ],
+    "relatedTopics": [
+      "data-structures-001",
+      "dynamic-programming-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Graph Neural Networks",
+      "Distributed Graph Algorithms"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "gradient-descent-001",
+    "title": "경사하강법 & 역전파 (Gradient Descent & Backpropagation)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Gradient Descent",
+      "Backpropagation",
+      "SGD",
+      "Adam",
+      "Learning Rate",
+      "Optimizer"
+    ],
+    "definition": "손실 함수를 최소화하기 위해 가중치를 업데이트하는 최적화 알고리즘과 신경망 학습의 핵심 기법입니다.",
+    "characteristics": [
+      "경사하강법 (Gradient Descent): 손실 함수의 기울기 반대 방향으로 이동",
+      "수식: θ = θ - α∇J(θ), α=학습률, ∇J=기울기",
+      "Batch GD: 전체 데이터 사용, 느림, 안정적",
+      "SGD (Stochastic): 1개 샘플씩, 빠름, 불안정",
+      "Mini-batch GD: 일부 샘플 사용, 절충안",
+      "Momentum: 관성 추가, 진동 감소",
+      "Adam (Adaptive Moment): Momentum + RMSProp, 적응형 학습률",
+      "학습률 (Learning Rate): 너무 크면 발산, 너무 작으면 느림",
+      "역전파 (Backpropagation): 출력에서 입력으로 오차 전파, 가중치 갱신",
+      "Chain Rule: 합성 함수 미분, 각 층의 기울기 계산"
+    ],
+    "relatedTopics": [
+      "ai-deep-learning-001",
+      "ml-learning-types-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Second-order Optimization",
+      "Adaptive Learning Rates"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "genetic-algorithm-001",
+    "title": "유전 알고리즘 (Genetic Algorithm)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "Genetic Algorithm",
+      "Evolutionary Algorithm",
+      "Crossover",
+      "Mutation",
+      "Fitness Function"
+    ],
+    "definition": "자연 선택과 유전 법칙을 모방하여 최적해를 찾는 진화 기반 최적화 알고리즘입니다.",
+    "characteristics": [
+      "생물학적 영감: 선택, 교배, 돌연변이",
+      "구성 요소: 유전자(Gene), 염색체(Chromosome), 개체(Individual), 세대(Generation)",
+      "과정: 1) 초기 집단 생성 → 2) 적합도 평가 → 3) 선택 → 4) 교배(Crossover) → 5) 돌연변이(Mutation) → 반복",
+      "선택 (Selection): 룰렛 휠, 토너먼트, 순위 기반",
+      "교배 (Crossover): 1점/2점/균등 교배, 부모 유전자 조합",
+      "돌연변이 (Mutation): 랜덤 변이, 지역 최적 탈출",
+      "Fitness Function: 해의 적합도 평가, 문제 의존적",
+      "장점: 복잡한 최적화, 전역 탐색, 단점: 느림, 수렴 보장 없음",
+      "활용: 일정 최적화, 경로 최적화, 게임 AI, 신경망 구조 탐색"
+    ],
+    "relatedTopics": [
+      "ai-deep-learning-001",
+      "greedy-algorithm-001"
+    ],
+    "importance": 3,
+    "trends": [
+      "Neuroevolution",
+      "Multi-objective Optimization"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "ensemble-001",
+    "title": "앙상블 (Bagging, Boosting, Random Forest)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Ensemble",
+      "Bagging",
+      "Boosting",
+      "Random Forest",
+      "XGBoost",
+      "Stacking"
+    ],
+    "definition": "여러 약한 학습기를 결합하여 강력한 예측 모델을 만드는 기법입니다.",
+    "characteristics": [
+      "장점: 과적합 감소, 정확도 향상, 안정성",
+      "Bagging (Bootstrap Aggregating): 병렬, 무작위 샘플링, 평균/투표",
+      "Random Forest: Decision Tree + Bagging + Feature Sampling",
+      "특징: 각 트리는 무작위 데이터 + 무작위 특징, 분산 감소",
+      "Boosting: 순차적, 이전 오류에 집중, 편향 감소",
+      "AdaBoost: 오분류 샘플 가중치 증가",
+      "Gradient Boosting: 잔차(Residual) 학습, 경사하강법",
+      "XGBoost: 빠른 Gradient Boosting, 정규화, 병렬 처리, Kaggle 우승",
+      "LightGBM: Leaf-wise 성장, 빠름, 대규모 데이터",
+      "CatBoost: 범주형 데이터 자동 처리",
+      "Stacking: 다층 앙상블, Meta-learner"
+    ],
+    "relatedTopics": [
+      "ml-learning-types-001",
+      "gradient-descent-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "LightGBM",
+      "CatBoost"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "dynamic-programming-001",
+    "title": "동적 계획법 (Dynamic Programming)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "Dynamic Programming",
+      "DP",
+      "Memoization",
+      "Tabulation",
+      "Optimal Substructure"
+    ],
+    "definition": "큰 문제를 작은 부분 문제로 나누고, 중복 계산을 메모이제이션으로 피하여 최적해를 구하는 기법입니다.",
+    "characteristics": [
+      "두 가지 조건: Optimal Substructure (최적 부분 구조), Overlapping Subproblems (중복 부분 문제)",
+      "Top-Down (Memoization): 재귀 + 캐싱, 필요한 부분만 계산",
+      "Bottom-Up (Tabulation): 반복문, 작은 문제부터 순차적으로 해결",
+      "대표 문제: 피보나치 (O(n)), 최장 공통 부분 수열 (LCS), 배낭 문제 (Knapsack), 최단 경로 (Floyd-Warshall)",
+      "상태 정의: dp[i] = i번째 상태의 최적값",
+      "점화식: 이전 상태로부터 현재 상태 계산",
+      "Greedy vs DP: Greedy는 매 순간 최선, DP는 모든 경우 고려",
+      "시간복잡도: 부분 문제 개수 × 각 문제 해결 시간"
+    ],
+    "relatedTopics": [
+      "recursion-divide-conquer-001",
+      "greedy-algorithm-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "GPU-accelerated DP",
+      "Approximate DP"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "dimensionality-reduction-001",
+    "title": "차원 축소 (PCA, LDA, t-SNE)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "PCA",
+      "LDA",
+      "t-SNE",
+      "UMAP",
+      "Dimensionality Reduction"
+    ],
+    "definition": "고차원 데이터를 저차원으로 변환하여 시각화하거나 노이즈를 제거하는 기법입니다.",
+    "characteristics": [
+      "목적: 시각화, 계산 효율, 과적합 방지, 노이즈 제거",
+      "PCA (Principal Component Analysis): 선형 변환, 분산 최대화",
+      "주성분: 고유벡터, 데이터 분산이 가장 큰 방향",
+      "Explained Variance: 각 주성분이 설명하는 분산 비율",
+      "LDA (Linear Discriminant Analysis): 지도 학습, 클래스 분리 최대화",
+      "t-SNE (t-distributed Stochastic Neighbor Embedding): 비선형, 고차원 유사도 보존",
+      "장점: 시각화 우수, 단점: 느림, 전역 구조 보존 약함",
+      "UMAP (Uniform Manifold Approximation): 빠른 t-SNE 대안, 전역+지역 구조",
+      "Autoencoder: 신경망 기반, Encoder-Decoder, 비선형 변환",
+      "활용: 고차원 데이터 시각화, 특징 추출, 전처리"
+    ],
+    "relatedTopics": [
+      "clustering-001",
+      "ml-learning-types-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "UMAP",
+      "Autoencoders"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "diffusion-model-001",
+    "title": "Diffusion Model (확산 모델)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Diffusion Model",
+      "DDPM",
+      "Stable Diffusion",
+      "Denoising",
+      "Generative Model"
+    ],
+    "definition": "노이즈를 점진적으로 제거하여 고품질 데이터를 생성하는 확률적 생성 모델입니다.",
+    "characteristics": [
+      "Forward Process: 데이터에 점진적으로 노이즈 추가, q(xₜ|xₜ₋₁)",
+      "Reverse Process: 노이즈에서 데이터 복원, pθ(xₜ₋₁|xₜ), 신경망 학습",
+      "DDPM (Denoising Diffusion Probabilistic Models): 기본 확산 모델",
+      "U-Net: 노이즈 예측 네트워크, Skip Connection",
+      "Score Matching: 데이터 분포의 기울기(Score) 학습",
+      "Stable Diffusion: Latent Space에서 확산, 효율적, Text-to-Image",
+      "CLIP: 텍스트-이미지 임베딩, 프롬프트 조건부 생성",
+      "장점: 고품질, 안정적 학습, 단점: 느린 생성 속도",
+      "활용: DALL-E 2, Midjourney, Stable Diffusion, 이미지/오디오/비디오 생성"
+    ],
+    "relatedTopics": [
+      "ai-deep-learning-001",
+      "cnn-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Latent Diffusion",
+      "Video Diffusion"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
     "id": "data-structures-001",
     "title": "자료구조",
     "category": "technical-focus",
@@ -9143,6 +9827,231 @@
       "Lock-Free Data Structures",
       "Cache-Oblivious Data Structures",
       "Probabilistic Data Structures"
+    ]
+  },
+  {
+    "id": "compression-algorithms-001",
+    "title": "압축 알고리즘 (Huffman, LZW)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "Huffman Coding",
+      "LZW",
+      "Data Compression",
+      "Lossless",
+      "Entropy Encoding"
+    ],
+    "definition": "데이터를 효율적으로 저장하고 전송하기 위해 크기를 줄이는 압축 알고리즘입니다.",
+    "characteristics": [
+      "Lossless (무손실): 원본 완전 복원, Lossy (손실): 일부 손실 허용",
+      "Huffman Coding: 빈도 기반 가변 길이 인코딩, Greedy + Priority Queue",
+      "동작: 빈도 계산 → Huffman Tree 구축 → 코드 할당",
+      "빈도 높은 문자 → 짧은 코드, 빈도 낮은 문자 → 긴 코드",
+      "LZW (Lempel-Ziv-Welch): 사전 기반, 반복 패턴 압축, GIF/TIFF 사용",
+      "RLE (Run-Length Encoding): 연속 반복 데이터 압축, 간단",
+      "Deflate: LZ77 + Huffman, ZIP/PNG 사용",
+      "Entropy: 정보량 측정, Shannon Entropy, 이론적 압축 한계",
+      "활용: 파일 압축 (ZIP, 7z), 이미지 (JPEG, PNG), 동영상 (H.264, AV1)"
+    ],
+    "relatedTopics": [
+      "greedy-algorithm-001",
+      "data-structures-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Neural Compression",
+      "Video Compression (AV1)"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "cnn-001",
+    "title": "CNN (Convolutional Neural Network)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "CNN",
+      "Convolution",
+      "Pooling",
+      "ResNet",
+      "ImageNet",
+      "Computer Vision"
+    ],
+    "definition": "이미지 데이터의 공간적 특징을 학습하는 합성곱 신경망으로, 컴퓨터 비전의 핵심 모델입니다.",
+    "characteristics": [
+      "Convolution Layer: 필터(커널)로 특징 추출, 가중치 공유, 지역적 연결",
+      "Pooling Layer: 다운샘플링, Max Pooling, Average Pooling, 차원 축소",
+      "Fully Connected Layer: 분류를 위한 완전 연결층",
+      "Activation Function: ReLU, Leaky ReLU, 비선형성 추가",
+      "대표 아키텍처: LeNet (1998), AlexNet (2012), VGG (2014), ResNet (2015), Inception",
+      "ResNet: Skip Connection (잔차 연결), 깊은 네트워크 학습 가능",
+      "Data Augmentation: 회전, 반전, 크롭으로 데이터 증강",
+      "Transfer Learning: 사전 학습 모델 (ImageNet) 활용",
+      "활용: 이미지 분류, 객체 탐지 (YOLO, R-CNN), 세그멘테이션"
+    ],
+    "relatedTopics": [
+      "ai-deep-learning-001",
+      "gradient-descent-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Vision Transformer (ViT)",
+      "Efficient CNN (MobileNet, EfficientNet)"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "clustering-001",
+    "title": "군집화 (K-Means, DBSCAN)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL",
+      "DS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "Clustering",
+      "K-Means",
+      "DBSCAN",
+      "Hierarchical Clustering",
+      "Unsupervised Learning"
+    ],
+    "definition": "레이블 없는 데이터를 유사한 그룹으로 나누는 비지도 학습 알고리즘입니다.",
+    "characteristics": [
+      "K-Means: 중심(Centroid) 기반, K개 클러스터, 유클리드 거리",
+      "동작: 1) 초기 중심 선택 → 2) 가장 가까운 중심에 할당 → 3) 중심 재계산 → 반복",
+      "장점: 간단, 빠름, 단점: K 사전 설정, 초기값 의존, 구형 클러스터만",
+      "Elbow Method: 최적 K 찾기, 관성(Inertia) 감소율",
+      "DBSCAN (Density-Based): 밀도 기반, 임의 모양 클러스터, 노이즈 처리",
+      "파라미터: ε (반경), MinPts (최소 점 개수)",
+      "Hierarchical Clustering: 계층적, Dendrogram, Agglomerative/Divisive",
+      "Silhouette Score: 군집화 품질 평가, -1~1",
+      "활용: 고객 세분화, 이미지 분할, 이상 탐지, 문서 분류"
+    ],
+    "relatedTopics": [
+      "ml-learning-types-001",
+      "dimensionality-reduction-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Deep Clustering",
+      "Spectral Clustering"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "bert-gpt-001",
+    "title": "BERT vs GPT 구조",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "BERT",
+      "GPT",
+      "Masked LM",
+      "Autoregressive",
+      "Bidirectional",
+      "Decoder-only"
+    ],
+    "definition": "Transformer 기반의 두 대표적인 사전 학습 모델로, 양방향(BERT)과 단방향(GPT) 언어 이해 방식의 차이를 가집니다.",
+    "characteristics": [
+      "BERT (Bidirectional Encoder Representations from Transformers): Encoder-only, 양방향",
+      "BERT 학습: Masked Language Model (MLM), 일부 단어 가림 → 예측",
+      "Next Sentence Prediction (NSP): 두 문장 연속성 예측",
+      "BERT 활용: 질의응답, 감정 분석, 개체명 인식 (Fine-tuning)",
+      "GPT (Generative Pre-trained Transformer): Decoder-only, 단방향 (왼→오)",
+      "GPT 학습: Autoregressive LM, 이전 토큰으로 다음 토큰 예측",
+      "GPT 활용: 텍스트 생성, 대화, Zero-shot/Few-shot Learning",
+      "차이점: BERT는 이해(Understanding), GPT는 생성(Generation)",
+      "GPT-3/4: 대규모 파라미터, In-Context Learning, Prompt Engineering",
+      "최신: Instruction Tuning, RLHF (Reinforcement Learning from Human Feedback)"
+    ],
+    "relatedTopics": [
+      "transformer-001",
+      "llm-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "Instruction Tuning",
+      "RLHF"
+    ],
+    "tags": [
+      "2025"
+    ]
+  },
+  {
+    "id": "backtracking-001",
+    "title": "백트래킹 (Backtracking)",
+    "category": "technical-focus",
+    "subcategory": "알고리즘",
+    "subjectCategories": [
+      "AL"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "computer-systems"
+    ],
+    "keywords": [
+      "Backtracking",
+      "N-Queens",
+      "Sudoku",
+      "Pruning",
+      "DFS"
+    ],
+    "definition": "모든 가능한 경우를 탐색하되, 조건에 맞지 않으면 즉시 후퇴(backtrack)하여 불필요한 탐색을 줄이는 기법입니다.",
+    "characteristics": [
+      "DFS 기반: 깊이 우선 탐색으로 모든 경우 탐색",
+      "Pruning (가지치기): 조건 위배 시 즉시 중단, 탐색 공간 축소",
+      "구조: 선택 → 유효성 검사 → 재귀 → 복원",
+      "대표 문제: N-Queens (N개 퀸 배치), Sudoku, Hamilton Path, Graph Coloring",
+      "Permutation (순열), Combination (조합) 생성",
+      "Constraint Satisfaction Problem (CSP): 제약 조건 만족 문제",
+      "시간복잡도: 최악 O(2ⁿ) 또는 O(n!), Pruning으로 개선",
+      "최적화: 가지치기 조건 강화, 휴리스틱 사용"
+    ],
+    "relatedTopics": [
+      "recursion-divide-conquer-001",
+      "graph-algorithms-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "Constraint Satisfaction",
+      "SAT Solvers"
+    ],
+    "tags": [
+      "2025"
     ]
   },
   {
