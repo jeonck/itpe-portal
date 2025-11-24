@@ -260,6 +260,44 @@ export default function TopicWiki() {
               <p className="text-gray-700 leading-relaxed">{selectedTopic.definition}</p>
             </div>
 
+            {/* Technical Elements */}
+            {selectedTopic.technicalElements && selectedTopic.technicalElements.length > 0 && (
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">기술요소</h3>
+                <ul className="space-y-2">
+                  {selectedTopic.technicalElements.map((element, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-2 flex-shrink-0" />
+                      <span className="text-gray-700">{element}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Operating Principle */}
+            {selectedTopic.operatingPrinciple && (
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">동작원리</h3>
+                <p className="text-gray-700 leading-relaxed whitespace-pre-line">{selectedTopic.operatingPrinciple}</p>
+              </div>
+            )}
+
+            {/* Functions */}
+            {selectedTopic.functions && selectedTopic.functions.length > 0 && (
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">기능</h3>
+                <ul className="space-y-2">
+                  {selectedTopic.functions.map((func, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-green-600 mt-2 flex-shrink-0" />
+                      <span className="text-gray-700">{func}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             {/* Characteristics */}
             <div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">특징</h3>

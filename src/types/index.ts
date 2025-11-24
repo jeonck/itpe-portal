@@ -36,6 +36,9 @@ export interface Topic {
   keywords: string[];
   mnemonic?: string; // 암기 두음
   definition: string;
+  technicalElements?: string[]; // 기술요소 (선택)
+  operatingPrinciple?: string; // 동작원리 (선택)
+  functions?: string[]; // 기능 (선택)
   characteristics: string[];
   diagram?: string; // 구성도 URL 또는 설명
   relatedTopics: string[]; // 연관 토픽 ID들

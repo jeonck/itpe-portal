@@ -27,6 +27,28 @@ files.forEach((filePath) => { // 'file' -> 'filePath' since globSync returns ful
   const definitionMatch = content.match(/# 정의\n(.+?)(?=\n##|\n$)/s);
   const definition = definitionMatch ? definitionMatch[1].trim() : '';
 
+  // 기술요소 추출 (## 기술요소)
+  const technicalElementsMatch = content.match(/## 기술요소\n((?:- .+\n?)+)/);
+  const technicalElements = technicalElementsMatch
+    ? technicalElementsMatch[1]
+        .split('\n')
+        .filter(line => line.trim().startsWith('-'))
+        .map(line => line.replace(/^-\s*/, '').trim())
+    : null;
+
+  // 동작원리 추출 (## 동작원리)
+  const operatingPrincipleMatch = content.match(/## 동작원리\n(.+?)(?=\n##|\n$)/s);
+  const operatingPrinciple = operatingPrincipleMatch ? operatingPrincipleMatch[1].trim() : null;
+
+  // 기능 추출 (## 기능)
+  const functionsMatch = content.match(/## 기능\n((?:- .+\n?)+)/);
+  const functions = functionsMatch
+    ? functionsMatch[1]
+        .split('\n')
+        .filter(line => line.trim().startsWith('-'))
+        .map(line => line.replace(/^-\s*/, '').trim())
+    : null;
+
   // 특징 추출
   const characteristicsMatch = content.match(/## 특징\n((?:- .+\n?)+)/);
   const characteristics = characteristicsMatch
@@ -47,6 +69,9 @@ files.forEach((filePath) => { // 'file' -> 'filePath' since globSync returns ful
     keywords: data.keywords,
     ...(mnemonic && { mnemonic }),
     definition,
+    ...(technicalElements && { technicalElements }),
+    ...(operatingPrinciple && { operatingPrinciple }),
+    ...(functions && { functions }),
     characteristics,
     relatedTopics: data.relatedTopics || [],
     importance: data.importance,
