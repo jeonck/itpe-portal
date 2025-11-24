@@ -1059,6 +1059,99 @@
     ]
   },
   {
+    "id": "wbs-001",
+    "title": "WBS (Work Breakdown Structure)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 범위 관리",
+    "subjectCategories": [
+      "PM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "WBS",
+      "작업 분해 구조",
+      "범위 기준선",
+      "델리버러블",
+      "작업 패키지"
+    ],
+    "definition": "WBS(Work Breakdown Structure)는 프로젝트의 전체 범위를 계층적이고 산출물 지향적으로 분해한 구조입니다. 프로젝트의 모든 작업을 가장 낮은 수준의 작업 패키지(Work Package)까지 세분화하여 프로젝트 팀이 이해하고 관리할 수 있는 형태로 만듭니다. WBS는 프로젝트 범위 기준선(Scope Baseline)의 핵심 요소이며, 이후 일정, 원가, 자원 계획의 기반이 됩니다.",
+    "characteristics": [
+      "**계층적 구조**: 프로젝트의 최종 산출물(제품, 서비스, 결과)을 중심으로 주요 구성 요소를 식별하고, 이를 점진적으로 하위 수준의 작업으로 분해합니다."
+    ],
+    "relatedTopics": [
+      "pmbok-10-knowledge-areas-001",
+      "project-5-processes-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "애자일 WBS (Product Backlog)",
+      "협업 도구를 통한 WBS 관리"
+    ]
+  },
+  {
+    "id": "schedule-compression-001",
+    "title": "일정 단축 (Crashing, Fast Tracking)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 일정 관리",
+    "subjectCategories": [
+      "PM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "일정 단축",
+      "Crashing",
+      "Fast Tracking",
+      "임계 경로",
+      "프로젝트 관리"
+    ],
+    "definition": "일정 단축(Schedule Compression)은 프로젝트 일정을 단축하기 위한 두 가지 주요 기법인 Crashing(시간 단축)과 Fast Tracking(작업 병행)을 의미합니다. 이는 프로젝트 마감 기한이 촉박하거나 일정 지연으로 인해 프로젝트 완료일이 지연될 위험이 있을 때 사용됩니다.",
+    "characteristics": [
+      "**Crashing (시간 단축)**:"
+    ],
+    "relatedTopics": [
+      "pmbok-10-knowledge-areas-001",
+      "risk-management-001"
+    ],
+    "importance": 4
+  },
+  {
+    "id": "risk-management-001",
+    "title": "리스크 관리 (정량적/정성적 분석)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 리스크 관리",
+    "subjectCategories": [
+      "PM",
+      "IS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "리스크 관리",
+      "리스크 식별",
+      "리스크 분석",
+      "리스크 대응",
+      "정량적 분석",
+      "정성적 분석"
+    ],
+    "definition": "리스크 관리(Risk Management)는 프로젝트 목표 달성에 부정적인(위협) 또는 긍정적인(기회) 영향을 미칠 수 있는 불확실한 사건을 식별하고, 분석하며, 이에 대한 대응 계획을 수립하고 실행하는 일련의 프로세스입니다. 리스크 분석은 식별된 리스크의 발생 가능성과 영향도를 평가하는 과정으로, 정성적 분석과 정량적 분석으로 나뉩니다.",
+    "characteristics": [
+      "**리스크 관리 프로세스**:"
+    ],
+    "relatedTopics": [
+      "it-governance-001",
+      "cyber-resilience-001"
+    ],
+    "importance": 5
+  },
+  {
     "id": "project-5-processes-001",
     "title": "프로젝트 5대 프로세스 (착수-기획-실행-감시및통제-종료)",
     "category": "digital-service",
@@ -1122,6 +1215,51 @@
     ]
   },
   {
+    "id": "pmbok-10-knowledge-areas-001",
+    "title": "PMBOK 10대 지식 영역",
+    "category": "management-focus",
+    "subcategory": "프로젝트 관리 방법론",
+    "subjectCategories": [
+      "PM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "PMBOK",
+      "지식 영역",
+      "통합 관리",
+      "범위 관리",
+      "일정 관리",
+      "원가 관리",
+      "품질 관리",
+      "자원 관리",
+      "의사소통 관리",
+      "리스크 관리",
+      "조달 관리",
+      "이해관계자 관리"
+    ],
+    "definition": "PMBOK(Project Management Body of Knowledge)에서 정의하는 10대 지식 영역은 프로젝트를 성공적으로 관리하기 위해 필요한 지식과 프로세스를 기능별로 분류한 것입니다. 이 지식 영역들은 프로젝트 생애주기 전반에 걸쳐 적용되며, 각 영역은 고유의 프로세스, 도구, 기법, 산출물을 포함합니다.",
+    "characteristics": [
+      "**통합 관리 (Integration Management)**: 프로젝트의 다양한 요소들을 조정하고 통합하여 프로젝트 목표를 달성합니다. 프로젝트 헌장 개발, 프로젝트 관리 계획서 개발, 프로젝트 작업 지시 및 관리, 프로젝트 작업 감시 및 통제, 통합 변경 통제, 프로젝트 또는 단계 종료.",
+      "**범위 관리 (Scope Management)**: 프로젝트가 포함해야 할 작업과 제외해야 할 작업을 정의하고 통제합니다. 범위 계획 수립, 요구사항 수집, 범위 정의, WBS(작업 분할 구조) 생성, 범위 확인, 범위 통제.",
+      "**일정 관리 (Schedule Management)**: 프로젝트 활동의 순서를 정하고 일정을 수립 및 관리합니다. 일정 계획 수립, 활동 정의, 활동 순서 배열, 활동 기간 산정, 일정 개발, 일정 통제.",
+      "**원가 관리 (Cost Management)**: 프로젝트 예산을 계획, 산정, 예산 책정, 통제하여 프로젝트를 승인된 예산 내에서 완료합니다. 원가 계획 수립, 원가 산정, 예산 책정, 원가 통제.",
+      "**품질 관리 (Quality Management)**: 프로젝트와 인도물이 요구사항을 충족하도록 품질 정책을 수립하고 실행합니다. 품질 계획 수립, 품질 관리, 품질 통제.",
+      "**자원 관리 (Resource Management)**: 프로젝트를 성공적으로 완료하는 데 필요한 자원(인적, 물적)을 식별, 획득, 관리합니다. 자원 계획 수립, 활동 자원 산정, 자원 획득, 프로젝트 팀 개발, 프로젝트 팀 관리, 자원 통제.",
+      "**의사소통 관리 (Communications Management)**: 프로젝트 정보의 생성, 수집, 배포, 저장, 검색, 최종 처리를 시기적절하고 적절하게 계획, 관리, 통제합니다. 의사소통 계획 수립, 의사소통 관리, 의사소통 감시.",
+      "**리스크 관리 (Risk Management)**: 프로젝트 리스크를 식별, 분석, 대응하고 통제합니다. 리스크 계획 수립, 리스크 식별, 정성적/정량적 리스크 분석, 리스크 대응 계획 수립, 리스크 대응 실행, 리스크 감시.",
+      "**조달 관리 (Procurement Management)**: 프로젝트 팀 외부에서 제품, 서비스 또는 결과물을 조달하는 프로세스를 관리합니다. 조달 계획 수립, 조달 수행, 조달 통제.",
+      "**이해관계자 관리 (Stakeholder Management)**: 프로젝트에 영향을 미치거나 영향을 받는 개인, 그룹, 조직을 식별하고 그들의 참여를 관리합니다. 이해관계자 식별, 이해관계자 참여 계획 수립, 이해관계자 참여 관리, 이해관계자 참여 감시."
+    ],
+    "relatedTopics": [
+      "pmbok-7th-001",
+      "project-5-processes-001"
+    ],
+    "importance": 5
+  },
+  {
     "id": "pmbok-001",
     "title": "PMBOK (프로젝트 관리)",
     "category": "management-focus",
@@ -1153,6 +1291,77 @@
       "audit-001"
     ],
     "importance": 5
+  },
+  {
+    "id": "evm-001",
+    "title": "EVM (획득가치 관리 - SPI, CPI 계산)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 원가 관리",
+    "subjectCategories": [
+      "PM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "EVM",
+      "획득가치 관리",
+      "SPI",
+      "CPI",
+      "PV",
+      "EV",
+      "AC",
+      "SV",
+      "CV",
+      "EAC",
+      "ETC"
+    ],
+    "definition": "EVM(Earned Value Management, 획득가치 관리)은 프로젝트의 범위, 일정, 원가 성과를 통합적으로 측정하고 모니터링하여 프로젝트의 현재 상태와 미래 예측을 제공하는 핵심 관리 기법입니다. 이를 통해 프로젝트 관리자는 현재까지의 성과를 객관적으로 파악하고, 필요한 경우 시정 조치를 취하여 프로젝트를 성공적으로 완료할 수 있도록 합니다.",
+    "characteristics": [
+      "**3대 기본 요소**:"
+    ],
+    "relatedTopics": [
+      "pmbok-10-knowledge-areas-001",
+      "it-investment-evaluation-001"
+    ],
+    "importance": 5
+  },
+  {
+    "id": "ccm-001",
+    "title": "CCM (Critical Chain Method)",
+    "category": "management-focus",
+    "subcategory": "프로젝트 일정 관리",
+    "subjectCategories": [
+      "PM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "CCM",
+      "Critical Chain",
+      "버퍼 관리",
+      "자원 제약",
+      "골드랫",
+      "TOC"
+    ],
+    "definition": "CCM(Critical Chain Method, 임계 사슬 방법)은 TOC(Theory of Constraints, 제약 이론)의 창시자인 엘리 골드랫이 제안한 프로젝트 일정 관리 기법입니다. 이는 프로젝트의 자원 제약과 불확실성을 고려하여 일정을 최적화하고, 프로젝트 전체의 완료일을 단축하는 데 중점을 둡니다. 개별 작업의 안전 여유(Safety Margin)를 제거하고 프로젝트 및 피더(Feeder) 버퍼로 통합하여 관리하는 것이 핵심입니다.",
+    "characteristics": [
+      "**TOC (제약 이론) 기반**: 프로젝트의 병목(제약) 자원을 식별하고, 이 제약에 집중하여 프로젝트의 처리량(Throughput)을 최대화하는 것을 목표로 합니다.",
+      "**임계 사슬 (Critical Chain)**: 자원 제약을 고려하여 결정된 프로젝트의 가장 긴 경로입니다. (전통적인 임계 경로(Critical Path)는 자원 제약을 고려하지 않음)",
+      "**버퍼 관리 (Buffer Management)**:"
+    ],
+    "relatedTopics": [
+      "schedule-compression-001",
+      "risk-management-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "애자일 환경에서의 버퍼 관리",
+      "멀티프로젝트 환경 CCM"
+    ]
   },
   {
     "id": "virtual-memory-001",
@@ -2456,6 +2665,396 @@
     "importance": 5
   },
   {
+    "id": "sw-separated-procurement-change-001",
+    "title": "SW 분리발주 & 과업변경",
+    "category": "management-focus",
+    "subcategory": "IT 정책 및 규제",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "SW 분리발주",
+      "과업 변경",
+      "과업 심의위원회",
+      "SW 진흥법"
+    ],
+    "definition": "SW 분리발주는 소프트웨어 개발 사업을 하드웨어 구매, 네트워크 구축 등 다른 IT 사업과 분리하여 발주하는 제도를 의미합니다. 이는 SW의 가치를 높이고 전문성을 확보하기 위함입니다. 과업변경은 SW 사업 수행 중 사업의 범위나 내용이 변경되는 경우를 의미하며, 이는 공정하고 투명한 절차(예: 과업 심의위원회)를 통해 관리되어야 합니다. 두 가지 모두 '소프트웨어 진흥법'을 근거로 SW 사업의 품질 및 공정성 확보를 목표로 합니다.",
+    "characteristics": [
+      "**SW 분리발주**:"
+    ],
+    "relatedTopics": [
+      "public-sw-procurement-001",
+      "it-law-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "분리발주 의무 대상 확대",
+      "클라우드 환경의 SW 발주",
+      "애자일 사업에서의 과업 변경 관리"
+    ]
+  },
+  {
+    "id": "startup-methodologies-001",
+    "title": "스타트업 방법론 (Lean Startup, Pivot)",
+    "category": "management-focus",
+    "subcategory": "IT 경영 전략",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "린 스타트업",
+      "피벗",
+      "MVP",
+      "가설 검증",
+      "고객 개발"
+    ],
+    "definition": "스타트업 방법론은 불확실성이 높은 환경에서 새로운 제품이나 서비스를 개발하고 성장시키는 데 사용되는 일련의 접근 방식입니다. 특히 린 스타트업(Lean Startup)은 고객 개발과 가설 검증을 통해 낭비를 최소화하고 학습을 최대화하며, 피벗(Pivot)은 시장의 피드백을 바탕으로 비즈니스 모델이나 전략의 방향을 근본적으로 전환하는 것을 의미합니다.",
+    "characteristics": [
+      "**린 스타트업 (Lean Startup)**:"
+    ],
+    "relatedTopics": [
+      "design-thinking-001",
+      "agile-devops-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "린 스타트업 스케일업",
+      "애자일 비즈니스 모델",
+      "AI 기반 고객 검증"
+    ]
+  },
+  {
+    "id": "smart-factory-industry-4-5-001",
+    "title": "스마트 팩토리 & 인더스트리 4.0/5.0",
+    "category": "digital-service",
+    "subcategory": "IT 서비스 관리",
+    "subjectCategories": [
+      "IM",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "스마트 팩토리",
+      "인더스트리 4.0",
+      "인더스트리 5.0",
+      "CPS",
+      "MES",
+      "SCM"
+    ],
+    "definition": "스마트 팩토리는 ICT 기술(IoT, 빅데이터, AI, 클라우드 등)을 제조 공정에 적용하여 생산성, 품질, 효율성을 극대화하는 지능형 생산 공장입니다. 인더스트리 4.0은 이러한 스마트 팩토리 구현을 위한 4차 산업혁명 시대의 제조업 패러다임 변화를 의미하며, 인더스트리 5.0은 기술 중심에서 한발 더 나아가 '인간 중심'의 초개인화 및 지속가능한 제조 시스템을 지향합니다.",
+    "characteristics": [
+      "**스마트 팩토리**:"
+    ],
+    "relatedTopics": [
+      "iot-001",
+      "ai-deep-learning-001",
+      "edge-computing-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "자율 제조 시스템",
+      "디지털 트윈",
+      "인간 중심 제조"
+    ]
+  },
+  {
+    "id": "sla-slm-001",
+    "title": "SLA / SLM (서비스 수준 관리)",
+    "category": "management-focus",
+    "subcategory": "IT 서비스 관리",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "SLA",
+      "SLM",
+      "서비스 수준 협약",
+      "서비스 수준 관리",
+      "서비스 가용성",
+      "성능 지표"
+    ],
+    "definition": "SLA(Service Level Agreement)는 서비스 제공자와 고객 간에 합의된 서비스 수준에 대한 공식적인 협약 문서입니다. SLM(Service Level Management)은 이러한 SLA를 정의, 모니터링, 검토하고 지속적으로 개선하여 고객의 기대치를 충족시키고 서비스 품질을 유지 및 향상시키는 프로세스입니다.",
+    "characteristics": [
+      "**SLA (Service Level Agreement)**:"
+    ],
+    "relatedTopics": [
+      "itsm-itil-001",
+      "it-governance-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "XLA (경험 수준 협약)",
+      "AI 기반 SLM",
+      "클라우드 환경 SLA"
+    ]
+  },
+  {
+    "id": "scm-vmi-001",
+    "title": "SCM & VMI (공급망 관리)",
+    "category": "management-focus",
+    "subcategory": "공급망 관리",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "SCM",
+      "VMI",
+      "공급망 관리",
+      "재고 최적화",
+      "수요 예측",
+      "물류 효율화"
+    ],
+    "definition": "SCM(Supply Chain Management)은 제품 및 서비스의 원자재 조달부터 생산, 유통, 최종 소비자에게 전달되는 전 과정의 흐름을 통합적으로 관리하여 효율성을 극대화하는 경영 전략이자 시스템입니다. VMI(Vendor Managed Inventory)는 SCM의 한 전략으로, 공급업체가 고객사의 재고를 직접 관리하고 보충함으로써 공급망 전체의 재고 수준을 최적화하고 비용을 절감하는 방식입니다.",
+    "characteristics": [
+      "**SCM (Supply Chain Management)**:"
+    ],
+    "relatedTopics": [
+      "erp-001",
+      "smart-factory-industry-4-5-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "AI 기반 SCM",
+      "블록체인 기반 공급망 추적",
+      "레질리언스 SCM"
+    ]
+  },
+  {
+    "id": "rto-rpo-001",
+    "title": "RTO / RPO (재해 복구 목표)",
+    "category": "management-focus",
+    "subcategory": "IT 리스크 관리",
+    "subjectCategories": [
+      "IM",
+      "IS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "RTO",
+      "RPO",
+      "재해 복구 목표",
+      "복구 시간 목표",
+      "복구 시점 목표"
+    ],
+    "definition": "RTO(Recovery Time Objective)와 RPO(Recovery Point Objective)는 재해 복구 계획(DRP) 및 비즈니스 연속성 계획(BCP) 수립 시 핵심적으로 고려되는 목표 지표입니다.\n*   **RTO (Recovery Time Objective)**: 재해 발생 후 비즈니스 기능 또는 IT 시스템을 복구하여 정상적인 운영 상태로 되돌려야 하는 최대 허용 시간입니다. '얼마나 빨리 복구할 것인가'에 대한 목표입니다.\n*   **RPO (Recovery Point Objective)**: 재해 발생 시 데이터 손실을 허용할 수 있는 최대 허용 시점입니다. '얼마까지의 데이터를 잃어도 되는가'에 대한 목표입니다.",
+    "characteristics": [
+      "**RTO (Recovery Time Objective)**:"
+    ],
+    "relatedTopics": [
+      "bcp-drp-001",
+      "cyber-resilience-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "제로 RTO/RPO",
+      "클라우드 기반 DR",
+      "CDP (Continuous Data Protection)"
+    ]
+  },
+  {
+    "id": "rpa-001",
+    "title": "RPA (Robotic Process Automation)",
+    "category": "management-focus",
+    "subcategory": "IT 운영",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "RPA",
+      "로봇 프로세스 자동화",
+      "업무 자동화",
+      "디지털 워커",
+      "가상 비서"
+    ],
+    "definition": "RPA(Robotic Process Automation)는 사람이 반복적으로 수행하는 규칙 기반의 업무 프로세스를 소프트웨어 로봇(Bot)을 통해 자동화하는 기술입니다. 기존 시스템의 UI를 그대로 활용하여 인간의 행동을 모방함으로써, 시스템 통합 없이 빠르고 효율적으로 업무를 자동화하여 생산성과 효율성을 높입니다.",
+    "characteristics": [
+      "**업무 자동화**: 정형화되고 반복적인 업무(데이터 입력, 파일 이동, 이메일 처리, 보고서 생성 등)를 소프트웨어 로봇이 자동으로 수행.",
+      "**비침습적 자동화**: 기존 IT 시스템의 API를 직접 연동하는 대신, 사용자 인터페이스(UI)를 통해 자동화를 구현하므로, 기존 시스템 변경 없이 적용 가능.",
+      "**디지털 워커 (Digital Worker)**: RPA 로봇은 가상 직원처럼 24시간 365일 업무 수행이 가능하며, 오류 없이 정확하게 작업 처리.",
+      "**주요 구성 요소**:"
+    ],
+    "relatedTopics": [
+      "process-innovation-001",
+      "ai-deep-learning-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "지능형 RPA (IPA)",
+      "데스크톱 프로세스 자동화 (DPA)",
+      "RPAaaS (RPA as a Service)"
+    ]
+  },
+  {
+    "id": "regulatory-sandbox-001",
+    "title": "규제 샌드박스 (Regulatory Sandbox)",
+    "category": "management-focus",
+    "subcategory": "IT 정책 및 규제",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "규제 샌드박스",
+      "신기술",
+      "규제 특례",
+      "실증 특례",
+      "임시 허가"
+    ],
+    "definition": "규제 샌드박스(Regulatory Sandbox)는 새로운 제품이나 서비스(주로 신기술 기반)가 기존 규제에 저촉되거나 규제가 불분명하여 시장 출시가 어려운 경우, 해당 기업에 대해 일정 기간 동안 기존 규제를 면제하거나 유예해주는 제도입니다. 마치 아이들이 모래밭(Sandbox)에서 자유롭게 놀듯이, 기업들이 규제 부담 없이 혁신적인 아이디어를 시험해볼 수 있도록 허용하는 것입니다.",
+    "characteristics": [
+      "**목표**: 신기술 및 신산업 분야의 혁신을 촉진하고, 규제 불확실성을 해소하여 기업의 시장 진입을 지원.",
+      "**주요 유형**:"
+    ],
+    "relatedTopics": [
+      "it-law-001",
+      "digital-transformation-ax-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "금융 규제 샌드박스 확대",
+      "인공지능 분야 규제 샌드박스",
+      "비대면 서비스 활성화"
+    ]
+  },
+  {
+    "id": "public-sw-procurement-001",
+    "title": "공공 SW 사업 발주 제도",
+    "category": "management-focus",
+    "subcategory": "IT 정책 및 규제",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "공공 SW",
+      "발주 제도",
+      "SW 진흥법",
+      "분리 발주",
+      "제안요청서",
+      "제안서"
+    ],
+    "definition": "공공 SW 사업 발주 제도는 국가, 지방자치단체, 공공기관 등이 소프트웨어 개발, 시스템 구축, 유지보수 등의 사업을 민간 기업에 위탁할 때 적용되는 일련의 법규, 절차, 기준을 의미합니다. 이는 공정하고 투명한 사업자 선정, SW 사업의 품질 확보, 그리고 SW 산업 진흥을 목적으로 합니다. '소프트웨어 진흥법'을 근거로 다양한 제도가 운영되고 있습니다.",
+    "characteristics": [
+      "**소프트웨어 진흥법**: 공공 SW 사업 발주 제도의 근간이 되는 법률로, SW 사업의 품질 향상 및 SW 산업 경쟁력 강화를 위한 다양한 내용을 포함합니다. (예: 적정 사업비 보장, 기술성 평가 강화, SW 분리 발주 의무화)",
+      "**주요 제도**:"
+    ],
+    "relatedTopics": [
+      "sw-separated-procurement-001",
+      "rfp-proposal-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "민간 주도형 SW 사업 확대",
+      "클라우드 서비스 우선 도입",
+      "애자일 방식 적용"
+    ]
+  },
+  {
+    "id": "patent-ip-001",
+    "title": "특허권 & 지식재산권 (IP)",
+    "category": "management-focus",
+    "subcategory": "지식재산권",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "특허권",
+      "지식재산권",
+      "IP",
+      "특허",
+      "상표",
+      "디자인",
+      "저작권"
+    ],
+    "definition": "지식재산권(Intellectual Property Rights, IP)은 인간의 지적 창작물에 대한 법적 보호 권리입니다. 특허권은 IP의 한 형태로, 발명에 대해 일정 기간 동안 독점적이고 배타적인 권리를 부여하여 발명가의 창작 의욕을 고취하고 기술 발전을 촉진합니다. IT 분야에서는 소프트웨어 특허, 비즈니스 모델 특허, 디자인 특허 등 다양한 형태로 IP가 중요하게 다루어집니다.",
+    "characteristics": [
+      "**지식재산권 (IP)**:"
+    ],
+    "relatedTopics": [
+      "business-strategy-001",
+      "it-law-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "AI 발명 특허 인정 여부",
+      "오픈소스 라이선스 관리",
+      "디지털 콘텐츠 저작권 보호"
+    ]
+  },
+  {
+    "id": "open-innovation-001",
+    "title": "오픈 이노베이션 (Open Innovation)",
+    "category": "management-focus",
+    "subcategory": "IT 경영 전략",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "오픈 이노베이션",
+      "외부 자원 활용",
+      "개방형 혁신",
+      "기술 제휴",
+      "크라우드 소싱"
+    ],
+    "definition": "오픈 이노베이션(Open Innovation)은 기업이 연구개발, 상품화 과정에서 외부의 아이디어, 기술, 자원 등을 적극적으로 활용하고, 내부의 혁신 자원을 외부와 공유함으로써 새로운 가치를 창출하고 혁신 효율성을 높이는 개방형 혁신 패러다임입니다. 이는 헨리 체스브로(Henry Chesbrough) 교수에 의해 제시되었습니다.",
+    "characteristics": [
+      "**외부 자원 활용**: 기업 내부의 한정된 자원과 역량에 의존하지 않고, 대학, 연구소, 스타트업, 고객, 심지어 경쟁사 등 외부의 다양한 아이디어와 기술을 도입합니다.",
+      "**내부 자원 공유**: 기업 내부에서 개발된 기술이나 아이디어를 외부와 공유하여 새로운 비즈니스 기회를 탐색하거나, 표준화를 통해 시장을 확대하기도 합니다.",
+      "**폐쇄형 혁신과의 대비**: 과거의 폐쇄형 혁신(Closed Innovation)이 모든 R&D 활동을 기업 내부에서 수행하는 것을 강조했다면, 오픈 이노베이션은 내외부의 경계를 허물고 지식 흐름을 촉진합니다.",
+      "**유형**:"
+    ],
+    "relatedTopics": [
+      "startup-methodologies-001",
+      "business-strategy-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "플랫폼 기반 오픈 이노베이션",
+      "API 경제",
+      "AI 기술 협력"
+    ]
+  },
+  {
     "id": "k-esg-guidelines-001",
     "title": "K-ESG 가이드라인",
     "category": "digital-service",
@@ -2487,6 +3086,147 @@
       "ESG 정보 공개 의무화",
       "ESG 평가 지표 고도화",
       "공급망 ESG 관리 강화"
+    ]
+  },
+  {
+    "id": "itsm-itil-001",
+    "title": "ITSM & ITIL v4",
+    "category": "management-focus",
+    "subcategory": "IT 서비스 관리",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "ITSM",
+      "ITIL",
+      "서비스 가치 시스템",
+      "서비스 가치 사슬",
+      "IT 서비스 관리"
+    ],
+    "definition": "ITSM(IT Service Management)은 IT를 기술 중심이 아닌 '서비스' 중심으로 관리하는 체계적인 접근 방식으로, 고객에게 가치를 제공하기 위한 IT 서비스의 설계, 제공, 지원, 개선 활동을 포괄합니다. ITIL(Information Technology Infrastructure Library)은 ITSM 구현을 위한 사실상 표준으로, ITIL v4는 서비스 가치 시스템(SVS)과 서비스 가치 사슬(SVC)을 중심으로 IT 서비스의 창출, 제공, 개선을 위한 포괄적인 지침을 제공합니다.",
+    "characteristics": [
+      "**ITSM (IT Service Management)**:"
+    ],
+    "relatedTopics": [
+      "it-governance-001",
+      "sla-slm-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "AIOps",
+      "Shift-Left",
+      "DevOps와 ITSM 통합"
+    ]
+  },
+  {
+    "id": "it-outsourcing-insourcing-001",
+    "title": "IT 아웃소싱 & 인소싱",
+    "category": "management-focus",
+    "subcategory": "IT 운영",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "IT 아웃소싱",
+      "IT 인소싱",
+      "핵심 역량",
+      "전문성",
+      "비용 효율성"
+    ],
+    "definition": "IT 아웃소싱(Outsourcing)은 기업 내부의 IT 기능이나 업무를 외부 전문 기업에 위탁하여 수행하게 하는 전략입니다. 반대로 인소싱(Insourcing)은 과거 아웃소싱했던 IT 기능이나 외부 위탁을 고려했던 기능을 다시 내부에서 직접 수행하는 것을 의미합니다. 두 방식 모두 기업의 IT 전략과 핵심 역량, 비용 효율성 등을 고려하여 선택됩니다.",
+    "characteristics": [
+      "**IT 아웃소싱 (IT Outsourcing)**:"
+    ],
+    "relatedTopics": [
+      "it-governance-001",
+      "public-sw-procurement-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "클라우드 기반 아웃소싱",
+      "지능형 자동화 아웃소싱 (IAO)",
+      "파트너십 기반 협력 모델"
+    ]
+  },
+  {
+    "id": "it-investment-evaluation-001",
+    "title": "IT 투자 성과 평가 (ROI, NPV, IRR)",
+    "category": "management-focus",
+    "subcategory": "IT 투자 관리",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "IT 투자",
+      "ROI",
+      "NPV",
+      "IRR",
+      "TCO",
+      "재무 타당성"
+    ],
+    "definition": "IT 투자 성과 평가는 기업이 IT 프로젝트에 투자한 자본이 얼마나 효율적이고 효과적으로 비즈니스 가치를 창출하는지를 분석하는 과정입니다. 이는 제한된 자원을 가장 효율적으로 배분하고, IT 투자의 정당성을 확보하며, 경영 의사결정을 지원하는 데 필수적입니다. ROI, NPV, IRR은 IT 투자의 재무적 타당성을 평가하는 대표적인 기법들입니다.",
+    "characteristics": [
+      "**평가 목적**:"
+    ],
+    "relatedTopics": [
+      "bsc-it-bsc-001",
+      "it-governance-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "AI 기반 투자 분석",
+      "클라우드 투자 성과 평가",
+      "비재무적 성과 평가 강화"
+    ]
+  },
+  {
+    "id": "it-governance-001",
+    "title": "IT 거버넌스 (ISO 38500, COBIT)",
+    "category": "management-focus",
+    "subcategory": "IT 거버넌스",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "IT 거버넌스",
+      "ISO 38500",
+      "COBIT",
+      "IT 전략",
+      "리스크 관리",
+      "IT 성과"
+    ],
+    "definition": "IT 거버넌스는 조직의 전반적인 거버넌스 체계의 필수적인 부분으로, IT가 조직의 목표를 달성하는 데 기여할 수 있도록 IT의 방향성을 설정하고, IT 자원과 프로세스를 효과적으로 통제하며, IT 리스크를 관리하는 활동을 의미합니다. ISO 38500과 COBIT은 IT 거버넌스 구현을 위한 대표적인 국제 표준 및 프레임워크입니다.",
+    "characteristics": [
+      "**목표**: IT 투자 가치 극대화, IT 리스크 최소화, IT를 통한 비즈니스 목표 달성 지원, 규제 준수.",
+      "**주요 영역**: IT 전략 정렬, IT 가치 전달, IT 리스크 관리, IT 자원 관리, IT 성과 측정.",
+      "**ISO 38500 (IT 거버넌스 국제 표준)**:"
+    ],
+    "relatedTopics": [
+      "ea-001",
+      "ax-esg-001",
+      "finops-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "AI 거버넌스",
+      "데이터 거버넌스",
+      "클라우드 거버넌스"
     ]
   },
   {
@@ -2594,6 +3334,42 @@
     ]
   },
   {
+    "id": "erp-001",
+    "title": "ERP (확장형 ERP)",
+    "category": "management-focus",
+    "subcategory": "경영 정보 시스템",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "ERP",
+      "전사적 자원 관리",
+      "확장형 ERP",
+      "SCM",
+      "CRM",
+      "MES"
+    ],
+    "definition": "ERP(Enterprise Resource Planning)는 기업의 재무, 회계, 생산, 구매, 판매, 인사 등 모든 업무 프로세스를 하나의 통합 시스템으로 관리하여 정보 흐름을 최적화하고 생산성을 높이는 전사적 자원 관리 시스템입니다. 확장형 ERP는 기존 ERP의 핵심 기능에 SCM(공급망 관리), CRM(고객 관계 관리), BI(비즈니스 인텔리전스) 등 외부 시스템 및 솔루션을 통합하여 기업 활동의 범위를 확장한 형태를 의미합니다.",
+    "characteristics": [
+      "**ERP의 핵심 기능**:"
+    ],
+    "relatedTopics": [
+      "bpm-pi-001",
+      "scm-vmi-001",
+      "crm-cem-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "클라우드 ERP",
+      "AI 기반 ERP",
+      "산업 특화 ERP"
+    ]
+  },
+  {
     "id": "ea-001",
     "title": "EA (Enterprise Architecture)",
     "category": "management-focus",
@@ -2658,6 +3434,260 @@
       "전사적 AI 도입",
       "AI 기반 초개인화 서비스",
       "AI 거버넌스"
+    ]
+  },
+  {
+    "id": "digital-platform-government-001",
+    "title": "디지털 플랫폼 정부 (DPG)",
+    "category": "management-focus",
+    "subcategory": "IT 정책 및 규제",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "디지털 플랫폼 정부",
+      "DPG",
+      "초개인화 서비스",
+      "AI",
+      "데이터",
+      "클라우드"
+    ],
+    "definition": "디지털 플랫폼 정부(DPG)는 모든 데이터가 연결되는 디지털 플랫폼 위에서 인공지능(AI)과 데이터 기반으로 국민, 기업, 정부가 함께 사회문제를 해결하고 새로운 가치를 창출하는 정부를 의미합니다. 단순히 정부 서비스를 디지털화하는 것을 넘어, 민관 협력을 통해 국민 체감형 서비스를 제공하고 정부 운영의 효율성을 극대화하는 것을 목표로 합니다.",
+    "characteristics": [
+      "**초연결 디지털 플랫폼**: 모든 정부 서비스와 데이터가 유기적으로 연동되는 디지털 기반을 구축합니다.",
+      "**AI-데이터 기반**: 인공지능과 빅데이터 분석을 통해 국민의 필요를 예측하고, 선제적이고 맞춤형 서비스를 제공합니다.",
+      "**민관 협력**: 정부 주도뿐만 아니라 민간의 혁신적인 아이디어와 기술을 적극 활용하여 다양한 서비스를 개발하고 제공합니다.",
+      "**주요 목표**:"
+    ],
+    "relatedTopics": [
+      "ax-esg-001",
+      "it-governance-001",
+      "digital-transformation-ax-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "AI 기반 행정 서비스",
+      "마이데이터 (MyData)",
+      "공공 서비스 자동화"
+    ]
+  },
+  {
+    "id": "design-thinking-001",
+    "title": "디자인 씽킹 (Design Thinking)",
+    "category": "management-focus",
+    "subcategory": "IT 경영 전략",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "디자인 씽킹",
+      "사용자 중심",
+      "공감",
+      "문제 정의",
+      "아이디어 발상",
+      "프로토타입"
+    ],
+    "definition": "디자인 씽킹(Design Thinking)은 디자이너가 문제 해결에 접근하는 방식에서 영감을 얻은 사용자 중심의 혁신 방법론입니다. 인간의 니즈를 깊이 이해하고, 문제 정의, 아이디어 발상, 프로토타입 제작, 테스트 과정을 반복하며 창의적이고 실용적인 해결책을 찾아냅니다. 이는 제품, 서비스, 프로세스, 비즈니스 모델 등 다양한 분야에서 활용됩니다.",
+    "characteristics": [
+      "**인간 중심 (Human-Centered)**: 사용자(고객)의 관점에서 문제를 파악하고 해결책을 모색하는 것이 핵심입니다. 사용자의 공감(Empathy)을 최우선으로 합니다.",
+      "**반복적이고 점진적인 프로세스**: 선형적이지 않고 유연하게 단계를 넘나들며 반복적인 피드백과 개선을 통해 해결책을 발전시킵니다.",
+      "**협업과 다양한 관점**: 다양한 배경을 가진 팀원들의 협업과 이질적인 관점의 결합을 통해 더 나은 아이디어를 도출합니다.",
+      "**주요 5단계 프로세스**:"
+    ],
+    "relatedTopics": [
+      "startup-methodologies-001",
+      "business-strategy-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "서비스 디자인",
+      "UX/UI 디자인",
+      "시스템 씽킹"
+    ]
+  },
+  {
+    "id": "data-valuation-001",
+    "title": "데이터 가치 평가",
+    "category": "management-focus",
+    "subcategory": "데이터 관리",
+    "subjectCategories": [
+      "IM",
+      "DS"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "데이터 가치",
+      "데이터 자산",
+      "데이터 경제",
+      "무형 자산 평가"
+    ],
+    "definition": "데이터 가치 평가는 기업이 보유하거나 활용하는 데이터가 창출하는 경제적, 비즈니스적 가치를 측정하고 분석하는 프로세스입니다. 데이터가 단순한 정보 자원을 넘어 기업의 핵심 자산이자 미래 성장의 동력으로 인식되면서, 데이터의 가치를 객관적으로 평가하는 방법론의 중요성이 증대되고 있습니다.",
+    "characteristics": [
+      "**평가 필요성**:"
+    ],
+    "relatedTopics": [
+      "data-governance-001",
+      "it-investment-evaluation-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "데이터 마켓플레이스 활성화",
+      "데이터 기반 기업 가치 평가",
+      "AI 기반 데이터 가치 분석"
+    ]
+  },
+  {
+    "id": "crm-cem-001",
+    "title": "CRM & CEM (고객 경험 관리)",
+    "category": "management-focus",
+    "subcategory": "고객 관계 관리",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "CRM",
+      "CEM",
+      "고객 관계 관리",
+      "고객 경험 관리",
+      "고객 생애 가치",
+      "고객 접점"
+    ],
+    "definition": "CRM(Customer Relationship Management)은 고객과의 관계를 관리하고 고객 데이터를 분석하여 고객 생애 가치(LTV)를 극대화하는 경영 전략이자 시스템입니다. CEM(Customer Experience Management)은 CRM의 발전된 형태로, 고객이 기업의 제품, 서비스, 브랜드와 상호작용하는 모든 접점에서 느끼는 총체적인 경험을 긍정적으로 설계하고 관리하는 데 중점을 둡니다.",
+    "characteristics": [
+      "**CRM (Customer Relationship Management)**:"
+    ],
+    "relatedTopics": [
+      "bigdata-platform-001",
+      "digital-transformation-ax-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "AI 기반 고객 경험 분석",
+      "개인화된 고객 여정",
+      "옴니채널 CEM"
+    ]
+  },
+  {
+    "id": "bsc-it-bsc-001",
+    "title": "BSC (균형성과표) & IT-BSC",
+    "category": "management-focus",
+    "subcategory": "IT 성과 관리",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "BSC",
+      "균형성과표",
+      "IT-BSC",
+      "성과 관리",
+      "재무 관점",
+      "고객 관점",
+      "내부 프로세스 관점",
+      "학습과 성장 관점"
+    ],
+    "definition": "BSC(Balanced Score Card, 균형성과표)는 로버트 캐플런과 데이비드 노튼이 개발한 성과 관리 프레임워크로, 기업의 성과를 단순히 재무적인 관점뿐만 아니라 고객, 내부 프로세스, 학습과 성장이라는 4가지 핵심 관점에서 균형 있게 측정하고 관리합니다. IT-BSC는 이러한 BSC 개념을 IT 조직 또는 IT 프로젝트의 성과 평가에 적용하여, IT 활동이 비즈니스 목표 달성에 어떻게 기여하는지 다각적으로 평가하는 도구입니다.",
+    "characteristics": [
+      "**BSC (Balanced Score Card)**:"
+    ],
+    "relatedTopics": [
+      "it-governance-001",
+      "it-investment-evaluation-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "ESG 성과지표 통합",
+      "OKR 연계",
+      "데이터 기반 성과 관리"
+    ]
+  },
+  {
+    "id": "bpm-pi-001",
+    "title": "BPM & PI (Process Innovation)",
+    "category": "management-focus",
+    "subcategory": "프로세스 혁신",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "BPM",
+      "PI",
+      "프로세스 혁신",
+      "BPR",
+      "프로세스 모델링",
+      "워크플로우"
+    ],
+    "definition": "BPM(Business Process Management)은 기업의 비즈니스 프로세스를 정의, 모델링, 실행, 모니터링, 최적화하는 전사적 관리 시스템입니다. PI(Process Innovation) 또는 BPR(Business Process Reengineering)은 기존 비즈니스 프로세스를 근본적으로 재설계하여 비용, 품질, 서비스, 속도 등 핵심적인 성과 지표를 획기적으로 향상시키는 활동을 의미하며, BPM은 이러한 PI를 지속적으로 지원하는 도구이자 방법론입니다.",
+    "characteristics": [
+      "**BPM (Business Process Management)**:"
+    ],
+    "relatedTopics": [
+      "erp-001",
+      "rpa-001"
+    ],
+    "importance": 4,
+    "trends": [
+      "지능형 BPM (iBPM)",
+      "로우코드/노코드 BPM",
+      "프로세스 마이닝"
+    ]
+  },
+  {
+    "id": "bcp-drp-001",
+    "title": "BCP & DRP (업무 연속성 계획)",
+    "category": "management-focus",
+    "subcategory": "IT 리스크 관리",
+    "subjectCategories": [
+      "IM",
+      "IS"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "BCP",
+      "DRP",
+      "업무 연속성",
+      "재해 복구",
+      "RTO",
+      "RPO"
+    ],
+    "definition": "BCP(Business Continuity Plan)는 재해나 비상사태 발생 시에도 핵심 비즈니스 기능을 최소한으로 유지하고, 정해진 시간 내에 정상적인 운영 상태로 복구하기 위한 포괄적인 계획입니다. DRP(Disaster Recovery Plan)는 BCP의 하위 개념으로, IT 시스템 및 인프라에 초점을 맞춰 재해 발생 시 정보 시스템을 복구하는 데 필요한 절차와 자원을 상세히 기술한 계획입니다.",
+    "characteristics": [
+      "**BCP (Business Continuity Plan)**:"
+    ],
+    "relatedTopics": [
+      "cyber-resilience-001",
+      "it-governance-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "클라우드 기반 BCP/DRP",
+      "사이버 레질리언스 통합",
+      "자동화된 재해 복구"
     ]
   },
   {
