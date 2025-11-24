@@ -1059,6 +1059,69 @@
     ]
   },
   {
+    "id": "project-5-processes-001",
+    "title": "프로젝트 5대 프로세스 (착수-기획-실행-감시및통제-종료)",
+    "category": "digital-service",
+    "subcategory": "프로젝트 관리 프로세스",
+    "subjectCategories": [
+      "PM"
+    ],
+    "difficulty": "intermediate",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "착수",
+      "기획",
+      "실행",
+      "감시 및 통제",
+      "종료",
+      "프로젝트 생애주기"
+    ],
+    "definition": "프로젝트 관리의 5대 프로세스 그룹은 프로젝트의 생애주기 동안 수행되는 프로젝트 관리 활동들을 논리적으로 분류한 것입니다. 이 5가지 프로세스 그룹(착수, 기획, 실행, 감시 및 통제, 종료)은 모든 프로젝트에서 반복적으로 또는 순차적으로 발생하며, 프로젝트의 성공적인 완수를 위한 체계적인 접근법을 제공합니다.",
+    "characteristics": [
+      "**착수 (Initiating)**:"
+    ],
+    "relatedTopics": [
+      "pmbok-7th-001",
+      "sdlc-001"
+    ],
+    "importance": 5
+  },
+  {
+    "id": "pmbok-7th-001",
+    "title": "PMBOK 7판 (12원칙, 8성과영역)",
+    "category": "digital-service",
+    "subcategory": "프로젝트 관리 방법론",
+    "subjectCategories": [
+      "PM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "PMBOK 7판",
+      "프로젝트 관리 원칙",
+      "프로젝트 성과 영역",
+      "가치 전달 시스템"
+    ],
+    "definition": "PMBOK(Project Management Body of Knowledge) 7판은 프로젝트 관리의 지식 체계를 '프로젝트 관리 원칙(12 Principles)'과 '프로젝트 성과 영역(8 Performance Domains)' 중심으로 재편한 가이드입니다. 전통적인 프로세스 중심에서 벗어나 프로젝트를 통해 '가치(Value)'를 지속적으로 전달하는 데 초점을 맞추고 있으며, 예측(Predictive), 애자일(Agile), 하이브리드(Hybrid) 등 다양한 접근 방식을 포괄합니다.",
+    "characteristics": [
+      "**12가지 프로젝트 관리 원칙 (Project Management Principles)**:"
+    ],
+    "relatedTopics": [
+      "pmbok-001",
+      "agile-devops-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "애자일/하이브리드 통합",
+      "가치 중심 접근",
+      "디지털 트랜스포메이션 시대의 PM"
+    ]
+  },
+  {
     "id": "pmbok-001",
     "title": "PMBOK (프로젝트 관리)",
     "category": "management-focus",
@@ -2424,6 +2487,41 @@
       "ESG 정보 공개 의무화",
       "ESG 평가 지표 고도화",
       "공급망 ESG 관리 강화"
+    ]
+  },
+  {
+    "id": "isp-ismp-001",
+    "title": "ISP & ISMP (정보화 전략 계획)",
+    "category": "management-focus",
+    "subcategory": "IT 전략",
+    "subjectCategories": [
+      "IM"
+    ],
+    "difficulty": "advanced",
+    "certifications": [
+      "information-management"
+    ],
+    "keywords": [
+      "ISP",
+      "ISMP",
+      "정보화 전략",
+      "중장기 계획",
+      "현행 분석",
+      "미래 모델"
+    ],
+    "definition": "ISP(Information Strategy Planning)는 조직의 비전과 목표 달성을 위한 정보 시스템 구축 및 활용의 중장기 전략을 수립하는 활동입니다. ISMP(Information System Master Plan)는 ISP의 결과로 도출된 전략을 구체적인 시스템 구현 계획으로 전환하는 마스터 플랜입니다. 두 가지 모두 조직의 IT 방향성을 설정하고 투자 효율성을 극대화하는 데 중요한 역할을 합니다.",
+    "characteristics": [
+      "**ISP (Information Strategy Planning)**:"
+    ],
+    "relatedTopics": [
+      "it-governance-001",
+      "ea-001"
+    ],
+    "importance": 5,
+    "trends": [
+      "디지털 트랜스포메이션 전략 수립",
+      "클라우드 전환 ISP",
+      "AI/빅데이터 기반 ISP"
     ]
   },
   {
