@@ -10,11 +10,11 @@ export default function Layout({ children }: LayoutProps) {
 
   const navItems = [
     { path: '/', label: '홈', icon: Home },
+    { path: '/exam-trends', label: '출제 경향', icon: TrendingUp },
     { path: '/topics', label: '토픽 위키', icon: BookOpen },
     { path: '/roadmap', label: '학습 로드맵', icon: Map },
     { path: '/mindmap', label: '마인드맵', icon: Network },
     { path: '/answer-examples', label: '답안 예시', icon: FileText },
-    { path: '/exam-trends', label: '출제 경향', icon: TrendingUp },
     { path: '/timer', label: '타이머', icon: TimerIcon },
   ];
 
