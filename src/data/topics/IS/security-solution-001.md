@@ -38,59 +38,39 @@ trends:
 - NAC (Network Access Control): 단말 인증 및 접근 제어
 - VPN: 암호화된 터널 통신, IPsec, SSL/TLS VPN
 
-## 최신 트렌드
-- SASE
-- Zero Trust Architecture
-- Cloud Security
-- XDR
-
-# 정의
-정보 시스템을 다양한 위협으로부터 보호하기 위한 하드웨어 및 소프트웨어 보안 솔루션입니다.
-
-## 특징
-- Firewall: 네트워크 경계 보호, 패킷 필터링, 상태 검사
-- IPS/IDS: 침입 방지/탐지 시스템, 시그니처 및 행위 기반 탐지
-- WAF (Web Application Firewall): 웹 공격 차단, OWASP Top 10 대응
-- NAC (Network Access Control): 단말 인증 및 접근 제어
-- VPN: 암호화된 터널 통신, IPsec, SSL/TLS VPN
-
-## 최신 트렌드
-- SASE
-- Zero Trust Architecture
-- Cloud Security
-- XDR
-
-# 정의
-정보 시스템을 다양한 위협으로부터 보호하기 위한 하드웨어 및 소프트웨어 보안 솔루션입니다.
-
-## 특징
-- Firewall: 네트워크 경계 보호, 패킷 필터링, 상태 검사
-- IPS/IDS: 침입 방지/탐지 시스템, 시그니처 및 행위 기반 탐지
-- WAF (Web Application Firewall): 웹 공격 차단, OWASP Top 10 대응
-- NAC (Network Access Control): 단말 인증 및 접근 제어
-- VPN: 암호화된 터널 통신, IPsec, SSL/TLS VPN
-
-## 최신 트렌드
-- SASE
-- Zero Trust Architecture
-- Cloud Security
-- XDR
-
-# 정의
-정보 시스템을 다양한 위협으로부터 보호하기 위한 하드웨어 및 소프트웨어 보안 솔루션입니다.
-
-## 특징
-- Firewall: 네트워크 경계 보호, 패킷 필터링, 상태 검사
-- IPS/IDS: 침입 방지/탐지 시스템, 시그니처 및 행위 기반 탐지
-- WAF (Web Application Firewall): 웹 공격 차단, OWASP Top 10 대응
-- NAC (Network Access Control): 단말 인증 및 접근 제어
-- VPN: 암호화된 터널 통신, IPsec, SSL/TLS VPN
-
-## 최신 트렌드
-- SASE
-- Zero Trust Architecture
-- Cloud Security
-- XDR
-
 ## 기술요소
-- [TODO: 기술요소 내용을 여기에 작성하세요.]
+다양한 보안 솔루션들은 정보 시스템을 무단 접근, 오용, 변경, 파괴로부터 보호하기 위해 각기 다른 계층에서 작동하는 핵심 기술 요소들입니다.
+
+-   **방화벽 (Firewall)**:
+    -   **역할**: 네트워크 경계에서 내부 네트워크로 유입되거나 외부로 나가는 트래픽을 모니터링하고 제어하는 보안 시스템. 외부의 침입을 막는 '문지기' 역할.
+    -   **기술**:
+        -   **패킷 필터링 방화벽**: IP 주소, 포트 번호, 프로토콜 등 네트워크 계층 정보를 기반으로 패킷을 허용하거나 차단.
+        -   **상태 기반 검사 방화벽 (Stateful Inspection Firewall)**: 세션 정보를 기억하여 현재 진행 중인 연결의 패킷만 허용하고, 비정상적인 연결은 차단.
+        -   **애플리케이션 계층 게이트웨이 (Proxy Firewall)**: 특정 애플리케이션 프로토콜(HTTP, FTP 등)에 대한 심층 검사를 수행.
+-   **침입 탐지 시스템 (IDS, Intrusion Detection System) / 침입 방지 시스템 (IPS, Intrusion Prevention System)**:
+    -   **IDS**: 네트워크 트래픽이나 시스템 로그를 분석하여 침입 행위를 '탐지'하고 관리자에게 알림. 수동적 방어.
+    -   **IPS**: IDS의 기능에 더해 탐지된 침입을 '자동으로 차단'하여 공격을 사전에 방지. 능동적 방어.
+    -   **기술**:
+        -   **시그니처 기반 (Signature-based)**: 알려진 공격 패턴(시그니처)과 일치하는 트래픽을 탐지/차단.
+        -   **행위 기반 (Behavior-based)**: 정상적인 네트워크 또는 시스템의 행위를 학습하여 벗어나는 비정상적인 행위를 탐지/차단.
+-   **웹 방화벽 (WAF, Web Application Firewall)**:
+    -   **역할**: 웹 애플리케이션으로 향하는 HTTP/HTTPS 트래픽을 전문적으로 분석하여 SQL Injection, XSS, CSRF 등과 같은 웹 기반 공격을 탐지하고 차단.
+    -   **특징**: OSI 7계층(애플리케이션 계층)에서 동작하며, OWASP Top 10과 같은 웹 취약점 대응에 특화.
+-   **네트워크 접근 제어 (NAC, Network Access Control)**:
+    -   **역할**: 네트워크에 접속하는 모든 단말(PC, 노트북, 모바일, IoT 장치 등)의 보안 정책 준수 여부를 확인하고, 인가된 단말만 네트워크에 접근하도록 통제하는 솔루션.
+    -   **기능**: 사용자 인증, 장치 인증, 보안 검역(백신 설치 여부, OS 패치 최신 여부 확인), 네트워크 세그먼트 할당.
+-   **가상 사설망 (VPN, Virtual Private Network)**:
+    -   **역할**: 공중망(인터넷)을 이용하여 사설 네트워크와 같은 보안 수준을 제공하는 기술. 데이터를 암호화하고 터널링하여 보안된 통신 채널을 구축.
+    -   **기술**: IPsec, SSL/TLS VPN.
+-   **보안 정보 및 이벤트 관리 (SIEM, Security Information and Event Management)**:
+    -   다양한 보안 장비와 시스템의 로그를 통합 수집, 분석하여 위협을 탐지하고 관리.
+-   **데이터 유출 방지 (DLP, Data Loss Prevention)**:
+    -   조직 내부의 중요 정보가 외부로 유출되는 것을 탐지하고 차단.
+
+이러한 보안 솔루션들은 상호 보완적으로 작동하여 다계층적인 방어 체계를 구축함으로써 정보 시스템의 기밀성, 무결성, 가용성을 종합적으로 보호합니다.
+
+## 최신 트렌드
+- SASE
+- Zero Trust Architecture
+- Cloud Security
+- XDR

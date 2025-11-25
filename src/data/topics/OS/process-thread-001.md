@@ -66,3 +66,9 @@ trends:
 - Resource Allocation Graph로 순환 대기 확인
 - 순환이 있으면 Deadlock 발생
 - 해결: 프로세스 종료 또는 자원 선점
+
+## 최신 트렌드
+- 코루틴(Coroutine)
+- Go의 고루틴
+- Async/Await 패턴
+- 경량 컨테이너

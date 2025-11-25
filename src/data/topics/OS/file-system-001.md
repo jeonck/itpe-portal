@@ -29,6 +29,15 @@ trends:
 # 정의
 디스크에 파일을 저장, 관리, 검색하는 체계로, 메타데이터와 데이터 블록을 효율적으로 구조화합니다.
 
+## 특징
+- Inode (Index Node): Unix/Linux 파일 메타데이터 (권한, 소유자, 크기, 블록 주소), 파일명은 디렉토리에 저장
+- FAT (File Allocation Table): MS-DOS/Windows, 간단한 구조, 플래시 메모리 호환
+- NTFS (New Technology FS): Windows, 저널링, ACL, 압축/암호화, 대용량 지원
+- EXT4 (Extended FS): Linux 표준, 저널링, Extent 기반, 최대 1EB 지원
+- Journaling: 메타데이터 변경 사항을 로그에 기록, 시스템 장애 시 복구 빠름
+- VFS (Virtual File System): OS가 다양한 파일 시스템을 통합 인터페이스로 제공
+- 최신 FS: Btrfs (CoW, 스냅샷), ZFS (데이터 무결성), XFS (대용량)
+
 ## 동작원리
 파일 시스템은 파일 접근과 메타데이터 관리를 다음과 같이 수행합니다:
 
@@ -70,15 +79,6 @@ FAT32 동작
 - FAT 테이블: 각 클러스터의 다음 클러스터 번호 저장
 - 파일 읽기: FAT 체인 따라가기
   - 예: 클러스터 2 → FAT[2]=3 → FAT[3]=4 → FAT[4]=EOF
-
-## 특징
-- Inode (Index Node): Unix/Linux 파일 메타데이터 (권한, 소유자, 크기, 블록 주소), 파일명은 디렉토리에 저장
-- FAT (File Allocation Table): MS-DOS/Windows, 간단한 구조, 플래시 메모리 호환
-- NTFS (New Technology FS): Windows, 저널링, ACL, 압축/암호화, 대용량 지원
-- EXT4 (Extended FS): Linux 표준, 저널링, Extent 기반, 최대 1EB 지원
-- Journaling: 메타데이터 변경 사항을 로그에 기록, 시스템 장애 시 복구 빠름
-- VFS (Virtual File System): OS가 다양한 파일 시스템을 통합 인터페이스로 제공
-- 최신 FS: Btrfs (CoW, 스냅샷), ZFS (데이터 무결성), XFS (대용량)
 
 ## 최신 트렌드
 - Copy-on-Write FS (Btrfs, ZFS)
