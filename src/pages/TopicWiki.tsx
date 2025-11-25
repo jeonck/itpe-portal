@@ -311,6 +311,14 @@ export default function TopicWiki() {
               </div>
             )}
 
+            {/* Procedure */}
+            {selectedTopic.procedure && (
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">절차</h3>
+                <p className="text-gray-700 leading-relaxed whitespace-pre-line">{selectedTopic.procedure}</p>
+              </div>
+            )}
+
             {/* Keywords */}
             <div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">키워드</h3>

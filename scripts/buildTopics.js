@@ -49,6 +49,10 @@ files.forEach((filePath) => { // 'file' -> 'filePath' since globSync returns ful
         .map(line => line.replace(/^-\s*/, '').trim())
     : null;
 
+  // 절차 추출 (## 절차)
+  const procedureMatch = content.match(/## 절차\n(.+?)(?=\n##|\n$)/s);
+  const procedure = procedureMatch ? procedureMatch[1].trim() : null;
+
   // 특징 추출
   const characteristicsMatch = content.match(/## 특징\n((?:- .+\n?)+)/);
   const characteristics = characteristicsMatch
@@ -72,6 +76,7 @@ files.forEach((filePath) => { // 'file' -> 'filePath' since globSync returns ful
     ...(technicalElements && { technicalElements }),
     ...(operatingPrinciple && { operatingPrinciple }),
     ...(functions && { functions }),
+    ...(procedure && { procedure }),
     characteristics,
     relatedTopics: data.relatedTopics || [],
     importance: data.importance,
