@@ -8890,6 +8890,7 @@
       "양자 알고리즘"
     ],
     "definition": "양자 컴퓨터는 양자 역학의 특성(중첩, 얽힘)을 활용하여 기존의 고전 컴퓨터가 해결하기 어려운 특정 문제들을 압도적으로 빠르게 풀 수 있는 차세대 컴퓨팅 기술입니다. 정보의 최소 단위인 큐비트(Qubit)를 사용하여 0과 1의 상태를 동시에 표현하고 상호작용함으로써, 기존 컴퓨터의 한계를 넘어서는 연산 능력을 제공합니다.",
+    "operatingPrinciple": "양자 컴퓨터는 양자 역학의 특성을 활용하여 정보를 처리하며, 그 핵심적인 동작 원리는 다음과 같습니다.\n\n1.  **큐비트 초기화 (Initialization)**:\n    -   큐비트는 일반적으로 $|0\\rangle$ 상태로 초기화됩니다. 이 상태는 양자 컴퓨팅의 시작점이며, 연산을 통해 다양한 중첩 상태로 변환됩니다.\n\n2.  **중첩 (Superposition)**:\n    -   **원리**: 큐비트에 양자 게이트(예: Hadamard 게이트)를 적용하면 큐비트는 $|0\\rangle$와 $|1\\rangle$ 상태의 선형 결합인 중첩 상태가 됩니다.\n    -   **효과**: `n`개의 큐비트가 중첩 상태에 있으면 `2^n`개의 모든 가능한 상태를 동시에 표현하고 연산할 수 있어, 고전 컴퓨터가 한 번에 하나의 상태만 처리하는 것과 비교할 수 없는 병렬성을 제공합니다.\n\n3.  **얽힘 (Entanglement)**:\n    -   **원리**: 두 개 이상의 큐비트를 얽힘 상태로 만들 수 있습니다(예: CNOT 게이트). 얽힌 큐비트들은 개별적으로 존재하지 않고 하나의 양자 시스템으로 묶여, 하나의 큐비트 상태가 측정되면 다른 큐비트의 상태도 즉시 결정됩니다.\n    -   **효과**: 얽힘은 큐비트 간의 강력한 상관관계를 생성하며, 이를 통해 복잡한 양자 알고리즘의 연산 능력을 극대화하고 고전 컴퓨터로는 불가능한 방식으로 정보를 처리할 수 있습니다.\n\n4.  **양자 게이트 연산 (Quantum Gate Operations)**:\n    -   **원리**: 큐비트의 상태를 조작하는 논리 게이트입니다. 고전 컴퓨터의 AND, OR, NOT 게이트와 유사하지만, 양자 게이트는 큐비트의 중첩 및 얽힘 상태를 변화시킬 수 있습니다.\n    -   **단일 큐비트 게이트**: Hadamard, Pauli-X, Y, Z 게이트 등. (예: Hadamard 게이트는 큐비트를 중첩 상태로 만듭니다.)\n    -   **다중 큐비트 게이트**: CNOT(Controlled-NOT), Toffoli 게이트 등. (얽힘 상태를 생성하거나 조작하는 데 사용됩니다.)\n    -   **양자 회로**: 일련의 양자 게이트들을 순차적으로 적용하여 특정 양자 알고리즘을 구현합니다.\n\n5.  **측정 (Measurement)**:\n    -   **원리**: 연산이 끝난 큐비트를 측정하면 큐비트의 중첩 상태가 붕괴(Collapse)되어 고전적인 0 또는 1의 상태 중 하나로 확정됩니다. 측정은 양자 컴퓨팅 연산의 최종 결과물을 얻는 과정입니다.\n    -   **확률론적 특성**: 중첩 상태의 큐비트는 측정 시 각 상태로 붕괴될 확률을 가집니다. 따라서 정확한 결과를 얻기 위해 여러 번의 측정이 필요할 수 있습니다.\n\n이러한 동작 원리를 통해 양자 컴퓨터는 특정 유형의 문제(예: 대규모 인수분해, 데이터베이스 탐색, 최적화 문제, 분자 모델링)에 대해 고전 컴퓨터보다 훨씬 뛰어난 성능을 발휘할 수 있습니다.",
     "characteristics": [
       "큐비트 (Qubit):"
     ],
@@ -8926,7 +8927,6 @@
       "AI 반도체"
     ],
     "definition": "PIM(Processing In Memory)은 중앙 처리 장치(CPU)와 메모리 간의 빈번한 데이터 이동으로 발생하는 병목 현상(폰노이만 병목)을 해결하기 위해 메모리 내부 또는 메모리 근처에서 연산을 수행하는 차세대 컴퓨팅 아키텍처입니다. PNM(Processing Near Memory)은 PIM의 한 형태로, 연산 유닛을 메모리 칩 가까이에 배치하여 데이터 이동 거리를 줄이는 기술을 포함합니다. AI 및 빅데이터 처리와 같이 대용량 데이터의 병렬 연산이 많은 작업에서 성능과 에너지 효율을 획기적으로 향상시킬 수 있습니다.",
-    "operatingPrinciple": "PIM/PNM은 데이터 이동을 최소화하여 폰노이만 병목을 해결합니다:\n\n폰노이만 병목 (Von Neumann Bottleneck)\n- 기존 구조: CPU ↔ 버스 ↔ 메모리 (데이터 이동 병목)\n- 문제점: 대량 데이터 처리 시 버스 대역폭이 한계\n- 예시: AI 모델 학습 시 가중치(Weight)를 메모리에서 반복 읽기\n\nPIM 동작 (HBM-PIM 예시)\n1) 명령 전달: CPU가 PIM에 연산 명령 전송\n2) 데이터 로컬 처리: HBM 내부 연산 유닛이 메모리 데이터 직접 접근\n3) 인메모리 연산: 데이터 이동 없이 메모리 내에서 MAC 연산 수행\n4) 결과 반환: 최종 결과만 CPU로 전송\n\n삼성 HBM-PIM 구조:\n- 각 HBM 채널에 연산 유닛(PE) 배치\n- 행렬-벡터 곱셈(GEMV) 가속\n- 16개 채널이 병렬로 연산\n- 전력 효율 2배, 성능 2배 향상\n\nPNM 동작\n- 메모리 칩 외부, 패키지 내부에 연산 유닛 배치\n- 메모리와 짧은 연결 (마이크로범프)\n- PIM보다 구현 용이, 유연성 높음",
     "characteristics": [
       "폰노이만 병목 (Von Neumann Bottleneck): CPU와 메모리가 분리되어 있어 데이터 처리 시 CPU와 메모리 간의 데이터 이동이 빈번하게 발생하고, 이로 인해 전체 시스템 성능 저하 및 에너지 소모 증가를 야기하는 현상.",
       "PIM (Processing In Memory):"
@@ -8964,7 +8964,6 @@
       "저전력 AI"
     ],
     "definition": "뉴로모픽 칩(Neuromorphic Chip)은 인간 뇌의 구조와 작동 방식을 모방하여 설계된 차세대 인공지능 반도체입니다. 폰노이만 구조의 컴퓨팅 한계(CPU와 메모리 간의 병목 현상)를 극복하고, 저전력으로 효율적인 병렬 연산을 수행하며, 특히 스파이킹 신경망(SNN) 기반의 학습 및 추론에 최적화되어 있습니다. 이는 엣지 디바이스에서의 AI 구현과 같은 분야에서 높은 잠재력을 가집니다.",
-    "operatingPrinciple": "뉴로모픽 칩은 뇌의 뉴런과 시냅스를 모방하여 동작합니다:\n\n스파이킹 뉴런 동작 (Leaky Integrate-and-Fire 모델)\n1) 입력 신호 수신: 시냅스를 통해 스파이크 신호 받음\n2) 막전위 누적: 뉴런 내부의 막전위(Membrane Potential)가 상승\n3) 누수(Leak): 시간이 지나면 막전위가 자연스럽게 감소\n4) 발화(Fire): 막전위가 임계값(Threshold) 초과 시 스파이크 발생\n5) 리셋: 막전위를 초기 상태로 리셋\n\n시냅스 가소성 (STDP: Spike-Timing-Dependent Plasticity)\n- 학습 메커니즘: 뉴런 간 연결 강도(Weight) 조정\n- Pre-Synaptic 뉴런이 Post-Synaptic 뉴런보다 먼저 발화 → 시냅스 강화\n- Post-Synaptic 뉴런이 먼저 발화 → 시냅스 약화\n- 생물학적 학습 방식 모방\n\n이벤트 기반 처리 (Event-Driven Processing)\n- 스파이크가 발생할 때만 연산 수행\n- 입력이 없으면 전력 소비 거의 없음\n- 비동기 통신: 클럭 없이 이벤트 발생 시에만 동작\n- 저전력 실시간 처리 구현",
     "characteristics": [
       "뇌 모방 아키텍처:"
     ],
@@ -9073,7 +9072,6 @@
       "PCIe"
     ],
     "definition": "CXL(Compute Express Link)은 CPU, GPU, FPGA, PIM 등 다양한 프로세서 및 메모리 장치 간의 고속, 저지연 연결을 위한 새로운 인터페이스 표준입니다. PCIe(Peripheral Component Interconnect Express) 기반으로 개발되었으며, 메모리 풀링(Memory Pooling) 및 공유 메모리(Memory Sharing) 기능을 통해 이기종 컴퓨팅 환경에서 데이터 이동 병목 현상을 해결하고 메모리 효율성 및 시스템 성능을 극대화하는 것을 목표로 합니다.",
-    "operatingPrinciple": "CXL은 3가지 프로토콜을 통해 CPU와 장치 간 통신을 지원합니다:\n\nCXL.io 프로토콜\n- PCIe 5.0 기반 I/O 프로토콜\n- 기존 PCIe 장치와 호환성 유지\n- 장치 초기화, 설정, 제어에 사용\n- Non-coherent 트랜잭션 (일반 I/O)\n\nCXL.cache 프로토콜\n- 가속기(Device)가 CPU의 메모리를 캐싱\n- Host-to-Device (H2D): CPU가 장치 메모리 접근\n- Device-to-Host (D2H): 장치가 CPU 메모리 접근\n- 캐시 일관성 유지 (Snoop 기반)\n- 예시: GPU가 CPU 메모리를 직접 캐싱\n\nCXL.mem 프로토콜\n- CPU가 CXL 장치의 메모리를 직접 접근\n- Memory Expander: CPU의 메모리 공간 확장\n- Load/Store 명령어로 접근 (DMA 불필요)\n- 주소 공간에 직접 매핑\n\n메모리 풀링 동작\n1) 여러 CXL 메모리 장치를 스위치에 연결\n2) 각 서버가 필요에 따라 메모리 할당\n3) Dynamic Capacity Device (DCD): 런타임 메모리 할당/해제\n4) 메모리 활용률 향상 (Stranded Memory 해결)",
     "characteristics": [
       "PCIe 기반: 기존 PCIe 물리 계층을 재활용하여 개발되었으므로, 새로운 하드웨어 인프라 구축 없이 기존 PCIe 환경에 통합이 용이합니다.",
       "메모리 일관성 (Memory Coherency):"
@@ -9110,7 +9108,6 @@
       "명령어 사이클"
     ],
     "definition": "컴퓨터 시스템의 하드웨어 구성과 동작 원리를 정의하는 체계로, CPU 구조와 명령어 처리 방식을 포함합니다.",
-    "operatingPrinciple": "CPU는 명령어 사이클과 파이프라인을 통해 명령어를 처리합니다:\n\n명령어 사이클 (Instruction Cycle)\n1) Fetch (인출): PC(Program Counter)가 가리키는 주소에서 명령어 가져옴\n2) Decode (해독): 명령어 디코더가 명령어를 분석하여 제어 신호 생성\n3) Execute (실행): ALU에서 연산 수행 또는 메모리 접근\n4) Write-back (쓰기): 결과를 레지스터나 메모리에 저장\n5) PC 업데이트: 다음 명령어 주소로 이동\n\n5단계 파이프라인 동작\n- 여러 명령어를 동시에 처리하여 처리량(Throughput) 향상\n- 각 단계가 독립적으로 다른 명령어 처리\n- 이상적으로 매 클럭마다 1개 명령어 완료 (CPI ≈ 1)\n\n예시:\n- 클럭 1: I1(Fetch)\n- 클럭 2: I1(Decode), I2(Fetch)\n- 클럭 3: I1(Execute), I2(Decode), I3(Fetch)\n- 클럭 4: I1(Memory), I2(Execute), I3(Decode), I4(Fetch)\n- 클럭 5: I1(Write), I2(Memory), I3(Execute), I4(Decode), I5(Fetch)\n\n파이프라인 해저드 해결\n- 데이터 해저드: Forwarding (Bypassing) - 이전 단계 결과를 직접 전달\n- 제어 해저드: Branch Prediction - 분기 결과 예측 및 추측 실행\n- 구조적 해저드: 하드웨어 자원 중복 (별도 명령어/데이터 캐시)",
     "characteristics": [
       "폰노이만 vs 하버드 아키텍처: 폰노이만은 명령어와 데이터가 같은 메모리/버스 사용(단순, 병목), 하버드는 명령어/데이터 메모리 분리(빠름, 복잡). 현대 CPU는 Modified Harvard (L1 캐시 분리, 메인 메모리 통합)",
       "파이프라인: Fetch(인출) → Decode(해독) → Execute(실행) → Memory(메모리 접근) → Write-back(쓰기) 5단계를 동시 처리하여 처리량 향상",
@@ -9186,7 +9183,6 @@
       "Cache Coherence"
     ],
     "definition": "CPU와 주기억장치 사이의 속도 차이를 해소하기 위한 고속 버퍼 메모리로, 지역성 원리를 활용하여 성능을 향상시킵니다.",
-    "operatingPrinciple": "캐시 메모리는 지역성 원리를 활용하여 CPU와 메모리 간 속도 차이를 해소합니다:\n\n지역성 원리 (Principle of Locality)\n- 시간 지역성 (Temporal Locality): 최근 접근한 데이터는 가까운 미래에 다시 접근할 가능성이 높음\n- 공간 지역성 (Spatial Locality): 접근한 데이터 근처의 데이터도 곧 접근할 가능성이 높음\n- 이를 활용하여 자주 사용되는 데이터를 캐시에 보관\n\n캐시 동작 과정\n1) CPU가 메모리 주소 요청\n2) 캐시 확인 (Tag 비교)\n3) Cache Hit: 캐시에 데이터 존재 → 즉시 반환\n4) Cache Miss: 캐시에 데이터 없음 → 메인 메모리 접근 → 캐시에 저장\n\nSet-Associative 매핑 동작\n1) 메모리 주소를 Tag, Index, Offset으로 분할\n2) Index로 캐시 Set 선택\n3) Set 내 모든 Way의 Tag와 비교 (병렬 비교)\n4) 일치하면 Hit, 불일치하면 Miss\n5) Miss 시 교체 알고리즘(LRU 등)으로 희생자 선택\n\nMESI 프로토콜 (Cache Coherence)\n- Modified: 수정됨, 다른 캐시에 없음, 메모리와 불일치\n- Exclusive: 유일하게 존재, 메모리와 일치\n- Shared: 여러 캐시에 공유, 읽기 전용\n- Invalid: 무효화됨\n- 버스 스누핑으로 다른 코어의 쓰기 감지 및 상태 전이",
     "characteristics": [
       "매핑 기법: 1) Direct Mapping - 각 블록이 하나의 캐시 라인에만 매핑(간단, 충돌 많음) 2) Fully Associative - 어느 라인에나 배치 가능(유연, 검색 느림) 3) Set-Associative - N-way(2, 4, 8-way 등), Direct와 Fully의 절충안",
       "교체 알고리즘: LRU(Least Recently Used, 가장 오래 사용 안함), FIFO(First In First Out), Random, LFU(Least Frequently Used)",
@@ -9227,7 +9223,6 @@
       "AI 가속기"
     ],
     "definition": "AI 반도체는 인공지능(AI) 연산에 특화되어 고성능, 저전력, 병렬 처리를 효율적으로 수행하도록 설계된 반도체입니다. CPU나 GPU와 같은 범용 프로세서의 한계를 극복하고 AI 모델의 학습 및 추론 속도를 가속화하여 AI 기술의 발전과 상용화를 이끄는 핵심 하드웨어 기술입니다. NPU, TPU, FPGA, ASIC 등이 대표적인 AI 반도체 유형입니다.",
-    "operatingPrinciple": "AI 반도체는 다음과 같은 방식으로 AI 연산을 가속화합니다:\n\n행렬 연산 가속 (Matrix Multiplication Acceleration)\n- AI 모델의 핵심 연산인 행렬 곱셈을 전용 하드웨어로 처리\n- Systolic Array: 2D 배열 형태의 PE(Processing Element)로 구성\n- 각 PE가 곱셈-덧셈(MAC, Multiply-Accumulate) 연산 수행\n- 데이터가 배열을 통해 흐르며 병렬 처리\n\nTPU의 Systolic Array 동작\n1) 가중치(Weight)를 각 PE에 미리 로드\n2) 입력 데이터가 위에서 아래로 흐름\n3) 부분 합(Partial Sum)이 왼쪽에서 오른쪽으로 전파\n4) 최종 결과가 오른쪽 끝에서 출력\n\n데이터 재사용 (Data Reuse)\n- 온칩 메모리(SRAM)에 데이터 캐싱\n- 외부 메모리 접근 최소화 (전력 소비 감소)\n- Weight Stationary, Output Stationary 등 최적화 기법\n\n저정밀도 연산 (Low-Precision Computing)\n- FP32 대신 INT8, FP16, BF16 사용\n- 정밀도는 낮지만 추론 성능은 유지\n- 하드웨어 비용 및 전력 소비 대폭 감소",
     "characteristics": [
       "목표: AI 모델 학습(Training) 및 추론(Inference)의 효율성 극대화 (속도, 전력 효율).",
       "NPU (Neural Processing Unit):"
@@ -9312,6 +9307,7 @@
       "Encoder-Decoder"
     ],
     "definition": "Self-Attention 메커니즘으로 시퀀스 전체의 관계를 병렬로 학습하는 혁신적인 신경망 아키텍처입니다.",
+    "operatingPrinciple": "Transformer는 Self-Attention으로 시퀀스 전체 관계를 병렬로 학습합니다:\n\n**1. Self-Attention**\n- Q, K, V 생성: Q = X×W_Q, K = X×W_K, V = X×W_V\n- Attention Score: Score = Q×K^T / √d_k\n- Attention Weights: softmax(Score)\n- Output: Attention_Weights × V\n\n**2. Multi-Head Attention**\n- 8개 head 병렬 수행: 다양한 관점 학습\n- Concat 후 선형 변환\n\n**3. Positional Encoding**\n- PE(pos,2i) = sin(pos/10000^(2i/d))\n- 입력 임베딩에 더해 위치 정보 부여\n\n**4. Encoder 구조**\n```\nInput + PE → Multi-Head Self-Attention → Add&Norm → FFN → Add&Norm (× N층)\n```\n\n**5. Decoder 구조**\n```\nOutput → Masked Self-Attention → Cross-Attention (Encoder) → FFN (× N층)\n```\n\n**6. FFN (Feed-Forward)**\n- Position-wise 독립 처리\n- FFN(x) = ReLU(x×W_1)×W_2\n\n**7. Masked Attention**\n- 미래 토큰 masking (-∞)\n- Auto-regressive 생성",
     "characteristics": [
       "\"Attention is All You Need\" (2017), RNN 없이 순차 데이터 처리",
       "Self-Attention: 입력 시퀀스 내 모든 위치 간 관계 계산",
@@ -9358,6 +9354,7 @@
       "Asymptotic Notation"
     ],
     "definition": "알고리즘의 효율성을 분석하는 척도로, 입력 크기에 따른 실행 시간과 메모리 사용량을 표기합니다.",
+    "procedure": "- 시간복잡도 분석 절차: 1) 알고리즘의 기본 연산 식별 (비교, 대입, 연산 등) → 2) 각 코드 블록의 실행 횟수 계산 → 3) 중첩 루프는 곱셈, 순차 코드는 덧셈으로 합산 → 4) 최고차항만 남기고 계수 제거 → 5) Big-O 표기법으로 표현\n- 공간복잡도 분석 절차: 1) 입력 데이터 크기 확인 → 2) 추가 메모리 사용량 계산 (변수, 배열, 재귀 스택 등) → 3) 입력 크기에 따른 메모리 증가 패턴 분석 → 4) Big-O 표기법으로 표현\n- 최악/평균/최선 케이스 분석: 1) 입력 데이터의 배치 상태에 따른 시나리오 식별 → 2) 각 케이스별 연산 횟수 계산 → 3) Big-O(최악), Big-Θ(평균), Big-Ω(최선) 표기\n- 알고리즘 비교: 1) 각 알고리즘의 시간/공간 복잡도 계산 → 2) 입력 크기별 성능 비교 → 3) 상황에 맞는 최적 알고리즘 선택",
     "characteristics": [
       "Big-O 표기법: 최악의 경우 성능, O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ) < O(n!)",
       "Big-Ω (Omega): 최선의 경우, Big-Θ (Theta): 평균의 경우",
@@ -9403,6 +9400,7 @@
       "Rabin-Karp"
     ],
     "definition": "텍스트에서 패턴을 효율적으로 찾는 문자열 검색 알고리즘입니다.",
+    "procedure": "**KMP (Knuth-Morris-Pratt) 알고리즘 절차**\n\n1단계: Failure Function (실패 함수) 구축\n```\n1) fail[0] = 0으로 초기화\n2) j = 0, i = 1부터 패턴 길이까지:\n   - pattern[i] == pattern[j]:\n     * fail[i] = j + 1\n     * i++, j++\n   - pattern[i] != pattern[j]:\n     * j가 0이 아니면 j = fail[j-1]로 이동\n     * j가 0이면 fail[i] = 0, i++\n```\n\n2단계: 패턴 매칭\n```\n1) i = 0 (텍스트 인덱스), j = 0 (패턴 인덱스)\n2) while i < 텍스트 길이:\n   - text[i] == pattern[j]:\n     * i++, j++\n     * if j == 패턴 길이:\n       → 패턴 발견 (위치: i-j)\n       → j = fail[j-1] (다음 매칭 계속)\n   - text[i] != pattern[j]:\n     * j가 0이 아니면: j = fail[j-1]\n     * j가 0이면: i++\n```\n\n**Boyer-Moore 알고리즘 절차**\n\n1단계: Bad Character Table 생성\n```\n1) 모든 문자의 이동 거리를 패턴 길이로 초기화\n2) 패턴의 각 문자에 대해:\n   badChar[pattern[i]] = 패턴 길이 - i - 1\n```\n\n2단계: 뒤에서부터 비교\n```\n1) i = 0 (텍스트 시작 위치)\n2) while i <= 텍스트 길이 - 패턴 길이:\n   - j = 패턴 길이 - 1 (뒤에서부터)\n   - while j >= 0 and pattern[j] == text[i+j]:\n     * j--\n   - if j < 0:\n     → 패턴 발견\n   - else:\n     → i += max(1, j - badChar[text[i+j]])\n```\n\n**Rabin-Karp 알고리즘 절차**\n\n1단계: 해시 값 계산\n```\n1) 패턴의 해시 값 계산:\n   hash_p = 0\n   for i in 0 to m-1:\n     hash_p = (hash_p * d + pattern[i]) % q\n   (d=진법, q=소수)\n\n2) 텍스트 첫 윈도우 해시 값 계산:\n   hash_t = 0\n   for i in 0 to m-1:\n     hash_t = (hash_t * d + text[i]) % q\n```\n\n2단계: Rolling Hash로 비교\n```\n1) for i in 0 to n-m:\n   - if hash_p == hash_t:\n     * 실제 문자열 비교 (해시 충돌 확인)\n     * 일치하면 패턴 발견\n\n   - 다음 윈도우 해시 계산 (Rolling Hash):\n     * hash_t = (d * (hash_t - text[i] * h) + text[i+m]) % q\n     * h = d^(m-1) % q\n```\n\n**Aho-Corasick (다중 패턴 매칭) 절차**\n\n1단계: Trie 구축\n```\n1) 모든 패턴을 Trie에 삽입\n2) 각 패턴의 끝 노드 표시\n```\n\n2단계: Failure Link 구축\n```\n1) BFS로 Trie 순회\n2) 각 노드의 failure link 설정:\n   - 현재 경로의 가장 긴 접미사가 Trie에 존재하는 노드로 연결\n```\n\n3단계: 텍스트 스캔\n```\n1) 현재 노드 = 루트\n2) 텍스트의 각 문자에 대해:\n   - 자식 노드 존재: 이동\n   - 자식 노드 없음: failure link 따라 이동\n   - 패턴 끝 노드 도달 시 매칭 발견\n```",
     "characteristics": [
       "Naive 알고리즘: 모든 위치에서 비교, O(nm), n=텍스트 길이, m=패턴 길이",
       "KMP (Knuth-Morris-Pratt): 실패 함수로 불필요한 비교 생략, O(n+m)",
@@ -9448,6 +9446,7 @@
       "NLP"
     ],
     "definition": "시퀀스 데이터의 시간적 의존성을 학습하는 순환 신경망으로, 자연어와 시계열 처리에 사용됩니다.",
+    "operatingPrinciple": "**1. RNN 기본**\n- h_t = tanh(W_h × h_(t-1) + W_x × x_t)\n- 이전 상태 h_(t-1)과 현재 입력 x_t 결합\n- Vanishing Gradient: 긴 시퀀스에서 초기 정보 소실\n\n**2. LSTM Gate 메커니즘**\n- Forget Gate: f_t = σ(W_f×[h_(t-1), x_t]), 무엇을 잊을지\n- Input Gate: i_t = σ(W_i×[h_(t-1), x_t]), 무엇을 저장할지\n- Cell State: C_t = f_t⊙C_(t-1) + i_t⊙tanh(W_C×[h_(t-1), x_t])\n- Output Gate: o_t = σ(W_o×[h_(t-1), x_t]), h_t = o_t⊙tanh(C_t)\n- Cell State로 장기 기억 유지, Gate로 정보 흐름 제어\n\n**3. GRU**\n- Reset/Update Gate 2개\n- h_t = (1-z_t)⊙h_(t-1) + z_t⊙tanh(W×[r_t⊙h_(t-1), x_t])\n\n**4. Bidirectional RNN**\n- Forward (과거→현재) + Backward (미래→현재)\n- 출력 = [Forward; Backward] Concat",
     "characteristics": [
       "RNN (Recurrent Neural Network): 이전 상태를 현재 입력에 반영, 순환 구조",
       "문제점: Vanishing Gradient (기울기 소실), Long-term Dependency 학습 어려움",
@@ -9493,6 +9492,7 @@
       "Master Theorem"
     ],
     "definition": "함수가 자기 자신을 호출하는 재귀와, 문제를 작은 부분으로 나누어 해결하는 분할정복 기법입니다.",
+    "procedure": "- 재귀 함수 작성 절차: 1) 기저 조건(Base Case) 정의 → 2) 재귀 케이스에서 문제를 더 작은 하위 문제로 분해 → 3) 하위 문제 해결을 위해 자기 자신 호출 → 4) 하위 문제 결과를 결합하여 반환\n- Merge Sort 절차: 1) 배열을 절반으로 분할 (Divide) → 2) 각 부분을 재귀적으로 정렬 (Conquer) → 3) 정렬된 두 부분을 병합 (Combine, 두 포인터로 비교하며 합침) → 4) 크기 1이 될 때까지 반복\n- Quick Sort 절차: 1) Pivot 선택 (보통 마지막 원소) → 2) Partition: Pivot보다 작은 원소는 왼쪽, 큰 원소는 오른쪽으로 배치 → 3) Pivot의 최종 위치 확정 → 4) 왼쪽과 오른쪽 부분을 재귀적으로 정렬\n- Binary Search 절차: 1) 정렬된 배열의 중간 원소 선택 → 2) 찾는 값과 중간 원소 비교 → 3) 같으면 반환, 작으면 왼쪽 절반에서 재귀, 크면 오른쪽 절반에서 재귀 → 4) 범위가 없어지면 없음 반환\n- 분할정복 일반 절차: Divide (문제 분할) → Conquer (재귀 해결) → Combine (결과 결합)",
     "characteristics": [
       "재귀 (Recursion): 함수가 자기 자신을 호출, 기저 조건(Base Case) 필수",
       "재귀 구조: Base Case + Recursive Case",
@@ -9584,6 +9584,7 @@
       "Dijkstra"
     ],
     "definition": "매 단계에서 현재 최선의 선택을 하여 전체 최적해를 구하는 알고리즘 설계 기법입니다.",
+    "procedure": "탐욕 알고리즘 설계 및 적용 단계:\n\n**1. 문제 이해 및 조건 확인**\n- Greedy Choice Property: 매 순간의 최선의 선택이 전체 최적해로 이어지는가?\n- Optimal Substructure: 부분 문제의 최적해가 전체 문제의 최적해를 구성하는가?\n\n**2. 선택 기준 정의 (Selection Criteria)**\n- 매 단계에서 무엇을 기준으로 선택할지 결정\n- 예: Activity Selection → 종료 시간이 가장 빠른 활동\n- 예: Dijkstra → 현재까지 거리가 가장 짧은 정점\n- 예: Huffman Coding → 빈도가 가장 낮은 두 노드\n\n**3. 탐욕 선택 수행**\n- 현재 상태에서 지역적 최적 선택\n- 선택한 항목은 해에 포함\n- 선택한 항목과 관련된 부분 문제로 축소\n\n**4. 다음 단계로 진행**\n- 축소된 문제에 대해 동일한 방식 반복\n- 더 이상 선택할 수 없을 때까지 계속\n\n**5. 정당성 증명 (선택적)**\n- Exchange Argument: Greedy 해를 최적해로 교환 가능함을 증명\n- Induction: 귀납법으로 각 단계의 선택이 올바름을 증명\n\n**대표 예제: Activity Selection (활동 선택)**\n```\n1) 활동을 종료 시간 기준으로 정렬\n2) 첫 번째 활동 선택\n3) 선택한 활동과 겹치지 않는 활동 중 종료 시간이 가장 빠른 것 선택\n4) 3번 반복\n```\n\n**대표 예제: Dijkstra 최단 경로**\n```\n1) 시작 정점의 거리를 0으로, 나머지는 ∞로 초기화\n2) 방문하지 않은 정점 중 거리가 가장 짧은 정점 선택\n3) 선택한 정점을 거쳐 가는 경로로 거리 업데이트\n4) 모든 정점을 방문할 때까지 2-3 반복\n```",
     "characteristics": [
       "핵심: 매 순간 지역적 최적 선택 (Local Optimal) → 전역 최적 (Global Optimal)",
       "조건: Greedy Choice Property (탐욕 선택 속성), Optimal Substructure (최적 부분 구조)",
@@ -9630,6 +9631,7 @@
       "MST"
     ],
     "definition": "그래프 자료구조에서 탐색, 최단 경로, 최소 신장 트리를 구하는 핵심 알고리즘들입니다.",
+    "procedure": "**BFS (너비 우선 탐색) 절차**\n```\n1) 시작 정점을 큐에 삽입하고 방문 표시\n2) 큐에서 정점 v를 꺼냄\n3) v의 인접 정점 중 미방문 정점을 모두 큐에 삽입하고 방문 표시\n4) 큐가 빌 때까지 2-3 반복\n```\n\n**DFS (깊이 우선 탐색) 절차**\n```\n재귀 방식:\n1) 현재 정점 v를 방문 표시\n2) v의 인접 정점 중 미방문 정점에 대해 DFS 재귀 호출\n3) 모든 인접 정점 처리 완료 시 종료\n\n스택 방식:\n1) 시작 정점을 스택에 삽입\n2) 스택에서 정점을 꺼내 방문 표시\n3) 인접한 미방문 정점들을 스택에 삽입\n4) 스택이 빌 때까지 반복\n```\n\n**Dijkstra 최단 경로 절차**\n```\n1) 시작 정점의 거리를 0, 나머지는 ∞로 초기화\n2) 우선순위 큐에 (거리, 시작 정점) 삽입\n3) 큐에서 거리가 가장 짧은 정점 u 추출\n4) u의 인접 정점 v에 대해:\n   if dist[u] + weight(u,v) < dist[v]:\n     dist[v] = dist[u] + weight(u,v)\n     큐에 (dist[v], v) 삽입\n5) 큐가 빌 때까지 3-4 반복\n```\n\n**Bellman-Ford 절차**\n```\n1) 시작 정점의 거리를 0, 나머지는 ∞로 초기화\n2) V-1번 반복:\n   모든 간선 (u,v)에 대해:\n     if dist[u] + weight(u,v) < dist[v]:\n       dist[v] = dist[u] + weight(u,v)\n3) 음수 사이클 확인: 한 번 더 갱신되면 음수 사이클 존재\n```\n\n**Floyd-Warshall 모든 쌍 최단 경로 절차**\n```\n1) dist[i][j] 초기화:\n   - i == j: 0\n   - 간선 존재: weight(i,j)\n   - 간선 없음: ∞\n2) k = 1 to V:\n     i = 1 to V:\n       j = 1 to V:\n         dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])\n```\n\n**Kruskal MST 절차**\n```\n1) 모든 간선을 가중치 기준 오름차순 정렬\n2) 각 정점을 독립적인 집합으로 초기화 (Union-Find)\n3) 정렬된 간선 순서대로:\n   - 간선 (u,v)가 사이클을 만들지 않으면 (Find(u) ≠ Find(v)):\n     - MST에 추가\n     - Union(u, v)\n4) V-1개 간선 선택 시 종료\n```\n\n**Prim MST 절차**\n```\n1) 임의의 시작 정점을 MST에 포함\n2) MST에 포함된 정점과 연결된 간선 중 최소 가중치 간선 선택\n3) 선택한 간선으로 연결된 새 정점을 MST에 추가\n4) V-1개 간선 선택할 때까지 2-3 반복\n```",
     "characteristics": [
       "BFS (너비 우선 탐색): 큐 사용, 최단 거리 (가중치 없음), O(V+E)",
       "DFS (깊이 우선 탐색): 스택/재귀, 연결 요소, 사이클 탐지, O(V+E)",
@@ -9676,6 +9678,7 @@
       "Optimizer"
     ],
     "definition": "손실 함수를 최소화하기 위해 가중치를 업데이트하는 최적화 알고리즘과 신경망 학습의 핵심 기법입니다.",
+    "operatingPrinciple": "- 순전파 (Forward Pass): 입력 데이터를 신경망에 통과시켜 예측값 계산\n- 손실 계산: 예측값과 실제값의 차이를 손실 함수로 측정 (MSE, Cross-Entropy 등)\n- 역전파 (Backward Pass): Chain Rule을 사용해 출력층부터 입력층으로 기울기 계산\n- 가중치 갱신: 계산된 기울기를 사용하여 θ = θ - α∇J(θ) 공식으로 파라미터 업데이트\n- Optimizer 적용: SGD, Momentum, Adam 등의 최적화 알고리즘으로 학습률 조정 및 수렴 가속화\n- 반복 학습: 여러 에폭(epoch)에 걸쳐 위 과정을 반복하여 손실 함수 최소화\n- 수렴 조건: 손실이 더 이상 감소하지 않거나 검증 성능이 포화될 때 학습 종료",
     "characteristics": [
       "경사하강법 (Gradient Descent): 손실 함수의 기울기 반대 방향으로 이동",
       "수식: θ = θ - α∇J(θ), α=학습률, ∇J=기울기",
@@ -9767,6 +9770,7 @@
       "Stacking"
     ],
     "definition": "여러 약한 학습기를 결합하여 강력한 예측 모델을 만드는 기법입니다.",
+    "operatingPrinciple": "- Bagging 동작: 1) Bootstrap Sampling으로 여러 학습 데이터셋 생성 (중복 허용 무작위 추출) → 2) 각 데이터셋으로 독립적인 모델 학습 → 3) 예측 시 모든 모델의 결과를 평균(회귀) 또는 다수결 투표(분류)로 결합\n- Random Forest 동작: 1) Bootstrap으로 데이터 샘플링 → 2) 각 노드 분할 시 전체 특징 중 일부만 무작위 선택 → 3) 선택된 특징에서 최적 분할 수행 → 4) 여러 트리 생성 후 결과 집계\n- Boosting 동작: 1) 초기 모델로 예측 → 2) 오분류 샘플의 가중치 증가 → 3) 가중치가 높은 샘플에 집중하여 다음 모델 학습 → 4) 순차적으로 모델 추가하며 오류 수정 → 5) 가중 평균으로 최종 예측\n- Gradient Boosting 동작: 1) 초기 예측값 설정 → 2) 실제값과 예측값의 잔차(residual) 계산 → 3) 잔차를 타겟으로 새로운 모델 학습 → 4) 학습률을 곱해 예측값에 추가 → 5) 반복하여 잔차 최소화\n- Stacking 동작: 1) 1차 모델들(base learners)로 예측 → 2) 1차 모델들의 예측값을 새로운 특징으로 사용 → 3) Meta-learner가 이 예측값들을 학습하여 최종 예측",
     "characteristics": [
       "장점: 과적합 감소, 정확도 향상, 안정성",
       "Bagging (Bootstrap Aggregating): 병렬, 무작위 샘플링, 평균/투표",
@@ -9813,6 +9817,7 @@
       "Optimal Substructure"
     ],
     "definition": "큰 문제를 작은 부분 문제로 나누고, 중복 계산을 메모이제이션으로 피하여 최적해를 구하는 기법입니다.",
+    "procedure": "동적 계획법 문제 해결은 다음 단계를 따릅니다:\n\n**1. 문제 분석 및 조건 확인**\n- Optimal Substructure: 큰 문제의 최적해가 작은 문제의 최적해로 구성되는가?\n- Overlapping Subproblems: 동일한 부분 문제가 반복적으로 계산되는가?\n- 두 조건이 모두 만족되면 DP 적용 가능\n\n**2. 상태 정의 (State Definition)**\n- dp[i]: i번째 상태의 최적값 정의\n- 예: 피보나치 → dp[i] = i번째 피보나치 수\n- 예: 배낭 문제 → dp[i][w] = i번째 물건까지 고려, 무게 w일 때 최대 가치\n\n**3. 점화식 수립 (Recurrence Relation)**\n- 현재 상태를 이전 상태로 표현\n- 예: 피보나치 → dp[i] = dp[i-1] + dp[i-2]\n- 예: LCS → dp[i][j] = dp[i-1][j-1] + 1 (문자 일치 시)\n\n**4. 초기값 설정 (Base Case)**\n- 가장 작은 문제의 해를 직접 정의\n- 예: dp[0] = 0, dp[1] = 1 (피보나치)\n\n**5. 구현 방식 선택**\n\nTop-Down (Memoization):\n```\nmemo = {}\nfunction fib(n):\n  if n in memo: return memo[n]\n  if n <= 1: return n\n  memo[n] = fib(n-1) + fib(n-2)\n  return memo[n]\n```\n\nBottom-Up (Tabulation):\n```\ndp = [0] * (n+1)\ndp[1] = 1\nfor i in range(2, n+1):\n  dp[i] = dp[i-1] + dp[i-2]\nreturn dp[n]\n```\n\n**6. 시간/공간 복잡도 분석**\n- 시간: 부분 문제 개수 × 각 문제 해결 시간\n- 공간: 메모이제이션 배열 크기 (최적화 가능)",
     "characteristics": [
       "두 가지 조건: Optimal Substructure (최적 부분 구조), Overlapping Subproblems (중복 부분 문제)",
       "Top-Down (Memoization): 재귀 + 캐싱, 필요한 부분만 계산",
@@ -9949,6 +9954,16 @@
     ],
     "mnemonic": "선트그",
     "definition": "데이터를 효율적으로 저장하고 접근하기 위한 구조로, 각 자료구조는 특정 연산에 최적화되어 있습니다.",
+    "technicalElements": [
+      "Stack 연산: Push(삽입), Pop(삭제 및 반환), Peek(조회), isEmpty, 배열 또는 연결 리스트로 구현",
+      "Queue 연산: Enqueue(삽입), Dequeue(삭제 및 반환), Front(조회), Circular Queue(원형 큐)로 효율적 구현",
+      "Linked List 연산: 노드 삽입(맨 앞/중간/맨 뒤), 노드 삭제, 탐색, 역순 변환, Sentinel Node로 경계 처리",
+      "Tree 순회: Preorder(전위), Inorder(중위), Postorder(후위), Level-order(레벨 순회)",
+      "BST 연산: Search(탐색), Insert(삽입, 리프까지 탐색 후 추가), Delete(삭제, 3가지 케이스 처리)",
+      "Heap 연산: Insert(삽입 후 상향 조정), ExtractMax/Min(루트 제거 후 하향 조정), Heapify(배열을 힙으로 변환)",
+      "Hash Table 충돌 처리: Chaining(연결 리스트로 충돌 항목 저장), Open Addressing(Linear/Quadratic Probing, Double Hashing)",
+      "Graph 순회: DFS(스택/재귀, 경로 탐색), BFS(큐, 최단 거리)"
+    ],
     "characteristics": [
       "선형 자료구조: Stack(LIFO, push/pop O(1), 함수 호출, 괄호 검사), Queue(FIFO, enqueue/dequeue O(1), BFS, 스케줄링), Linked List(동적 크기, 삽입/삭제 O(1), 탐색 O(n), 단방향/양방향/원형)",
       "트리(Tree): 계층 구조. Binary Tree(이진 트리), BST(Binary Search Tree, 탐색/삽입/삭제 평균 O(log n), 최악 O(n)), AVL/Red-Black Tree(균형 이진 탐색 트리, O(log n) 보장), Heap(완전 이진 트리, 우선순위 큐), B-Tree(DB 인덱스)",
@@ -9987,6 +10002,7 @@
       "Entropy Encoding"
     ],
     "definition": "데이터를 효율적으로 저장하고 전송하기 위해 크기를 줄이는 압축 알고리즘입니다.",
+    "procedure": "- Huffman Coding 절차: 1) 각 문자의 빈도수 계산 → 2) 빈도수 기반 우선순위 큐 생성 → 3) 가장 낮은 빈도 2개 노드를 꺼내 부모 노드 생성 → 4) 모든 노드가 하나의 트리가 될 때까지 반복 → 5) 트리 순회하며 각 문자에 이진 코드 할당 (왼쪽 0, 오른쪽 1) → 6) 할당된 코드로 원본 데이터 인코딩\n- LZW 압축 절차: 1) 초기 사전에 단일 문자 등록 → 2) 입력 스트림에서 가장 긴 일치 문자열 찾기 → 3) 사전 인덱스 출력 → 4) 일치 문자열 + 다음 문자를 새 항목으로 사전에 추가 → 5) 입력 끝까지 반복\n- LZW 압축 해제: 1) 초기 사전 복원 → 2) 인덱스를 읽어 문자열 출력 → 3) 이전 문자열 + 현재 문자열 첫 문자를 사전에 추가 → 4) 압축 데이터 끝까지 반복\n- 압축률 평가: 압축률 = (원본 크기 - 압축 크기) / 원본 크기 × 100%",
     "characteristics": [
       "Lossless (무손실): 원본 완전 복원, Lossy (손실): 일부 손실 허용",
       "Huffman Coding: 빈도 기반 가변 길이 인코딩, Greedy + Priority Queue",
@@ -10033,6 +10049,7 @@
       "Computer Vision"
     ],
     "definition": "이미지 데이터의 공간적 특징을 학습하는 합성곱 신경망으로, 컴퓨터 비전의 핵심 모델입니다.",
+    "operatingPrinciple": "CNN은 이미지의 공간적 구조를 보존하면서 특징을 추출하는 계층적 구조로 동작합니다:\n\n**1. Convolution Layer (합성곱 계층)**\n- 필터(커널) 슬라이딩: 3×3, 5×5 크기의 가중치 행렬을 이미지 위에서 이동\n- Convolution 연산: output[i][j] = Σ Σ input[i+m][j+n] × filter[m][n]\n- 가중치 공유 (Weight Sharing): 동일 필터를 전체 이미지에 적용, 파라미터 수 감소\n- Feature Map 생성: 각 필터가 특정 패턴(edge, corner, texture) 감지\n- 계층적 특징 추출: 얕은 층(low-level), 깊은 층(high-level) 특징\n\n**2. Activation Function**\n- ReLU(x) = max(0, x): 비선형성 추가\n- Vanishing Gradient 문제 완화\n- 음수 값 제거로 희소성 (Sparsity) 확보\n\n**3. Pooling Layer**\n- Max Pooling: 2×2 윈도우 내 최대값 선택\n- 효과: 차원 축소, 작은 변형에 강건, 계산량 감소\n- 위치 정보보다 특징 존재 여부 중시\n\n**4. Forward Propagation 흐름**\n```\nInput (32×32×3) → Conv+ReLU → Pooling → Conv+ReLU → Pooling → Flatten → FC → Softmax (분류)\n```\n\n**5. ResNet Skip Connection**\n- Residual Block: H(x) = F(x) + x\n- Skip Connection으로 Gradient 직접 전달\n- Vanishing Gradient 해결, 깊은 네트워크 (100+ 층) 학습 가능\n\n**6. 역전파 학습**\n- Forward: 예측값 계산\n- Loss: Cross-Entropy Loss\n- Backward: 기울기 역전파 (Pooling: Max 위치로만 전달, Conv: 필터 업데이트)\n- Optimizer: SGD, Adam으로 가중치 갱신",
     "characteristics": [
       "Convolution Layer: 필터(커널)로 특징 추출, 가중치 공유, 지역적 연결",
       "Pooling Layer: 다운샘플링, Max Pooling, Average Pooling, 차원 축소",
@@ -10124,6 +10141,7 @@
       "Decoder-only"
     ],
     "definition": "Transformer 기반의 두 대표적인 사전 학습 모델로, 양방향(BERT)과 단방향(GPT) 언어 이해 방식의 차이를 가집니다.",
+    "operatingPrinciple": "- BERT 내부 동작: 1) 입력 토큰을 임베딩 벡터로 변환 (Token + Position + Segment Embedding) → 2) 양방향 Transformer Encoder 레이어 통과 (Self-Attention으로 문맥 양방향 참조) → 3) MLM에서 [MASK] 토큰 예측, NSP에서 [CLS] 토큰으로 문장 관계 분류 → 4) 사전학습 후 downstream 태스크에 Fine-tuning\n- GPT 내부 동작: 1) 입력 토큰을 임베딩 (Token + Position Embedding) → 2) Masked Self-Attention을 사용하는 Decoder 레이어 통과 (왼쪽 토큰만 참조, 오른쪽 마스킹) → 3) 각 위치에서 다음 토큰 확률 분포 계산 → 4) Autoregressive 방식으로 한 토큰씩 생성\n- BERT Attention 메커니즘: 양방향 Self-Attention으로 모든 토큰이 서로를 참조하여 문맥 이해\n- GPT Attention 메커니즘: Causal Masking으로 현재 위치 이전 토큰만 참조하여 순차 생성\n- Fine-tuning vs Prompting: BERT는 태스크별 Fine-tuning 필요, GPT는 Prompt로 In-Context Learning 가능\n- RLHF 동작: 1) Pre-training → 2) Supervised Fine-tuning → 3) Reward Model 학습 (인간 선호도 학습) → 4) PPO로 강화학습 최적화",
     "characteristics": [
       "BERT (Bidirectional Encoder Representations from Transformers): Encoder-only, 양방향",
       "BERT 학습: Masked Language Model (MLM), 일부 단어 가림 → 예측",
@@ -10169,6 +10187,7 @@
       "DFS"
     ],
     "definition": "모든 가능한 경우를 탐색하되, 조건에 맞지 않으면 즉시 후퇴(backtrack)하여 불필요한 탐색을 줄이는 기법입니다.",
+    "procedure": "- 백트래킹 기본 절차: 1) 기저 조건 확인 (해를 찾았거나 더 이상 진행 불가) → 2) 현재 상태에서 가능한 선택지 탐색 → 3) 각 선택지에 대해 유효성 검사 수행 → 4) 유효하면 선택 적용 및 재귀 호출 → 5) 재귀 호출 후 선택 복원(backtrack) → 6) 모든 선택지 탐색 완료\n- N-Queens 적용 예시: 1) 빈 체스판에서 시작 → 2) 현재 행에서 각 열 위치 시도 → 3) 퀸 배치 시 같은 열, 대각선에 다른 퀸이 있는지 검사 → 4) 유효하면 퀸 배치 후 다음 행으로 재귀 → 5) N개 퀸을 모두 배치하면 해 발견 → 6) 실패 시 퀸 제거하고 다음 위치 시도\n- Sudoku 적용 예시: 1) 빈 칸 찾기 → 2) 1~9 숫자 시도 → 3) 같은 행/열/3x3 박스에 중복이 없는지 검사 → 4) 유효하면 숫자 배치 후 다음 빈 칸으로 재귀 → 5) 모든 칸이 채워지면 해 발견 → 6) 실패 시 숫자 제거하고 다음 숫자 시도\n- 가지치기 최적화: 조기에 불가능한 경로를 판단하여 재귀 깊이 감소",
     "characteristics": [
       "DFS 기반: 깊이 우선 탐색으로 모든 경우 탐색",
       "Pruning (가지치기): 조건 위배 시 즉시 중단, 탐색 공간 축소",
