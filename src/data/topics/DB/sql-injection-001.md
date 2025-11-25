@@ -41,6 +41,36 @@ tags:
 - 최소 권한 원칙: DB 계정 권한 최소화
 - WAF: 웹 방화벽으로 패턴 탐지 및 차단
 
-## 최신 트렌드
-- WAF (Web Application Firewall)
-- Runtime Application Self-Protection
+## 기술요소
+SQL Injection 공격을 방어하기 위한 주요 기술적 요소와 보안 대책은 다음과 같습니다.
+
+-   **Prepared Statement & Parameterized Query (준비된 구문 & 매개변수화된 쿼리)**:
+    -   **원리**: SQL 쿼리 템플릿과 사용자 입력을 분리하여 처리하는 가장 효과적인 방어 기법입니다. 쿼리 템플릿(SQL 문 구조)은 데이터베이스에 먼저 전송되어 컴파일되고, 이후 사용자 입력 값은 파라미터로 바인딩됩니다.
+    -   **Prepared Statement**: SQL 쿼리 자체를 먼저 데이터베이스에 '준비'시킨 후, 나중에 값을 채워 넣는 방식.
+    -   **Parameterized Query**: 사용자 입력 값을 쿼리 내의 '플레이스홀더(Placeholders)'에 바인딩하여 SQL 문법으로 해석되지 않고 단순히 데이터 값으로만 처리되도록 합니다.
+    -   **장점**: 사용자 입력이 SQL 구문으로 해석될 여지가 없어 SQL Injection 공격을 원천적으로 차단합니다.
+    -   **예시**: Java의 PreparedStatement, Python의 DB API (`cursor.execute("SELECT * FROM users WHERE username = %s", (username,))`)
+
+-   **ORM (Object-Relational Mapping)**:
+    -   **원리**: 객체 지향 언어의 객체와 관계형 데이터베이스의 테이블 간의 매핑을 통해 SQL 쿼리를 직접 작성하지 않고도 데이터를 조작할 수 있도록 돕는 기술입니다.
+    -   **방어 원리**: 대부분의 ORM(Hibernate, JPA, Django ORM, SQLAlchemy 등)은 내부적으로 Prepared Statement 방식을 사용하여 쿼리를 생성하므로, 개발자가 직접 SQL Injection에 취약한 쿼리를 작성할 가능성을 줄여줍니다.
+    -   **장점**: 개발 생산성 향상과 함께 SQL Injection 방어에 기여.
+
+-   **입력 값 검증 (Input Validation)**:
+    -   **원리**: 사용자로부터 입력받는 모든 데이터에 대해 애플리케이션 계층에서 유효성을 검증하여 악의적인 입력이나 예상치 못한 입력이 데이터베이스로 전달되는 것을 방지합니다.
+    -   **유형**:
+        -   **화이트리스트(Whitelist) 기반 검증**: 허용된 문자, 형식, 길이, 데이터 타입만을 정의하고 그 외의 입력은 모두 차단. (블랙리스트 기반 검증보다 안전)
+        -   **특수문자 필터링 또는 이스케이핑**: SQL 예약어나 특수 문자를 필터링하거나 안전한 문자로 변환(이스케이핑). Prepared Statement가 가장 좋지만, 불가피할 경우 사용.
+    -   **장점**: 공격 시도를 조기에 차단하여 시스템의 다른 부분에 대한 공격도 예방.
+
+-   **최소 권한 원칙 (Principle of Least Privilege)**:
+    -   데이터베이스 사용 계정에 최소한의 필요한 권한만을 부여합니다. (예: 웹 애플리케이션에서 사용하는 DB 계정에는 SELECT 권한만 부여하고, INSERT/UPDATE/DELETE 권한은 필요한 경우에만 부여)
+    -   SQL Injection이 발생하더라도 공격자가 획득할 수 있는 정보나 피해 범위를 최소화합니다.
+
+-   **웹 방화벽 (WAF, Web Application Firewall)**:
+    -   HTTP/HTTPS 트래픽을 모니터링하여 웹 공격 패턴(SQL Injection 패턴 포함)을 탐지하고 차단합니다. 애플리케이션 계층(L7)에서 동작하는 보안 솔루션입니다.
+
+-   **오류 메시지 최소화**:
+    -   웹 애플리케이션에서 SQL 관련 오류 메시지를 사용자에게 직접 노출하지 않도록 합니다. 오류 메시지에는 데이터베이스 스키마나 쿼리 구조 등 공격에 활용될 수 있는 민감 정보가 포함될 수 있기 때문입니다.
+
+이러한 기술 요소들을 복합적으로 적용하여 SQL Injection 공격을 효과적으로 방어할 수 있습니다.
