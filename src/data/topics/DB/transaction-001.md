@@ -1,25 +1,25 @@
 ---
-id: transaction-001
-title: 트랜잭션 (Transaction)
 category: fundamental
+certifications:
+- information-management
+- computer-systems
+difficulty: intermediate
+id: transaction-001
+importance: 5
+keywords:
+- ACID
+- 격리성 수준
+- 원자성
+- 일관성
+- 지속성
+relatedTopics:
+- db-normalization-001
+- index-001
+- nosql-001
 subcategory: 데이터베이스
 subjectCategories:
-  - DB
-difficulty: intermediate
-certifications:
-  - information-management
-  - computer-systems
-keywords:
-  - ACID
-  - 격리성 수준
-  - 원자성
-  - 일관성
-  - 지속성
-importance: 5
-relatedTopics:
-  - db-normalization-001
-  - index-001
-  - nosql-001
+- DB
+title: 트랜잭션 (Transaction)
 ---
 
 # 정의
@@ -52,3 +52,32 @@ relatedTopics:
 
 이러한 ACID 속성은 관계형 데이터베이스에서 데이터의 신뢰성을 보장하는 핵심 원칙입니다. 분산 환경에서는 이 속성을 유지하기 위한 2PC(Two-Phase Commit)나 Saga Pattern과 같은 별도의 메커니즘이 필요합니다.
 
+# 정의
+데이터베이스에서 하나의 논리적 작업 단위를 구성하는 연산들의 집합으로, ACID 특성을 보장해야 합니다.
+
+## 동작원리
+데이터베이스 트랜잭션은 다음과 같은 메커니즘을 통해 ACID 속성을 보장합니다.
+
+1.  원자성 (Atomicity):
+    -   원리: 트랜잭션 내의 모든 연산은 부분적으로만 성공할 수 없습니다. 모두 성공하거나, 모두 실패하여 롤백(Rollback)되어야 합니다.
+    -   구현: 로그(Log)를 사용하여 구현됩니다. 트랜잭션이 시작되면 모든 변경 사항은 먼저 로그에 기록됩니다. 트랜잭션이 성공적으로 완료되면 로그를 기반으로 데이터베이스에 반영(Commit)되고, 실패하면 로그의 이전 상태로 되돌립니다.
+    -   예시: 계좌 이체 시 출금과 입금 중 하나만 성공하는 것을 방지.
+
+2.  일관성 (Consistency):
+    -   원리: 트랜잭션이 성공적으로 완료되면 데이터베이스는 항상 일관된 상태를 유지해야 합니다. 즉, 미리 정의된 규칙(무결성 제약 조건, 비즈니스 규칙)을 위반하지 않아야 합니다.
+    -   구현: 트랜잭션이 데이터베이스의 무결성 제약 조건(Primary Key, Foreign Key, Check 등)을 위반하는 경우 해당 트랜잭션은 롤백됩니다. 애플리케이션 계층에서의 비즈니스 로직도 일관성 유지에 기여합니다.
+
+3.  격리성 (Isolation):
+    -   원리: 동시에 실행되는 여러 트랜잭션은 서로 영향을 주지 않고 독립적으로 수행되어야 합니다. 각 트랜잭션은 마치 시스템에서 혼자 실행되는 것처럼 동작합니다.
+    -   구현: Lock (잠금)을 사용하여 구현됩니다. 트랜잭션이 특정 데이터에 접근할 때 다른 트랜잭션의 접근을 막습니다. (Shared Lock, Exclusive Lock). MVCC(Multi-Version Concurrency Control)와 같은 동시성 제어 기법도 사용됩니다.
+    -   격리성 수준 (Isolation Level): SQL 표준은 트랜잭션 간의 데이터 가시성 정도에 따라 다음과 같은 4가지 격리성 수준을 정의합니다. (낮은 수준일수록 동시성 높지만 이상 현상 발생 가능성 높음)
+        -   Read Uncommitted: 커밋되지 않은 데이터를 다른 트랜잭션이 읽을 수 있음 (Dirty Read 발생).
+        -   Read Committed: 커밋된 데이터만 읽을 수 있음 (Dirty Read 방지).
+        -   Repeatable Read: 한 트랜잭션 내에서 같은 데이터를 여러 번 읽어도 항상 동일한 값을 보장 (Non-Repeatable Read 방지).
+        -   Serializable: 가장 높은 격리성 수준으로, 트랜잭션을 순차적으로 실행하는 것과 동일한 결과를 보장 (모든 이상 현상 방지).
+
+4.  지속성 (Durability):
+    -   원리: 트랜잭션이 성공적으로 커밋된 후에는 시스템 장애(전원 손실, 시스템 크래시 등)가 발생하더라도 해당 변경 내용은 영구적으로 데이터베이스에 반영되어 손실되지 않습니다.
+    -   구현: 커밋된 변경 사항이 영구 저장 장치(디스크)에 기록됩니다. 트랜잭션 로그가 디스크에 먼저 기록된 후 데이터 파일에 반영되는 WAL(Write-Ahead Logging) 기법이 사용됩니다.
+
+이러한 ACID 속성은 관계형 데이터베이스에서 데이터의 신뢰성을 보장하는 핵심 원칙입니다. 분산 환경에서는 이 속성을 유지하기 위한 2PC(Two-Phase Commit)나 Saga Pattern과 같은 별도의 메커니즘이 필요합니다.

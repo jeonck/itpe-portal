@@ -1,29 +1,48 @@
 ---
-id: time-space-complexity-001
-title: 시간복잡도 & 공간복잡도 (Big-O)
 category: technical-focus
+certifications:
+- computer-systems
+difficulty: intermediate
+id: time-space-complexity-001
+importance: 5
+keywords:
+- Big-O
+- Time Complexity
+- Space Complexity
+- Algorithm Analysis
+- Asymptotic Notation
+relatedTopics:
+- algorithms-001
+- data-structures-001
 subcategory: 알고리즘
 subjectCategories:
-  - AL
-difficulty: intermediate
-certifications:
-  - computer-systems
-keywords:
-  - Big-O
-  - Time Complexity
-  - Space Complexity
-  - Algorithm Analysis
-  - Asymptotic Notation
-importance: 5
-relatedTopics:
-  - algorithms-001
-  - data-structures-001
-trends:
-  - Amortized Analysis
-  - Cache Complexity
+- AL
 tags:
-  - '2025'
+- '2025'
+title: 시간복잡도 & 공간복잡도 (Big-O)
+trends:
+- Amortized Analysis
+- Cache Complexity
 ---
+
+# 정의
+알고리즘의 효율성을 분석하는 척도로, 입력 크기에 따른 실행 시간과 메모리 사용량을 표기합니다.
+
+## 특징
+- Big-O 표기법: 최악의 경우 성능, O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ) < O(n!)
+- Big-Ω (Omega): 최선의 경우, Big-Θ (Theta): 평균의 경우
+- 시간복잡도: 입력 크기 n에 대한 연산 횟수
+- 공간복잡도: 알고리즘이 사용하는 메모리 양
+- O(1): 상수 시간 (배열 인덱스 접근, 해시 테이블 조회)
+- O(log n): 로그 시간 (이진 탐색, 균형 트리)
+- O(n): 선형 시간 (배열 순회, 선형 탐색)
+- O(n log n): 효율적 정렬 (Merge Sort, Quick Sort, Heap Sort)
+- O(n²): 이중 루프 (Bubble Sort, Selection Sort)
+- Amortized Analysis: 분할 상환 분석, 평균적으로 보장되는 성능
+
+## 최신 트렌드
+- Amortized Analysis
+- Cache Complexity
 
 # 정의
 알고리즘의 효율성을 분석하는 척도로, 입력 크기에 따른 실행 시간과 메모리 사용량을 표기합니다.

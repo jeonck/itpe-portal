@@ -1,28 +1,28 @@
 ---
-id: darkweb-osint-001
-title: 다크웹 & OSINT (위협 정보 분석)
 category: digital-service
+certifications:
+- information-management
+- computer-systems
+difficulty: advanced
+id: darkweb-osint-001
+importance: 4
+keywords:
+- 다크웹
+- OSINT
+- 오픈소스 인텔리전스
+- 위협 인텔리전스
+- 사이버 범죄
+relatedTopics:
+- security-attack-001
+- security-operations-siem-soar-001
 subcategory: 위협 정보 분석
 subjectCategories:
-  - IS
-difficulty: advanced
-certifications:
-  - information-management
-  - computer-systems
-keywords:
-  - 다크웹
-  - OSINT
-  - 오픈소스 인텔리전스
-  - 위협 인텔리전스
-  - 사이버 범죄
-importance: 4
-relatedTopics:
-  - security-attack-001
-  - security-operations-siem-soar-001
+- IS
+title: 다크웹 & OSINT (위협 정보 분석)
 trends:
-  - AI 기반 OSINT 분석
-  - 블록체인 기반 다크웹 거래 추적
-  - 위협 인텔리전스 플랫폼 고도화
+- AI 기반 OSINT 분석
+- 블록체인 기반 다크웹 거래 추적
+- 위협 인텔리전스 플랫폼 고도화
 ---
 
 # 정의
@@ -46,3 +46,23 @@ trends:
 - 다크웹과 OSINT의 상호 보완: OSINT를 통해 수집된 정보는 다크웹 모니터링을 위한 단서가 될 수 있으며, 다크웹에서 발견된 정보는 OSINT 분석을 통해 더 넓은 맥락에서 이해될 수 있습니다. 이 둘은 사이버 위협 인텔리전스의 중요한 축을 이룹니다.
 - 사이버 위협 인텔리전스 (CTI): 위협에 대한 정보를 수집, 분석, 활용하여 예방 및 대응하는 프로세스로, 다크웹과 OSINT는 CTI의 핵심 정보원입니다.
 
+# 정의
+다크웹(Dark Web)은 특정 소프트웨어(예: Tor)를 통해서만 접근 가능한 인터넷의 한 부분으로, 익명성이 보장되어 합법적인 활동 외에 마약 거래, 해킹 도구 판매, 개인 정보 유출 등 불법적인 사이버 범죄 활동이 은밀하게 이루어지는 공간입니다. OSINT(Open Source INTelligence)는 공개된 출처(인터넷 검색 엔진, 소셜 미디어, 뉴스 기사, 웹사이트 등)에서 정보를 수집, 분석하여 유의미한 위협 정보를 도출하는 기법입니다. 이 두 가지는 사이버 위협 탐지 및 대응에 있어 중요한 정보원의 역할을 합니다.
+
+## 특징
+- 다크웹 (Dark Web):
+    - 익명성: Tor와 같은 익명성 네트워크를 통해 사용자 IP 주소와 활동을 추적하기 어렵게 만듭니다.
+    - 불법 활동: 해킹 도구, 개인 정보, 마약, 무기 등 불법 거래 및 사이버 범죄의 온상.
+    - 정보 유출 확인: 기업이나 조직의 정보 유출 여부를 다크웹 모니터링을 통해 확인할 수 있습니다.
+    - 딥웹 (Deep Web)과의 관계: 딥웹은 검색 엔진으로 검색되지 않는 모든 웹 페이지(온라인 뱅킹, 개인 클라우드 등)를 포함하며, 다크웹은 딥웹의 아주 작은 일부분입니다.
+- OSINT (Open Source INTelligence):
+    - 공개된 정보 활용: 특별한 접근 권한 없이도 누구나 접근 가능한 공개된 정보를 활용합니다.
+    - 정보원: 웹사이트, 소셜 미디어, 뉴스, 블로그, 포럼, 공개 데이터베이스, 연구 보고서 등.
+    - 목표:
+        - 위협 정보 수집: 공격자 동향, 새로운 취약점, 악성코드 정보 등.
+        - 침해 사고 대응: 유출된 정보의 범위 및 피해 규모 파악.
+        - 위협 행위자 프로파일링: 공격자의 신원 및 활동 패턴 분석.
+        - 취약점 분석: 특정 조직의 공개된 정보(예: 직원 정보, 사용 기술 스택)를 이용한 공격 가능성 파악.
+    - 활용 분야: 사이버 보안, 범죄 수사, 경쟁 정보 분석, 위험 관리.
+- 다크웹과 OSINT의 상호 보완: OSINT를 통해 수집된 정보는 다크웹 모니터링을 위한 단서가 될 수 있으며, 다크웹에서 발견된 정보는 OSINT 분석을 통해 더 넓은 맥락에서 이해될 수 있습니다. 이 둘은 사이버 위협 인텔리전스의 중요한 축을 이룹니다.
+- 사이버 위협 인텔리전스 (CTI): 위협에 대한 정보를 수집, 분석, 활용하여 예방 및 대응하는 프로세스로, 다크웹과 OSINT는 CTI의 핵심 정보원입니다.

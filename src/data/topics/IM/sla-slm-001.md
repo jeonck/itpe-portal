@@ -1,28 +1,28 @@
 ---
-id: sla-slm-001
-title: SLA / SLM (서비스 수준 관리)
 category: management-focus
+certifications:
+- information-management
+difficulty: intermediate
+id: sla-slm-001
+importance: 4
+keywords:
+- SLA
+- SLM
+- 서비스 수준 협약
+- 서비스 수준 관리
+- 서비스 가용성
+- 성능 지표
+relatedTopics:
+- itsm-itil-001
+- it-governance-001
 subcategory: IT 서비스 관리
 subjectCategories:
-  - IM
-difficulty: intermediate
-certifications:
-  - information-management
-keywords:
-  - SLA
-  - SLM
-  - 서비스 수준 협약
-  - 서비스 수준 관리
-  - 서비스 가용성
-  - 성능 지표
-importance: 4
-relatedTopics:
-  - itsm-itil-001
-  - it-governance-001
+- IM
+title: SLA / SLM (서비스 수준 관리)
 trends:
-  - XLA (경험 수준 협약)
-  - AI 기반 SLM
-  - 클라우드 환경 SLA
+- XLA (경험 수준 협약)
+- AI 기반 SLM
+- 클라우드 환경 SLA
 ---
 
 # 정의
@@ -51,3 +51,28 @@ SLA(Service Level Agreement)는 서비스 제공자와 고객 간에 합의된 �
     - 유지보수성 (Maintainability): 서비스가 고장 났을 때 복구하는 용이성.
     - 서비스 응답 시간 (Response Time): 사용자 요청에 대한 서비스의 응답 속도.
 
+# 정의
+SLA(Service Level Agreement)는 서비스 제공자와 고객 간에 합의된 서비스 수준에 대한 공식적인 협약 문서입니다. SLM(Service Level Management)은 이러한 SLA를 정의, 모니터링, 검토하고 지속적으로 개선하여 고객의 기대치를 충족시키고 서비스 품질을 유지 및 향상시키는 프로세스입니다.
+
+## 특징
+- SLA (Service Level Agreement):
+    - 구성 요소:
+        - 서비스 범위: 제공되는 서비스의 종류와 내용.
+        - 서비스 수준 목표: 가용성, 성능(응답 시간, 처리량), 보안, 장애 복구 시간(RTO, RPO) 등 정량적 지표.
+        - 측정 방법 및 보고: 서비스 수준의 측정 기준, 모니터링 주기, 보고 형식.
+        - 책임 및 의무: 제공자와 고객의 역할과 책임.
+        - 위반 시 제재: 서비스 수준 미달성 시 벌칙 또는 보상.
+    - 목표: 서비스 품질에 대한 명확한 기대치 설정, 분쟁 예방, 고객 만족도 향상, 서비스 제공자의 책임 명확화.
+- SLM (Service Level Management):
+    - 프로세스:
+        1.  서비스 수준 정의: 고객과 협의하여 SLA 수립.
+        2.  서비스 수준 모니터링: 서비스 수준 지표(SLI) 및 핵심 성과 지표(KPI)를 통해 실시간으로 서비스 성능 측정.
+        3.  서비스 수준 보고: 고객에게 주기적으로 서비스 성과 보고.
+        4.  서비스 수준 검토: SLA의 적절성을 평가하고 필요시 조정.
+        5.  서비스 수준 개선: 지속적인 서비스 품질 향상 활동.
+    - 목표: 고객의 요구사항을 충족시키고 비즈니스 가치를 극대화하는 IT 서비스를 제공.
+- 주요 지표:
+    - 가용성 (Availability): 서비스가 정상적으로 운영되는 시간의 비율.
+    - 신뢰성 (Reliability): 서비스가 지정된 기간 동안 고장 없이 수행되는 능력.
+    - 유지보수성 (Maintainability): 서비스가 고장 났을 때 복구하는 용이성.
+    - 서비스 응답 시간 (Response Time): 사용자 요청에 대한 서비스의 응답 속도.

@@ -1,28 +1,28 @@
 ---
-id: cyber-resilience-001
-title: 사이버 레질리언스 (Cyber Resilience)
 category: digital-service
+certifications:
+- information-management
+difficulty: advanced
+id: cyber-resilience-001
+importance: 5
+keywords:
+- 사이버 복원력
+- 회복 탄력성
+- BCP
+- DRP
+- 비즈니스 연속성
+relatedTopics:
+- security-attack-001
+- it-governance-001
 subcategory: 보안 관리
 subjectCategories:
-  - IS
-  - IM
-difficulty: advanced
-certifications:
-  - information-management
-keywords:
-  - 사이버 복원력
-  - 회복 탄력성
-  - BCP
-  - DRP
-  - 비즈니스 연속성
-importance: 5
-relatedTopics:
-  - security-attack-001
-  - it-governance-001
+- IS
+- IM
+title: 사이버 레질리언스 (Cyber Resilience)
 trends:
-  - NIST CSF 2.0
-  - 비즈니스 연속성 계획 (BCP)
-  - 공급망 레질리언스
+- NIST CSF 2.0
+- 비즈니스 연속성 계획 (BCP)
+- 공급망 레질리언스
 ---
 
 # 정의
@@ -36,3 +36,13 @@ trends:
 - 위기 관리 및 커뮤니케이션: 위기 상황 발생 시 내외부 이해관계자와의 효과적인 커뮤니케이션 전략을 포함합니다.
 - 지속적인 개선 및 적응: 변화하는 위협 환경에 맞춰 레질리언스 전략과 실행 방안을 지속적으로 평가하고 개선합니다.
 
+# 정의
+사이버 레질리언스(Cyber Resilience)는 사이버 공격, 시스템 장애, 자연재해 등 예기치 않은 다양한 위협과 혼란 속에서도 조직의 핵심 비즈니스 기능을 보호하고, 신속하게 복구하며, 지속적으로 운영될 수 있는 능력을 말합니다. 단순히 공격을 방어하는 것을 넘어, 공격을 감내하고 회복하는 능력에 초점을 맞춥니다.
+
+## 특징
+- 위협 감내 및 회복: 공격을 100% 막을 수 없다는 전제 하에, 공격이 발생했을 때 비즈니스 연속성을 유지하고 빠르게 정상 상태로 돌아오는 능력을 강조합니다.
+- 예방, 탐지, 대응, 복구, 적응의 통합: 전통적인 보안 프레임워크(예방-탐지-대응)에 '복구'와 '적응' 요소를 통합하여 전 주기적 관점에서 접근합니다.
+- 비즈니스 연속성 (BCP) 및 재해 복구 (DRP)와의 연계: BCP(Business Continuity Plan)와 DRP(Disaster Recovery Plan)는 사이버 레질리언스를 구성하는 중요한 요소입니다.
+- 핵심 자산 보호: 조직의 가장 중요한 정보 자산과 비즈니스 기능에 우선순위를 두고 보호 및 복구 전략을 수립합니다.
+- 위기 관리 및 커뮤니케이션: 위기 상황 발생 시 내외부 이해관계자와의 효과적인 커뮤니케이션 전략을 포함합니다.
+- 지속적인 개선 및 적응: 변화하는 위협 환경에 맞춰 레질리언스 전략과 실행 방안을 지속적으로 평가하고 개선합니다.

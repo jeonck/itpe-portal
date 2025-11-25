@@ -1,28 +1,28 @@
 ---
-id: financial-feasibility-analysis-001
-title: 재무 타당성 분석 (BEP, Payback Period)
 category: management-focus
+certifications:
+- information-management
+difficulty: advanced
+id: financial-feasibility-analysis-001
+importance: 4
+keywords:
+- 재무 타당성
+- BEP
+- 손익분기점
+- Payback Period
+- 회수 기간
+- IT 투자
+relatedTopics:
+- it-investment-evaluation-001
+- evm-001
 subcategory: 프로젝트 원가 관리
 subjectCategories:
-  - PM
-  - IM
-difficulty: advanced
-certifications:
-  - information-management
-keywords:
-  - 재무 타당성
-  - BEP
-  - 손익분기점
-  - Payback Period
-  - 회수 기간
-  - IT 투자
-importance: 4
-relatedTopics:
-  - it-investment-evaluation-001
-  - evm-001
+- PM
+- IM
+title: 재무 타당성 분석 (BEP, Payback Period)
 trends:
-  - AI 기반 재무 예측
-  - 클라우드 투자 재무 분석
+- AI 기반 재무 예측
+- 클라우드 투자 재무 분석
 ---
 
 # 정의
@@ -47,3 +47,24 @@ trends:
     - NPV (순현재가치), IRR (내부수익률): 화폐의 시간 가치를 고려하는 대표적인 기법.
     - PI (수익성 지수): NPV의 단점을 보완.
 
+# 정의
+재무 타당성 분석은 프로젝트나 투자안의 경제적 가치를 평가하여 투자를 결정하기 위한 과정입니다. 이는 주로 화폐의 시간 가치를 고려하거나 고려하지 않는 다양한 기법을 사용하여 투자로부터 얻을 수 있는 수익과 비용을 비교 분석합니다. BEP(Break-Even Point)와 Payback Period(회수 기간)는 특히 프로젝트의 위험성과 수익성을 직관적으로 평가하는 데 유용한 기법입니다.
+
+## 특징
+- BEP (Break-Even Point, 손익분기점):
+    - 정의: 총 수입과 총 비용이 같아 이익도 손실도 발생하지 않는 조업도(판매량 또는 매출액)를 의미합니다. 즉, 이 시점을 넘어서야 비로소 이익이 발생하기 시작합니다.
+    - 계산: `BEP (수량) = 고정비 / (단위당 판매 가격 - 단위당 변동비)`
+    - 활용: 프로젝트의 최소한의 성공 기준 설정, 위험도 평가(BEP가 낮을수록 안정적), 가격 결정 전략 수립.
+- Payback Period (회수 기간):
+    - 정의: 프로젝트에 투자한 초기 비용을 회수하는 데 걸리는 시간을 의미합니다.
+    - 계산: `회수 기간 = 초기 투자액 / 연간 현금 흐름` (연간 현금 흐름이 일정할 경우)
+    - 활용: 투자 위험성 평가(회수 기간이 짧을수록 위험이 낮다고 판단), 단기 수익성 중시 투자 의사결정.
+    - 장점: 계산이 간단하고 이해하기 쉬움, 단기적인 현금 흐름 파악 용이.
+    - 단점: 화폐의 시간 가치 무시 (할인된 회수 기간법으로 보완 가능), 회수 기간 이후의 수익성을 고려하지 않음.
+- 재무 타당성 분석의 중요성:
+    - 제한된 자원 하에서 투자의 우선순위를 결정하고, 효율적인 자원 배분을 통해 기업의 가치를 극대화합니다.
+    - 프로젝트의 재무적 위험을 사전에 파악하고 대비책을 마련하는 데 도움을 줍니다.
+    - 투자자와 이해관계자들에게 프로젝트의 경제적 건전성을 설명하는 근거 자료로 활용됩니다.
+- 다른 평가 기법:
+    - NPV (순현재가치), IRR (내부수익률): 화폐의 시간 가치를 고려하는 대표적인 기법.
+    - PI (수익성 지수): NPV의 단점을 보완.

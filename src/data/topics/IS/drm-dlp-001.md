@@ -1,29 +1,29 @@
 ---
-id: drm-dlp-001
-title: DRM & DLP (내부정보 유출방지)
 category: digital-service
+certifications:
+- information-management
+- computer-systems
+difficulty: intermediate
+id: drm-dlp-001
+importance: 5
+keywords:
+- DRM
+- DLP
+- 내부정보 유출방지
+- 데이터 암호화
+- 접근 제어
+- 민감 정보
+relatedTopics:
+- encryption-001
+- access-control-001
 subcategory: 내부정보 유출방지
 subjectCategories:
-  - IS
-difficulty: intermediate
-certifications:
-  - information-management
-  - computer-systems
-keywords:
-  - DRM
-  - DLP
-  - 내부정보 유출방지
-  - 데이터 암호화
-  - 접근 제어
-  - 민감 정보
-importance: 5
-relatedTopics:
-  - encryption-001
-  - access-control-001
+- IS
+title: DRM & DLP (내부정보 유출방지)
 trends:
-  - 클라우드 DLP
-  - AI 기반 DLP
-  - 제로 트러스트 DLP
+- 클라우드 DLP
+- AI 기반 DLP
+- 제로 트러스트 DLP
 ---
 
 # 정의
@@ -53,3 +53,29 @@ DRM(Digital Rights Management)은 디지털 콘텐츠의 저작권을 보호하�
     - 활용: 기업의 기밀 문서 유출 방지, 개인정보보호 규제 준수(GDPR, 국내 개인정보보호법 등).
 - 관계: DRM이 주로 콘텐츠 자체의 불법 유통 방지에 초점을 맞춘다면, DLP는 조직 내부의 민감 데이터 유출 행위를 탐지하고 차단하는 데 중점을 둡니다. 두 기술 모두 정보의 기밀성을 보호하는 중요한 역할을 합니다.
 
+# 정의
+DRM(Digital Rights Management)은 디지털 콘텐츠의 저작권을 보호하고 불법 복제 및 유통을 방지하기 위한 기술 및 정책입니다. DLP(Data Loss Prevention)는 조직 내부의 중요 정보(민감 정보, 기밀 데이터)가 외부로 유출되는 것을 탐지하고 차단하여 정보 유출 사고를 예방하는 솔루션입니다. 두 기술 모두 데이터 및 정보 자산의 기밀성과 무결성을 보호하는 데 중점을 둡니다.
+
+## 특징
+- DRM (Digital Rights Management):
+    - 목표: 디지털 콘텐츠(음악, 영상, 문서, 소프트웨어 등)의 저작권을 보호하고, 사용 권한을 제어.
+    - 기능:
+        - 콘텐츠 암호화: 불법적인 접근 및 재생 방지.
+        - 사용 권한 관리: 사용 기간, 재생 횟수, 복사 횟수 등 제어.
+        - 불법 복제 방지: 워터마킹, 핑거프린팅 등을 통해 유출 경로 추적.
+    - 활용: 온라인 스트리밍 서비스, 전자책, 소프트웨어 라이선싱, 기업 내부 문서 보안.
+    - 한계: 사용자의 정당한 사용까지 제한할 수 있어 사용자 편의성 저해, 기술적 우회 시도 발생.
+- DLP (Data Loss Prevention):
+    - 목표: 조직 내부의 중요 정보가 외부로 유출되는 것을 방지.
+    - 기능:
+        - 콘텐츠 분석: 문서 내용, 파일 속성 등을 분석하여 민감 정보(주민등록번호, 신용카드 번호 등) 식별.
+        - 모니터링: 엔드포인트(PC), 네트워크, 스토리지 등 다양한 경로에서의 데이터 이동 모니터링.
+        - 차단 및 격리: 정책 위반 시 데이터 전송 차단, 암호화, 격리.
+        - 보고 및 감사: 유출 시도 및 처리 내역 기록, 감사 기능.
+    - 구축 유형:
+        - 엔드포인트 DLP: PC, 노트북 등 사용자 단말에서의 데이터 유출 통제.
+        - 네트워크 DLP: 이메일, 웹, FTP 등 네트워크 트래픽을 통한 데이터 유출 통제.
+        - 스토리지 DLP: 서버, 파일 공유 시스템 등에 저장된 데이터 보호.
+        - 클라우드 DLP: 클라우드 서비스 환경에서의 데이터 유출 통제.
+    - 활용: 기업의 기밀 문서 유출 방지, 개인정보보호 규제 준수(GDPR, 국내 개인정보보호법 등).
+- 관계: DRM이 주로 콘텐츠 자체의 불법 유통 방지에 초점을 맞춘다면, DLP는 조직 내부의 민감 데이터 유출 행위를 탐지하고 차단하는 데 중점을 둡니다. 두 기술 모두 정보의 기밀성을 보호하는 중요한 역할을 합니다.

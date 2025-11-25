@@ -1,30 +1,30 @@
 ---
-id: data-fabric-mesh-001
-title: Data Fabric & Data Mesh
 category: digital-service
+certifications:
+- information-management
+difficulty: advanced
+id: data-fabric-mesh-001
+importance: 5
+keywords:
+- Data Fabric
+- Data Mesh
+- Domain-Oriented
+- Self-Serve
+- Federated Governance
+relatedTopics:
+- data-governance-001
+- dw-dm-etl-001
 subcategory: 데이터 아키텍처
 subjectCategories:
-  - DB
-  - DS
-  - IM
-difficulty: advanced
-certifications:
-  - information-management
-keywords:
-  - Data Fabric
-  - Data Mesh
-  - Domain-Oriented
-  - Self-Serve
-  - Federated Governance
-importance: 5
-relatedTopics:
-  - data-governance-001
-  - dw-dm-etl-001
-trends:
-  - Decentralized Data Architecture
-  - Data Product Thinking
+- DB
+- DS
+- IM
 tags:
-  - '2025'
+- '2025'
+title: Data Fabric & Data Mesh
+trends:
+- Decentralized Data Architecture
+- Data Product Thinking
 ---
 
 # 정의
@@ -52,5 +52,33 @@ Data Fabric은 통합된 데이터 관리 플랫폼, Data Mesh는 도메인 중�
   - **데이터 제품 (Data as a Product)**: 각 도메인 팀은 데이터를 마치 제품처럼 취급하여, 고품질, 신뢰성, 발견 용이성, 주소 지정 가능성 등을 갖춘 데이터 제품을 생산하고 제공합니다.
   - **셀프 서비스 데이터 플랫폼 (Self-Serve Data Platform)**: 도메인 팀이 데이터를 생성, 관리, 소비하는 데 필요한 인프라와 도구를 제공하는 플랫폼입니다. (예: 데이터 파이프라인, 스토리지, 컴퓨팅 자원)
   - **연합형 거버넌스 (Federated Governance)**: 중앙에서 모든 것을 통제하는 대신, 전사적인 데이터 거버넌스 정책(예: 보안, 개인정보보호)을 수립하고, 각 도메인 팀은 이 정책 하에서 자율적으로 데이터를 관리합니다.
+
+이 두 아키텍처는 대규모 분산 환경에서 데이터 관리의 복잡성을 해결하고 데이터 활용도를 높이는 데 기여합니다.
+
+# 정의
+Data Fabric은 통합된 데이터 관리 플랫폼, Data Mesh는 도메인 중심의 분산 데이터 소유권 모델로, 대규모 조직의 데이터 아키텍처를 혁신합니다.
+
+## 특징
+- Data Fabric: 중앙집중형, AI 기반 메타데이터 관리, 자동화된 데이터 통합
+- Data Mesh: 4대 원칙 - Domain Ownership, Data as a Product, Self-Serve Platform, Federated Governance
+- Domain-Oriented: 도메인 팀이 데이터 소유 및 관리
+- Data Product: 데이터를 제품처럼 관리 (품질, SLA, 문서화)
+- Self-Serve Platform: 데이터 엔지니어링 플랫폼 제공
+- Federated Governance: 분산 거버넌스, 중앙 정책 + 도메인 자율성
+- 비교: Fabric은 통합, Mesh는 분산
+
+## 기술요소
+- Data Fabric:
+  - AI 기반 메타데이터 관리: AI/머신러닝을 활용하여 데이터 자산의 메타데이터를 자동으로 수집, 분석, 관리합니다. 데이터의 의미, 관계, 품질 등을 파악.
+  - 지식 그래프 (Knowledge Graph): 데이터와 메타데이터 간의 관계를 그래프 형태로 표현하여 데이터의 맥락적 이해를 돕습니다.
+  - 데이터 통합 및 가상화: 물리적인 데이터 이동 없이 논리적으로 데이터를 통합하고 가상화하여 단일 접근점을 제공합니다.
+  - 데이터 카탈로그: 조직 내 모든 데이터 자산에 대한 정보를 제공하여 데이터 검색 및 발견을 용이하게 합니다.
+  - 데이터 거버넌스 및 보안: 데이터 접근 제어, 감사, 규제 준수 등을 중앙에서 관리합니다.
+  - 데이터 파이프라인 자동화: 데이터 수집, 변환, 전송 등 파이프라인 구축을 자동화합니다.
+- Data Mesh:
+  - 도메인 중심 (Domain-Oriented): 데이터를 비즈니스 도메인(예: 주문, 고객, 마케팅)별로 분할하고, 각 도메인 팀이 데이터의 소유권과 책임을 가집니다.
+  - 데이터 제품 (Data as a Product): 각 도메인 팀은 데이터를 마치 제품처럼 취급하여, 고품질, 신뢰성, 발견 용이성, 주소 지정 가능성 등을 갖춘 데이터 제품을 생산하고 제공합니다.
+  - 셀프 서비스 데이터 플랫폼 (Self-Serve Data Platform): 도메인 팀이 데이터를 생성, 관리, 소비하는 데 필요한 인프라와 도구를 제공하는 플랫폼입니다. (예: 데이터 파이프라인, 스토리지, 컴퓨팅 자원)
+  - 연합형 거버넌스 (Federated Governance): 중앙에서 모든 것을 통제하는 대신, 전사적인 데이터 거버넌스 정책(예: 보안, 개인정보보호)을 수립하고, 각 도메인 팀은 이 정책 하에서 자율적으로 데이터를 관리합니다.
 
 이 두 아키텍처는 대규모 분산 환경에서 데이터 관리의 복잡성을 해결하고 데이터 활용도를 높이는 데 기여합니다.
