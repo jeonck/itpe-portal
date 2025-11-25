@@ -31,10 +31,21 @@ trends:
 # 정의
 여러 서버에 네트워크 트래픽을 분산하여 가용성과 성능을 향상시키는 기술로, L4와 L7 계층에서 동작합니다.
 
+## 특징
+- L4 Load Balancing: 전송 계층 (TCP/UDP), IP/포트 기반 분산, 빠른 처리
+- L7 Load Balancing: 응용 계층 (HTTP/HTTPS), URL/헤더/쿠키 기반 분산, 세밀한 제어
+- 알고리즘: Round Robin, Least Connections, IP Hash, Weighted
+- Health Check: 서버 상태 모니터링 (TCP/HTTP), 장애 서버 자동 제외
+- Session Persistence (Sticky Session): 동일 클라이언트를 동일 서버로 연결하여 세션 유지
+- SSL Offloading: 로드 밸런서에서 SSL 처리하여 백엔드 부하 감소
+- AWS: ALB (L7, HTTP/HTTPS), NLB (L4, TCP/UDP), CLB (Classic, 레거시)
+- 기타: NGINX, HAProxy, F5 BIG-IP, Envoy
+- 사용 사례: 대규모 웹 서비스, MSA (마이크로서비스), Auto Scaling, Blue-Green 배포
+
 ## 기술요소
 로드 밸런서는 다음과 같은 구성 요소로 이루어집니다:
 
-**1. 로드 밸런서 계층별 구분**
+1. 로드 밸런서 계층별 구분
 
 L4 Load Balancer (전송 계층)
 - OSI 4계층(TCP/UDP)에서 동작합니다.
@@ -48,7 +59,7 @@ L7 Load Balancer (응용 계층)
 - 특징: 세밀한 제어, 콘텐츠 기반 라우팅, SSL 오프로딩
 - 제품: AWS ALB, NGINX Plus, HAProxy, F5 BIG-IP
 
-**2. 핵심 구성 요소**
+2. 핵심 구성 요소
 
 Frontend (Virtual IP)
 - 클라이언트가 접속하는 단일 진입점입니다.
@@ -63,23 +74,12 @@ Health Check
 - TCP/HTTP/HTTPS 헬스 체크
 - 장애 서버 자동 제외 및 복구 시 재포함
 
-**3. 분산 알고리즘**
+3. 분산 알고리즘
 - Round Robin: 순차적으로 분산 (단순, 공평)
 - Least Connections: 연결 수가 적은 서버 선택 (동적 부하 고려)
 - IP Hash: 클라이언트 IP 해시로 동일 서버 연결 (세션 유지)
 - Weighted Round Robin: 서버 성능에 따라 가중치 부여
 - Least Response Time: 응답 시간이 빠른 서버 선택
-
-## 특징
-- L4 Load Balancing: 전송 계층 (TCP/UDP), IP/포트 기반 분산, 빠른 처리
-- L7 Load Balancing: 응용 계층 (HTTP/HTTPS), URL/헤더/쿠키 기반 분산, 세밀한 제어
-- 알고리즘: Round Robin, Least Connections, IP Hash, Weighted
-- Health Check: 서버 상태 모니터링 (TCP/HTTP), 장애 서버 자동 제외
-- Session Persistence (Sticky Session): 동일 클라이언트를 동일 서버로 연결하여 세션 유지
-- SSL Offloading: 로드 밸런서에서 SSL 처리하여 백엔드 부하 감소
-- AWS: ALB (L7, HTTP/HTTPS), NLB (L4, TCP/UDP), CLB (Classic, 레거시)
-- 기타: NGINX, HAProxy, F5 BIG-IP, Envoy
-- 사용 사례: 대규모 웹 서비스, MSA (마이크로서비스), Auto Scaling, Blue-Green 배포
 
 ## 최신 트렌드
 - Service Mesh
