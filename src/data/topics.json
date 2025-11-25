@@ -2990,12 +2990,13 @@
       "NB-IoT"
     ],
     "definition": "무선 통신 기술을 이용한 네트워크로, WiFi, 이동통신(5G/6G), IoT 통신 등 다양한 기술을 포함합니다.",
+    "operatingPrinciple": "무선 네트워크는 전파를 이용하여 데이터를 전송하며, 각 기술마다 고유한 메커니즘을 사용합니다:\n\n**WiFi (OFDMA + MU-MIMO)**\n- OFDMA: 주파수 대역을 여러 사용자에게 분할 할당\n- MU-MIMO: 여러 안테나로 동시에 다중 사용자 서비스\n\n**5G/6G (Massive MIMO + Beamforming)**\n- Massive MIMO: 수십~수백 개 안테나로 공간 다중화\n- Beamforming: 특정 방향으로 신호 집중\n\n**IoT (저전력 변조)**\n- LoRa: CSS 변조로 장거리 전송\n- Zigbee: IEEE 802.15.4 메쉬 네트워크",
     "characteristics": [
-      "WiFi 6 (802.11ax): OFDMA, MU-MIMO, Target Wake Time",
-      "WiFi 7 (802.11be): 320MHz 대역폭, Multi-Link Operation",
-      "5G: eMBB (초고속), URLLC (초저지연), mMTC (대규모 연결)",
-      "6G: 테라헤르츠 대역, AI 통합, 홀로그램 통신",
-      "IoT: Zigbee (저전력 메시), LoRa (장거리 저전력), NB-IoT (셀룰러 기반)"
+      "WiFi 6 (802.11ax): OFDMA, MU-MIMO, Target Wake Time, 2.4/5GHz",
+      "WiFi 7 (802.11be): 320MHz 대역폭, Multi-Link Operation, 최대 46Gbps",
+      "5G: eMBB (초고속 20Gbps), URLLC (초저지연 1ms), mMTC (100만 기기/km²)",
+      "6G: 테라헤르츠 대역 (0.1~10THz), AI 네이티브, 홀로그램 통신, 1Tbps",
+      "IoT: Zigbee (저전력 메시, 10~100m), LoRa (장거리 15km), NB-IoT (셀룰러)"
     ],
     "relatedTopics": [
       "osi-7layer-001",
@@ -3034,15 +3035,16 @@
       "802.11be"
     ],
     "definition": "WiFi 6의 6GHz 확장판인 WiFi 6E와, 초고속 멀티링크를 지원하는 차세대 WiFi 7 무선랜 표준입니다.",
+    "operatingPrinciple": "WiFi 6/7은 다음 메커니즘으로 성능을 향상시킵니다:\n\n**OFDMA (Orthogonal Frequency-Division Multiple Access)**\n- 하나의 채널을 여러 Resource Unit (RU)로 분할\n- 각 사용자에게 RU 할당하여 동시 전송\n- 저지연, 고효율 (WiFi 5 대비 4배 향상)\n\n**MU-MIMO (Multi-User MIMO)**\n- 여러 안테나로 동시에 다중 사용자 서비스\n- 공간 다중화 (Spatial Multiplexing)\n\n**TWT (Target Wake Time)**\n- 기기가 슬립/활성 시간을 협상\n- 배터리 절감 (IoT 기기에 유용)\n\n**Multi-Link Operation (WiFi 7)**\n- 2.4GHz + 5GHz + 6GHz 동시 사용\n- 링크 aggregation으로 속도 및 안정성 향상\n- 한 대역 혼잡 시 다른 대역 사용",
     "characteristics": [
-      "WiFi 6 (802.11ax): OFDMA, MU-MIMO, TWT, 최대 9.6Gbps",
-      "WiFi 6E: WiFi 6 + 6GHz 대역 (간섭 적음, 채널 많음)",
-      "주파수: 2.4GHz, 5GHz, 6GHz (6E부터)",
-      "OFDMA: 주파수 자원을 여러 기기에 분할 할당",
-      "MU-MIMO: 다중 기기 동시 통신",
-      "WiFi 7 (802.11be): Multi-Link Operation, 최대 46Gbps",
-      "MLO: 2.4/5/6GHz 동시 사용으로 안정성 및 속도 향상",
-      "사용 사례: 고밀도 환경, AR/VR, 8K 스트리밍"
+      "WiFi 6 (802.11ax): OFDMA, MU-MIMO 8x8, TWT, 최대 9.6Gbps",
+      "WiFi 6E: WiFi 6 + 6GHz 대역 (간섭 적음, 14개 80MHz 채널)",
+      "주파수: 2.4GHz (장거리), 5GHz (중거리), 6GHz (단거리 고속, 6E부터)",
+      "OFDMA: 주파수 자원을 여러 기기에 분할 할당, 저지연",
+      "MU-MIMO: 다중 기기 동시 통신 (하향 8x8, 상향 8x8)",
+      "WiFi 7 (802.11be): Multi-Link Operation, 최대 46Gbps, 4K-QAM",
+      "MLO: 2.4/5/6GHz 동시 사용으로 안정성 및 속도 2~3배 향상",
+      "사용 사례: 고밀도 환경 (스타디움), AR/VR, 8K 스트리밍, 클라우드 게임"
     ],
     "relatedTopics": [
       "wireless-001",
@@ -3080,15 +3082,16 @@
       "Tunneling"
     ],
     "definition": "공용 네트워크를 통해 암호화된 터널을 생성하여 안전한 사설 네트워크 연결을 제공하는 기술입니다.",
+    "operatingPrinciple": "VPN은 다음과 같은 메커니즘으로 안전한 터널을 생성합니다:\n\n**1. IPsec VPN 동작 (Site-to-Site VPN)**\n네트워크 계층에서 IP 패킷을 암호화하여 사이트 간 안전한 연결을 제공합니다:\n\n1단계: IKE (Internet Key Exchange) Phase 1\n- 두 VPN 게이트웨이 간 관리 채널(ISAKMP SA) 수립\n- 인증: 사전 공유 키(PSK) 또는 인증서 사용\n- 암호화: AES, 3DES\n- 해싱: SHA-256, MD5\n- DH(Diffie-Hellman) 키 교환으로 세션 키 생성\n\n2단계: IKE Phase 2\n- 실제 데이터를 위한 IPsec SA 생성\n- ESP(Encapsulating Security Payload) 또는 AH(Authentication Header) 선택\n\n3단계: 데이터 전송\n- ESP: IP 패킷 암호화 + 캡슐화\n- 터널 모드: 전체 IP 패킷 암호화 (Site-to-Site)\n- 전송 모드: 페이로드만 암호화 (Host-to-Host)\n\n4단계: 복호화 및 전달\n- 수신측 VPN 게이트웨이가 복호화 후 내부 네트워크로 전달\n\n**2. SSL/TLS VPN 동작 (Remote Access VPN)**\n웹 브라우저 기반으로 간편하게 접속합니다:\n\n1) 클라이언트 → VPN 서버: HTTPS 연결 (포트 443)\n2) TLS Handshake: 서버 인증서 검증, 세션 키 생성\n3) 사용자 인증: ID/PW, 다중인증(MFA)\n4) SSL 터널 수립: 애플리케이션 데이터를 SSL로 암호화\n5) 웹 기반 접근: 브라우저에서 내부 리소스 접속\n\n특징:\n- 클라이언트 소프트웨어 불필요 (브라우저만으로 접속)\n- 방화벽 통과 용이 (HTTPS 포트 443 사용)\n\n**3. WireGuard 동작 (차세대 VPN)**\n현대적인 암호화 기술로 빠르고 간단한 VPN을 제공합니다:\n\n1) 공개키 기반 인증\n   - 각 피어(peer)는 공개키/개인키 쌍 보유\n   - 상대방의 공개키를 미리 등록\n\n2) Noise Protocol Framework로 핸드셰이크\n   - 세션 키 생성, 재생 공격 방지\n\n3) ChaCha20-Poly1305로 패킷 암호화\n   - UDP 기반 전송, 빠른 성능\n\n4) Cryptokey Routing\n   - IP 주소와 공개키를 매핑하여 라우팅\n\n특징:\n- 코드 4,000줄 (OpenVPN 70,000줄 대비 단순)\n- 빠른 속도, 낮은 지연시간\n- 리눅스 커널에 통합\n\n**4. Split Tunneling**\nVPN 트래픽과 일반 트래픽을 분리하여 성능을 최적화합니다:\n\nFull Tunnel Mode\n- 모든 트래픽이 VPN을 경유 (보안 최대)\n\nSplit Tunnel Mode\n- 내부 리소스 접근만 VPN 사용\n- 인터넷 트래픽은 직접 연결 (성능 향상)",
     "characteristics": [
-      "목적: 원격 접속, 데이터 암호화, IP 주소 우회",
-      "프로토콜: IPsec, SSL/TLS VPN, PPTP, L2TP, WireGuard",
-      "IPsec: 네트워크 계층 암호화, Site-to-Site VPN",
-      "SSL VPN: 웹 브라우저 기반, 클라이언트 간편",
-      "WireGuard: 최신 프로토콜, 단순하고 빠름, 강력한 암호화",
-      "터널링: 데이터를 암호화하여 캡슐화",
-      "Split Tunneling: VPN 트래픽과 일반 트래픽 분리",
-      "사용 사례: 원격 근무, 본사-지사 연결, 보안 접속"
+      "목적: 원격 접속, 데이터 암호화 및 기밀성, IP 주소 우회/익명화",
+      "프로토콜: IPsec (Site-to-Site), SSL/TLS VPN (Remote Access), PPTP (레거시), L2TP/IPsec, WireGuard",
+      "IPsec: OSI 3계층(네트워크) 암호화, Site-to-Site VPN, IKE 키 교환",
+      "SSL VPN: OSI 7계층(응용), 웹 브라우저 기반, 클라이언트 간편, HTTPS 포트 443",
+      "WireGuard: 최신 프로토콜, 단순(4천 줄), 빠름, 강력한 암호화(ChaCha20)",
+      "터널링: 데이터를 암호화하여 캡슐화, 공용 네트워크에서 사설 네트워크처럼 동작",
+      "Split Tunneling: VPN 트래픽과 일반 인터넷 트래픽 분리",
+      "사용 사례: 재택근무 원격 접속, 본사-지사 간 안전한 연결, 공용 WiFi 보안, 지역 차단 우회"
     ],
     "relatedTopics": [
       "sd-wan-sase-001",
@@ -3124,12 +3127,16 @@
       "신뢰성"
     ],
     "definition": "인터넷의 핵심 프로토콜로, 연결 지향적이고 신뢰성 있는 데이터 전송을 보장하는 TCP와 네트워크 계층의 IP로 구성됩니다.",
+    "operatingPrinciple": "TCP/IP는 다음과 같은 메커니즘으로 동작합니다:\n\n**1. 연결 수립 (3-way Handshake)**\n신뢰성 있는 연결을 수립하는 과정입니다:\n\n1) 클라이언트 → 서버: SYN (연결 요청)\n   - 클라이언트가 초기 시퀀스 번호(ISN)와 함께 SYN 패킷 전송\n\n2) 서버 → 클라이언트: SYN-ACK (연결 수락)\n   - 서버가 자신의 ISN과 함께 SYN-ACK 응답\n\n3) 클라이언트 → 서버: ACK (연결 확인)\n   - 클라이언트가 ACK를 보내며 연결 완료\n\n**2. 데이터 전송 및 신뢰성 보장**\n\n순서 보장 (Sequence Number)\n- 각 세그먼트에 순서 번호를 부여하여 순서대로 재조립합니다.\n- 순서가 틀린 패킷은 버퍼에 저장 후 재정렬합니다.\n\n확인 응답 (ACK)\n- 수신자가 받은 데이터에 대해 ACK를 전송합니다.\n- ACK를 받지 못하면 타임아웃 후 재전송합니다.\n\n체크섬 (Checksum)\n- 전송 중 데이터 손상 여부를 검증합니다.\n\n**3. 흐름 제어 (Flow Control)**\n수신자 버퍼 오버플로우를 방지합니다:\n\n슬라이딩 윈도우 (Sliding Window)\n- 수신자가 rwnd(receive window)를 송신자에게 알립니다.\n- 송신자는 rwnd 크기만큼만 데이터를 전송합니다.\n- ACK를 받으면 윈도우를 이동하여 추가 전송합니다.\n\n**4. 혼잡 제어 (Congestion Control)**\n네트워크 혼잡을 방지하여 전체 처리량을 최적화합니다:\n\nSlow Start\n- cwnd(congestion window)를 1부터 시작하여 지수적으로 증가합니다.\n- 1 → 2 → 4 → 8 → 16...\n\nCongestion Avoidance\n- ssthresh(slow start threshold)에 도달하면 선형적으로 증가합니다.\n\nFast Retransmit\n- 3개의 중복 ACK를 받으면 타임아웃 전에 즉시 재전송합니다.\n\nFast Recovery\n- 패킷 손실 발생 시 cwnd를 절반으로 줄이고 선형 증가합니다.\n\n**5. 연결 종료 (4-way Handshake)**\n양방향 연결을 안전하게 종료합니다:\n\n1) 클라이언트 → 서버: FIN (종료 요청)\n2) 서버 → 클라이언트: ACK (종료 확인)\n3) 서버 → 클라이언트: FIN (서버 종료)\n4) 클라이언트 → 서버: ACK (최종 확인)",
     "characteristics": [
-      "3-way Handshake: SYN → SYN-ACK → ACK (연결 수립)",
-      "4-way Handshake: FIN → ACK → FIN → ACK (연결 종료)",
-      "흐름 제어: 슬라이딩 윈도우, 수신 버퍼 관리",
-      "혼잡 제어: Slow Start, Congestion Avoidance, Fast Retransmit",
-      "TCP vs UDP: 신뢰성/순서 보장 vs 빠른 속도/실시간"
+      "연결 지향: 3-way Handshake로 연결 수립, 4-way Handshake로 종료",
+      "신뢰성 보장: 순서 번호, ACK, 재전송, 체크섬",
+      "흐름 제어: 슬라이딩 윈도우로 수신 버퍼 오버플로우 방지",
+      "혼잡 제어: Slow Start, Congestion Avoidance, Fast Retransmit/Recovery",
+      "전이중 통신: 양방향 동시 데이터 전송",
+      "TCP vs UDP: TCP(신뢰성/순서 보장, 연결 지향, 느림) vs UDP(빠른 속도, 비연결, 실시간 스트리밍)",
+      "IP 역할: 네트워크 계층에서 패킷 라우팅 및 주소 지정",
+      "포트 번호: 프로세스 식별 (0-65535)"
     ],
     "relatedTopics": [
       "osi-7layer-001",
@@ -3160,15 +3167,16 @@
       "CUBIC"
     ],
     "definition": "네트워크 혼잡을 감지하고 전송 속도를 조절하여 패킷 손실을 최소화하고 처리량을 최적화하는 TCP 알고리즘입니다.",
+    "operatingPrinciple": "TCP 혼잡 제어는 다음과 같은 알고리즘으로 네트워크 혼잡을 방지합니다:\n\n**1. Slow Start (느린 시작)**\n연결 초기에 전송 속도를 점진적으로 증가시킵니다:\n\n1) cwnd (congestion window) = 1 MSS (Maximum Segment Size)\n2) ACK 받을 때마다 cwnd를 2배로 증가 (지수 증가)\n   - 1 → 2 → 4 → 8 → 16 → 32...\n3) ssthresh (slow start threshold)에 도달하면 Congestion Avoidance로 전환\n4) 패킷 손실 발생 시 ssthresh = cwnd / 2로 설정\n\n**2. Congestion Avoidance (혼잡 회피)**\n네트워크 용량에 근접하면 조심스럽게 증가합니다:\n\nAIMD (Additive Increase Multiplicative Decrease)\n- Additive Increase: RTT마다 cwnd += 1 MSS (선형 증가)\n- Multiplicative Decrease: 패킷 손실 시 cwnd = cwnd / 2 (절반 감소)\n\n**3. Fast Retransmit (빠른 재전송)**\n타임아웃 전에 손실된 패킷을 재전송합니다:\n\n1) 수신자가 순서가 틀린 패킷 받으면 마지막 순서 ACK 중복 전송\n2) 송신자가 3개의 중복 ACK (3 duplicate ACK) 수신\n3) 타임아웃 기다리지 않고 즉시 재전송\n4) 빠른 복구로 성능 저하 최소화\n\n**4. Fast Recovery (빠른 복구)**\n패킷 손실 후 빠르게 복구합니다:\n\n1) Fast Retransmit 발생 시 진입\n2) ssthresh = cwnd / 2\n3) cwnd = ssthresh + 3 MSS (중복 ACK 3개)\n4) 새로운 ACK 받으면 Congestion Avoidance로 전환\n5) Slow Start를 건너뛰어 빠른 복구\n\n**5. CUBIC (Linux 기본 알고리즘)**\n고속 네트워크에 최적화된 알고리즘입니다:\n\n3차 함수 기반 윈도우 증가\n- W(t) = C × (t - K)³ + W_max\n- W_max: 마지막 손실 시점의 cwnd\n- 손실 지점에 빠르게 도달 후 조심스럽게 탐색\n\n특징:\n- RTT와 무관하게 동작 (공정성 향상)\n- 빠른 대역폭 활용\n- 고속 장거리 네트워크에 효과적\n\n**6. BBR (Bottleneck Bandwidth and RTT)**\nGoogle이 개발한 혼잡 제어 알고리즘입니다:\n\n동작 원리:\n1) Bottleneck Bandwidth 측정: 최대 전송 속도 파악\n2) RTT_min 측정: 최소 왕복 시간 측정\n3) 최적 전송률 = BtlBw × RTT_min\n4) 패킷 손실이 아닌 대역폭과 RTT 기반 제어\n\n4단계 사이클:\n- STARTUP: 대역폭 빠르게 탐색 (2배씩 증가)\n- DRAIN: 큐 비우기\n- PROBE_BW: 대역폭 주기적 탐색\n- PROBE_RTT: RTT 측정\n\n특징:\n- 패킷 손실 없이도 혼잡 감지\n- 낮은 지연시간\n- 높은 처리량",
     "characteristics": [
-      "목적: 네트워크 혼잡 방지, 공정한 대역폭 분배, 패킷 손실 최소화",
-      "혼잡 윈도우 (CWND): 한 번에 전송할 수 있는 세그먼트 수",
-      "Slow Start: 지수 증가 (1 → 2 → 4 → 8...)",
-      "Congestion Avoidance: 선형 증가 (AIMD - Additive Increase Multiplicative Decrease)",
-      "Fast Retransmit: 3 duplicate ACK 수신 시 즉시 재전송",
-      "Fast Recovery: 혼잡 발생 시 절반으로 감소",
-      "CUBIC: Linux 기본 알고리즘, 3차 함수 기반",
-      "BBR: Google 개발, Bottleneck Bandwidth and RTT 기반"
+      "목적: 네트워크 혼잡 방지, 공정한 대역폭 분배, 패킷 손실 최소화, 처리량 최적화",
+      "혼잡 윈도우 (CWND): 한 번에 전송할 수 있는 세그먼트 수, 동적으로 조절",
+      "Slow Start: 지수 증가 (1 → 2 → 4 → 8...), ssthresh까지",
+      "Congestion Avoidance: 선형 증가 (AIMD), RTT마다 +1 MSS",
+      "Fast Retransmit: 3 duplicate ACK 수신 시 타임아웃 전에 즉시 재전송",
+      "Fast Recovery: 혼잡 발생 시 cwnd 절반으로 감소, Slow Start 건너뛰기",
+      "CUBIC: Linux 기본 알고리즘, 3차 함수 기반, RTT 독립적, 고속 네트워크 최적화",
+      "BBR: Google 개발, Bottleneck Bandwidth와 RTT 기반, 패킷 손실 아닌 대역폭 측정"
     ],
     "relatedTopics": [
       "tcpip-001",
@@ -3206,13 +3214,13 @@
     ],
     "definition": "네트워크를 소프트웨어로 제어하는 SDN과, 네트워크 기능을 가상화하는 NFV를 통해 유연하고 자동화된 네트워크를 구축합니다.",
     "characteristics": [
-      "SDN: 제어 플레인(Control Plane)과 데이터 플레인(Data Plane) 분리",
-      "OpenFlow: SDN 프로토콜, 스위치를 프로그래밍 가능하게 제어",
-      "SDN 컨트롤러: 중앙집중 네트워크 제어, 정책 기반 자동화",
-      "NFV: 방화벽, 라우터 등 네트워크 기능을 가상 머신으로 구현",
-      "장점: 유연성, 자동화, 비용 절감, 빠른 서비스 배포",
-      "사용 사례: 데이터센터 네트워크, 5G 코어, SD-WAN",
-      "주요 기술: OpenvSwitch, ONOS, OpenDaylight, ETSI NFV"
+      "SDN: 제어 플레인과 데이터 플레인 분리로 중앙집중 네트워크 제어",
+      "OpenFlow: SDN 프로토콜, Flow Table 기반 프로그래밍 가능한 스위치 제어",
+      "SDN 컨트롤러: 중앙집중 네트워크 제어, 정책 기반 자동화, 실시간 트래픽 최적화",
+      "NFV: 방화벽, 라우터 등 네트워크 기능을 소프트웨어(VM/컨테이너)로 구현",
+      "장점: 유연성, 자동화, 비용 절감(전용 하드웨어 불필요), 빠른 서비스 배포",
+      "사용 사례: 데이터센터 네트워크, 5G 코어 네트워크, SD-WAN, vCPE",
+      "SDN + NFV 결합: SDN 컨트롤러가 NFV 인프라를 제어하여 End-to-End 자동화"
     ],
     "relatedTopics": [
       "sd-wan-001",
@@ -3252,14 +3260,14 @@
     ],
     "definition": "소프트웨어로 정의된 광역 네트워크(SD-WAN)와 네트워크와 보안을 통합한 클라우드 기반 서비스(SASE)입니다.",
     "characteristics": [
-      "SD-WAN: 여러 연결(MPLS, 인터넷, LTE)을 소프트웨어로 통합 관리",
-      "장점: 비용 절감, 성능 최적화, 중앙집중 관리, 빠른 배포",
-      "경로 선택: 애플리케이션별 최적 경로 자동 선택",
-      "SASE: Secure Access Service Edge, Gartner 제안 (2019년)",
-      "SASE 구성: SD-WAN + FWaaS + SWG + CASB + ZTNA",
-      "Zero Trust: 모든 접근 검증, \"절대 신뢰하지 말고 항상 검증\"",
-      "클라우드 기반: 엣지에서 네트워크와 보안 통합 제공",
-      "사용 사례: 원격 근무, 클라우드 전환, 글로벌 네트워크"
+      "SD-WAN: 여러 연결(MPLS, 인터넷, LTE)을 소프트웨어로 통합 관리, MPLS 비용 절감",
+      "장점: MPLS 대비 70% 비용 절감, 성능 최적화, 중앙집중 관리, 빠른 지사 배포",
+      "경로 선택: 애플리케이션별(Office 365, Zoom 등) 최적 경로 자동 선택, 실시간 성능 측정",
+      "SASE: Secure Access Service Edge, Gartner 제안 (2019년), 네트워크와 보안 통합",
+      "SASE 구성: SD-WAN + FWaaS + SWG + CASB + ZTNA (5대 핵심 요소)",
+      "Zero Trust: 모든 접근 검증, \"절대 신뢰하지 말고 항상 검증\", 사용자/기기 ID 기반 접근 제어",
+      "클라우드 기반: 엣지에서 네트워크와 보안 통합 제공, 온프레미스 장비 불필요",
+      "사용 사례: 원격 근무 환경, 클라우드 전환(Cloud-First), 글로벌 네트워크 관리"
     ],
     "relatedTopics": [
       "sdn-nfv-001",
@@ -3296,12 +3304,15 @@
       "AS"
     ],
     "definition": "네트워크에서 최적의 경로를 찾아 패킷을 전달하기 위한 프로토콜로, 내부/외부 라우팅 프로토콜로 구분됩니다.",
+    "operatingPrinciple": "라우팅 프로토콜은 다음과 같은 방식으로 최적 경로를 찾아 패킷을 전달합니다:\n\n**1. 거리 벡터 (Distance Vector) 방식**\n각 라우터가 인접 라우터로부터 거리 정보를 받아 라우팅 테이블을 업데이트합니다.\n\nRIP (Routing Information Protocol) 동작:\n1) 각 라우터가 자신의 라우팅 테이블을 인접 라우터에게 주기적으로 전송 (30초마다)\n2) 받은 정보를 바탕으로 Bellman-Ford 알고리즘으로 최단 경로 계산\n3) 거리 = 홉 수 (최대 15홉, 16홉은 무한대로 간주)\n4) 라우팅 테이블 업데이트 후 다시 전파\n\n특징:\n- 장점: 구현 간단, 설정 쉬움\n- 단점: 느린 수렴(Convergence), Count-to-Infinity 문제\n\n**2. 링크 상태 (Link State) 방식**\n각 라우터가 전체 네트워크 토폴로지를 파악하여 최적 경로를 계산합니다.\n\nOSPF (Open Shortest Path First) 동작:\n1) 각 라우터가 LSA(Link State Advertisement)를 플러딩하여 링크 상태 정보 전파\n2) 모든 라우터가 동일한 LSDB(Link State Database)를 구축\n3) Dijkstra의 SPF(Shortest Path First) 알고리즘으로 최단 경로 트리 생성\n4) 토폴로지 변경 시에만 업데이트 전송\n\nOSPF 주요 개념:\n- Area: 네트워크를 여러 영역으로 분할하여 확장성 향상 (Area 0: Backbone)\n- DR/BDR: 브로드캐스트 네트워크에서 대표 라우터 선출\n- 메트릭: Cost (대역폭 기반, 100Mbps/인터페이스 대역폭)\n\n특징:\n- 장점: 빠른 수렴, 계층적 설계, VLSM/CIDR 지원\n- 단점: 복잡한 설정, 높은 CPU/메모리 사용\n\n**3. 경로 벡터 (Path Vector) 방식**\nAS(Autonomous System) 간 라우팅을 위한 방식입니다.\n\nBGP (Border Gateway Protocol) 동작:\n1) eBGP: AS 간 라우팅 정보 교환\n2) iBGP: AS 내부 라우터 간 BGP 정보 공유\n3) 경로 속성(Path Attributes)을 기반으로 최적 경로 선택:\n   - AS_PATH: 경유하는 AS 목록 (짧을수록 우선)\n   - NEXT_HOP: 다음 홉 주소\n   - LOCAL_PREF: 로컬 우선순위 (높을수록 우선)\n   - MED: 외부로 나가는 경로 선호도\n\n4) 정책 기반 라우팅: 관리자 정책에 따라 경로 제어\n\n특징:\n- 인터넷의 핵심 라우팅 프로토콜\n- AS_PATH로 루프 방지\n- 정책 기반 라우팅 가능\n\n**4. 라우팅 테이블 구축 및 패킷 전달**\n1) 라우팅 프로토콜이 최적 경로를 계산하여 라우팅 테이블에 저장\n2) 패킷 수신 시 목적지 IP 주소를 라우팅 테이블과 비교 (Longest Prefix Match)\n3) 다음 홉(Next Hop) 주소로 패킷 포워딩\n4) TTL(Time To Live) 감소, 0이 되면 패킷 폐기",
     "characteristics": [
-      "거리 벡터 (Distance Vector): RIP, 홉 수 기반, Bellman-Ford 알고리즘",
-      "링크 상태 (Link State): OSPF, 전체 토폴로지 인식, Dijkstra 알고리즘",
-      "BGP (Border Gateway Protocol): AS 간 라우팅, Path Vector 방식",
-      "OSPF: Area 개념, SPF 트리, Fast Convergence",
-      "라우팅 메트릭: 홉 수, 대역폭, 지연, 비용"
+      "거리 벡터: RIP, 홉 수 기반, Bellman-Ford 알고리즘, 주기적 업데이트, 느린 수렴",
+      "링크 상태: OSPF, 전체 토폴로지 인식, Dijkstra 알고리즘, 빠른 수렴",
+      "BGP: AS 간 라우팅, Path Vector 방식, 정책 기반 라우팅, 인터넷 백본",
+      "OSPF: Area 개념, DR/BDR, Cost 메트릭, VLSM 지원",
+      "라우팅 메트릭: 홉 수(RIP), 대역폭(OSPF), 지연, 신뢰성, 비용",
+      "IGP vs EGP: IGP(AS 내부, RIP/OSPF), EGP(AS 간, BGP)",
+      "Static vs Dynamic: 정적 라우팅(수동 설정) vs 동적 라우팅(자동 계산)"
     ],
     "relatedTopics": [
       "osi-7layer-001",
@@ -3333,15 +3344,16 @@
       "Post-Quantum"
     ],
     "definition": "양자역학 원리를 활용하여 도청이 불가능한 암호키를 분배하는 차세대 보안 통신 기술입니다.",
+    "operatingPrinciple": "양자 암호 통신은 양자역학 원리를 활용하여 도청 불가능한 키 분배를 제공합니다:\n\n**1. BB84 프로토콜 동작 (가장 널리 사용)**\n\n1단계: 양자 상태 전송\n- Alice가 무작위 비트 (0 또는 1)를 생성\n- 무작위 기저 (Rectilinear: +, Diagonal: ×) 선택\n- 편광된 광자(Photon)로 전송\n  - + 기저: 0→↑, 1→→\n  - × 기저: 0→↗, 1→↖\n\n2단계: Bob의 측정\n- Bob도 무작위 기저로 광자 측정\n- 기저가 일치하면 정확한 값 측정\n- 기저가 불일치하면 무작위 값 측정\n\n3단계: 기저 공개 및 키 생성\n- Alice와 Bob이 사용한 기저를 공개 채널로 공유\n- 기저가 일치한 비트만 유지 → Sifted Key\n- 불일치 비트는 폐기\n\n4단계: 도청 검출\n- Sifted Key의 일부를 공개 비교\n- 오류율이 threshold 이상이면 도청 의심\n- 하이젠베르크 불확정성 원리: 도청자(Eve)가 측정하면 양자 상태 변화\n\n5단계: Privacy Amplification\n- 오류 정정 및 프라이버시 증폭\n- 최종 안전한 비밀키 생성\n- 대칭키 암호 (AES)에 사용\n\n**2. E91 프로토콜 (양자 얽힘 기반)**\n\n양자 얽힘 (Quantum Entanglement) 활용:\n1) 얽힌 광자 쌍 생성 (EPR Pair)\n2) 한 쪽은 Alice, 다른 쪽은 Bob에게 전송\n3) 각자 무작위 기저로 측정\n4) 측정 결과가 상관관계를 가짐 (Bell Inequality 위배)\n5) 도청 시 상관관계 변화로 감지\n\n**3. 양자 키 분배 (QKD) 시스템 구성**\n\n송신부 (Alice)\n- 광자 발생기: 약한 레이저 펄스 또는 단일 광자\n- 편광기: 양자 상태 인코딩\n\n전송 채널\n- 광섬유: 도시 간 연결 (최대 100km)\n- 자유 공간: 위성 통신 (수천 km)\n\n수신부 (Bob)\n- 광자 검출기: APD (Avalanche Photo Diode)\n- 편광 분석기: 양자 상태 측정\n\n**4. 양자 컴퓨팅 위협과 PQC**\n\n양자 컴퓨터 위협:\n- Shor 알고리즘: RSA, ECC 등 공개키 암호 해독 가능\n- 현재 암호화된 데이터를 저장 후 나중에 해독 (Harvest Now, Decrypt Later)\n\nPQC (Post-Quantum Cryptography):\n- 양자 컴퓨터로도 해독 어려운 암호\n- NIST 표준: CRYSTALS-Kyber (키 교환), CRYSTALS-Dilithium (전자서명)\n- 격자 기반 암호 (Lattice-based), 해시 기반\n\nQKD vs PQC:\n- QKD: 물리적 보안 (하드웨어 필요)\n- PQC: 수학적 보안 (소프트웨어 업데이트)",
     "characteristics": [
-      "QKD (Quantum Key Distribution): 양자 상태로 암호키 안전 분배",
-      "핵심 원리: 양자 중첩, 양자 얽힘, 불확정성 원리",
-      "보안성: 도청 시 양자 상태 변화로 즉시 감지",
-      "프로토콜: BB84, E91, B92",
-      "양자 컴퓨팅 위협: 기존 RSA, ECC 등 공개키 암호 위협",
-      "PQC (Post-Quantum Cryptography): 양자 컴퓨터 공격 대비 암호",
-      "상용화: 한국, 중국, 미국 등에서 실험 네트워크 구축",
-      "사용 사례: 금융, 국방, 정부 기관 통신"
+      "QKD (Quantum Key Distribution): 양자 상태(광자)로 암호키 안전 분배",
+      "핵심 원리: 양자 중첩, 양자 얽힘, 하이젠베르크 불확정성 원리",
+      "보안성: 도청 시 양자 상태 붕괴/변화로 즉시 감지, 무조건적 보안",
+      "프로토콜: BB84 (편광 기반), E91 (양자 얽힘), B92 (2상태)",
+      "양자 컴퓨팅 위협: Shor 알고리즘으로 RSA, ECC 등 공개키 암호 해독 가능",
+      "PQC (Post-Quantum Cryptography): 양자 컴퓨터 공격 대비 암호 (격자 기반, 해시 기반)",
+      "상용화: 한국 (KT), 중국 (양자 위성 墨子號), 유럽 (OpenQKD), 실험 네트워크 구축",
+      "사용 사례: 금융 거래, 국방 통신, 정부 기관, 데이터센터 간 연결"
     ],
     "relatedTopics": [
       "security-solution-001",
@@ -3380,10 +3392,11 @@
     ],
     "definition": "네트워크 통신을 7개의 계층으로 구분하여 표준화한 참조 모델입니다.",
     "characteristics": [
-      "계층별 독립성과 모듈화",
-      "표준화된 인터페이스",
-      "계층 간 명확한 역할 분담",
-      "문제 해결 및 디버깅 용이"
+      "계층별 독립성과 모듈화: 각 계층은 독립적으로 동작하며 변경이 다른 계층에 영향 없음",
+      "표준화된 인터페이스: 계층 간 명확한 인터페이스 정의",
+      "계층 간 명확한 역할 분담: 각 계층은 특정 기능만 수행",
+      "문제 해결 및 디버깅 용이: 계층별로 문제 원인 추적 가능",
+      "TCP/IP 모델과 비교: OSI 7계층 vs TCP/IP 4계층 (응용/전송/인터넷/네트워크 인터페이스)"
     ],
     "relatedTopics": [
       "tcpip-001",
@@ -3416,14 +3429,15 @@
     ],
     "definition": "여러 서버에 네트워크 트래픽을 분산하여 가용성과 성능을 향상시키는 기술로, L4와 L7 계층에서 동작합니다.",
     "characteristics": [
-      "L4 Load Balancing: 전송 계층 (TCP/UDP), IP/포트 기반 분산",
-      "L7 Load Balancing: 응용 계층 (HTTP/HTTPS), URL/헤더/쿠키 기반 분산",
+      "L4 Load Balancing: 전송 계층 (TCP/UDP), IP/포트 기반 분산, 빠른 처리",
+      "L7 Load Balancing: 응용 계층 (HTTP/HTTPS), URL/헤더/쿠키 기반 분산, 세밀한 제어",
       "알고리즘: Round Robin, Least Connections, IP Hash, Weighted",
-      "Health Check: 서버 상태 모니터링, 장애 서버 자동 제외",
-      "Session Persistence (Sticky Session): 세션 유지",
-      "AWS: ALB (L7), NLB (L4), CLB (Classic)",
-      "기타: NGINX, HAProxy, F5",
-      "사용 사례: 대규모 웹 서비스, MSA, Auto Scaling"
+      "Health Check: 서버 상태 모니터링 (TCP/HTTP), 장애 서버 자동 제외",
+      "Session Persistence (Sticky Session): 동일 클라이언트를 동일 서버로 연결하여 세션 유지",
+      "SSL Offloading: 로드 밸런서에서 SSL 처리하여 백엔드 부하 감소",
+      "AWS: ALB (L7, HTTP/HTTPS), NLB (L4, TCP/UDP), CLB (Classic, 레거시)",
+      "기타: NGINX, HAProxy, F5 BIG-IP, Envoy",
+      "사용 사례: 대규모 웹 서비스, MSA (마이크로서비스), Auto Scaling, Blue-Green 배포"
     ],
     "relatedTopics": [
       "cloud-infra-001",
@@ -3460,14 +3474,16 @@
       "주소 고갈"
     ],
     "definition": "32비트 주소 공간의 IPv4 고갈 문제를 해결하기 위해 128비트 주소를 사용하는 IPv6로 전환하는 과정과 기술을 다룹니다.",
+    "operatingPrinciple": "IPv4에서 IPv6로 전환하는 다음 3가지 메커니즘이 사용됩니다:\n\n**1. 듀얼 스택 (Dual Stack)**\nIPv4와 IPv6를 동시에 운영합니다:\n\n- 네트워크 장비에 IPv4와 IPv6 주소를 모두 할당\n- 애플리케이션이 목적지에 따라 적절한 프로토콜 선택\n- 목적지가 IPv6 지원 → IPv6 사용\n- 목적지가 IPv4만 지원 → IPv4 사용\n\n장점: 가장 안정적, 점진적 전환 가능\n단점: 두 프로토콜 모두 관리 필요, 리소스 소비\n\n**2. 터널링 (Tunneling)**\nIPv6 패킷을 IPv4 네트워크를 통해 전송합니다:\n\n6to4 터널링\n- IPv6 패킷을 IPv4 패킷으로 캡슐화\n- IPv4 네트워크를 통과 후 다시 IPv6로 역캡슐화\n- 자동 터널링: 6to4 주소 체계 사용 (2002::/16)\n\nTeredo 터널링\n- NAT 뒤의 IPv6 호스트를 지원\n- UDP 포트 3544 사용\n- Windows에 내장\n\nISATAP (Intra-Site Automatic Tunnel Addressing Protocol)\n- 기업 내부 IPv6 전환에 사용\n\n**3. 변환 (Translation)**\nIPv6와 IPv4 간 프로토콜 변환을 수행합니다:\n\nNAT64\n- IPv6 전용 호스트가 IPv4 서버에 접속 가능\n- IPv6 패킷을 IPv4로 변환 (헤더 매핑)\n- DNS64와 함께 사용\n\nDNS64\n- IPv4 전용 서버의 A 레코드를 AAAA 레코드로 합성\n- 예: 192.0.2.1 → 64:ff9b::192.0.2.1\n\n464XLAT\n- 모바일 네트워크에서 주로 사용\n- IPv4 앱이 IPv6 전용 네트워크에서 동작\n\n**4. IPv6 Auto Configuration (SLAAC)**\nIPv6는 자동 주소 설정을 지원합니다:\n\n1) 라우터가 Router Advertisement (RA) 메시지 전송\n2) 호스트가 네트워크 프리픽스 수신 (예: 2001:db8::/64)\n3) 호스트가 MAC 주소 기반 Interface ID 생성 (EUI-64)\n4) 프리픽스 + Interface ID = 완전한 IPv6 주소\n5) DAD (Duplicate Address Detection)로 중복 검사",
     "characteristics": [
       "IPv4: 32비트 (43억 개), 점으로 구분된 10진수 (192.168.0.1)",
-      "IPv6: 128비트 (340간 개), 콜론으로 구분된 16진수 (2001:db8::1)",
-      "IPv4 고갈: NAT, CIDR로 일시적 해결",
-      "IPv6 장점: 주소 풍부, 헤더 간소화, IPSec 필수, Auto Configuration",
-      "전환 기술: 듀얼 스택 (IPv4/IPv6 동시), 터널링 (6to4, Teredo), 변환 (NAT64)",
+      "IPv6: 128비트 (340언데실리온 개), 콜론으로 구분된 16진수 (2001:db8::1)",
+      "IPv4 고갈: NAT, CIDR로 일시적 해결, 2011년 IANA 주소 고갈",
+      "IPv6 장점: 주소 풍부, 헤더 간소화 (40바이트 고정), IPSec 필수, Auto Configuration (SLAAC)",
+      "전환 기술: 듀얼 스택 (IPv4/IPv6 동시), 터널링 (6to4, Teredo), 변환 (NAT64/DNS64)",
       "IPv6 주소 종류: Unicast, Multicast, Anycast (Broadcast 없음)",
-      "채택 현황: 모바일, IoT에서 활발, 전세계 40% 수준"
+      "채택 현황: 모바일(T-Mobile, Verizon 100%), IoT, 전세계 평균 40%",
+      "IPv6 헤더: Next Header 체인, 라우터가 분할 안 함 (호스트만 분할)"
     ],
     "relatedTopics": [
       "tcpip-001",
@@ -3505,15 +3521,16 @@
       "저전력"
     ],
     "definition": "저전력, 광역 통신을 목표로 하는 IoT 전용 네트워크 기술로, LoRa, NB-IoT, Zigbee 등이 대표적입니다.",
+    "operatingPrinciple": "IoT 네트워크는 다음과 같은 방식으로 저전력 광역 통신을 제공합니다:\n\n**1. LoRa/LoRaWAN 동작**\n\n물리 계층 (LoRa)\n- CSS (Chirp Spread Spectrum) 변조 방식 사용\n- 주파수를 시간에 따라 변화시켜 신호 전송 (Chirp)\n- 노이즈에 강하고 장거리 전송 가능 (최대 15km)\n\nLoRaWAN 프로토콜 동작\n1) End Device (센서) → Gateway: LoRa로 데이터 전송\n2) Gateway → Network Server: 인터넷/LTE로 전송\n3) Network Server → Application Server: 데이터 라우팅\n\nClass 구분:\n- Class A: 상향링크 후에만 수신 창 (가장 저전력)\n- Class B: 주기적인 수신 창\n- Class C: 항상 수신 대기 (높은 전력 소비)\n\n**2. NB-IoT (Narrowband IoT) 동작**\n\nLTE 기반 IoT 전용 표준\n- LTE 주파수 대역의 200kHz 대역폭 사용\n- 통신사 기지국 인프라 활용\n\n동작 모드:\n1) PSM (Power Saving Mode): 대부분 시간 동안 슬립\n2) eDRX (Extended Discontinuous Reception): 긴 주기로 깨어남\n3) 데이터 전송 시에만 활성화\n\n장점:\n- 건물 침투력 우수 (MCL 164dB)\n- 10년 이상 배터리 수명\n\n**3. Zigbee 동작 (메쉬 네트워크)**\n\nIEEE 802.15.4 기반 저전력 무선 통신\n- 2.4GHz 대역 사용\n- 짧은 거리 (10~100m)\n\n메쉬 네트워크 토폴로지:\n1) 코디네이터 (Coordinator): 네트워크 생성 및 관리\n2) 라우터 (Router): 데이터 중계\n3) 엔드 디바이스 (End Device): 센서/액추에이터\n\nAODV (Ad-hoc On-Demand Distance Vector) 라우팅\n- 목적지까지 최적 경로를 동적으로 찾음\n- 한 노드 장애 시 다른 경로로 우회\n\n사용 사례: 스마트 홈 (Philips Hue, 삼성 SmartThings)\n\n**4. LPWAN 특징 비교**\n\n전력 소비:\n- LoRa: 매우 낮음 (10년 배터리)\n- NB-IoT: 낮음 (10년 배터리)\n- Zigbee: 낮음 (2~3년 배터리)\n\n거리:\n- LoRa: 최대 15km (도시 2~5km)\n- NB-IoT: 10km 이상 (기지국 커버리지)\n- Zigbee: 10~100m (메쉬로 확장)\n\n데이터 속도:\n- LoRa: 0.3~50 kbps\n- NB-IoT: 최대 250 kbps\n- Zigbee: 250 kbps",
     "characteristics": [
-      "LPWAN (Low Power Wide Area Network): 저전력, 장거리, 저속",
-      "LoRa: 비면허 대역 (ISM), 장거리 (수 km~15km), 저전력",
-      "LoRaWAN: LoRa 기반 프로토콜, Class A/B/C, 게이트웨이 방식",
-      "NB-IoT: 3GPP 표준, 면허 대역, 통신사 인프라 활용",
-      "Zigbee: 저전력, 짧은 거리 (10~100m), 메쉬 네트워크",
-      "사용 사례: 스마트 미터, 자산 추적, 농업 센서, 스마트 시티",
-      "Matter: IoT 통합 표준 (Apple, Google, Amazon 등 주도)",
-      "비교: WiFi (고속, 근거리), Bluetooth (저전력, 근거리), Cellular (광역, 고비용)"
+      "LPWAN (Low Power Wide Area Network): 저전력, 장거리, 저속, 대규모 IoT 디바이스",
+      "LoRa: 비면허 대역 (ISM 915MHz/868MHz), 장거리 (도시 2~5km, 교외 15km), CSS 변조",
+      "LoRaWAN: LoRa 기반 프로토콜, Class A/B/C, Star 토폴로지, 게이트웨이 방식",
+      "NB-IoT: 3GPP 표준, 면허 대역 (LTE), 통신사 인프라 활용, PSM/eDRX",
+      "Zigbee: IEEE 802.15.4, 2.4GHz, 짧은 거리 (10~100m), 메쉬 네트워크, AODV 라우팅",
+      "사용 사례: 스마트 미터, 자산 추적, 농업 센서, 스마트 시티, 환경 모니터링",
+      "Matter: IoT 통합 표준 (Apple, Google, Amazon 등 주도), 상호 운용성",
+      "비교: WiFi (고속 고전력), Bluetooth (저전력 근거리), Cellular (광역 고비용)"
     ],
     "relatedTopics": [
       "5g-001",
@@ -3550,14 +3567,16 @@
       "UDP"
     ],
     "definition": "HTTP/1.1의 성능 한계를 극복하기 위해 멀티플렉싱을 제공하는 HTTP/2와, UDP 기반 QUIC 프로토콜을 사용하는 HTTP/3입니다.",
+    "operatingPrinciple": "HTTP/2와 HTTP/3는 다음과 같은 메커니즘으로 성능을 향상시킵니다:\n\n**1. HTTP/2 동작 (TCP 기반)**\n\n바이너리 프레이밍 (Binary Framing)\n- HTTP/1.1의 텍스트 기반 프로토콜을 바이너리로 변환\n- 프레임 단위로 데이터 전송 (HEADERS, DATA 프레임 등)\n\n멀티플렉싱 (Multiplexing)\n1) 하나의 TCP 연결에서 여러 스트림(Stream) 생성\n2) 각 스트림은 독립적인 요청/응답 처리\n3) 스트림 ID로 구분하여 동시 전송\n4) 우선순위 설정으로 중요한 리소스 먼저 전송\n\n헤더 압축 (HPACK)\n- 중복되는 헤더를 압축하여 전송량 감소\n- 정적 테이블과 동적 테이블 사용\n\nServer Push\n1) 서버가 클라이언트 요청 예측\n2) HTML 요청 시 CSS, JS 파일을 미리 푸시\n3) RTT(Round Trip Time) 감소\n\nHTTP/2 문제점:\n- TCP Head-of-Line Blocking: 패킷 손실 시 모든 스트림 대기\n\n**2. HTTP/3 (QUIC) 동작 (UDP 기반)**\n\nQUIC 프로토콜 특징\n- UDP 기반이지만 TCP처럼 신뢰성 제공\n- 스트림 단위 재전송으로 HOL Blocking 해결\n\n연결 수립 (0-RTT/1-RTT)\n1) 첫 연결: 1-RTT (TLS 1.3 통합 핸드셰이크)\n   - 클라이언트 → 서버: Client Hello + QUIC 파라미터\n   - 서버 → 클라이언트: Server Hello + 인증서\n   - 즉시 데이터 전송 가능\n\n2) 재연결: 0-RTT (세션 재개)\n   - 이전 세션 정보 활용\n   - 핸드셰이크 없이 즉시 데이터 전송\n\n스트림 독립성\n- 각 스트림이 독립적으로 재전송\n- 스트림 1의 패킷 손실이 스트림 2에 영향 없음\n\nConnection Migration\n- IP 주소/포트 변경 시에도 연결 유지\n- 모바일 네트워크 전환 시 유용 (WiFi ↔ LTE)\n\n암호화\n- 기본적으로 TLS 1.3 암호화 적용\n- 헤더 일부도 암호화\n\n**3. HTTP/1.1 → HTTP/2 → HTTP/3 비교**\n\nHTTP/1.1:\n- 텍스트 기반, 한 연결에 하나의 요청/응답\n- 여러 연결 필요 (보통 6개)\n\nHTTP/2:\n- 바이너리, 멀티플렉싱, HPACK 압축\n- TCP HOL Blocking 문제\n\nHTTP/3:\n- UDP 기반 QUIC, HOL Blocking 해결\n- 0-RTT 연결, Connection Migration",
     "characteristics": [
-      "HTTP/2: 바이너리 프로토콜, 멀티플렉싱, 헤더 압축(HPACK), Server Push",
-      "Multiplexing: 하나의 연결로 여러 요청/응답 동시 처리",
-      "Server Push: 클라이언트 요청 없이 리소스 전송",
-      "HTTP/3: QUIC 프로토콜 사용 (UDP 기반)",
-      "QUIC 장점: Head-of-Line Blocking 해결, 빠른 핸드셰이크 (0-RTT)",
+      "HTTP/2: 바이너리 프로토콜, 멀티플렉싱, 헤더 압축(HPACK), Server Push, TCP 기반",
+      "Multiplexing: 하나의 TCP 연결로 여러 요청/응답 동시 처리, 스트림 ID로 구분",
+      "Server Push: 서버가 클라이언트 요청 예측하여 리소스 미리 전송, RTT 감소",
+      "HTTP/3: QUIC 프로토콜 사용, UDP 기반이지만 TCP처럼 신뢰성 제공",
+      "QUIC 장점: Head-of-Line Blocking 완전 해결, 빠른 핸드셰이크(0-RTT/1-RTT), Connection Migration",
       "HTTP/2 문제: TCP Head-of-Line Blocking (패킷 손실 시 전체 스트림 지연)",
-      "HTTP/3 채택: Google, Facebook, Cloudflare"
+      "HTTP/3 채택: Google, Facebook, Cloudflare, 전체 웹의 약 25% (2025년)",
+      "사용 사례: 대규모 웹 서비스, 모바일 앱, 실시간 스트리밍"
     ],
     "relatedTopics": [
       "tcpip-001",
@@ -3596,15 +3615,16 @@
       "DNS 보안"
     ],
     "definition": "DNS 쿼리와 응답의 무결성, 기밀성, 인증을 보장하기 위한 보안 기술로 DNSSEC, DoH, DoT 등이 있습니다.",
+    "operatingPrinciple": "DNS 보안 기술은 다음과 같은 방식으로 동작합니다:\n\n**1. DNSSEC (DNS Security Extensions) 동작**\nDNS 응답의 무결성과 인증을 보장합니다:\n\n1단계: Zone Signing\n- DNS 레코드를 Zone Signing Key (ZSK)로 서명\n- RRSIG (Resource Record Signature) 생성\n\n2단계: Trust Chain 구축\n- Key Signing Key (KSK)로 ZSK를 서명\n- DS (Delegation Signer) 레코드를 상위 도메인에 등록\n- 루트 DNS까지 신뢰 체인(Chain of Trust) 형성\n\n3단계: DNS 쿼리 및 검증\n- 클라이언트가 DNS 쿼리 전송\n- DNS 서버가 응답과 함께 RRSIG 반환\n- 클라이언트가 공개키로 서명 검증\n- 서명이 유효하면 응답 신뢰, 무효하면 거부\n\n특징:\n- 위변조 방지: 공개키 암호화로 DNS 응답 검증\n- 한계: 암호화 미제공 (쿼리 내용은 평문)\n\n**2. DoT (DNS over TLS) 동작**\nTLS로 DNS 쿼리를 암호화하여 프라이버시를 보호합니다:\n\n1) 클라이언트 → DNS 서버: TCP 포트 853으로 연결\n2) TLS Handshake: 서버 인증서 검증, 세션 키 생성\n3) 암호화된 DNS 쿼리 전송\n4) 암호화된 DNS 응답 수신\n5) TLS 세션 유지 또는 종료\n\n특징:\n- 전용 포트(853) 사용으로 DNS 트래픽 식별 가능\n- 방화벽에서 차단 가능\n\n**3. DoH (DNS over HTTPS) 동작**\nHTTPS로 DNS 쿼리를 암호화하여 프라이버시와 우회성을 제공합니다:\n\n1) 클라이언트 → DNS 서버: HTTPS 연결 (포트 443)\n2) TLS Handshake: 서버 인증서 검증\n3) HTTP/2 또는 HTTP/3로 DNS 쿼리 전송 (POST 또는 GET)\n4) JSON 또는 DNS wire format으로 응답\n5) 일반 HTTPS 트래픽과 동일하게 보임\n\n특징:\n- HTTPS 포트(443) 사용으로 일반 웹 트래픽과 구분 불가\n- 방화벽 우회 용이, 검열 회피\n- 브라우저 내장 지원 (Firefox, Chrome)\n\n**4. DNS Filtering 동작**\n악성 도메인과 유해 콘텐츠를 차단합니다:\n\n1) 클라이언트가 DNS 쿼리 전송\n2) DNS 서버가 도메인을 블랙리스트/화이트리스트와 비교\n3) 차단 대상이면 NXDOMAIN 또는 다른 IP 반환\n4) 허용 대상이면 정상 IP 반환\n\n사용 사례:\n- 악성 도메인 차단 (피싱, 멀웨어)\n- 유해 콘텐츠 필터링 (자녀 보호)\n- 광고 차단",
     "characteristics": [
-      "DNS 취약점: Cache Poisoning, Spoofing, DDoS, 스누핑",
-      "DNSSEC: DNS 응답 서명으로 위변조 방지, 공개키 암호화",
-      "DoT (DNS over TLS): TLS로 DNS 쿼리 암호화 (포트 853)",
-      "DoH (DNS over HTTPS): HTTPS로 DNS 쿼리 암호화 (포트 443)",
-      "DoH vs DoT: DoH는 HTTPS 트래픽처럼 보여 우회 어려움",
-      "DNS Filtering: 악성 도메인 차단, 유해 콘텐츠 필터링",
-      "Public DNS: Cloudflare (1.1.1.1), Google (8.8.8.8), Quad9",
-      "사용 사례: 프라이버시 보호, 중간자 공격 방지, 콘텐츠 필터링"
+      "DNS 취약점: Cache Poisoning(응답 위조), Spoofing(가짜 DNS 서버), DDoS, 스누핑(쿼리 감청)",
+      "DNSSEC: DNS 응답 전자서명으로 위변조 방지, 공개키 암호화, Trust Chain",
+      "DoT (DNS over TLS): TLS로 DNS 쿼리 암호화, 전용 포트 853, 프라이버시 보호",
+      "DoH (DNS over HTTPS): HTTPS로 DNS 쿼리 암호화, 포트 443, 일반 웹 트래픽과 구분 불가",
+      "DoH vs DoT: DoH는 HTTPS처럼 보여 방화벽 우회 용이, 검열 회피",
+      "DNS Filtering: 악성 도메인 차단, 유해 콘텐츠 필터링, 블랙리스트 기반",
+      "Public DNS: Cloudflare (1.1.1.1, 프라이버시 중시), Google (8.8.8.8), Quad9 (보안 중시)",
+      "사용 사례: 프라이버시 보호, 중간자 공격(MITM) 방지, 콘텐츠 필터링, 검열 우회"
     ],
     "relatedTopics": [
       "security-solution-001",
@@ -3641,15 +3661,16 @@
       "CloudFlare"
     ],
     "definition": "지리적으로 분산된 서버 네트워크를 통해 콘텐츠를 사용자와 가까운 위치에서 제공하여 속도와 가용성을 향상시키는 서비스입니다.",
+    "operatingPrinciple": "CDN은 다음과 같은 메커니즘으로 콘텐츠를 빠르게 전달합니다:\n\n**1. 콘텐츠 캐싱 및 배포 프로세스**\n\n1단계: 사용자 요청\n- 사용자가 www.example.com/image.jpg 요청\n- DNS가 가장 가까운 CDN 엣지 서버 IP 반환\n\n2단계: 캐시 확인 (Cache Hit/Miss)\n- Cache Hit: 엣지 서버에 콘텐츠 존재\n  → 즉시 사용자에게 전달 (Origin 접근 불필요)\n\n- Cache Miss: 엣지 서버에 콘텐츠 없음\n  → Origin Server에서 콘텐츠 가져오기 (Pull)\n  → 엣지 서버에 캐싱\n  → 사용자에게 전달\n\n3단계: 캐시 저장\n- TTL(Time to Live) 기반으로 캐시 유지\n- Cache-Control 헤더에 따라 캐시 정책 적용\n- LRU(Least Recently Used) 알고리즘으로 캐시 관리\n\n**2. 지리적 라우팅 (GeoDNS)**\n사용자와 가장 가까운 엣지 서버로 연결합니다:\n\n1) 사용자가 DNS 쿼리 전송\n2) GeoDNS가 사용자 IP의 지리적 위치 파악\n3) 가장 가까운 PoP(Point of Presence)의 IP 반환\n4) 낮은 지연시간으로 콘텐츠 제공\n\n**3. 캐싱 전략**\n\n캐시 정책 설정\n- Cache-Control: max-age=3600 (1시간 캐싱)\n- Cache-Control: no-cache (매번 검증)\n- Cache-Control: private (브라우저만 캐싱)\n- ETag: 콘텐츠 버전 식별\n\n캐시 무효화 (Purge/Invalidation)\n- 콘텐츠 업데이트 시 캐시 즉시 삭제\n- 방법: URL 기반, Tag 기반, 전체 삭제\n\n**4. Origin Shield**\nOrigin 서버 부하를 줄이기 위한 중간 캐시 계층입니다:\n\n1) 여러 엣지 서버 → Origin Shield (중간 캐시)\n2) Origin Shield → Origin Server (필요시만)\n3) Origin 요청 수 90% 이상 감소\n\n**5. DDoS 방어**\n분산 아키텍처로 DDoS 공격을 완화합니다:\n\n- Anycast 네트워크: 공격 트래픽을 전 세계 PoP에 분산\n- Rate Limiting: 과도한 요청 차단\n- WAF (Web Application Firewall): 악성 트래픽 필터링\n\n**6. 동영상 스트리밍 최적화**\nAdaptive Bitrate Streaming (ABR)\n- 네트워크 속도에 따라 화질 자동 조절\n- HLS (HTTP Live Streaming), DASH 프로토콜\n\nChunked Transfer\n- 동영상을 작은 조각(Chunk)으로 분할\n- 각 조각을 엣지에서 캐싱",
     "characteristics": [
-      "동작 원리: 엣지 서버에 콘텐츠 캐싱, 가장 가까운 서버에서 제공",
-      "장점: 지연 시간 감소, 대역폭 절감, 가용성 향상, DDoS 방어",
-      "캐싱 전략: TTL (Time to Live), Cache-Control 헤더",
-      "주요 업체: Cloudflare, AWS CloudFront, Akamai, Fastly",
-      "PoP (Point of Presence): CDN 엣지 서버 위치",
-      "Origin Server: 원본 콘텐츠 서버",
-      "Purge/Invalidation: 캐시 무효화",
-      "사용 사례: 동영상 스트리밍, 정적 파일 배포, API 가속"
+      "동작 원리: 엣지 서버에 콘텐츠 캐싱, 가장 가까운 서버에서 제공, GeoDNS 라우팅",
+      "장점: 지연 시간 감소(50~90%), 대역폭 절감, 가용성 향상, DDoS 방어, Origin 부하 감소",
+      "캐싱 전략: TTL (Time to Live), Cache-Control 헤더, ETag, LRU 알고리즘",
+      "주요 업체: Cloudflare (200+ 도시), AWS CloudFront, Akamai, Fastly",
+      "PoP (Point of Presence): CDN 엣지 서버가 위치한 데이터센터",
+      "Origin Server: 원본 콘텐츠를 저장하는 서버",
+      "Purge/Invalidation: 캐시 무효화, URL/Tag 기반",
+      "사용 사례: 동영상 스트리밍(Netflix, YouTube), 정적 파일 배포, API 가속, 게임 패치"
     ],
     "relatedTopics": [
       "http-quic-001",
@@ -3686,14 +3707,15 @@
       "AI Native"
     ],
     "definition": "5G를 뛰어넘는 테라헤르츠(THz) 대역을 활용한 6세대 이동통신으로, AI 네이티브 및 홀로그램 통신을 목표로 합니다.",
+    "operatingPrinciple": "6G는 테라헤르츠 대역과 AI를 활용한 차세대 무선 통신입니다:\n\n**THz 통신 동작**\n- 0.1~10THz 초고주파 전파 사용\n- 짧은 파장으로 초고속 데이터 전송 (최대 1Tbps)\n- 직진성 강함 → 지향성 안테나 필수\n\n**RIS (Reconfigurable Intelligent Surface)**\n- 전파 반사/굴절을 능동적으로 제어\n- 메타표면(Meta-surface)으로 전파 경로 최적화\n- 음영 지역 커버리지 향상\n\n**AI Native 네트워크**\n- AI가 네트워크 리소스를 실시간 최적화\n- 트래픽 예측, 자동 장애 복구\n- 사용자 경험 기반 QoS 조정",
     "characteristics": [
-      "목표 성능: 최대 1Tbps 속도, 10μs 이하 지연, 1000만 기기/km²",
-      "주파수: 테라헤르츠 대역 (0.1~10THz)",
+      "목표 성능: 최대 1Tbps 속도 (5G의 50배), 10μs 이하 지연, 1000만 기기/km²",
+      "주파수: 테라헤르츠 대역 (0.1~10THz), 밀리미터파보다 높은 주파수",
       "핵심 기술: THz 통신, AI/ML 네이티브, RIS (Reconfigurable Intelligent Surface)",
       "서비스: 홀로그램 통신, Digital Twin, XR (AR/VR/MR), 초정밀 위치 (cm 단위)",
-      "AI Native: AI 기반 네트워크 최적화, 자율 운영",
-      "상용화: 2030년대 목표",
-      "한국: 6G 선도국 목표, 정부 R&D 투자"
+      "AI Native: AI 기반 네트워크 자율 운영, 트래픽 예측 및 최적화",
+      "상용화: 2030년대 상용화 목표 (ITU-R IMT-2030)",
+      "한국: 6G 선도국 목표, 정부 R&D 투자, 삼성/LG 기술 개발"
     ],
     "relatedTopics": [
       "5g-001",
@@ -3732,14 +3754,14 @@
     ],
     "definition": "초고속, 초저지연, 초연결을 목표로 하는 5세대 이동통신으로, eMBB, URLLC, mMTC 3대 서비스로 구성됩니다.",
     "characteristics": [
-      "eMBB (Enhanced Mobile Broadband): 초고속 데이터 (최대 20Gbps)",
-      "URLLC (Ultra-Reliable Low-Latency Communication): 초저지연 (1ms 이하)",
-      "mMTC (Massive Machine Type Communication): 초연결 (100만 기기/km²)",
-      "주파수: Sub-6GHz (커버리지), mmWave (28/39GHz, 속도)",
-      "Network Slicing: 용도별 가상 네트워크 분리",
-      "MEC (Multi-access Edge Computing): 엣지 컴퓨팅 연동",
-      "NSA vs SA: Non-Standalone (4G 코어), Standalone (5G 코어)",
-      "사용 사례: 자율주행, 원격 수술, 스마트 팩토리, AR/VR"
+      "eMBB (Enhanced Mobile Broadband): 초고속 데이터 전송 (최대 20Gbps 다운로드, 10Gbps 업로드)",
+      "URLLC (Ultra-Reliable Low-Latency Communication): 초저지연 (1ms 이하), 초고신뢰성 (99.999%)",
+      "mMTC (Massive Machine Type Communication): 초연결 (1km² 당 100만 기기 연결)",
+      "주파수: Sub-6GHz (커버리지), mmWave (28/39GHz, 초고속)",
+      "Network Slicing: 용도별 가상 네트워크 분리, 독립적 QoS 보장",
+      "MEC (Multi-access Edge Computing): 엣지에서 지연시간 최소화",
+      "NSA vs SA: Non-Standalone (4G 코어 활용), Standalone (5G 독립 코어)",
+      "사용 사례: 자율주행, 원격 수술, 스마트 팩토리, AR/VR, 8K 스트리밍"
     ],
     "relatedTopics": [
       "wireless-001",
@@ -4961,13 +4983,7 @@
       "JWT"
     ],
     "definition": "사용자 신원을 확인하고(인증) 자원에 대한 접근 권한을 관리하는(권한 부여) 보안 메커니즘입니다.",
-    "characteristics": [
-      "SSO (Single Sign-On): 한 번의 인증으로 여러 시스템 접근",
-      "OAuth 2.0: 권한 부여 프레임워크, Access Token 기반",
-      "IAM (Identity and Access Management): 통합 신원 및 접근 관리",
-      "MFA (Multi-Factor Authentication): 다중 인증 요소 (지식, 소유, 생체)",
-      "SAML, JWT: 인증 토큰 표준"
-    ],
+    "characteristics": [],
     "relatedTopics": [
       "encryption-001",
       "security-solution-001",
@@ -5003,9 +5019,7 @@
       "프라이버시 침해"
     ],
     "definition": "AI 보안은 인공지능 시스템 자체를 대상으로 하는 다양한 공격(적대적 공격, 데이터 오염 등)으로부터 AI 모델과 데이터를 보호하고, AI 시스템의 안전성과 신뢰성을 확보하는 분야입니다. AI 기술의 확산과 함께 그 중요성이 증대되고 있으며, '방어'를 넘어 'AI 악용 방지'가 핵심 과제로 부상하고 있습니다.",
-    "characteristics": [
-      "적대적 공격 (Adversarial Attack): AI 모델이 잘못된 예측을 하도록 유도하기 위해 미세하게 조작된 입력 데이터를 생성하는 기법. 육안으로는 구별하기 어렵지만, AI 모델을 오작동시킵니다."
-    ],
+    "characteristics": [],
     "relatedTopics": [
       "ai-deep-learning-001",
       "encryption-001"
@@ -5039,9 +5053,7 @@
       "최소 권한"
     ],
     "definition": "접근통제(Access Control)는 정보 자원(파일, 데이터베이스, 시스템 등)에 대해 인가된 사용자만이 접근하고 특정 작업을 수행할 수 있도록 제한하는 보안 메커니즘입니다. 사용자 신원 확인(인증) 후 접근 권한을 부여하며, 정보보호의 기밀성, 무결성, 가용성 보장에 핵심적인 역할을 합니다.",
-    "characteristics": [
-      "접근통제 모델:"
-    ],
+    "characteristics": [],
     "relatedTopics": [
       "auth-001",
       "zero-trust-architecture-001"

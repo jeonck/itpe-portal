@@ -32,32 +32,55 @@ trends:
 # 정의
 소프트웨어로 정의된 광역 네트워크(SD-WAN)와 네트워크와 보안을 통합한 클라우드 기반 서비스(SASE)입니다.
 
+## 기술요소
+SD-WAN과 SASE는 다음과 같은 구성 요소로 이루어집니다:
+
+**SD-WAN 아키텍처**
+
+1. SD-WAN Edge 장비
+   지사나 원격 사이트에 배치되는 가상/물리 장비입니다.
+   - 여러 연결(MPLS, 인터넷, LTE/5G) 통합 관리
+   - 애플리케이션 인식 라우팅 (Application-Aware Routing)
+   - 트래픽 암호화 및 QoS 적용
+
+2. SD-WAN 컨트롤러 (Orchestrator)
+   중앙에서 모든 Edge 장비를 관리합니다.
+   - 정책 관리, 경로 최적화, 성능 모니터링
+   - Zero-Touch Provisioning (자동 배포)
+
+3. 전송 네트워크 (Underlay)
+   실제 데이터가 전송되는 물리적 연결입니다.
+   - MPLS, 인터넷(Broadband), LTE/5G, 위성
+   - 다중 경로 활용으로 가용성 및 성능 향상
+
+**SASE 아키텍처 (SD-WAN + Security)**
+
+1. 네트워크 서비스
+   - SD-WAN: 광역 네트워크 연결 및 최적화
+   - CDN: 콘텐츠 가속
+   - WAN Optimization: 트래픽 압축 및 최적화
+
+2. 보안 서비스 (SSE: Security Service Edge)
+   - FWaaS (Firewall as a Service): 클라우드 방화벽
+   - SWG (Secure Web Gateway): 웹 트래픽 필터링
+   - CASB (Cloud Access Security Broker): 클라우드 앱 보안
+   - ZTNA (Zero Trust Network Access): Zero Trust 접근 제어
+   - IPS/IDS, DLP, Malware Protection
+
+3. 클라우드 PoP (Point of Presence)
+   전 세계에 분산된 엣지 위치에서 서비스를 제공합니다.
+   - 사용자와 가까운 위치에서 낮은 지연시간 제공
+   - 로컬 브레이크아웃 (직접 인터넷 접속)
+
 ## 특징
-- SD-WAN: 여러 연결(MPLS, 인터넷, LTE)을 소프트웨어로 통합 관리
-- 장점: 비용 절감, 성능 최적화, 중앙집중 관리, 빠른 배포
-- 경로 선택: 애플리케이션별 최적 경로 자동 선택
-- SASE: Secure Access Service Edge, Gartner 제안 (2019년)
-- SASE 구성: SD-WAN + FWaaS + SWG + CASB + ZTNA
-- Zero Trust: 모든 접근 검증, "절대 신뢰하지 말고 항상 검증"
-- 클라우드 기반: 엣지에서 네트워크와 보안 통합 제공
-- 사용 사례: 원격 근무, 클라우드 전환, 글로벌 네트워크
-
-## 최신 트렌드
-- SSE (Security Service Edge)
-- SASE 통합
-
-# 정의
-소프트웨어로 정의된 광역 네트워크(SD-WAN)와 네트워크와 보안을 통합한 클라우드 기반 서비스(SASE)입니다.
-
-## 특징
-- SD-WAN: 여러 연결(MPLS, 인터넷, LTE)을 소프트웨어로 통합 관리
-- 장점: 비용 절감, 성능 최적화, 중앙집중 관리, 빠른 배포
-- 경로 선택: 애플리케이션별 최적 경로 자동 선택
-- SASE: Secure Access Service Edge, Gartner 제안 (2019년)
-- SASE 구성: SD-WAN + FWaaS + SWG + CASB + ZTNA
-- Zero Trust: 모든 접근 검증, "절대 신뢰하지 말고 항상 검증"
-- 클라우드 기반: 엣지에서 네트워크와 보안 통합 제공
-- 사용 사례: 원격 근무, 클라우드 전환, 글로벌 네트워크
+- SD-WAN: 여러 연결(MPLS, 인터넷, LTE)을 소프트웨어로 통합 관리, MPLS 비용 절감
+- 장점: MPLS 대비 70% 비용 절감, 성능 최적화, 중앙집중 관리, 빠른 지사 배포
+- 경로 선택: 애플리케이션별(Office 365, Zoom 등) 최적 경로 자동 선택, 실시간 성능 측정
+- SASE: Secure Access Service Edge, Gartner 제안 (2019년), 네트워크와 보안 통합
+- SASE 구성: SD-WAN + FWaaS + SWG + CASB + ZTNA (5대 핵심 요소)
+- Zero Trust: 모든 접근 검증, "절대 신뢰하지 말고 항상 검증", 사용자/기기 ID 기반 접근 제어
+- 클라우드 기반: 엣지에서 네트워크와 보안 통합 제공, 온프레미스 장비 불필요
+- 사용 사례: 원격 근무 환경, 클라우드 전환(Cloud-First), 글로벌 네트워크 관리
 
 ## 최신 트렌드
 - SSE (Security Service Edge)
