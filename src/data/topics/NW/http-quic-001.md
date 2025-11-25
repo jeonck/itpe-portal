@@ -33,7 +33,7 @@ HTTP/1.1의 성능 한계를 극복하기 위해 멀티플렉싱을 제공하는
 ## 동작원리
 HTTP/2와 HTTP/3는 다음과 같은 메커니즘으로 성능을 향상시킵니다:
 
-**1. HTTP/2 동작 (TCP 기반)**
+1. HTTP/2 동작 (TCP 기반)
 
 바이너리 프레이밍 (Binary Framing)
 - HTTP/1.1의 텍스트 기반 프로토콜을 바이너리로 변환
@@ -57,7 +57,7 @@ Server Push
 HTTP/2 문제점:
 - TCP Head-of-Line Blocking: 패킷 손실 시 모든 스트림 대기
 
-**2. HTTP/3 (QUIC) 동작 (UDP 기반)**
+2. HTTP/3 (QUIC) 동작 (UDP 기반)
 
 QUIC 프로토콜 특징
 - UDP 기반이지만 TCP처럼 신뢰성 제공
@@ -85,7 +85,7 @@ Connection Migration
 - 기본적으로 TLS 1.3 암호화 적용
 - 헤더 일부도 암호화
 
-**3. HTTP/1.1 → HTTP/2 → HTTP/3 비교**
+3. HTTP/1.1 → HTTP/2 → HTTP/3 비교
 
 HTTP/1.1:
 - 텍스트 기반, 한 연결에 하나의 요청/응답

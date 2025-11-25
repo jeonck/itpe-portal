@@ -33,7 +33,7 @@ trends:
 ## 동작원리
 TCP 혼잡 제어는 다음과 같은 알고리즘으로 네트워크 혼잡을 방지합니다:
 
-**1. Slow Start (느린 시작)**
+1. Slow Start (느린 시작)
 연결 초기에 전송 속도를 점진적으로 증가시킵니다:
 
 1) cwnd (congestion window) = 1 MSS (Maximum Segment Size)
@@ -42,14 +42,14 @@ TCP 혼잡 제어는 다음과 같은 알고리즘으로 네트워크 혼잡을 
 3) ssthresh (slow start threshold)에 도달하면 Congestion Avoidance로 전환
 4) 패킷 손실 발생 시 ssthresh = cwnd / 2로 설정
 
-**2. Congestion Avoidance (혼잡 회피)**
+2. Congestion Avoidance (혼잡 회피)
 네트워크 용량에 근접하면 조심스럽게 증가합니다:
 
 AIMD (Additive Increase Multiplicative Decrease)
 - Additive Increase: RTT마다 cwnd += 1 MSS (선형 증가)
 - Multiplicative Decrease: 패킷 손실 시 cwnd = cwnd / 2 (절반 감소)
 
-**3. Fast Retransmit (빠른 재전송)**
+3. Fast Retransmit (빠른 재전송)
 타임아웃 전에 손실된 패킷을 재전송합니다:
 
 1) 수신자가 순서가 틀린 패킷 받으면 마지막 순서 ACK 중복 전송
@@ -57,7 +57,7 @@ AIMD (Additive Increase Multiplicative Decrease)
 3) 타임아웃 기다리지 않고 즉시 재전송
 4) 빠른 복구로 성능 저하 최소화
 
-**4. Fast Recovery (빠른 복구)**
+4. Fast Recovery (빠른 복구)
 패킷 손실 후 빠르게 복구합니다:
 
 1) Fast Retransmit 발생 시 진입
@@ -66,7 +66,7 @@ AIMD (Additive Increase Multiplicative Decrease)
 4) 새로운 ACK 받으면 Congestion Avoidance로 전환
 5) Slow Start를 건너뛰어 빠른 복구
 
-**5. CUBIC (Linux 기본 알고리즘)**
+5. CUBIC (Linux 기본 알고리즘)
 고속 네트워크에 최적화된 알고리즘입니다:
 
 3차 함수 기반 윈도우 증가
@@ -79,7 +79,7 @@ AIMD (Additive Increase Multiplicative Decrease)
 - 빠른 대역폭 활용
 - 고속 장거리 네트워크에 효과적
 
-**6. BBR (Bottleneck Bandwidth and RTT)**
+6. BBR (Bottleneck Bandwidth and RTT)
 Google이 개발한 혼잡 제어 알고리즘입니다:
 
 동작 원리:

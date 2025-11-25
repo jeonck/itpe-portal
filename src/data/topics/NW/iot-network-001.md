@@ -34,7 +34,7 @@ trends:
 ## 동작원리
 IoT 네트워크는 다음과 같은 방식으로 저전력 광역 통신을 제공합니다:
 
-**1. LoRa/LoRaWAN 동작**
+1. LoRa/LoRaWAN 동작
 
 물리 계층 (LoRa)
 - CSS (Chirp Spread Spectrum) 변조 방식 사용
@@ -51,7 +51,7 @@ Class 구분:
 - Class B: 주기적인 수신 창
 - Class C: 항상 수신 대기 (높은 전력 소비)
 
-**2. NB-IoT (Narrowband IoT) 동작**
+2. NB-IoT (Narrowband IoT) 동작
 
 LTE 기반 IoT 전용 표준
 - LTE 주파수 대역의 200kHz 대역폭 사용
@@ -66,7 +66,7 @@ LTE 기반 IoT 전용 표준
 - 건물 침투력 우수 (MCL 164dB)
 - 10년 이상 배터리 수명
 
-**3. Zigbee 동작 (메쉬 네트워크)**
+3. Zigbee 동작 (메쉬 네트워크)
 
 IEEE 802.15.4 기반 저전력 무선 통신
 - 2.4GHz 대역 사용
@@ -83,7 +83,7 @@ AODV (Ad-hoc On-Demand Distance Vector) 라우팅
 
 사용 사례: 스마트 홈 (Philips Hue, 삼성 SmartThings)
 
-**4. LPWAN 특징 비교**
+4. LPWAN 특징 비교
 
 전력 소비:
 - LoRa: 매우 낮음 (10년 배터리)

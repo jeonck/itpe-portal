@@ -36,15 +36,15 @@ trends:
 ## 동작원리
 무선 네트워크는 전파를 이용하여 데이터를 전송하며, 각 기술마다 고유한 메커니즘을 사용합니다:
 
-**WiFi (OFDMA + MU-MIMO)**
+WiFi (OFDMA + MU-MIMO)
 - OFDMA: 주파수 대역을 여러 사용자에게 분할 할당
 - MU-MIMO: 여러 안테나로 동시에 다중 사용자 서비스
 
-**5G/6G (Massive MIMO + Beamforming)**
+5G/6G (Massive MIMO + Beamforming)
 - Massive MIMO: 수십~수백 개 안테나로 공간 다중화
 - Beamforming: 특정 방향으로 신호 집중
 
-**IoT (저전력 변조)**
+IoT (저전력 변조)
 - LoRa: CSS 변조로 장거리 전송
 - Zigbee: IEEE 802.15.4 메쉬 네트워크
 

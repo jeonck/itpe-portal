@@ -33,7 +33,7 @@ trends:
 ## 동작원리
 IPv4에서 IPv6로 전환하는 다음 3가지 메커니즘이 사용됩니다:
 
-**1. 듀얼 스택 (Dual Stack)**
+1. 듀얼 스택 (Dual Stack)
 IPv4와 IPv6를 동시에 운영합니다:
 
 - 네트워크 장비에 IPv4와 IPv6 주소를 모두 할당
@@ -44,7 +44,7 @@ IPv4와 IPv6를 동시에 운영합니다:
 장점: 가장 안정적, 점진적 전환 가능
 단점: 두 프로토콜 모두 관리 필요, 리소스 소비
 
-**2. 터널링 (Tunneling)**
+2. 터널링 (Tunneling)
 IPv6 패킷을 IPv4 네트워크를 통해 전송합니다:
 
 6to4 터널링
@@ -60,7 +60,7 @@ Teredo 터널링
 ISATAP (Intra-Site Automatic Tunnel Addressing Protocol)
 - 기업 내부 IPv6 전환에 사용
 
-**3. 변환 (Translation)**
+3. 변환 (Translation)
 IPv6와 IPv4 간 프로토콜 변환을 수행합니다:
 
 NAT64
@@ -76,7 +76,7 @@ DNS64
 - 모바일 네트워크에서 주로 사용
 - IPv4 앱이 IPv6 전용 네트워크에서 동작
 
-**4. IPv6 Auto Configuration (SLAAC)**
+4. IPv6 Auto Configuration (SLAAC)
 IPv6는 자동 주소 설정을 지원합니다:
 
 1) 라우터가 Router Advertisement (RA) 메시지 전송
