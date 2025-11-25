@@ -32,7 +32,7 @@ tags:
 # 정의
 안전 필수 시스템에서 소프트웨어의 기능 안전성(Functional Safety)을 보장하기 위한 국제 표준으로, 자동차(ISO 26262)와 산업 일반(IEC 61508)에 적용됩니다.
 
-## 동작원리
+## 절차
 ISO 26262는 V-Model 기반의 체계적인 안전성 보장 프로세스를 따릅니다:
 
 1. Hazard Analysis & Risk Assessment (HARA)
