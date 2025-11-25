@@ -66,3 +66,6 @@ OWASP(Open Web Application Security Project) Top 10은 웹 애플리케이션 �
 
 *   활용: 웹 애플리케이션 개발자, 보안 엔지니어, 침투 테스터가 보안 취약점을 이해하고 방어 전략을 수립하는 데 중요한 가이드라인으로 활용됩니다.
 *   WAF (Web Application Firewall)와의 관계: WAF는 OWASP Top 10과 같은 웹 공격을 탐지하고 차단하는 데 특화된 보안 솔루션입니다.
+
+## 기술요소
+- [TODO: 기술요소 내용을 여기에 작성하세요.]

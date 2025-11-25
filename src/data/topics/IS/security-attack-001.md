@@ -56,3 +56,6 @@ trends:
 - AI 기반 공격
 - Supply Chain Attack
 - Zero-day Exploit
+
+## 기술요소
+- [TODO: 기술요소 내용을 여기에 작성하세요.]
