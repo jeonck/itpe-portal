@@ -2310,6 +2310,7 @@
       "페이지 교체"
     ],
     "definition": "물리 메모리의 한계를 극복하기 위해 디스크를 보조 기억장치로 활용하여 논리적으로 큰 메모리 공간을 제공하는 기법입니다.",
+    "operatingPrinciple": "가상 메모리는 주소 변환과 페이징을 통해 동작합니다:\n\n주소 변환 과정 (Address Translation)\n1) CPU가 논리 주소(Virtual Address) 생성\n2) 논리 주소를 페이지 번호(Page Number)와 오프셋(Offset)으로 분할\n   - 예: 32비트 주소, 4KB 페이지 → 상위 20비트(페이지), 하위 12비트(오프셋)\n3) TLB 확인 (Translation Lookaside Buffer)\n   - Hit: 물리 프레임 번호 즉시 반환\n   - Miss: 페이지 테이블 접근\n4) 페이지 테이블 조회\n   - Valid bit 확인\n   - Valid=1: 물리 프레임 번호 반환\n   - Valid=0: Page Fault 발생\n5) 물리 주소 = 프레임 번호 + 오프셋\n\nPage Fault 처리 절차\n1) Page Fault 인터럽트 발생\n2) OS가 페이지 테이블에서 디스크 주소 확인\n3) 빈 프레임 할당\n   - 없으면 페이지 교체 알고리즘 실행 (LRU, FIFO 등)\n   - 희생 페이지(Victim Page) 선택\n   - Dirty bit=1이면 디스크에 Write-back\n4) 디스크에서 요청 페이지 로드\n5) 페이지 테이블 갱신 (Valid bit=1, 프레임 번호 설정)\n6) TLB 갱신\n7) 명령어 재실행\n\nLRU 알고리즘 동작 (Least Recently Used)\n- 각 페이지에 마지막 접근 시간 기록\n- 교체 시 가장 오래전에 사용된 페이지 선택\n- 구현: 스택, 카운터, 하드웨어 지원\n- 근사 LRU: Clock 알고리즘 (Reference bit 사용)",
     "characteristics": [
       "페이징 vs 세그멘테이션: 페이징은 고정 크기 페이지(4KB)로 분할하여 외부 단편화 없음, 내부 단편화 존재. 세그멘테이션은 가변 크기 세그먼트(코드, 데이터, 스택)로 논리적 분할, 외부 단편화 발생. 현대 OS는 페이지드 세그멘테이션 혼합",
       "페이지 부재(Page Fault): 요청한 페이지가 물리 메모리에 없을 때 발생. 처리: 1) 인터럽트 발생 2) 디스크에서 페이지 로드 3) 페이지 테이블 갱신 4) 명령어 재실행. 과도한 Page Fault는 스래싱(Thrashing) 유발",
@@ -2434,6 +2435,7 @@
       "동기화"
     ],
     "definition": "여러 프로세스/스레드가 공유 자원에 동시 접근할 때 데이터 일관성을 보장하기 위한 기법입니다.",
+    "operatingPrinciple": "동기화 기법들은 다음과 같이 동작합니다:\n\nMutex 동작\n1) lock() 호출\n   - 잠금 변수 확인 (locked = 0 또는 1)\n   - locked = 0이면 1로 설정하고 진입 (Test-and-Set 원자 연산)\n   - locked = 1이면 대기 큐에 추가되고 Sleep\n2) 임계 영역 실행\n3) unlock() 호출\n   - locked = 0으로 설정\n   - 대기 큐에서 스레드 깨움 (Wakeup)\n\nSemaphore 동작\n- 정수 변수 S로 자원 개수 관리\n- P(wait) 연산:\n  ```\n  P(S):\n    S = S - 1\n    if S < 0:\n      현재 스레드를 대기 큐에 추가\n      Sleep\n  ```\n- V(signal) 연산:\n  ```\n  V(S):\n    S = S + 1\n    if S <= 0:\n      대기 큐에서 스레드 깨움\n  ```\n- Binary Semaphore (S=1): Mutex와 유사\n- Counting Semaphore (S=N): 여러 자원 관리\n\nMonitor 동작 (Java synchronized)\n1) Monitor 진입: 한 번에 한 스레드만 진입\n2) Condition Variable 사용:\n   - wait(): 조건 불만족 시 대기, 다른 스레드에게 모니터 양보\n   - signal(): 대기 중인 스레드 하나 깨움\n   - broadcast(): 모든 대기 스레드 깨움\n3) Monitor 퇴출: 자동으로 잠금 해제\n\nSpinlock 동작\n```\nwhile (test_and_set(&lock) == 1) {\n  // Busy waiting (계속 확인)\n}\n// 임계 영역\nlock = 0\n```\n- CPU를 계속 사용하며 대기 (Context Switch 없음)\n- 짧은 임계 영역에 유리 (Mutex보다 빠름)\n- 멀티코어 환경에서 효과적",
     "characteristics": [
       "Critical Section (임계 영역): 공유 자원에 접근하는 코드 영역, 한 번에 하나만 실행",
       "Race Condition (경쟁 상태): 여러 스레드가 동시에 공유 데이터 접근, 결과가 실행 순서에 따라 달라짐",
@@ -2477,6 +2479,7 @@
       "Deadlock"
     ],
     "definition": "프로세스는 실행 중인 프로그램의 인스턴스이며, 스레드는 프로세스 내의 실행 단위로, 운영체제의 핵심 개념입니다.",
+    "operatingPrinciple": "프로세스와 스레드는 다음과 같이 생성되고 관리됩니다:\n\n프로세스 생성 (fork 시스템 콜)\n1) fork() 호출: 부모 프로세스가 자식 프로세스 생성\n2) PCB 생성: OS가 새로운 PCB 할당 (PID, 상태, 레지스터 등)\n3) 메모리 복사: 부모의 주소 공간 복사 (CoW: Copy-on-Write 최적화)\n4) 반환: 부모에게 자식 PID, 자식에게 0 반환\n5) exec() 호출: 새로운 프로그램 로드 및 실행\n\n문맥 교환 (Context Switching) 절차\n1) 타이머 인터럽트 또는 시스템 콜 발생\n2) 현재 프로세스 상태 저장\n   - 레지스터 값을 PCB에 저장\n   - PC (Program Counter), SP (Stack Pointer) 저장\n3) 스케줄러가 다음 프로세스 선택\n4) 새 프로세스 상태 복원\n   - PCB에서 레지스터 값 로드\n   - 페이지 테이블 전환 (프로세스 전환 시)\n5) 실행 재개\n\n스레드 생성 (pthread_create)\n1) 스레드 생성 요청\n2) TCB 할당 (TID, 스택 포인터, PC)\n3) 독립 스택 할당 (힙/코드/데이터는 공유)\n4) 스레드 함수 실행\n\n교착상태 (Deadlock) 탐지\n- Resource Allocation Graph로 순환 대기 확인\n- 순환이 있으면 Deadlock 발생\n- 해결: 프로세스 종료 또는 자원 선점",
     "characteristics": [
       "PCB/TCB: PCB(Process Control Block)는 프로세스 정보(PID, 상태, PC, 레지스터, 메모리 포인터 등) 저장, TCB(Thread Control Block)는 스레드 정보(TID, PC, 스택 포인터, 레지스터) 저장",
       "문맥교환(Context Switching): CPU가 프로세스/스레드를 전환할 때 현재 상태 저장 후 새로운 상태 복원. 프로세스 전환은 무겁고(메모리 맵 전환), 스레드 전환은 가볍다(같은 주소 공간)",
@@ -2774,6 +2777,7 @@
       "Journaling"
     ],
     "definition": "디스크에 파일을 저장, 관리, 검색하는 체계로, 메타데이터와 데이터 블록을 효율적으로 구조화합니다.",
+    "operatingPrinciple": "파일 시스템은 파일 접근과 메타데이터 관리를 다음과 같이 수행합니다:\n\nEXT4 파일 읽기 과정\n1) 파일 열기: open(\"/home/user/file.txt\")\n2) 디렉토리 탐색\n   - 루트 디렉토리(/) Inode 읽기\n   - /home 디렉토리 엔트리에서 \"home\"의 Inode 번호 찾기\n   - /home/user 엔트리에서 \"user\"의 Inode 번호 찾기\n   - 최종적으로 \"file.txt\"의 Inode 번호 획득\n3) Inode 읽기\n   - Inode 테이블에서 해당 Inode 로드\n   - 파일 크기, 권한, 블록 주소 확인\n4) 데이터 블록 읽기\n   - Direct Block: 직접 블록 주소 (12개)\n   - Indirect Block: 간접 블록 (1단계, 2단계, 3단계)\n   - Extent (EXT4): 연속된 블록을 범위로 표현\n5) 데이터 반환\n\nInode 구조\n- 메타데이터: 크기, 소유자, 권한, 타임스탬프\n- 블록 포인터:\n  - 12개 Direct Block (48KB)\n  - 1개 Single Indirect (최대 4MB)\n  - 1개 Double Indirect (최대 4GB)\n  - 1개 Triple Indirect (최대 4TB)\n\nJournaling 동작 (저널링)\n1) 파일 쓰기 요청\n2) Journal에 트랜잭션 기록\n   - Begin Transaction\n   - 변경할 메타데이터/데이터 기록\n   - Commit Transaction\n3) 실제 파일 시스템에 반영\n4) Journal에서 트랜잭션 삭제\n5) 장애 발생 시: Journal 재생(Replay)으로 복구\n\nFAT32 동작\n- FAT 테이블: 각 클러스터의 다음 클러스터 번호 저장\n- 파일 읽기: FAT 체인 따라가기\n  - 예: 클러스터 2 → FAT[2]=3 → FAT[3]=4 → FAT[4]=EOF",
     "characteristics": [
       "Inode (Index Node): Unix/Linux 파일 메타데이터 (권한, 소유자, 크기, 블록 주소), 파일명은 디렉토리에 저장",
       "FAT (File Allocation Table): MS-DOS/Windows, 간단한 구조, 플래시 메모리 호환",
@@ -8953,6 +8957,7 @@
       "AI 반도체"
     ],
     "definition": "PIM(Processing In Memory)은 중앙 처리 장치(CPU)와 메모리 간의 빈번한 데이터 이동으로 발생하는 병목 현상(폰노이만 병목)을 해결하기 위해 메모리 내부 또는 메모리 근처에서 연산을 수행하는 차세대 컴퓨팅 아키텍처입니다. PNM(Processing Near Memory)은 PIM의 한 형태로, 연산 유닛을 메모리 칩 가까이에 배치하여 데이터 이동 거리를 줄이는 기술을 포함합니다. AI 및 빅데이터 처리와 같이 대용량 데이터의 병렬 연산이 많은 작업에서 성능과 에너지 효율을 획기적으로 향상시킬 수 있습니다.",
+    "operatingPrinciple": "PIM/PNM은 데이터 이동을 최소화하여 폰노이만 병목을 해결합니다:\n\n폰노이만 병목 (Von Neumann Bottleneck)\n- 기존 구조: CPU ↔ 버스 ↔ 메모리 (데이터 이동 병목)\n- 문제점: 대량 데이터 처리 시 버스 대역폭이 한계\n- 예시: AI 모델 학습 시 가중치(Weight)를 메모리에서 반복 읽기\n\nPIM 동작 (HBM-PIM 예시)\n1) 명령 전달: CPU가 PIM에 연산 명령 전송\n2) 데이터 로컬 처리: HBM 내부 연산 유닛이 메모리 데이터 직접 접근\n3) 인메모리 연산: 데이터 이동 없이 메모리 내에서 MAC 연산 수행\n4) 결과 반환: 최종 결과만 CPU로 전송\n\n삼성 HBM-PIM 구조:\n- 각 HBM 채널에 연산 유닛(PE) 배치\n- 행렬-벡터 곱셈(GEMV) 가속\n- 16개 채널이 병렬로 연산\n- 전력 효율 2배, 성능 2배 향상\n\nPNM 동작\n- 메모리 칩 외부, 패키지 내부에 연산 유닛 배치\n- 메모리와 짧은 연결 (마이크로범프)\n- PIM보다 구현 용이, 유연성 높음",
     "characteristics": [
       "폰노이만 병목 (Von Neumann Bottleneck): CPU와 메모리가 분리되어 있어 데이터 처리 시 CPU와 메모리 간의 데이터 이동이 빈번하게 발생하고, 이로 인해 전체 시스템 성능 저하 및 에너지 소모 증가를 야기하는 현상.",
       "PIM (Processing In Memory):"
