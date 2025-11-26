@@ -34,21 +34,29 @@ trends:
 - 자가 치유 (Self-healing)
 - 서비스 디스커버리 및 로드 밸런싱
 
-## 최신 트렌드
-- Serverless Kubernetes
-- GitOps
-- Service Mesh (Istio)
+## 기술요소
+Kubernetes(쿠버네티스)는 컨테이너화된 애플리케이션의 배포, 확장 및 관리를 자동화하는 강력한 오픈소스 플랫폼입니다. 다음은 쿠버네티스의 주요 기술 요소들입니다.
 
-# 정의
-컨테이너화된 애플리케이션의 배포, 확장, 관리를 자동화하는 오픈소스 플랫폼입니다.
+-   **컨트롤 플레인 (Control Plane)**: 쿠버네티스 클러스터를 관리하고 제어하는 핵심 구성 요소.
+    -   **Kube-API Server**: 쿠버네티스 API를 노출하는 컴포넌트. 모든 통신(내부/외부)의 프런트엔드.
+    -   **etcd**: 클러스터의 모든 데이터를 저장하는 분산형 키-값 저장소.
+    -   **Kube-Scheduler**: 새로 생성된 Pod를 실행할 노드를 선택.
+    -   **Kube-Controller Manager**: 컨트롤러 프로세스를 실행하는 컴포넌트 (예: Replication Controller, Endpoint Controller, Service Account Controller).
+    -   **Cloud Controller Manager (CCM)**: 클라우드 공급자별 컨트롤러 로직을 포함 (클라우드 환경에서만 동작).
+-   **워커 노드 (Worker Node)**: 컨테이너화된 애플리케이션(Pod)을 실행하는 물리 또는 가상 머신.
+    -   **Kubelet**: 각 노드에서 실행되는 에이전트로, Pod를 노드에서 컨테이너 런타임으로 실행.
+    -   **Kube-proxy**: 각 노드에서 네트워크 프록시 및 로드 밸런서 역할을 수행.
+    -   **컨테이너 런타임 (Container Runtime)**: 컨테이너 이미지 실행 및 관리. (예: Docker, containerd).
+-   **오브젝트 (Objects)**: 쿠버네티스 시스템의 영구적인 엔티티.
+    -   **Pod**: 쿠버네티스에서 생성 및 관리되는 최소 배포 단위. 하나 이상의 컨테이너와 스토리지, 네트워크 자원을 포함.
+    -   **Service**: Pod들의 논리적인 집합과 해당 Pod들에 접근하는 방식을 정의.
+    -   **Deployment**: Pod와 ReplicaSet에 대한 선언적 업데이트를 제공.
+    -   **ReplicaSet**: 지정된 수의 Pod 복제본이 항상 실행되도록 보장.
+    -   **Ingress**: 클러스터 외부에서 클러스터 내부 서비스로 HTTP/HTTPS 경로를 노출.
+-   **네트워킹**:
+    -   **CNI (Container Network Interface)**: 컨테이너 네트워킹을 위한 플러그인 기반 표준.
+    -   **Service Discovery**: 서비스의 IP 주소와 포트를 동적으로 찾아 연결.
+    -   **DNS**: 클러스터 내부 및 외부 서비스에 대한 이름 확인.
 
-## 특징
-- 선언적 구성 관리
-- 자동 스케일링 (HPA, VPA)
-- 자가 치유 (Self-healing)
-- 서비스 디스커버리 및 로드 밸런싱
+이러한 기술 요소들이 유기적으로 결합되어 쿠버네티스는 컨테이너화된 애플리케이션을 안정적이고 효율적으로 운영할 수 있는 환경을 제공합니다.
 
-## 최신 트렌드
-- Serverless Kubernetes
-- GitOps
-- Service Mesh (Istio)
