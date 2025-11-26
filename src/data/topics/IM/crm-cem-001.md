@@ -26,7 +26,7 @@ trends:
 ---
 
 # 정의
-CRM(Customer Relationship Management)은 고객과의 관계를 관리하고 고객 데이터를 분석하여 고객 생애 가치(LTV)를 극대화하는 경영 전략이자 시스템입니다. CEM(Customer Experience Management)은 CRM의 발전된 형태로, 고객이 기업의 제품, 서비스, 브랜드와 상호작용하는 모든 접점에서 느끼는 총체적인 경험을 긍정적으로 설계하고 관리하는 데 중점을 둡니다.
+CRM(Customer Relationship Management)은 고객과의 관계를 관리하고 고객 데이터를 분석하여 고객 생애 가치(LTV)를 극대화하는 경영 전략이자 시스템입니다. CEM(Customer Experience Management)은 CRM의 발전된 형태로, 고객이 기업의 제품, 서비스, 브랜드와 상호작용하는 모든 접점에서 느끼는 총체적인 경험을 긍정적으로 설계하고 관리하는 데 중점을 둡니다 기술.
 
 ## 특징
 - CRM (Customer Relationship Management):

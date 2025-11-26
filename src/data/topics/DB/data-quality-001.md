@@ -28,7 +28,7 @@ trends:
 ---
 
 # 정의
-데이터가 사용 목적에 적합한 품질을 갖추도록 정확성, 완전성, 일관성 등을 관리하는 활동으로, Dahama의 6원칙이 기준입니다.
+데이터가 사용 목적에 적합한 품질을 갖추도록 정확성, 완전성, 일관성 등을 관리하는 활동으로, Dahama의 6원칙이 기준 기술.
 
 ## 특징
 - Dahama 6원칙: 정확성(Accuracy), 완전성(Completeness), 일관성(Consistency), 유효성(Validity), 적시성(Timeliness), 유일성(Uniqueness)

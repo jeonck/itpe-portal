@@ -24,7 +24,7 @@ trends:
 ---
 
 # 정의
-PMBOK(Project Management Body of Knowledge) 7판은 프로젝트 관리의 지식 체계를 '프로젝트 관리 원칙(12 Principles)'과 '프로젝트 성과 영역(8 Performance Domains)' 중심으로 재편한 가이드입니다. 전통적인 프로세스 중심에서 벗어나 프로젝트를 통해 '가치(Value)'를 지속적으로 전달하는 데 초점을 맞추고 있으며, 예측(Predictive), 애자일(Agile), 하이브리드(Hybrid) 등 다양한 접근 방식을 포괄합니다.
+PMBOK(Project Management Body of Knowledge) 7판은 프로젝트 관리의 지식 체계를 '프로젝트 관리 원칙(12 Principles)'과 '프로젝트 성과 영역(8 Performance Domains)' 중심으로 재편한 가이드입니다. 전통적인 프로세스 중심에서 벗어나 프로젝트를 통해 '가치(Value)'를 지속적으로 전달하는 데 초점을 맞추고 있으며, 예측(Predictive), 애자일(Agile), 하이브리드(Hybrid) 등 다양한 접근 방식을 포괄 방식.
 
 ## 특징
 - 12가지 프로젝트 관리 원칙 (Project Management Principles):

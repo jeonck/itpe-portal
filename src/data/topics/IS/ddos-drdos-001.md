@@ -26,7 +26,7 @@ trends:
 ---
 
 # 정의
-DDoS(Distributed Denial of Service) 공격은 여러 대의 공격 시스템을 분산적으로 활용하여 특정 서버나 네트워크에 과도한 트래픽을 발생시켜 정상적인 서비스 제공을 방해하는 행위입니다. DRDoS(Distributed Reflection Denial of Service)는 DDoS의 한 형태로, 공격자가 위조된 IP 주소를 사용하여 다수의 정상적인 서버(리플렉터)에 요청을 보내고, 이 서버들이 증폭된 응답을 피해 서버로 보내도록 유도하는 공격입니다.
+DDoS(Distributed Denial of Service) 공격은 여러 대의 공격 시스템을 분산적으로 활용하여 특정 서버나 네트워크에 과도한 트래픽을 발생시켜 정상적인 서비스 제공을 방해하는 행위입니다. DRDoS(Distributed Reflection Denial of Service)는 DDoS의 한 형태로, 공격자가 위조된 IP 주소를 사용하여 다수의 정상적인 서버(리플렉터)에 요청을 보내고, 이 서버들이 증폭된 응답을 피해 서버로 보내도록 유도하는 공격 기법.
 
 ## 특징
 - DDoS (Distributed Denial of Service):

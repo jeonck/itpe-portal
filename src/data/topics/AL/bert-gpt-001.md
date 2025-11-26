@@ -28,7 +28,7 @@ trends:
 ---
 
 # 정의
-Transformer 기반의 두 대표적인 사전 학습 모델로, 양방향(BERT)과 단방향(GPT) 언어 이해 방식의 차이를 가집니다.
+Transformer 기반의 두 대표적인 사전 학습 모델로, 양방향(BERT)과 단방향(GPT) 언어 이해 방식의 차이를 가집니다 방식.
 
 ## 특징
 - BERT (Bidirectional Encoder Representations from Transformers): Encoder-only, 양방향
@@ -53,4 +53,3 @@ Transformer 기반의 두 대표적인 사전 학습 모델로, 양방향(BERT)�
 ## 최신 트렌드
 - Instruction Tuning
 - RLHF
-

@@ -27,7 +27,7 @@ trends:
 ---
 
 # 정의
-RAID(Redundant Array of Independent Disks)는 여러 디스크를 하나로 묶어 성능과 안정성을 향상시키는 기술이며, 스토리지 아키텍처는 데이터 저장 방식을 정의합니다.
+RAID(Redundant Array of Independent Disks)는 여러 디스크를 하나로 묶어 성능과 안정성을 향상시키는 기술이며, 스토리지 아키텍처는 데이터 저장 방식을 정의 기술.
 
 ## 특징
 - RAID 레벨: RAID 0(스트라이핑, 성능↑, 안정성×), RAID 1(미러링, 안정성↑, 용량 1/2), RAID 5(분산 패리티, 최소 3개 디스크, 1개 장애 허용), RAID 6(이중 패리티, 2개 장애 허용), RAID 10(1+0, 미러링+스트라이핑, 성능+안정성)
@@ -73,4 +73,3 @@ RAID(Redundant Array of Independent Disks)는 여러 디스크를 하나로 묶�
     -   **오브젝트 스토리지 (Object Storage)**: 데이터를 객체(Object) 단위로 저장하고 관리하는 스토리지. 비정형 데이터(이미지, 동영상 등) 저장에 적합. (AWS S3)
 
 이러한 스토리지 및 RAID 기술들은 데이터의 안전성, 접근성, 성능 요구사항에 따라 적절히 조합되어 사용됩니다.
-

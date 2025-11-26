@@ -21,7 +21,7 @@ title: 일정 단축 (Crashing, Fast Tracking)
 ---
 
 # 정의
-일정 단축(Schedule Compression)은 프로젝트 일정을 단축하기 위한 두 가지 주요 기법인 Crashing(시간 단축)과 Fast Tracking(작업 병행)을 의미합니다. 이는 프로젝트 마감 기한이 촉박하거나 일정 지연으로 인해 프로젝트 완료일이 지연될 위험이 있을 때 사용됩니다.
+일정 단축(Schedule Compression)은 프로젝트 일정을 단축하기 위한 두 가지 주요 기법인 Crashing(시간 단축)과 Fast Tracking(작업 병행)을 의미합니다. 이는 프로젝트 마감 기한이 촉박하거나 일정 지연으로 인해 프로젝트 완료일이 지연될 위험이 있을 때 사용됩니다 기법.
 
 ## 특징
 - Crashing (시간 단축):

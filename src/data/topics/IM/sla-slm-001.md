@@ -26,7 +26,7 @@ trends:
 ---
 
 # 정의
-SLA(Service Level Agreement)는 서비스 제공자와 고객 간에 합의된 서비스 수준에 대한 공식적인 협약 문서입니다. SLM(Service Level Management)은 이러한 SLA를 정의, 모니터링, 검토하고 지속적으로 개선하여 고객의 기대치를 충족시키고 서비스 품질을 유지 및 향상시키는 프로세스입니다.
+SLA(Service Level Agreement)는 서비스 제공자와 고객 간에 합의된 서비스 수준에 대한 공식적인 협약 문서입니다. SLM(Service Level Management)은 이러한 SLA를 정의, 모니터링, 검토하고 지속적으로 개선하여 고객의 기대치를 충족시키고 서비스 품질을 유지 및 향상시키는 프로세스 기능.
 
 ## 특징
 - SLA (Service Level Agreement):

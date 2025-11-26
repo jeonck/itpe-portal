@@ -27,7 +27,7 @@ trends:
 ---
 
 # 정의
-함수가 자기 자신을 호출하는 재귀와, 문제를 작은 부분으로 나누어 해결하는 분할정복 기법
+함수가 자기 자신을 호출하는 재귀와, 문제를 작은 부분으로 나누어 해결하는 분할정복 기법.
 
 ## 특징
 - 재귀 (Recursion): 함수가 자기 자신을 호출, 기저 조건(Base Case) 필수
@@ -50,4 +50,3 @@ trends:
 ## 최신 트렌드
 - Tail Recursion Optimization
 - Parallel Divide and Conquer
-

@@ -26,7 +26,7 @@ trends:
 ---
 
 # 정의
-BPM(Business Process Management)은 기업의 비즈니스 프로세스를 정의, 모델링, 실행, 모니터링, 최적화하는 전사적 관리 시스템입니다. PI(Process Innovation) 또는 BPR(Business Process Reengineering)은 기존 비즈니스 프로세스를 근본적으로 재설계하여 비용, 품질, 서비스, 속도 등 핵심적인 성과 지표를 획기적으로 향상시키는 활동을 의미하며, BPM은 이러한 PI를 지속적으로 지원하는 도구이자 방법론입니다.
+BPM(Business Process Management)은 기업의 비즈니스 프로세스를 정의, 모델링, 실행, 모니터링, 최적화하는 전사적 관리 시스템입니다. PI(Process Innovation) 또는 BPR(Business Process Reengineering)은 기존 비즈니스 프로세스를 근본적으로 재설계하여 비용, 품질, 서비스, 속도 등 핵심적인 성과 지표를 획기적으로 향상시키는 활동을 의미하며, BPM은 이러한 PI를 지속적으로 지원하는 도구이자 방법론 방법.
 
 ## 특징
 - BPM (Business Process Management):

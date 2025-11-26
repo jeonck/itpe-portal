@@ -29,7 +29,7 @@ trends:
 ---
 
 # 정의
-시스템 간 통신을 위한 API 설계 방법론으로, REST(자원 중심), GraphQL(쿼리 기반), gRPC(고성능 RPC)의 특징과 적용 시나리오를 이해합니다.
+시스템 간 통신을 위한 API 설계 방법론으로, REST(자원 중심), GraphQL(쿼리 기반), gRPC(고성능 RPC)의 특징과 적용 시나리오를 이해 방법.
 
 ## 특징
 - REST: HTTP 메서드(GET, POST, PUT, DELETE), 자원 중심 URL, Stateless, HATEOAS

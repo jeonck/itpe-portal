@@ -31,7 +31,7 @@ trends:
 ---
 
 # 정의
-MSA 환경에서 API 라우팅/보안/모니터링을 담당하는 API Gateway와 서비스 간 통신을 관리하는 Service Mesh를 통해 분산 시스템의 복잡도를 관리합니다.
+MSA 환경에서 API 라우팅/보안/모니터링을 담당하는 API Gateway와 서비스 간 통신을 관리하는 Service Mesh를 통해 분산 시스템의 복잡도를 관리 기술.
 
 ## 기술요소
 - API Gateway 계층: 외부 클라이언트 요청의 단일 진입점, North-South 트래픽 처리

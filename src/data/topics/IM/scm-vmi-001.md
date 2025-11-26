@@ -26,7 +26,7 @@ trends:
 ---
 
 # 정의
-SCM(Supply Chain Management)은 제품 및 서비스의 원자재 조달부터 생산, 유통, 최종 소비자에게 전달되는 전 과정의 흐름을 통합적으로 관리하여 효율성을 극대화하는 경영 전략이자 시스템입니다. VMI(Vendor Managed Inventory)는 SCM의 한 전략으로, 공급업체가 고객사의 재고를 직접 관리하고 보충함으로써 공급망 전체의 재고 수준을 최적화하고 비용을 절감하는 방식입니다.
+SCM(Supply Chain Management)은 제품 및 서비스의 원자재 조달부터 생산, 유통, 최종 소비자에게 전달되는 전 과정의 흐름을 통합적으로 관리하여 효율성을 극대화하는 경영 전략이자 시스템입니다. VMI(Vendor Managed Inventory)는 SCM의 한 전략으로, 공급업체가 고객사의 재고를 직접 관리하고 보충함으로써 공급망 전체의 재고 수준을 최적화하고 비용을 절감하는 방식.
 
 ## 특징
 - SCM (Supply Chain Management):

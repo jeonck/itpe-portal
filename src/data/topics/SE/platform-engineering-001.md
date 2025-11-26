@@ -33,7 +33,7 @@ trends:
 ---
 
 # 정의
-개발자 생산성 향상을 위해 Self-Service 기반의 내부 개발 플랫폼(IDP)을 구축하고 운영하는 엔지니어링 분야로, DevOps 다음 세대 접근법입니다.
+개발자 생산성 향상을 위해 Self-Service 기반의 내부 개발 플랫폼(IDP)을 구축하고 운영하는 엔지니어링 분야로, DevOps 다음 세대 접근법 플랫폼.
 
 ## 특징
 - IDP (Internal Developer Platform): 개발자가 인프라/배포/모니터링 등을 셀프서비스로 이용

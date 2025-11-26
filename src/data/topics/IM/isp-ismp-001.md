@@ -26,7 +26,7 @@ trends:
 ---
 
 # 정의
-ISP(Information Strategy Planning)는 조직의 비전과 목표 달성을 위한 정보 시스템 구축 및 활용의 중장기 전략을 수립하는 활동입니다. ISMP(Information System Master Plan)는 ISP의 결과로 도출된 전략을 구체적인 시스템 구현 계획으로 전환하는 마스터 플랜입니다. 두 가지 모두 조직의 IT 방향성을 설정하고 투자 효율성을 극대화하는 데 중요한 역할을 합니다.
+ISP(Information Strategy Planning)는 조직의 비전과 목표 달성을 위한 정보 시스템 구축 및 활용의 중장기 전략을 수립하는 활동입니다. ISMP(Information System Master Plan)는 ISP의 결과로 도출된 전략을 구체적인 시스템 구현 계획으로 전환하는 마스터 플랜입니다. 두 가지 모두 조직의 IT 방향성을 설정하고 투자 효율성을 극대화하는 데 중요한 역할을 기술.
 
 ## 특징
 - ISP (Information Strategy Planning):

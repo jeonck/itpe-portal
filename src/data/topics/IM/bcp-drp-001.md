@@ -27,7 +27,7 @@ trends:
 ---
 
 # 정의
-BCP(Business Continuity Plan)는 재해나 비상사태 발생 시에도 핵심 비즈니스 기능을 최소한으로 유지하고, 정해진 시간 내에 정상적인 운영 상태로 복구하기 위한 포괄적인 계획입니다. DRP(Disaster Recovery Plan)는 BCP의 하위 개념으로, IT 시스템 및 인프라에 초점을 맞춰 재해 발생 시 정보 시스템을 복구하는 데 필요한 절차와 자원을 상세히 기술한 계획입니다.
+BCP(Business Continuity Plan)는 재해나 비상사태 발생 시에도 핵심 비즈니스 기능을 최소한으로 유지하고, 정해진 시간 내에 정상적인 운영 상태로 복구하기 위한 포괄적인 계획입니다. DRP(Disaster Recovery Plan)는 BCP의 하위 개념으로, IT 시스템 및 인프라에 초점을 맞춰 재해 발생 시 정보 시스템을 복구하는 데 필요한 절차와 자원을 상세히 기술한 계획 기술.
 
 ## 특징
 - BCP (Business Continuity Plan):

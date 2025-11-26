@@ -30,7 +30,7 @@ trends:
 ---
 
 # 정의
-여러 데이터베이스나 서비스에 걸친 트랜잭션의 원자성을 보장하기 위한 기법으로, 2PC와 Saga Pattern이 대표적입니다.
+여러 데이터베이스나 서비스에 걸친 트랜잭션의 원자성을 보장하기 위한 기법으로, 2PC와 Saga Pattern이 대표적 기법.
 
 ## 특징
 - 2PC (Two-Phase Commit): Prepare → Commit 2단계 프로토콜

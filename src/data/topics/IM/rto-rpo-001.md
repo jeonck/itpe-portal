@@ -26,9 +26,7 @@ trends:
 ---
 
 # 정의
-RTO(Recovery Time Objective)와 RPO(Recovery Point Objective)는 재해 복구 계획(DRP) 및 비즈니스 연속성 계획(BCP) 수립 시 핵심적으로 고려되는 목표 지표입니다.
-*   RTO (Recovery Time Objective): 재해 발생 후 비즈니스 기능 또는 IT 시스템을 복구하여 정상적인 운영 상태로 되돌려야 하는 최대 허용 시간입니다. '얼마나 빨리 복구할 것인가'에 대한 목표입니다.
-*   RPO (Recovery Point Objective): 재해 발생 시 데이터 손실을 허용할 수 있는 최대 허용 시점입니다. '얼마까지의 데이터를 잃어도 되는가'에 대한 목표입니다.
+RTO(Recovery Time Objective)와 RPO(Recovery Point Objective)는 재해 복구 계획(DRP) 및 비즈니스 연속성 계획(BCP) 수립 시 핵심적으로 고려되는 목표 지표입니다. *   RTO (Recovery Time Objective): 재해 발생 후 비즈니스 기능 또는 IT 시스템을 복구하여 정상적인 운영 상태로 되돌려야 하는 최대 허용 시간입니다. '얼마나 빨리 복구할 것인가'에 대한 목표입니다. *   RPO (Recovery Point Objective): 재해 발생 시 데이터 손실을 허용할 수 있는 최대 허용 시점입니다. '얼마까지의 데이터를 잃어도 되는가'에 대한 목표 기술.
 
 ## 특징
 - RTO (Recovery Time Objective):

@@ -24,7 +24,7 @@ title: 디자인 패턴 (Design Pattern)
 ---
 
 # 정의
-소프트웨어 설계에서 반복적으로 발생하는 문제들에 대한 재사용 가능한 해결책으로, GoF의 23가지 패턴이 대표적입니다.
+소프트웨어 설계에서 반복적으로 발생하는 문제들에 대한 재사용 가능한 해결책으로, GoF의 23가지 패턴이 대표적 기법.
 
 ## 특징
 - 생성 패턴 (Creational): Singleton, Factory, Builder, Prototype

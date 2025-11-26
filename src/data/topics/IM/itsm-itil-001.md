@@ -25,7 +25,7 @@ trends:
 ---
 
 # 정의
-ITSM(IT Service Management)은 IT를 기술 중심이 아닌 '서비스' 중심으로 관리하는 체계적인 접근 방식으로, 고객에게 가치를 제공하기 위한 IT 서비스의 설계, 제공, 지원, 개선 활동을 포괄합니다. ITIL(Information Technology Infrastructure Library)은 ITSM 구현을 위한 사실상 표준으로, ITIL v4는 서비스 가치 시스템(SVS)과 서비스 가치 사슬(SVC)을 중심으로 IT 서비스의 창출, 제공, 개선을 위한 포괄적인 지침을 제공합니다.
+ITSM(IT Service Management)은 IT를 기술 중심이 아닌 '서비스' 중심으로 관리하는 체계적인 접근 방식으로, 고객에게 가치를 제공하기 위한 IT 서비스의 설계, 제공, 지원, 개선 활동을 포괄합니다. ITIL(Information Technology Infrastructure Library)은 ITSM 구현을 위한 사실상 표준으로, ITIL v4는 서비스 가치 시스템(SVS)과 서비스 가치 사슬(SVC)을 중심으로 IT 서비스의 창출, 제공, 개선을 위한 포괄적인 지침을 제공 기술.
 
 ## 특징
 - ITSM (IT Service Management):

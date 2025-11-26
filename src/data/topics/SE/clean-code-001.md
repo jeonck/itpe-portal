@@ -29,7 +29,7 @@ trends:
 ---
 
 # 정의
-읽기 쉽고 유지보수 가능한 코드 작성 원칙(Clean Code)과 변경에 유연한 소프트웨어 구조 설계 원칙(Clean Architecture)을 통합한 소프트웨어 개발 철학입니다.
+읽기 쉽고 유지보수 가능한 코드 작성 원칙(Clean Code)과 변경에 유연한 소프트웨어 구조 설계 원칙(Clean Architecture)을 통합한 소프트웨어 개발 철학 기술.
 
 ## 기술요소
 - Clean Code 작성 원칙
