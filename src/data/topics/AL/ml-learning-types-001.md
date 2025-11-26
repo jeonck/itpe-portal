@@ -31,35 +31,21 @@ trends:
 데이터로부터 패턴을 학습하는 머신러닝의 세 가지 주요 학습 방식 방식.
 
 ## 특징
-- 지도 학습 (Supervised Learning): 레이블된 데이터로 학습, 입력→출력 매핑
-- 분류 (Classification): 범주 예측, Logistic Regression, SVM, Decision Tree, Random Forest
-- 회귀 (Regression): 연속값 예측, Linear Regression, Polynomial Regression
-- 비지도 학습 (Unsupervised Learning): 레이블 없이 패턴 발견
-- 군집화 (Clustering): K-Means, DBSCAN, Hierarchical Clustering
-- 차원 축소: PCA, t-SNE, UMAP
-- 강화 학습 (Reinforcement Learning): 보상 기반, 시행착오 학습
-- 구성: Agent, Environment, State, Action, Reward
-- 알고리즘: Q-Learning, DQN, Policy Gradient, PPO, A3C
-- 활용: 지도(이미지 분류, 번역), 비지도(고객 세분화), 강화(게임 AI, 로봇 제어)
+- 학습 데이터 형태: 레이블 유무에 따라 분류
+- 학습 목표: 예측(지도), 패턴 발견(비지도), 보상 최대화(강화)
+- 적용 범위: 다양한 도메인과 문제 유형에 활용
+- 알고리즘 다양성: 각 학습 방식마다 특화된 알고리즘 존재
 
-## 최신 트렌드
-- Self-Supervised Learning
-- Meta-Learning
-
-# 정의
-데이터로부터 패턴을 학습하는 머신러닝의 세 가지 주요 학습 방식입니다.
-
-## 특징
-- 지도 학습 (Supervised Learning): 레이블된 데이터로 학습, 입력→출력 매핑
-- 분류 (Classification): 범주 예측, Logistic Regression, SVM, Decision Tree, Random Forest
-- 회귀 (Regression): 연속값 예측, Linear Regression, Polynomial Regression
-- 비지도 학습 (Unsupervised Learning): 레이블 없이 패턴 발견
-- 군집화 (Clustering): K-Means, DBSCAN, Hierarchical Clustering
-- 차원 축소: PCA, t-SNE, UMAP
-- 강화 학습 (Reinforcement Learning): 보상 기반, 시행착오 학습
-- 구성: Agent, Environment, State, Action, Reward
-- 알고리즘: Q-Learning, DQN, Policy Gradient, PPO, A3C
-- 활용: 지도(이미지 분류, 번역), 비지도(고객 세분화), 강화(게임 AI, 로봇 제어)
+## 기능
+- 지도 학습 (Supervised Learning): 레이블된 데이터로 입력→출력 매핑 학습
+  - 분류(Classification): 범주 예측 - Logistic Regression, SVM, Decision Tree, Random Forest
+  - 회귀(Regression): 연속값 예측 - Linear Regression, Polynomial Regression
+- 비지도 학습 (Unsupervised Learning): 레이블 없이 데이터 내 숨겨진 패턴 발견
+  - 군집화(Clustering): K-Means, DBSCAN, Hierarchical Clustering
+  - 차원 축소: PCA, t-SNE, UMAP로 고차원 데이터 압축
+- 강화 학습 (Reinforcement Learning): 환경과 상호작용하며 보상 최대화 전략 학습
+  - 구성 요소: Agent, Environment, State, Action, Reward
+  - 알고리즘: Q-Learning, DQN, Policy Gradient, PPO, A3C
 
 ## 최신 트렌드
 - Self-Supervised Learning

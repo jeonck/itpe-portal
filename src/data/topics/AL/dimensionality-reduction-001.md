@@ -30,16 +30,17 @@ trends:
 고차원 데이터를 저차원으로 변환하여 시각화하거나 노이즈를 제거하는 기법 기법.
 
 ## 특징
-- 목적: 시각화, 계산 효율, 과적합 방지, 노이즈 제거
-- PCA (Principal Component Analysis): 선형 변환, 분산 최대화
-- 주성분: 고유벡터, 데이터 분산이 가장 큰 방향
-- Explained Variance: 각 주성분이 설명하는 분산 비율
-- LDA (Linear Discriminant Analysis): 지도 학습, 클래스 분리 최대화
-- t-SNE (t-distributed Stochastic Neighbor Embedding): 비선형, 고차원 유사도 보존
-- 장점: 시각화 우수, 단점: 느림, 전역 구조 보존 약함
-- UMAP (Uniform Manifold Approximation): 빠른 t-SNE 대안, 전역+지역 구조
-- Autoencoder: 신경망 기반, Encoder-Decoder, 비선형 변환
-- 활용: 고차원 데이터 시각화, 특징 추출, 전처리
+- 고차원의 저주 극복: 계산 효율성 향상
+- 시각화 지원: 2D/3D로 변환하여 직관적 이해
+- 노이즈 제거: 중요 특징만 보존
+- 다양한 기법: 선형(PCA, LDA), 비선형(t-SNE, UMAP)
+
+## 동작원리
+- PCA (Principal Component Analysis): 공분산 행렬의 고유벡터를 주성분으로 선택, 분산이 최대화되는 방향으로 선형 변환, Explained Variance로 차원 수 결정
+- LDA (Linear Discriminant Analysis): 클래스 간 분산 최대화, 클래스 내 분산 최소화하는 판별 축 탐색, 지도 학습 방식
+- t-SNE (t-distributed Stochastic Neighbor Embedding): 고차원 공간의 유사도를 저차원에 보존, t-분포 사용으로 군집 분리 강화, 지역 구조 우수
+- UMAP (Uniform Manifold Approximation): 리만 기하학 기반, 전역 구조와 지역 구조 동시 보존, t-SNE보다 빠른 속도
+- Autoencoder: Encoder로 차원 축소, Decoder로 복원, 병목층(Bottleneck)이 압축 표현, 비선형 변환 가능
 
 ## 최신 트렌드
 - UMAP

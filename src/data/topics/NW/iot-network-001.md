@@ -31,6 +31,15 @@ trends:
 # 정의
 저전력, 광역 통신을 목표로 하는 IoT 전용 네트워크 기술로, LoRa, NB-IoT, Zigbee 등이 대표적 기술.
 
+## 특징
+- LPWAN (Low Power Wide Area Network): 저전력, 장거리, 저속, 대규모 IoT 디바이스
+- LoRa: 비면허 대역 (ISM 915MHz/868MHz), 장거리 (도시 2~5km, 교외 15km), CSS 변조
+- LoRaWAN: LoRa 기반 프로토콜, Class A/B/C, Star 토폴로지, 게이트웨이 방식
+- NB-IoT: 3GPP 표준, 면허 대역 (LTE), 통신사 인프라 활용, PSM/eDRX
+- Zigbee: IEEE 802.15.4, 2.4GHz, 짧은 거리 (10~100m), 메쉬 네트워크, AODV 라우팅
+- 사용 사례: 스마트 미터, 자산 추적, 농업 센서, 스마트 시티, 환경 모니터링
+- Matter: IoT 통합 표준 (Apple, Google, Amazon 등 주도), 상호 운용성
+- 비교: WiFi (고속 고전력), Bluetooth (저전력 근거리), Cellular (광역 고비용)
 
 ## 동작원리
 IoT 네트워크는 다음과 같은 방식으로 저전력 광역 통신을 제공합니다:
@@ -100,16 +109,6 @@ AODV (Ad-hoc On-Demand Distance Vector) 라우팅
 - LoRa: 0.3~50 kbps
 - NB-IoT: 최대 250 kbps
 - Zigbee: 250 kbps
-
-## 특징
-- LPWAN (Low Power Wide Area Network): 저전력, 장거리, 저속, 대규모 IoT 디바이스
-- LoRa: 비면허 대역 (ISM 915MHz/868MHz), 장거리 (도시 2~5km, 교외 15km), CSS 변조
-- LoRaWAN: LoRa 기반 프로토콜, Class A/B/C, Star 토폴로지, 게이트웨이 방식
-- NB-IoT: 3GPP 표준, 면허 대역 (LTE), 통신사 인프라 활용, PSM/eDRX
-- Zigbee: IEEE 802.15.4, 2.4GHz, 짧은 거리 (10~100m), 메쉬 네트워크, AODV 라우팅
-- 사용 사례: 스마트 미터, 자산 추적, 농업 센서, 스마트 시티, 환경 모니터링
-- Matter: IoT 통합 표준 (Apple, Google, Amazon 등 주도), 상호 운용성
-- 비교: WiFi (고속 고전력), Bluetooth (저전력 근거리), Cellular (광역 고비용)
 
 ## 최신 트렌드
 - LoRaWAN 확산

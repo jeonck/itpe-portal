@@ -32,14 +32,20 @@ OS 수준 가상화로 프로세스와 리소스를 격리하여 애플리케이
 
 
 ## 특징
-- VM vs Container: VM은 전체 OS 포함(무겁고 느림), 컨테이너는 커널 공유(가볍고 빠름)
-- namespace: 프로세스 격리 (PID, Network, Mount, UTS, IPC, User, Cgroup)
-- cgroups (Control Groups): 리소스 제한 (CPU, 메모리, I/O, 네트워크)
-- Docker: 이미지 기반 컨테이너 플랫폼, Dockerfile, 레이어 방식
-- OCI (Open Container Initiative): 컨테이너 표준 (Image Spec, Runtime Spec)
-- Container Runtime: containerd, CRI-O, runc
-- Union File System: AUFS, OverlayFS, 레이어 공유로 저장 효율
-- 사용 사례: 마이크로서비스, CI/CD, 개발 환경 일관성
+- 경량성: VM 대비 커널 공유로 빠른 시작과 적은 리소스 사용
+- 격리성: 프로세스와 리소스를 독립적으로 분리
+- 이식성: 어디서나 동일하게 실행 가능
+- 효율성: 레이어 방식으로 저장 공간 절약
+
+## 기술요소
+- namespace: 프로세스 격리 기술 (PID, Network, Mount, UTS, IPC, User, Cgroup namespace로 독립적 실행 환경 제공)
+- cgroups (Control Groups): 리소스 제한 및 모니터링 (CPU, 메모리, I/O, 네트워크 사용량 제어)
+- Docker Engine: 이미지 기반 컨테이너 플랫폼, Dockerfile로 이미지 빌드, 레이어 방식으로 효율적 저장
+- OCI (Open Container Initiative): 컨테이너 표준 규격 (Image Spec, Runtime Spec, Distribution Spec)
+- Container Runtime: containerd(Docker 런타임), CRI-O(Kubernetes 최적화), runc(저수준 런타임)
+- Union File System: AUFS, OverlayFS로 레이어 공유 및 Copy-on-Write 구현
+- 컨테이너 네트워킹: Bridge, Host, Overlay 네트워크 모드
+- 볼륨 관리: Bind Mount, Volume, tmpfs로 데이터 영속성 제공
 
 ## 최신 트렌드
 - Rootless Container

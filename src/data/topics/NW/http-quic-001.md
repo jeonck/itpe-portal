@@ -30,6 +30,15 @@ trends:
 # 정의
 HTTP/1. 1의 성능 한계를 극복하기 위해 멀티플렉싱을 제공하는 HTTP/2와, UDP 기반 QUIC 프로토콜을 사용하는 HTTP/3 기술.
 
+## 특징
+- HTTP/2: 바이너리 프로토콜, 멀티플렉싱, 헤더 압축(HPACK), Server Push, TCP 기반
+- Multiplexing: 하나의 TCP 연결로 여러 요청/응답 동시 처리, 스트림 ID로 구분
+- Server Push: 서버가 클라이언트 요청 예측하여 리소스 미리 전송, RTT 감소
+- HTTP/3: QUIC 프로토콜 사용, UDP 기반이지만 TCP처럼 신뢰성 제공
+- QUIC 장점: Head-of-Line Blocking 완전 해결, 빠른 핸드셰이크(0-RTT/1-RTT), Connection Migration
+- HTTP/2 문제: TCP Head-of-Line Blocking (패킷 손실 시 전체 스트림 지연)
+- HTTP/3 채택: Google, Facebook, Cloudflare, 전체 웹의 약 25% (2025년)
+- 사용 사례: 대규모 웹 서비스, 모바일 앱, 실시간 스트리밍
 
 ## 동작원리
 HTTP/2와 HTTP/3는 다음과 같은 메커니즘으로 성능을 향상시킵니다:
@@ -99,16 +108,6 @@ HTTP/2:
 HTTP/3:
 - UDP 기반 QUIC, HOL Blocking 해결
 - 0-RTT 연결, Connection Migration
-
-## 특징
-- HTTP/2: 바이너리 프로토콜, 멀티플렉싱, 헤더 압축(HPACK), Server Push, TCP 기반
-- Multiplexing: 하나의 TCP 연결로 여러 요청/응답 동시 처리, 스트림 ID로 구분
-- Server Push: 서버가 클라이언트 요청 예측하여 리소스 미리 전송, RTT 감소
-- HTTP/3: QUIC 프로토콜 사용, UDP 기반이지만 TCP처럼 신뢰성 제공
-- QUIC 장점: Head-of-Line Blocking 완전 해결, 빠른 핸드셰이크(0-RTT/1-RTT), Connection Migration
-- HTTP/2 문제: TCP Head-of-Line Blocking (패킷 손실 시 전체 스트림 지연)
-- HTTP/3 채택: Google, Facebook, Cloudflare, 전체 웹의 약 25% (2025년)
-- 사용 사례: 대규모 웹 서비스, 모바일 앱, 실시간 스트리밍
 
 ## 최신 트렌드
 - HTTP/3 채택 확산

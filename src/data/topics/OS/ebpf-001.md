@@ -31,13 +31,19 @@ Linux 커널을 안전하게 확장할 수 있는 프로그래밍 기술로, 커
 
 
 ## 특징
-- 동작 원리: 사용자 공간에서 eBPF 프로그램 작성 → 검증(Verifier) → JIT 컴파일 → 커널 실행
-- 안전성: Verifier가 무한 루프, 메모리 침범 등 검증, 샌드박스 환경
-- 활용 영역: 네트워킹, 보안, 트레이싱, 모니터링, 성능 분석
-- BPF Maps: 사용자-커널 간 데이터 공유, Array, Hash, LRU, Ring Buffer 등
-- XDP (eXpress Data Path): 패킷이 NIC에서 바로 처리, DDoS 방어
-- 도구: bpftrace, bpfcc, Cilium (CNI), Falco (보안), Pixie (APM)
-- 사용 사례: Kubernetes 네트워킹, 성능 프로파일링, 침입 탐지
+- 확장성: 커널 재컴파일 없이 커널 기능 확장
+- 안전성: Verifier를 통한 엄격한 검증으로 시스템 안정성 보장
+- 고성능: JIT 컴파일로 네이티브 코드 수준 성능
+- 다목적: 네트워킹, 보안, 관측성, 성능 분석 등 다양한 영역 지원
+
+## 동작원리
+- 1단계: eBPF 프로그램 작성 - C 언어로 작성 후 LLVM으로 BPF 바이트코드 컴파일
+- 2단계: 검증(Verifier) - 커널 Verifier가 무한 루프, 메모리 침범, 허용되지 않은 함수 호출 검증
+- 3단계: JIT 컴파일 - BPF 바이트코드를 기계어로 컴파일하여 성능 최적화
+- 4단계: 커널 실행 - Hook Point(시스템 콜, 네트워크 패킷, 커널 이벤트)에서 eBPF 프로그램 실행
+- BPF Maps: 사용자 공간과 커널 간 데이터 공유 구조 (Array, Hash, LRU, Ring Buffer, Stack)
+- XDP (eXpress Data Path): NIC 드라이버 레벨에서 패킷 처리, DDoS 방어 및 빠른 패킷 필터링
+- Helper Functions: 커널 데이터 접근 및 네트워크 조작을 위한 안전한 함수 제공
 
 ## 최신 트렌드
 - eBPF 기반 네트워킹 (Cilium)

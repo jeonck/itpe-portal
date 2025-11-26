@@ -31,6 +31,15 @@ trends:
 # 정의
 최소한의 코딩 또는 코딩 없이 시각적 인터페이스와 드래그앤드롭 방식으로 애플리케이션을 개발하는 플랫폼 기반 접근법 플랫폼.
 
+## 특징
+- Low-Code: 일부 코딩 필요, 개발자 대상, 확장성과 커스터마이징 가능
+- No-Code: 코딩 불필요, 비개발자(시민 개발자) 대상, 템플릿 기반
+- Visual Programming: 드래그앤드롭, 플로우차트 기반 로직 구성
+- 빠른 개발: RAD(Rapid Application Development), 프로토타이핑
+- Low-Code 플랫폼: OutSystems, Mendix, Microsoft Power Apps, Appian
+- No-Code 플랫폼: Bubble, Webflow, Airtable, Zapier
+- 한계: 복잡한 로직, 성능 최적화, 벤더 종속성
+
 ## 기능
 - Visual Programming (시각적 프로그래밍)
   - 드래그앤드롭 UI 빌더: 화면 요소(버튼, 입력창, 테이블)를 마우스로 배치
@@ -61,15 +70,6 @@ trends:
   - 시각적 데이터 필터링: 엑셀처럼 필터 및 정렬
   - 폼 빌더: 설문조사, 신청서 등 입력 폼 생성
   - 대시보드 생성: 차트와 지표를 조합하여 모니터링 화면 구성
-
-## 특징
-- Low-Code: 일부 코딩 필요, 개발자 대상, 확장성과 커스터마이징 가능
-- No-Code: 코딩 불필요, 비개발자(시민 개발자) 대상, 템플릿 기반
-- Visual Programming: 드래그앤드롭, 플로우차트 기반 로직 구성
-- 빠른 개발: RAD(Rapid Application Development), 프로토타이핑
-- Low-Code 플랫폼: OutSystems, Mendix, Microsoft Power Apps, Appian
-- No-Code 플랫폼: Bubble, Webflow, Airtable, Zapier
-- 한계: 복잡한 로직, 성능 최적화, 벤더 종속성
 
 ## 최신 트렌드
 - AI-Powered Low-Code

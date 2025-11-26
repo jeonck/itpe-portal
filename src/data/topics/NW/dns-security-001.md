@@ -32,6 +32,15 @@ trends:
 # 정의
 DNS 쿼리와 응답의 무결성, 기밀성, 인증을 보장하기 위한 보안 기술로 DNSSEC, DoH, DoT 등이 있습니다 기술.
 
+## 특징
+- DNS 취약점: Cache Poisoning(응답 위조), Spoofing(가짜 DNS 서버), DDoS, 스누핑(쿼리 감청)
+- DNSSEC: DNS 응답 전자서명으로 위변조 방지, 공개키 암호화, Trust Chain
+- DoT (DNS over TLS): TLS로 DNS 쿼리 암호화, 전용 포트 853, 프라이버시 보호
+- DoH (DNS over HTTPS): HTTPS로 DNS 쿼리 암호화, 포트 443, 일반 웹 트래픽과 구분 불가
+- DoH vs DoT: DoH는 HTTPS처럼 보여 방화벽 우회 용이, 검열 회피
+- DNS Filtering: 악성 도메인 차단, 유해 콘텐츠 필터링, 블랙리스트 기반
+- Public DNS: Cloudflare (1.1.1.1, 프라이버시 중시), Google (8.8.8.8), Quad9 (보안 중시)
+- 사용 사례: 프라이버시 보호, 중간자 공격(MITM) 방지, 콘텐츠 필터링, 검열 우회
 
 ## 동작원리
 DNS 보안 기술은 다음과 같은 방식으로 동작합니다:
@@ -97,16 +106,6 @@ HTTPS로 DNS 쿼리를 암호화하여 프라이버시와 우회성을 제공합
 - 악성 도메인 차단 (피싱, 멀웨어)
 - 유해 콘텐츠 필터링 (자녀 보호)
 - 광고 차단
-
-## 특징
-- DNS 취약점: Cache Poisoning(응답 위조), Spoofing(가짜 DNS 서버), DDoS, 스누핑(쿼리 감청)
-- DNSSEC: DNS 응답 전자서명으로 위변조 방지, 공개키 암호화, Trust Chain
-- DoT (DNS over TLS): TLS로 DNS 쿼리 암호화, 전용 포트 853, 프라이버시 보호
-- DoH (DNS over HTTPS): HTTPS로 DNS 쿼리 암호화, 포트 443, 일반 웹 트래픽과 구분 불가
-- DoH vs DoT: DoH는 HTTPS처럼 보여 방화벽 우회 용이, 검열 회피
-- DNS Filtering: 악성 도메인 차단, 유해 콘텐츠 필터링, 블랙리스트 기반
-- Public DNS: Cloudflare (1.1.1.1, 프라이버시 중시), Google (8.8.8.8), Quad9 (보안 중시)
-- 사용 사례: 프라이버시 보호, 중간자 공격(MITM) 방지, 콘텐츠 필터링, 검열 우회
 
 ## 최신 트렌드
 - DNS over HTTPS (DoH) 확산

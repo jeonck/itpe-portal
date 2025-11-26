@@ -31,14 +31,23 @@ trends:
 
 
 ## 특징
-- 분산 OS: 여러 노드를 단일 시스템처럼 운영, 투명한 자원 공유
-- 목표: 투명성 (위치, 이주, 복제), 확장성, 가용성
-- 예시: Amoeba, Plan 9, Google Borg (Kubernetes의 전신)
-- OpenStack: 오픈소스 클라우드 OS, IaaS 구축, Nova(컴퓨팅), Neutron(네트워크), Cinder(스토리지)
-- 클라우드 OS 구성: 가상화, 스토리지 풀, 네트워크 가상화, 오케스트레이션
-- Kubernetes: 컨테이너 오케스트레이션, 클라우드 네이티브 OS 역할
-- 분산 파일 시스템: GFS, HDFS, Ceph
-- 사용 사례: 프라이빗 클라우드, 대규모 데이터센터, HPC
+- 투명성: 여러 노드를 단일 시스템처럼 추상화
+- 확장성: 노드 추가로 수평 확장 가능
+- 고가용성: 장애 발생 시 자동 복구
+- 자원 공유: 분산된 컴퓨팅, 스토리지, 네트워크 자원 통합 관리
+
+## 기술요소
+- 분산 OS 커널: Amoeba, Plan 9, Google Borg (Kubernetes의 전신) - 여러 노드를 단일 시스템 이미지로 제공
+- OpenStack 구성 요소:
+  - Nova: 가상 머신 생성 및 관리 (컴퓨팅)
+  - Neutron: 네트워크 가상화 및 관리
+  - Cinder: 블록 스토리지 관리
+  - Swift: 오브젝트 스토리지
+  - Keystone: 인증 및 권한 관리
+- Kubernetes: 컨테이너 오케스트레이션으로 클라우드 네이티브 OS 역할 수행
+- 가상화 레이어: KVM, Xen, VMware로 하드웨어 자원 추상화
+- 분산 파일 시스템: GFS, HDFS, Ceph로 데이터 분산 저장 및 복제
+- 오케스트레이션: Heat(OpenStack), Ansible, Terraform으로 인프라 자동화
 
 ## 최신 트렌드
 - Kubernetes as OS

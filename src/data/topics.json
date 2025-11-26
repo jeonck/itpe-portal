@@ -196,18 +196,9 @@
       "감리 기준",
       "점검 항목"
     ],
-    "definition": "정보시스템 개발 프로젝트의 품질 및 관리 적정성을 독립적으로 검증하는 소프트웨어 감리 제도로, 한국의 3단계 감리가 대표적 기술.",
+    "definition": "정보시스템 개발 프로젝트의 품질 및 관리 적정성을 독립적으로 검증하는 소프트웨어 감리 제도로, 한국의 3단계 감리가 대표적 기술.\n\n# 특징\n- 감리 목적: 품질 보증, 위험 관리, 사업 관리 적정성 검증\n- 3단계 감리: 계획/설계 단계, 개발 단계, 시험/종료 단계\n- 감리 기준: 품질 기준, 사업관리 기준, 기술 기준\n- 점검 항목: 요구사항, 설계, 구현, 테스트, 형상관리, 일정/비용 관리\n- 감리 프로세스: 계획 → 실행 → 보고 → 개선조치\n- 감리원 자격: 정보관리기술사, 전자계산기조직응용기술사 등\n- 법적 근거: 소프트웨어진흥법, 전자정부법\n- 감리 보고서: 지적사항, 개선권고사항, 종합의견",
     "procedure": "소프트웨어 감리는 다음과 같은 3단계 프로세스로 수행됩니다:\n\n1단계: 계획/설계 단계 감리\n프로젝트 초기에 요구사항과 설계의 적정성을 검증:\n\n1. 감리 계획 수립\n   - 감리 범위, 일정, 투입 인력 계획\n   - 감리 기준: 소프트웨어 감리 기준(정보통신산업진흥원)\n   - 점검 항목 선정: 프로젝트 규모/특성에 따라 맞춤형 점검표 작성\n\n2. 요구사항 점검\n   - 요구사항 명세서(SRS) 완전성 검토: 누락된 기능 요구사항 확인\n   - 요구사항 추적성 매트릭스: 사용자 요구 → 시스템 요구사항 추적\n   - 비기능 요구사항: 성능, 보안, 가용성 목표 명확성\n   - 요구사항 변경 관리: 변경 이력 및 영향 분석 프로세스 확인\n\n3. 시스템 설계 점검\n   - 아키텍처 설계: 시스템 구조, 계층 분리, 인터페이스 정의 적정성\n   - 데이터베이스 설계: ERD, 정규화, 인덱스 설계 검토\n   - 인터페이스 설계: 외부 시스템 연계 방식, 데이터 포맷 명세\n   - 보안 설계: 인증/인가, 암호화, 접근 통제 방안\n   - 설계 산출물 품질: UML 모델, 상세 설계서 완성도\n\n4. 사업 관리 점검\n   - 일정 관리: WBS, 마일스톤, 일정 준수율\n   - 비용 관리: 예산 대비 집행 현황, Cost Overrun 리스크\n   - 인력 관리: 투입 인력 적정성, 핵심 인력 확보 여부\n   - 위험 관리: 리스크 식별, 대응 계획\n\n5. 지적사항 도출 및 보고\n   - 중대 지적: 프로젝트 성공에 심각한 영향 (예: 핵심 요구사항 누락)\n   - 권고사항: 개선 필요 항목 (예: 설계 문서 보완)\n   - 개선 조치 기한 설정: 다음 감리 시점까지 시정 요구\n\n2단계: 개발 단계 감리\n구현 중간 단계에서 개발 프로세스와 품질을 점검:\n\n1. 이전 감리 지적사항 이행 점검\n   - 1단계 지적사항 조치 완료 여부 확인\n   - 미이행 시 재지적 및 강도 높은 조치 요구\n\n2. 코드 품질 점검\n   - 코딩 표준 준수: 네이밍 컨벤션, 주석, 코드 리뷰 수행 여부\n   - 정적 분석 도구: SonarQube 등으로 코드 품질 측정\n   - 보안 취약점: SQL Injection, XSS 등 OWASP Top 10 점검\n   - 코드 복잡도: Cyclomatic Complexity, 중복 코드 비율\n\n3. 단위/통합 테스트 점검\n   - 테스트 계획: 테스트 전략, 범위, 일정\n   - 테스트 케이스: 요구사항 커버리지, 경계값 테스트\n   - 테스트 자동화: JUnit, Selenium 등 자동화 비율\n   - 결함 관리: 버그 추적, 재테스트, 회귀 테스트\n\n4. 형상 관리 점검\n   - 형상 관리 도구: Git, SVN 사용 적정성\n   - 버전 관리 전략: 브랜치 전략, 태깅 규칙\n   - 변경 통제: 소스 코드 변경 승인 프로세스\n\n5. 프로젝트 진행 상황\n   - 일정 지연: 지연 원인 분석, 만회 계획\n   - 산출물 완성도: 개발 완료율 대비 문서화 수준\n\n3단계: 시험/종료 단계 감리\n프로젝트 완료 전 최종 품질과 운영 준비 상태를 점검:\n\n1. 시스템 테스트 점검\n   - 통합 테스트: 전체 시스템 통합 후 기능/비기능 요구사항 검증\n   - 성능 테스트: 부하 테스트, 스트레스 테스트 결과 분석\n   - 보안 테스트: 침투 테스트, 취약점 스캔 결과\n   - UAT (사용자 인수 테스트): 실사용자 테스트 결과 및 승인\n\n2. 운영 준비 점검\n   - 배포 계획: 배포 전략, 롤백 계획, 데이터 마이그레이션\n   - 운영 매뉴얼: 시스템 운영 가이드, 장애 대응 절차\n   - 사용자 교육: 교육 계획, 교육 자료 완성도\n   - 유지보수 인수인계: 소스 코드, 문서, 개발 환경 이관\n\n3. 산출물 완전성 점검\n   - 필수 산출물: 요구사항 명세서, 설계서, 소스 코드, 테스트 결과서, 사용자 매뉴얼\n   - 산출물 품질: 최신성, 일관성, 완전성\n\n4. 프로젝트 종료 평가\n   - 목표 달성도: 요구사항 구현율, 일정/예산 준수\n   - 품질 평가: 결함 밀도, 테스트 커버리지\n   - 교훈 정리: 성공 요인, 개선 사항, 향후 프로젝트 적용 방안\n\n5. 최종 감리 보고서 작성\n   - 종합 의견: 프로젝트 성공 가능성 판단\n   - 조건부 통과: 특정 항목 개선 후 운영 전환 허가\n   - 불합격: 중대 결함으로 재감리 요구",
-    "characteristics": [
-      "감리 목적: 품질 보증, 위험 관리, 사업 관리 적정성 검증",
-      "3단계 감리: 계획/설계 단계, 개발 단계, 시험/종료 단계",
-      "감리 기준: 품질 기준, 사업관리 기준, 기술 기준",
-      "점검 항목: 요구사항, 설계, 구현, 테스트, 형상관리, 일정/비용 관리",
-      "감리 프로세스: 계획 → 실행 → 보고 → 개선조치",
-      "감리원 자격: 정보관리기술사, 전자계산기조직응용기술사 등",
-      "법적 근거: 소프트웨어진흥법, 전자정부법",
-      "감리 보고서: 지적사항, 개선권고사항, 종합의견"
-    ],
+    "characteristics": [],
     "relatedTopics": [
       "quality-001",
       "cmmi-spice-001",
@@ -909,17 +900,9 @@
       "Netflix",
       "Steady State"
     ],
-    "definition": "프로덕션 환경에서 의도적으로 장애를 주입하여 시스템의 복원력을 테스트하고 개선하는 Netflix 발 엔지니어링 기법.",
+    "definition": "프로덕션 환경에서 의도적으로 장애를 주입하여 시스템의 복원력을 테스트하고 개선하는 Netflix 발 엔지니어링 기법.\n\n# 특징\n- Steady State: 정상 상태 정의 (응답시간, 처리량, 에러율 등)\n- Hypothesis: 장애 발생 시 시스템 동작 가설 수립\n- 장애 주입: 서버 종료, 네트워크 지연, CPU/메모리 부하, 디스크 장애\n- 실험 실행: 프로덕션 환경에서 제어된 장애 실험\n- Chaos Monkey: AWS 인스턴스 무작위 종료 (Netflix)\n- 도구: Chaos Toolkit, Gremlin, Chaos Mesh, LitmusChaos\n- Game Day: 팀 전체가 참여하는 장애 대응 훈련",
     "operatingPrinciple": "카오스 엔지니어링 실험은 다음 단계로 수행됩니다:\n\n1. Steady State 정의 (정상 상태 정의)\n   시스템의 정상 동작 상태를 측정 가능한 지표로 정의:\n   - 응답 시간: 평균 응답시간 < 200ms\n   - 처리량(Throughput): 초당 요청 처리 수 > 1000 TPS\n   - 에러율: HTTP 5xx 에러율 < 0.1%\n   - 가용성: 서비스 가동률 > 99.9%\n   이러한 지표를 모니터링 대시보드로 시각화하여 지속 관찰\n\n2. Hypothesis 수립 (가설 수립)\n   특정 장애 상황에서 시스템이 어떻게 동작할지 가설 설정:\n   - \"API Gateway 인스턴스 1개가 종료되어도 나머지 인스턴스가 트래픽을 처리하여 사용자는 영향을 받지 않을 것이다\"\n   - \"데이터베이스 응답이 5초 지연되어도 Circuit Breaker가 동작하여 전체 시스템은 정상 동작할 것이다\"\n\n3. 장애 주입 (Inject Failure)\n   실제 프로덕션 환경에서 제어된 방식으로 장애를 발생:\n   - 서버 종료: EC2/Pod 무작위 종료 (Chaos Monkey)\n   - 네트워크 지연: 특정 서비스 간 통신에 지연 추가 (Latency Injection)\n   - CPU/메모리 부하: 리소스 사용률을 임계값까지 증가\n   - 디스크 장애: I/O 에러 시뮬레이션\n   - 의존성 장애: 외부 API 호출 실패 시뮬레이션\n   - 시간대 제한: 트래픽이 적은 시간대에 실험 진행\n   - Blast Radius 제한: 전체 중 일부(예: 10%) 트래픽만 영향\n\n4. 실험 실행 및 관찰\n   장애 주입 후 시스템 동작을 모니터링:\n   - Steady State 지표가 허용 범위 내에 유지되는지 확인\n   - 알림(Alert) 발생 여부 확인\n   - 자동 복구 메커니즘 동작 여부 확인\n   - 사용자 영향도 측정\n\n5. 결과 분석 및 개선\n   실험 결과를 바탕으로 시스템 개선:\n   - 가설이 맞으면: 시스템이 복원력을 갖췄음을 검증, 정기 실험으로 전환\n   - 가설이 틀리면: 취약점 발견, 개선 작업 수행 (Auto Scaling, Circuit Breaker, Retry 로직 추가 등)\n   - Postmortem 문서화: 실험 결과와 개선 사항 기록\n\n6. Game Day (정기 훈련)\n   팀 전체가 참여하는 대규모 장애 대응 훈련:\n   - 복합 장애 시나리오 실행\n   - 사고 대응 프로세스 검증\n   - On-call 팀 훈련",
-    "characteristics": [
-      "Steady State: 정상 상태 정의 (응답시간, 처리량, 에러율 등)",
-      "Hypothesis: 장애 발생 시 시스템 동작 가설 수립",
-      "장애 주입: 서버 종료, 네트워크 지연, CPU/메모리 부하, 디스크 장애",
-      "실험 실행: 프로덕션 환경에서 제어된 장애 실험",
-      "Chaos Monkey: AWS 인스턴스 무작위 종료 (Netflix)",
-      "도구: Chaos Toolkit, Gremlin, Chaos Mesh, LitmusChaos",
-      "Game Day: 팀 전체가 참여하는 장애 대응 훈련"
-    ],
+    "characteristics": [],
     "relatedTopics": [
       "sre-001",
       "kubernetes-001",
@@ -2267,15 +2250,14 @@
       "Xen"
     ],
     "definition": "물리적 하드웨어 위에 가상 머신(VM)을 생성하여 여러 OS를 독립적으로 실행할 수 있게 하는 기술과 이를 관리하는 Hypervisor 기술.",
+    "technicalElements": [
+      "Type 1 Hypervisor (Bare-Metal):"
+    ],
     "characteristics": [
-      "Type 1 (Bare-Metal): 하드웨어 직접 실행, 성능 우수, 데이터센터용",
-      "예시: VMware ESXi, Xen, KVM, Hyper-V",
-      "Type 2 (Hosted): 호스트 OS 위에 실행, 개발/테스트용, 성능 낮음",
-      "예시: VirtualBox, VMware Workstation, Parallels",
-      "가상화 기술: 전가상화 (Full), 반가상화 (Para), 하드웨어 지원 (Intel VT-x, AMD-V)",
-      "장점: 자원 효율, 격리성, 이식성, 스냅샷, 마이그레이션",
-      "Live Migration: 실행 중인 VM을 다른 호스트로 무중단 이동",
-      "사용 사례: 클라우드 컴퓨팅, 서버 통합, 개발 환경"
+      "하드웨어 추상화: 물리 서버를 여러 VM으로 분할",
+      "격리성: 각 VM은 독립된 OS와 애플리케이션 실행",
+      "자원 효율: 서버 통합으로 하드웨어 활용률 향상",
+      "유연성: 스냅샷, 복제, 마이그레이션 지원"
     ],
     "relatedTopics": [
       "cloud-infra-001",
@@ -2349,14 +2331,12 @@
       "Demand Paging"
     ],
     "definition": "프로세스가 필요한 페이지를 메모리에 유지하지 못해 과도한 페이지 부재가 발생하는 현상과 이를 방지하기 위한 Working Set 모델 기술.",
+    "operatingPrinciple": "- Thrashing 발생 메커니즘:\n  - 다중 프로그래밍 수준 과도: 너무 많은 프로세스가 메모리 경쟁\n  - 메모리 부족: 각 프로세스의 Working Set을 수용하지 못함\n  - 빈번한 Page Fault: 페이지 교체 오버헤드가 CPU 작업 시간 초과\n  - CPU 이용률 급락: 대부분 시간을 I/O 대기로 소비\n- Working Set Model:\n  - Working Set: Δ(델타) 시간 윈도우 내에 프로세스가 참조한 페이지 집합\n  - 원리: 충분한 Working Set 크기를 보장하면 Page Fault 최소화\n  - Locality (지역성) 활용: Temporal Locality(최근 참조 페이지 재참조), Spatial Locality(인접 주소 참조)\n- PFF (Page Fault Frequency) 전략:\n  - 페이지 부재율 모니터링: 임계값 설정\n  - 할당 조정: PFF 높으면 메모리 증가, 낮으면 감소\n  - 다중 프로그래밍 수준 조절: 메모리 부족 시 프로세스 수 감소 (Suspend/Swap-out)",
     "characteristics": [
-      "Thrashing: 페이지 교체가 너무 빈번하여 CPU 이용률 급격히 감소, 시스템 성능 저하",
-      "발생 원인: 다중 프로그래밍 수준 과도, 메모리 부족, 지역성(Locality) 부족",
-      "Working Set: 특정 시간 동안 프로세스가 참조하는 페이지 집합",
-      "Working Set Model: Δ(델타) 시간 윈도우 내 참조된 페이지, 충분한 Working Set 크기 보장",
-      "Locality (지역성): Temporal (시간), Spatial (공간) 지역성 활용",
-      "해결 방법: 다중 프로그래밍 수준 감소, 메모리 증설, 페이지 교체 알고리즘 개선",
-      "PFF (Page Fault Frequency): 페이지 부재율 모니터링하여 프로세스 할당 메모리 조정"
+      "성능 저하 현상: 페이지 교체가 실제 작업보다 많아짐",
+      "메모리 관리 핵심: Working Set 개념으로 필요 메모리 예측",
+      "지역성 원리: 프로그램의 시간적/공간적 참조 패턴 활용",
+      "시스템 안정성: 적절한 메모리 할당으로 예방"
     ],
     "relatedTopics": [
       "virtual-memory-001",
@@ -2392,14 +2372,12 @@
       "Bootloader"
     ],
     "definition": "사용자 프로그램이 커널 기능을 요청하는 System Call과 컴퓨터가 전원 투입 후 OS를 메모리에 적재하는 부팅 과정 기술.",
+    "operatingPrinciple": "- System Call 동작 과정:\n  - 1) 응용 프로그램이 라이브러리 함수 호출 (예: read())\n  - 2) 라이브러리가 Trap 명령(인터럽트)으로 커널 모드 전환\n  - 3) 커널이 System Call 번호로 해당 핸들러 실행\n  - 4) 결과를 레지스터/메모리에 저장 후 사용자 모드로 복귀\n- 주요 System Call: open(), read(), write(), fork(), exec(), mmap(), ioctl()\n- Shell vs Kernel: Shell(bash, zsh)은 사용자 인터페이스 제공, Kernel은 OS 핵심(자원 관리)\n\n- 부팅 과정 (Boot Process):\n  - 1) 전원 투입: CPU가 BIOS/UEFI ROM 주소로 점프\n  - 2) BIOS/UEFI: POST(Power-On Self-Test) 하드웨어 점검, 초기화\n  - 3) MBR/GPT 읽기: 부트 디스크의 첫 섹터에서 부트로더 위치 확인\n  - 4) Bootloader 실행: GRUB이 커널 이미지 선택 및 로드\n  - 5) Kernel 로드: 압축 해제, 메모리 초기화, 드라이버 로드, 루트 파일 시스템 마운트\n  - 6) Init 프로세스: systemd(최신), SysVinit(레거시)가 서비스 시작\n  - 7) 사용자 로그인: 디스플레이 매니저 또는 TTY 제공\n- BIOS vs UEFI: BIOS(16비트, MBR, 2TB 제한), UEFI(32/64비트, GPT, Secure Boot, GUI)",
     "characteristics": [
-      "System Call: 사용자 모드 → 커널 모드 전환, open(), read(), write(), fork(), exec()",
-      "동작: 라이브러리 함수 호출 → Trap (인터럽트) → 커널 처리 → 결과 반환",
-      "Shell vs Kernel: Shell은 사용자 인터페이스(bash, zsh), Kernel은 OS 핵심",
-      "부팅 과정: 1) 전원 → 2) BIOS/UEFI (하드웨어 초기화) → 3) MBR/GPT 읽기 → 4) Bootloader (GRUB) → 5) Kernel 로드 → 6) Init (systemd) → 7) 사용자 로그인",
-      "BIOS vs UEFI: BIOS(레거시, 16비트, MBR), UEFI(최신, 32/64비트, GPT, Secure Boot)",
-      "Kernel Load: 압축 해제, 메모리 초기화, 드라이버 로드",
-      "Init System: SysVinit, Upstart, systemd (최신, 병렬 시작)"
+      "사용자-커널 인터페이스: System Call로 커널 기능 요청",
+      "부팅 단계별 초기화: 하드웨어 → 부트로더 → 커널 → 서비스",
+      "모드 전환: 사용자 모드와 커널 모드 분리로 보안 보장",
+      "표준화: POSIX System Call, UEFI 표준"
     ],
     "relatedTopics": [
       "kernel-architecture-001",
@@ -2557,15 +2535,14 @@
       "Mobile OS"
     ],
     "definition": "스마트폰과 태블릿을 위해 최적화된 운영체제로, 터치 인터페이스, 전력 관리, 모바일 앱 생태계를 지원 기술.",
+    "technicalElements": [
+      "Android 아키텍처:"
+    ],
     "characteristics": [
-      "Android: Linux 커널 기반, 오픈소스 (AOSP), Google Play",
-      "Android 구조: Linux Kernel → HAL → ART/Native Libraries → Framework → Apps",
-      "ART (Android Runtime): Dalvik 후속, AOT 컴파일, JIT 병행, 성능 향상",
-      "Dalvik: 과거 Android VM, DEX 파일, JIT 컴파일",
-      "iOS: XNU 커널 (Mach + BSD), 폐쇄 생태계, App Store",
-      "iOS 특징: Objective-C/Swift, Metal API, 강력한 보안 (Secure Enclave)",
-      "모바일 OS 특징: 터치 UI, 센서 통합, 배터리 관리, 샌드박스, 백그라운드 제한",
-      "기타 OS: HarmonyOS (Huawei), Fuchsia (Google, Zircon 커널)"
+      "모바일 최적화: 터치 UI, 센서 통합, 배터리 효율성",
+      "앱 생태계: App Store/Google Play 중심의 플랫폼",
+      "보안 강화: 샌드박스, 권한 관리, 하드웨어 보안",
+      "제약된 자원: 백그라운드 제한, 메모리 관리 적극적"
     ],
     "relatedTopics": [
       "process-thread-001",
@@ -2600,15 +2577,14 @@
       "Snapshot"
     ],
     "definition": "물리적 디스크를 논리적 볼륨으로 추상화하여 유연한 디스크 관리를 가능하게 하는 Linux 스토리지 관리 기술.",
+    "technicalElements": [
+      "3계층 구조:"
+    ],
     "characteristics": [
-      "구조: Physical Volume (PV) → Volume Group (VG) → Logical Volume (LV)",
-      "PV (물리 볼륨): 실제 디스크 또는 파티션 (/dev/sda1 등)",
-      "VG (볼륨 그룹): 여러 PV를 묶은 스토리지 풀",
-      "LV (논리 볼륨): VG에서 할당된 가상 파티션, 파일 시스템 생성",
-      "장점: 동적 크기 조정, 디스크 추가 용이, 스냅샷, 여러 디스크 통합",
-      "Snapshot: 특정 시점의 LV 상태 저장, 백업 및 복구",
-      "명령어: pvcreate, vgcreate, lvcreate, lvextend, lvreduce",
-      "사용 사례: 서버 스토리지 관리, 데이터베이스 볼륨, 백업"
+      "추상화 계층: 물리적 디스크를 논리적 볼륨으로 분리",
+      "유연성: 동적 크기 조정 및 디스크 추가 가능",
+      "고급 기능: 스냅샷, 미러링, 스트라이핑 지원",
+      "관리 편의성: 파티션 재구성 없이 볼륨 관리"
     ],
     "relatedTopics": [
       "file-system-001",
@@ -2644,16 +2620,16 @@
       "umask"
     ],
     "definition": "Linux/Unix 시스템에서 파일과 디렉토리에 대한 접근 권한을 관리하는 보안 메커니즘.",
+    "functions": [
+      "기본 권한 구조: -rwxr-xr-- (파일 타입 + User(rwx) + Group(r-x) + Others(r--))",
+      "숫자 모드: r=4, w=2, x=1로 합산 (예: 755 = rwxr-xr-x, 644 = rw-r--r--)",
+      "chmod (Change Mode): 권한 변경"
+    ],
     "characteristics": [
-      "권한 구조: User(소유자), Group(그룹), Others(기타), rwx (읽기/쓰기/실행)",
-      "표기: -rwxr-xr-- (파일 타입 + User(rwx) + Group(r-x) + Others(r--))",
-      "숫자 모드: r=4, w=2, x=1, 예: chmod 755 (rwxr-xr-x)",
-      "chmod (Change Mode): 권한 변경, chmod 644 file.txt, chmod u+x script.sh",
-      "chown (Change Owner): 소유자 변경, chown user:group file.txt",
-      "umask: 기본 권한 마스크, 파일 생성 시 기본 권한 결정 (예: 022)",
-      "특수 권한: SUID (Set User ID), SGID (Set Group ID), Sticky Bit",
-      "ACL (Access Control List): 세밀한 권한 제어, getfacl, setfacl",
-      "보안: SELinux (Mandatory Access Control), AppArmor"
+      "3단계 권한 구조: User(소유자), Group(그룹), Others(기타)",
+      "3가지 권한 타입: Read(r), Write(w), Execute(x)",
+      "숫자/기호 표기: 8진수 또는 기호로 권한 표현",
+      "보안 기반: 파일 시스템 수준의 접근 제어"
     ],
     "relatedTopics": [
       "file-system-001",
@@ -2688,16 +2664,14 @@
       "Kernel Architecture"
     ],
     "definition": "운영체제 커널의 설계 방식으로, 기능의 배치와 통신 방식에 따라 모놀리식, 마이크로, Unikernel로 분류됩니다 방식.",
+    "technicalElements": [
+      "Monolithic Kernel (모놀리식 커널):"
+    ],
     "characteristics": [
-      "Monolithic Kernel (모놀리식): 모든 OS 서비스가 커널 공간에서 실행, 빠름, 복잡",
-      "예시: Linux, Unix, FreeBSD",
-      "장점: 성능 우수 (직접 호출), 단점: 오류 시 전체 시스템 장애",
-      "Microkernel (마이크로): 최소 기능만 커널에, 나머지는 사용자 공간, 안정적",
-      "예시: Minix, QNX, L4",
-      "장점: 모듈성, 안정성, 단점: IPC 오버헤드",
-      "Hybrid Kernel: 절충안, Windows NT, macOS (XNU)",
-      "Unikernel: 단일 주소 공간, 애플리케이션과 OS 통합, 클라우드/엣지 최적화",
-      "장점: 빠른 부팅, 작은 크기, 보안, 단점: 범용성 부족"
+      "설계 철학 차이: 기능 배치와 모듈성 수준에 따라 구분",
+      "성능 vs 안정성: 각 아키텍처의 트레이드오프 존재",
+      "용도별 최적화: 범용 OS, 임베디드, 클라우드에 따라 선택",
+      "진화 트렌드: 클라우드 네이티브와 엣지 컴퓨팅에 맞춘 새로운 설계"
     ],
     "relatedTopics": [
       "process-thread-001",
@@ -2733,15 +2707,14 @@
       "Signal"
     ],
     "definition": "독립적인 프로세스들이 데이터를 교환하고 동작을 조정하기 위한 통신 메커니즘.",
+    "functions": [
+      "Pipe (파이프): 단방향 데이터 스트림, 부모-자식 프로세스 간 통신"
+    ],
     "characteristics": [
-      "Pipe (파이프): 단방향 통신, 부모-자식 프로세스, Anonymous/Named Pipe (FIFO)",
-      "Message Queue: 메시지 단위 송수신, FIFO, 비동기, POSIX/System V",
-      "Shared Memory (공유 메모리): 가장 빠른 IPC, 동일 메모리 영역 공유, 동기화 필요",
-      "Semaphore: 프로세스 간 동기화, 카운터 기반, System V/POSIX",
-      "Socket: 네트워크 기반 IPC, TCP/UDP, 프로세스 간/머신 간 통신",
-      "Signal: 이벤트 통지, 비동기, SIGKILL, SIGTERM, SIGUSR1 등",
-      "Memory-Mapped File: 파일을 메모리에 매핑하여 공유",
-      "선택 기준: 속도(공유메모리 > 메시지큐 > 파이프), 용도, 동기화 필요성"
+      "프로세스 독립성: 각 프로세스는 독립된 주소 공간 사용",
+      "통신 필요성: 데이터 교환과 동작 조정을 위한 메커니즘",
+      "다양한 방식: 속도, 용도, 동기화 요구에 따라 선택",
+      "성능 차이: 공유 메모리 > 메시지 큐 > 파이프 순"
     ],
     "relatedTopics": [
       "process-thread-001",
@@ -2859,14 +2832,12 @@
       "Cilium"
     ],
     "definition": "Linux 커널을 안전하게 확장할 수 있는 프로그래밍 기술로, 커널 재컴파일 없이 커널 공간에서 코드를 실행 기술.",
+    "operatingPrinciple": "- 1단계: eBPF 프로그램 작성 - C 언어로 작성 후 LLVM으로 BPF 바이트코드 컴파일\n- 2단계: 검증(Verifier) - 커널 Verifier가 무한 루프, 메모리 침범, 허용되지 않은 함수 호출 검증\n- 3단계: JIT 컴파일 - BPF 바이트코드를 기계어로 컴파일하여 성능 최적화\n- 4단계: 커널 실행 - Hook Point(시스템 콜, 네트워크 패킷, 커널 이벤트)에서 eBPF 프로그램 실행\n- BPF Maps: 사용자 공간과 커널 간 데이터 공유 구조 (Array, Hash, LRU, Ring Buffer, Stack)\n- XDP (eXpress Data Path): NIC 드라이버 레벨에서 패킷 처리, DDoS 방어 및 빠른 패킷 필터링\n- Helper Functions: 커널 데이터 접근 및 네트워크 조작을 위한 안전한 함수 제공",
     "characteristics": [
-      "동작 원리: 사용자 공간에서 eBPF 프로그램 작성 → 검증(Verifier) → JIT 컴파일 → 커널 실행",
-      "안전성: Verifier가 무한 루프, 메모리 침범 등 검증, 샌드박스 환경",
-      "활용 영역: 네트워킹, 보안, 트레이싱, 모니터링, 성능 분석",
-      "BPF Maps: 사용자-커널 간 데이터 공유, Array, Hash, LRU, Ring Buffer 등",
-      "XDP (eXpress Data Path): 패킷이 NIC에서 바로 처리, DDoS 방어",
-      "도구: bpftrace, bpfcc, Cilium (CNI), Falco (보안), Pixie (APM)",
-      "사용 사례: Kubernetes 네트워킹, 성능 프로파일링, 침입 탐지"
+      "확장성: 커널 재컴파일 없이 커널 기능 확장",
+      "안전성: Verifier를 통한 엄격한 검증으로 시스템 안정성 보장",
+      "고성능: JIT 컴파일로 네이티브 코드 수준 성능",
+      "다목적: 네트워킹, 보안, 관측성, 성능 분석 등 다양한 영역 지원"
     ],
     "relatedTopics": [
       "kernel-architecture-001",
@@ -2902,15 +2873,15 @@
       "분산 시스템"
     ],
     "definition": "여러 컴퓨터를 하나의 통합된 시스템처럼 관리하는 운영체제와 클라우드 인프라를 관리하는 OS 플랫폼.",
+    "technicalElements": [
+      "분산 OS 커널: Amoeba, Plan 9, Google Borg (Kubernetes의 전신) - 여러 노드를 단일 시스템 이미지로 제공",
+      "OpenStack 구성 요소:"
+    ],
     "characteristics": [
-      "분산 OS: 여러 노드를 단일 시스템처럼 운영, 투명한 자원 공유",
-      "목표: 투명성 (위치, 이주, 복제), 확장성, 가용성",
-      "예시: Amoeba, Plan 9, Google Borg (Kubernetes의 전신)",
-      "OpenStack: 오픈소스 클라우드 OS, IaaS 구축, Nova(컴퓨팅), Neutron(네트워크), Cinder(스토리지)",
-      "클라우드 OS 구성: 가상화, 스토리지 풀, 네트워크 가상화, 오케스트레이션",
-      "Kubernetes: 컨테이너 오케스트레이션, 클라우드 네이티브 OS 역할",
-      "분산 파일 시스템: GFS, HDFS, Ceph",
-      "사용 사례: 프라이빗 클라우드, 대규모 데이터센터, HPC"
+      "투명성: 여러 노드를 단일 시스템처럼 추상화",
+      "확장성: 노드 추가로 수평 확장 가능",
+      "고가용성: 장애 발생 시 자동 복구",
+      "자원 공유: 분산된 컴퓨팅, 스토리지, 네트워크 자원 통합 관리"
     ],
     "relatedTopics": [
       "cloud-infra-001",
@@ -2947,15 +2918,21 @@
       "containerd"
     ],
     "definition": "OS 수준 가상화로 프로세스와 리소스를 격리하여 애플리케이션을 독립적으로 실행하는 경량 기술.",
+    "technicalElements": [
+      "namespace: 프로세스 격리 기술 (PID, Network, Mount, UTS, IPC, User, Cgroup namespace로 독립적 실행 환경 제공)",
+      "cgroups (Control Groups): 리소스 제한 및 모니터링 (CPU, 메모리, I/O, 네트워크 사용량 제어)",
+      "Docker Engine: 이미지 기반 컨테이너 플랫폼, Dockerfile로 이미지 빌드, 레이어 방식으로 효율적 저장",
+      "OCI (Open Container Initiative): 컨테이너 표준 규격 (Image Spec, Runtime Spec, Distribution Spec)",
+      "Container Runtime: containerd(Docker 런타임), CRI-O(Kubernetes 최적화), runc(저수준 런타임)",
+      "Union File System: AUFS, OverlayFS로 레이어 공유 및 Copy-on-Write 구현",
+      "컨테이너 네트워킹: Bridge, Host, Overlay 네트워크 모드",
+      "볼륨 관리: Bind Mount, Volume, tmpfs로 데이터 영속성 제공"
+    ],
     "characteristics": [
-      "VM vs Container: VM은 전체 OS 포함(무겁고 느림), 컨테이너는 커널 공유(가볍고 빠름)",
-      "namespace: 프로세스 격리 (PID, Network, Mount, UTS, IPC, User, Cgroup)",
-      "cgroups (Control Groups): 리소스 제한 (CPU, 메모리, I/O, 네트워크)",
-      "Docker: 이미지 기반 컨테이너 플랫폼, Dockerfile, 레이어 방식",
-      "OCI (Open Container Initiative): 컨테이너 표준 (Image Spec, Runtime Spec)",
-      "Container Runtime: containerd, CRI-O, runc",
-      "Union File System: AUFS, OverlayFS, 레이어 공유로 저장 효율",
-      "사용 사례: 마이크로서비스, CI/CD, 개발 환경 일관성"
+      "경량성: VM 대비 커널 공유로 빠른 시작과 적은 리소스 사용",
+      "격리성: 프로세스와 리소스를 독립적으로 분리",
+      "이식성: 어디서나 동일하게 실행 가능",
+      "효율성: 레이어 방식으로 저장 공간 절약"
     ],
     "relatedTopics": [
       "kubernetes-001",
@@ -3347,18 +3324,9 @@
       "양자 통신",
       "Post-Quantum"
     ],
-    "definition": "양자역학 원리를 활용하여 도청이 불가능한 암호키를 분배하는 차세대 보안 통신 기술.",
+    "definition": "양자역학 원리를 활용하여 도청이 불가능한 암호키를 분배하는 차세대 보안 통신 기술.\n\n# 특징\n- QKD (Quantum Key Distribution): 양자 상태(광자)로 암호키 안전 분배\n- 핵심 원리: 양자 중첩, 양자 얽힘, 하이젠베르크 불확정성 원리\n- 보안성: 도청 시 양자 상태 붕괴/변화로 즉시 감지, 무조건적 보안\n- 프로토콜: BB84 (편광 기반), E91 (양자 얽힘), B92 (2상태)\n- 양자 컴퓨팅 위협: Shor 알고리즘으로 RSA, ECC 등 공개키 암호 해독 가능\n- PQC (Post-Quantum Cryptography): 양자 컴퓨터 공격 대비 암호 (격자 기반, 해시 기반)\n- 상용화: 한국 (KT), 중국 (양자 위성 墨子號), 유럽 (OpenQKD), 실험 네트워크 구축\n- 사용 사례: 금융 거래, 국방 통신, 정부 기관, 데이터센터 간 연결",
     "operatingPrinciple": "양자 암호 통신은 양자역학 원리를 활용하여 도청 불가능한 키 분배를 제공합니다:\n\n1. BB84 프로토콜 동작 (가장 널리 사용)\n\n1단계: 양자 상태 전송\n- Alice가 무작위 비트 (0 또는 1)를 생성\n- 무작위 기저 (Rectilinear: +, Diagonal: ×) 선택\n- 편광된 광자(Photon)로 전송\n  - + 기저: 0→↑, 1→→\n  - × 기저: 0→↗, 1→↖\n\n2단계: Bob의 측정\n- Bob도 무작위 기저로 광자 측정\n- 기저가 일치하면 정확한 값 측정\n- 기저가 불일치하면 무작위 값 측정\n\n3단계: 기저 공개 및 키 생성\n- Alice와 Bob이 사용한 기저를 공개 채널로 공유\n- 기저가 일치한 비트만 유지 → Sifted Key\n- 불일치 비트는 폐기\n\n4단계: 도청 검출\n- Sifted Key의 일부를 공개 비교\n- 오류율이 threshold 이상이면 도청 의심\n- 하이젠베르크 불확정성 원리: 도청자(Eve)가 측정하면 양자 상태 변화\n\n5단계: Privacy Amplification\n- 오류 정정 및 프라이버시 증폭\n- 최종 안전한 비밀키 생성\n- 대칭키 암호 (AES)에 사용\n\n2. E91 프로토콜 (양자 얽힘 기반)\n\n양자 얽힘 (Quantum Entanglement) 활용:\n1) 얽힌 광자 쌍 생성 (EPR Pair)\n2) 한 쪽은 Alice, 다른 쪽은 Bob에게 전송\n3) 각자 무작위 기저로 측정\n4) 측정 결과가 상관관계를 가짐 (Bell Inequality 위배)\n5) 도청 시 상관관계 변화로 감지\n\n3. 양자 키 분배 (QKD) 시스템 구성\n\n송신부 (Alice)\n- 광자 발생기: 약한 레이저 펄스 또는 단일 광자\n- 편광기: 양자 상태 인코딩\n\n전송 채널\n- 광섬유: 도시 간 연결 (최대 100km)\n- 자유 공간: 위성 통신 (수천 km)\n\n수신부 (Bob)\n- 광자 검출기: APD (Avalanche Photo Diode)\n- 편광 분석기: 양자 상태 측정\n\n4. 양자 컴퓨팅 위협과 PQC\n\n양자 컴퓨터 위협:\n- Shor 알고리즘: RSA, ECC 등 공개키 암호 해독 가능\n- 현재 암호화된 데이터를 저장 후 나중에 해독 (Harvest Now, Decrypt Later)\n\nPQC (Post-Quantum Cryptography):\n- 양자 컴퓨터로도 해독 어려운 암호\n- NIST 표준: CRYSTALS-Kyber (키 교환), CRYSTALS-Dilithium (전자서명)\n- 격자 기반 암호 (Lattice-based), 해시 기반\n\nQKD vs PQC:\n- QKD: 물리적 보안 (하드웨어 필요)\n- PQC: 수학적 보안 (소프트웨어 업데이트)",
-    "characteristics": [
-      "QKD (Quantum Key Distribution): 양자 상태(광자)로 암호키 안전 분배",
-      "핵심 원리: 양자 중첩, 양자 얽힘, 하이젠베르크 불확정성 원리",
-      "보안성: 도청 시 양자 상태 붕괴/변화로 즉시 감지, 무조건적 보안",
-      "프로토콜: BB84 (편광 기반), E91 (양자 얽힘), B92 (2상태)",
-      "양자 컴퓨팅 위협: Shor 알고리즘으로 RSA, ECC 등 공개키 암호 해독 가능",
-      "PQC (Post-Quantum Cryptography): 양자 컴퓨터 공격 대비 암호 (격자 기반, 해시 기반)",
-      "상용화: 한국 (KT), 중국 (양자 위성 墨子號), 유럽 (OpenQKD), 실험 네트워크 구축",
-      "사용 사례: 금융 거래, 국방 통신, 정부 기관, 데이터센터 간 연결"
-    ],
+    "characteristics": [],
     "relatedTopics": [
       "security-solution-001",
       "quantum-computing-001"
@@ -3710,17 +3678,9 @@
       "Digital Twin",
       "AI Native"
     ],
-    "definition": "5G를 뛰어넘는 테라헤르츠(THz) 대역을 활용한 6세대 이동통신으로, AI 네이티브 및 홀로그램 통신을 목표로 기술.",
+    "definition": "5G를 뛰어넘는 테라헤르츠(THz) 대역을 활용한 6세대 이동통신으로, AI 네이티브 및 홀로그램 통신을 목표로 기술.\n\n# 특징\n- 목표 성능: 최대 1Tbps 속도 (5G의 50배), 10μs 이하 지연, 1000만 기기/km²\n- 주파수: 테라헤르츠 대역 (0.1~10THz), 밀리미터파보다 높은 주파수\n- 핵심 기술: THz 통신, AI/ML 네이티브, RIS (Reconfigurable Intelligent Surface)\n- 서비스: 홀로그램 통신, Digital Twin, XR (AR/VR/MR), 초정밀 위치 (cm 단위)\n- AI Native: AI 기반 네트워크 자율 운영, 트래픽 예측 및 최적화\n- 상용화: 2030년대 상용화 목표 (ITU-R IMT-2030)\n- 한국: 6G 선도국 목표, 정부 R&D 투자, 삼성/LG 기술 개발",
     "operatingPrinciple": "6G는 테라헤르츠 대역과 AI를 활용한 차세대 무선 통신입니다:\n\nTHz 통신 동작\n- 0.1~10THz 초고주파 전파 사용\n- 짧은 파장으로 초고속 데이터 전송 (최대 1Tbps)\n- 직진성 강함 → 지향성 안테나 필수\n\nRIS (Reconfigurable Intelligent Surface)\n- 전파 반사/굴절을 능동적으로 제어\n- 메타표면(Meta-surface)으로 전파 경로 최적화\n- 음영 지역 커버리지 향상\n\nAI Native 네트워크\n- AI가 네트워크 리소스를 실시간 최적화\n- 트래픽 예측, 자동 장애 복구\n- 사용자 경험 기반 QoS 조정",
-    "characteristics": [
-      "목표 성능: 최대 1Tbps 속도 (5G의 50배), 10μs 이하 지연, 1000만 기기/km²",
-      "주파수: 테라헤르츠 대역 (0.1~10THz), 밀리미터파보다 높은 주파수",
-      "핵심 기술: THz 통신, AI/ML 네이티브, RIS (Reconfigurable Intelligent Surface)",
-      "서비스: 홀로그램 통신, Digital Twin, XR (AR/VR/MR), 초정밀 위치 (cm 단위)",
-      "AI Native: AI 기반 네트워크 자율 운영, 트래픽 예측 및 최적화",
-      "상용화: 2030년대 상용화 목표 (ITU-R IMT-2030)",
-      "한국: 6G 선도국 목표, 정부 R&D 투자, 삼성/LG 기술 개발"
-    ],
+    "characteristics": [],
     "relatedTopics": [
       "5g-001",
       "ai-deep-learning-001"
@@ -9247,18 +9207,20 @@
       "Model Explainability"
     ],
     "definition": "블랙박스 AI 모델의 예측 과정을 설명하고 해석 가능하게 만드는 설명 가능한 AI 기술 기술.",
+    "technicalElements": [
+      "LIME (Local Interpretable Model-agnostic Explanations): 예측 주변 데이터 샘플링 → 단순 모델(선형회귀, 결정트리) 학습 → 지역적 해석 제공",
+      "SHAP (SHapley Additive exPlanations): 게임 이론의 Shapley Value 적용, 각 특징의 기여도를 공정하게 계산, 전역+지역 설명 동시 지원",
+      "Feature Importance: 트리 기반 모델에서 특징 중요도 계산, Gini Importance, Permutation Importance",
+      "Attention Visualization: Transformer와 CNN에서 어텐션 가중치 시각화, 모델이 주목하는 영역 표시",
+      "Saliency Map: 입력 이미지의 픽셀별 중요도 시각화, 그래디언트 기반 방법",
+      "Grad-CAM (Gradient-weighted Class Activation Mapping): CNN의 특정 클래스 예측 근거를 히트맵으로 시각화",
+      "Counterfactual Explanations: \"어떤 변화가 있으면 예측이 바뀌는가\" 설명"
+    ],
     "characteristics": [
-      "필요성: 신뢰성, 책임성, 규제 준수 (GDPR), 디버깅",
-      "Model-agnostic: 모델 종류와 무관하게 적용 가능",
-      "LIME (Local Interpretable Model-agnostic Explanations): 지역적 설명",
-      "동작: 예측 주변 데이터 샘플링 → 단순 모델 학습 → 해석",
-      "SHAP (SHapley Additive exPlanations): Shapley Value (게임 이론)",
-      "각 특징의 기여도 계산, 공정한 분배, 전역+지역 설명",
-      "Feature Importance: 특징 중요도, 트리 기반 모델",
-      "Attention Visualization: Transformer, CNN의 주의 집중 영역",
-      "Saliency Map: 이미지에서 중요 영역 시각화",
-      "Grad-CAM: CNN 예측 근거 시각화",
-      "활용: 의료 진단, 금융 대출, 자율주행, 법률"
+      "투명성 제공: 블랙박스 모델의 의사결정 과정 가시화",
+      "신뢰성 향상: 모델 예측에 대한 신뢰 구축",
+      "규제 준수: GDPR 등 설명 의무 충족",
+      "Model-agnostic: 모델 종류와 무관하게 적용 가능"
     ],
     "relatedTopics": [
       "ai-deep-learning-001",
@@ -9526,17 +9488,14 @@
       "Clustering"
     ],
     "definition": "데이터로부터 패턴을 학습하는 머신러닝의 세 가지 주요 학습 방식 방식.",
+    "functions": [
+      "지도 학습 (Supervised Learning): 레이블된 데이터로 입력→출력 매핑 학습"
+    ],
     "characteristics": [
-      "지도 학습 (Supervised Learning): 레이블된 데이터로 학습, 입력→출력 매핑",
-      "분류 (Classification): 범주 예측, Logistic Regression, SVM, Decision Tree, Random Forest",
-      "회귀 (Regression): 연속값 예측, Linear Regression, Polynomial Regression",
-      "비지도 학습 (Unsupervised Learning): 레이블 없이 패턴 발견",
-      "군집화 (Clustering): K-Means, DBSCAN, Hierarchical Clustering",
-      "차원 축소: PCA, t-SNE, UMAP",
-      "강화 학습 (Reinforcement Learning): 보상 기반, 시행착오 학습",
-      "구성: Agent, Environment, State, Action, Reward",
-      "알고리즘: Q-Learning, DQN, Policy Gradient, PPO, A3C",
-      "활용: 지도(이미지 분류, 번역), 비지도(고객 세분화), 강화(게임 AI, 로봇 제어)"
+      "학습 데이터 형태: 레이블 유무에 따라 분류",
+      "학습 목표: 예측(지도), 패턴 발견(비지도), 보상 최대화(강화)",
+      "적용 범위: 다양한 도메인과 문제 유형에 활용",
+      "알고리즘 다양성: 각 학습 방식마다 특화된 알고리즘 존재"
     ],
     "relatedTopics": [
       "ai-deep-learning-001",
@@ -9711,16 +9670,12 @@
       "Fitness Function"
     ],
     "definition": "자연 선택과 유전 법칙을 모방하여 최적해를 찾는 진화 기반 최적화 알고리즘 기법 기법.",
+    "procedure": "- 1단계: 초기 집단(Population) 생성 - 랜덤하게 염색체(해) 생성\n- 2단계: 적합도 평가 - Fitness Function으로 각 개체의 품질 측정\n- 3단계: 선택(Selection) - 적합도 높은 개체 우선 선택 (룰렛 휠, 토너먼트, 순위 기반)\n- 4단계: 교배(Crossover) - 부모 염색체의 유전자 조합 (1점/2점/균등 교배)\n- 5단계: 돌연변이(Mutation) - 랜덤 변이로 유전적 다양성 유지, 지역 최적 탈출\n- 6단계: 새로운 세대 형성 - 자손 개체로 다음 세대 구성\n- 7단계: 종료 조건 확인 - 최대 세대 수, 적합도 목표 달성 시 종료, 아니면 2단계로 반복",
     "characteristics": [
-      "생물학적 영감: 선택, 교배, 돌연변이",
-      "구성 요소: 유전자(Gene), 염색체(Chromosome), 개체(Individual), 세대(Generation)",
-      "과정: 1) 초기 집단 생성 → 2) 적합도 평가 → 3) 선택 → 4) 교배(Crossover) → 5) 돌연변이(Mutation) → 반복",
-      "선택 (Selection): 룰렛 휠, 토너먼트, 순위 기반",
-      "교배 (Crossover): 1점/2점/균등 교배, 부모 유전자 조합",
-      "돌연변이 (Mutation): 랜덤 변이, 지역 최적 탈출",
-      "Fitness Function: 해의 적합도 평가, 문제 의존적",
-      "장점: 복잡한 최적화, 전역 탐색, 단점: 느림, 수렴 보장 없음",
-      "활용: 일정 최적화, 경로 최적화, 게임 AI, 신경망 구조 탐색"
+      "생물학적 영감: 자연 선택과 유전 메커니즘 모방",
+      "확률적 탐색: 결정론적 알고리즘보다 유연한 탐색",
+      "전역 최적화: 지역 최적에 빠지지 않고 전역 탐색",
+      "병렬 처리: 집단 기반으로 병렬 평가 가능"
     ],
     "relatedTopics": [
       "ai-deep-learning-001",
@@ -9849,17 +9804,12 @@
       "Dimensionality Reduction"
     ],
     "definition": "고차원 데이터를 저차원으로 변환하여 시각화하거나 노이즈를 제거하는 기법 기법.",
+    "operatingPrinciple": "- PCA (Principal Component Analysis): 공분산 행렬의 고유벡터를 주성분으로 선택, 분산이 최대화되는 방향으로 선형 변환, Explained Variance로 차원 수 결정\n- LDA (Linear Discriminant Analysis): 클래스 간 분산 최대화, 클래스 내 분산 최소화하는 판별 축 탐색, 지도 학습 방식\n- t-SNE (t-distributed Stochastic Neighbor Embedding): 고차원 공간의 유사도를 저차원에 보존, t-분포 사용으로 군집 분리 강화, 지역 구조 우수\n- UMAP (Uniform Manifold Approximation): 리만 기하학 기반, 전역 구조와 지역 구조 동시 보존, t-SNE보다 빠른 속도\n- Autoencoder: Encoder로 차원 축소, Decoder로 복원, 병목층(Bottleneck)이 압축 표현, 비선형 변환 가능",
     "characteristics": [
-      "목적: 시각화, 계산 효율, 과적합 방지, 노이즈 제거",
-      "PCA (Principal Component Analysis): 선형 변환, 분산 최대화",
-      "주성분: 고유벡터, 데이터 분산이 가장 큰 방향",
-      "Explained Variance: 각 주성분이 설명하는 분산 비율",
-      "LDA (Linear Discriminant Analysis): 지도 학습, 클래스 분리 최대화",
-      "t-SNE (t-distributed Stochastic Neighbor Embedding): 비선형, 고차원 유사도 보존",
-      "장점: 시각화 우수, 단점: 느림, 전역 구조 보존 약함",
-      "UMAP (Uniform Manifold Approximation): 빠른 t-SNE 대안, 전역+지역 구조",
-      "Autoencoder: 신경망 기반, Encoder-Decoder, 비선형 변환",
-      "활용: 고차원 데이터 시각화, 특징 추출, 전처리"
+      "고차원의 저주 극복: 계산 효율성 향상",
+      "시각화 지원: 2D/3D로 변환하여 직관적 이해",
+      "노이즈 제거: 중요 특징만 보존",
+      "다양한 기법: 선형(PCA, LDA), 비선형(t-SNE, UMAP)"
     ],
     "relatedTopics": [
       "clustering-001",
@@ -9895,16 +9845,12 @@
       "Generative Model"
     ],
     "definition": "노이즈를 점진적으로 제거하여 고품질 데이터를 생성하는 확률적 생성 모델 기술.",
+    "operatingPrinciple": "- Forward Process (확산 과정): 원본 데이터에 점진적으로 가우시안 노이즈 추가, q(xₜ|xₜ₋₁)로 표현\n- Reverse Process (역확산 과정): 노이즈에서 데이터 복원, pθ(xₜ₋₁|xₜ)를 신경망으로 학습\n- DDPM (Denoising Diffusion Probabilistic Models): 마르코프 체인 기반 확산 모델\n- U-Net 아키텍처: 노이즈 예측 네트워크, Skip Connection으로 세부 정보 보존\n- Score Matching: 데이터 분포의 기울기(Score) 학습으로 생성 품질 향상\n- Latent Diffusion: Latent Space에서 확산 수행하여 계산 효율 개선\n- CLIP 통합: 텍스트-이미지 임베딩으로 프롬프트 기반 조건부 생성",
     "characteristics": [
-      "Forward Process: 데이터에 점진적으로 노이즈 추가, q(xₜ|xₜ₋₁)",
-      "Reverse Process: 노이즈에서 데이터 복원, pθ(xₜ₋₁|xₜ), 신경망 학습",
-      "DDPM (Denoising Diffusion Probabilistic Models): 기본 확산 모델",
-      "U-Net: 노이즈 예측 네트워크, Skip Connection",
-      "Score Matching: 데이터 분포의 기울기(Score) 학습",
-      "Stable Diffusion: Latent Space에서 확산, 효율적, Text-to-Image",
-      "CLIP: 텍스트-이미지 임베딩, 프롬프트 조건부 생성",
-      "장점: 고품질, 안정적 학습, 단점: 느린 생성 속도",
-      "활용: DALL-E 2, Midjourney, Stable Diffusion, 이미지/오디오/비디오 생성"
+      "확률적 생성 모델: 점진적 노이즈 제거 방식",
+      "고품질 생성: GAN 대비 안정적이고 다양한 결과물",
+      "조건부 생성: 텍스트, 이미지 등 다양한 조건 활용",
+      "활용 분야: 이미지/오디오/비디오 생성, DALL-E 2, Midjourney"
     ],
     "relatedTopics": [
       "ai-deep-learning-001",
@@ -10082,16 +10028,12 @@
       "Unsupervised Learning"
     ],
     "definition": "레이블 없는 데이터를 유사한 그룹으로 나누는 비지도 학습 알고리즘 기술 기술.",
+    "operatingPrinciple": "- K-Means 알고리즘: 1) 초기 중심(Centroid) 선택 → 2) 가장 가까운 중심에 데이터 할당 → 3) 중심 재계산 → 수렴까지 반복\n- DBSCAN 알고리즘: 밀도 기반 군집화, 파라미터 ε(반경)와 MinPts(최소 점 개수)로 핵심점/경계점/노이즈 구분\n- Hierarchical Clustering: Dendrogram 구조로 계층적 군집 형성, Agglomerative(상향식)/Divisive(하향식) 방식\n- 거리 측정: 유클리드 거리, 맨하탄 거리, 코사인 유사도\n- 최적 K 선정: Elbow Method로 관성(Inertia) 감소율 분석",
     "characteristics": [
-      "K-Means: 중심(Centroid) 기반, K개 클러스터, 유클리드 거리",
-      "동작: 1) 초기 중심 선택 → 2) 가장 가까운 중심에 할당 → 3) 중심 재계산 → 반복",
-      "장점: 간단, 빠름, 단점: K 사전 설정, 초기값 의존, 구형 클러스터만",
-      "Elbow Method: 최적 K 찾기, 관성(Inertia) 감소율",
-      "DBSCAN (Density-Based): 밀도 기반, 임의 모양 클러스터, 노이즈 처리",
-      "파라미터: ε (반경), MinPts (최소 점 개수)",
-      "Hierarchical Clustering: 계층적, Dendrogram, Agglomerative/Divisive",
-      "Silhouette Score: 군집화 품질 평가, -1~1",
-      "활용: 고객 세분화, 이미지 분할, 이상 탐지, 문서 분류"
+      "비지도 학습: 레이블 없는 데이터에서 패턴 발견",
+      "거리 기반: 유사도 측정을 통한 그룹화",
+      "다양한 알고리즘: 중심 기반, 밀도 기반, 계층적 방법",
+      "평가 지표: Silhouette Score, Inertia, DB Index"
     ],
     "relatedTopics": [
       "ml-learning-types-001",

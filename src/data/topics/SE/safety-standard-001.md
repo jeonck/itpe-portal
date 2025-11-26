@@ -32,6 +32,15 @@ trends:
 # 정의
 안전 필수 시스템에서 소프트웨어의 기능 안전성(Functional Safety)을 보장하기 위한 국제 표준으로, 자동차(ISO 26262)와 산업 일반(IEC 61508)에 적용 기술.
 
+## 특징
+- IEC 61508: 산업 전반의 기능 안전 기본 표준, SIL(Safety Integrity Level) 1~4 등급
+- ISO 26262: 자동차 전기/전자 시스템 안전 표준, IEC 61508 파생
+- ASIL(Automotive Safety Integrity Level): QM, A, B, C, D (D가 최고 등급)
+- V-Model 기반 개발: 요구사항-설계-구현-검증 대응
+- Hazard Analysis & Risk Assessment (HARA)
+- Safety Case: 안전성 입증 문서
+- 정적/동적 분석, 코드 리뷰, 추적성 관리
+
 ## 절차
 ISO 26262는 V-Model 기반의 체계적인 안전성 보장 프로세스를 따릅니다:
 
@@ -77,15 +86,6 @@ ISO 26262는 V-Model 기반의 체계적인 안전성 보장 프로세스를 따
    - Safety Plan, Safety Analysis, Verification Report
    - 추적성 매트릭스: 요구사항 → 설계 → 구현 → 테스트 완전 추적
    - 독립 평가: 제3자 인증 기관의 심사 (TÜV, SGS 등)
-
-## 특징
-- IEC 61508: 산업 전반의 기능 안전 기본 표준, SIL(Safety Integrity Level) 1~4 등급
-- ISO 26262: 자동차 전기/전자 시스템 안전 표준, IEC 61508 파생
-- ASIL(Automotive Safety Integrity Level): QM, A, B, C, D (D가 최고 등급)
-- V-Model 기반 개발: 요구사항-설계-구현-검증 대응
-- Hazard Analysis & Risk Assessment (HARA)
-- Safety Case: 안전성 입증 문서
-- 정적/동적 분석, 코드 리뷰, 추적성 관리
 
 ## 최신 트렌드
 - SOTIF (Safety Of The Intended Functionality)

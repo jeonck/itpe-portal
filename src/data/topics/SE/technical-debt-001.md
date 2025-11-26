@@ -31,6 +31,15 @@ trends:
 # 정의
 단기 목표 달성을 위해 최적이 아닌 설계나 구현을 선택함으로써 미래에 추가 비용이 발생하는 현상으로, Ward Cunningham이 제안한 개념 기술.
 
+## 특징
+- 의도적 부채: 빠른 출시를 위한 의도적 결정 (Deliberate Technical Debt)
+- 비의도적 부채: 미숙한 설계나 기술 부족으로 발생 (Inadvertent Technical Debt)
+- 부채 유형: 코드 부채, 설계 부채, 테스트 부채, 문서 부채, 인프라 부채
+- 부채 이자: 누적된 부채로 인한 개발 속도 저하, 버그 증가
+- 부채 관리: 지속적 리팩토링, 코드 리뷰, 자동화된 테스트
+- 부채 측정: SonarQube Debt Ratio, Code Climate
+- 레거시 코드: 테스트가 없는 오래된 코드
+
 ## 절차
 기술 부채는 다음과 같은 사이클로 발생하고 관리됩니다:
 
@@ -78,15 +87,6 @@ trends:
    - 자동화된 품질 검사: CI/CD 파이프라인에 정적 분석 도구 통합
    - Definition of Done: 테스트 작성, 문서화 포함
    - 아키텍처 가드레일: 설계 원칙 위반 방지
-
-## 특징
-- 의도적 부채: 빠른 출시를 위한 의도적 결정 (Deliberate Technical Debt)
-- 비의도적 부채: 미숙한 설계나 기술 부족으로 발생 (Inadvertent Technical Debt)
-- 부채 유형: 코드 부채, 설계 부채, 테스트 부채, 문서 부채, 인프라 부채
-- 부채 이자: 누적된 부채로 인한 개발 속도 저하, 버그 증가
-- 부채 관리: 지속적 리팩토링, 코드 리뷰, 자동화된 테스트
-- 부채 측정: SonarQube Debt Ratio, Code Climate
-- 레거시 코드: 테스트가 없는 오래된 코드
 
 ## 최신 트렌드
 - Technical Debt Quantification
