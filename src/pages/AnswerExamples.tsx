@@ -116,21 +116,21 @@ function FirstExamContent() {
             <div>
               <h4 className="font-bold text-blue-700 mb-2">I. 현실과 가상의 동기화, 디지털 트윈의 개요</h4>
               <div className="pl-4 space-y-2 text-sm">
-                <p><strong>1. 정의:</strong> 현실 세계의 기계, 장비, 사물 등을 컴퓨터 속 가상 세계에 구현하여, 실시간 시뮬레이션을 통해 결과를 예측하는 기술</p>
-                <p><strong>2. 핵심 특징:</strong> 실시간 동기화(Real-time), 모의실험(Simulation), 최적화(Optimization)</p>
+                <p><strong>가. 정의:</strong> 현실 세계의 기계, 장비, 사물 등을 컴퓨터 속 가상 세계에 구현하여, 실시간 시뮬레이션을 통해 결과를 예측하는 기술</p>
+                <p><strong>나. 핵심 특징:</strong> 실시간 동기화(Real-time), 모의실험(Simulation), 최적화(Optimization)</p>
               </div>
             </div>
 
             <div>
               <h4 className="font-bold text-green-700 mb-2">II. 디지털 트윈의 개념도 및 핵심 기술요소</h4>
               <div className="pl-4 space-y-3 text-sm">
-                <p><strong>1. 디지털 트윈의 개념도</strong></p>
+                <p><strong>가. 디지털 트윈의 개념도</strong></p>
                 <div className="bg-gray-100 p-4 rounded text-center text-xs text-gray-500">
                   [물리적 자산 ⇄ 데이터 수집/제어 ⇄ 가상 모델]<br/>
                   (Sensors → Data → AI/ML → Simulation → Actuator)
                 </div>
 
-                <p><strong>2. 핵심 기술요소</strong></p>
+                <p><strong>나. 핵심 기술요소</strong></p>
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse text-xs">
                     <thead className="bg-gray-100">
@@ -170,8 +170,8 @@ function FirstExamContent() {
             <div>
               <h4 className="font-bold text-purple-700 mb-2">III. 디지털 트윈과 메타버스의 비교 및 활용 방안</h4>
               <div className="pl-4 space-y-2 text-sm">
-                <p><strong>1. 메타버스와의 비교:</strong> (디지털 트윈) 현실 모사/산업용 vs (메타버스) 가상 확장/소셜·경제용</p>
-                <p><strong>2. 활용:</strong> 스마트 팩토리 공정 최적화, 재난 안전 시뮬레이션 등 도시 관제 적용 확대.</p>
+                <p><strong>가. 메타버스와의 비교:</strong> (디지털 트윈) 현실 모사/산업용 vs (메타버스) 가상 확장/소셜·경제용</p>
+                <p><strong>나. 활용:</strong> 스마트 팩토리 공정 최적화, 재난 안전 시뮬레이션 등 도시 관제 적용 확대.</p>
               </div>
             </div>
           </div>
