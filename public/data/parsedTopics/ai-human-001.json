@@ -1,0 +1,68 @@
+{
+  "id": "ai-human-001",
+  "title": "AI 휴먼 (Digital Human)",
+  "category": "digital-service",
+  "subcategory": "AI/ML",
+  "subjectCategories": [
+    "DS"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "AI Human",
+    "Digital Human",
+    "Virtual Influencer",
+    "Metahuman",
+    "Avatar"
+  ],
+  "definition": "AI 기술로 생성된 가상 인간으로, 실제 사람처럼 말하고 행동하며 다양한 서비스를 제공 기술.",
+  "technicalElements": [
+    "AI 휴먼(Digital Human)은 다양한 기술 요소들의 통합을 통해 실제 사람과 유사한 외형과 대화 능력을 구현합니다.",
+    "**3D 모델링 및 렌더링**:",
+    "**고품질 3D 캐릭터**: 실제 인물과 유사한 외형을 만들기 위해 3D 스캔, 디지털 조형 기술을 사용하여 얼굴, 몸, 의상 등을 모델링합니다.",
+    "**실시간 렌더링**: Unreal Engine, Unity와 같은 게임 엔진을 활용하여 실시간으로 고품질의 그래픽을 렌더링합니다. (예: 에픽게임즈의 Metahuman Creator)",
+    "**자연어 처리 및 생성 (NLP/NLG)**:",
+    "**LLM (Large Language Model) 기반 대화**: GPT-3/4, Gemini 등 대규모 언어 모델을 활용하여 질문 이해, 답변 생성, 맥락 유지 등 자연스러운 대화가 가능하도록 합니다.",
+    "**NLG (Natural Language Generation)**: 생성된 텍스트 답변을 음성 합성 또는 립싱크 데이터로 변환하는 기반이 됩니다.",
+    "**음성 합성 (Speech Synthesis / TTS)**:",
+    "**TTS (Text-To-Speech)**: 텍스트를 입력받아 실제 사람의 목소리와 유사한 음성으로 변환합니다.",
+    "**감정 표현**: 목소리의 톤, 속도, 강세 등을 조절하여 다양한 감정을 표현합니다.",
+    "**다국어 지원**: 여러 언어로 음성을 생성할 수 있는 기능.",
+    "**립싱크 및 표정 생성 (Lip-Sync & Facial Animation)**:",
+    "**립싱크 (Lip-Sync)**: 합성된 음성에 맞춰 AI 휴먼의 입술 움직임을 자연스럽게 동기화합니다.",
+    "**표정 생성**: 대화 내용이나 감정에 따라 AI 휴먼의 얼굴 표정을 실시간으로 생성하고 변경합니다. (예: 미소, 놀람, 슬픔 등)",
+    "**모션 캡처 (Motion Capture)**: 실제 인물의 표정이나 움직임을 캡처하여 AI 휴먼에 적용하기도 합니다.",
+    "**제스처 및 신체 동작 생성**:",
+    "대화의 맥락에 맞는 자연스러운 손짓, 몸짓 등 제스처를 생성하여 비언어적 소통을 강화합니다.",
+    "사전 정의된 동작 라이브러리 또는 AI 기반 동작 생성 모델을 활용합니다.",
+    "**실시간 상호작용 (Real-time Interaction)**:",
+    "**음성 인식 (STT, Speech-To-Text)**: 사용자의 음성을 텍스트로 변환하여 LLM에 입력합니다.",
+    "**화자 인식 (Speaker Recognition)**: 대화하는 사용자의 신원을 파악하거나 음성 특성을 분석합니다.",
+    "**웹캠/카메라 기반 얼굴 인식**: 사용자 표정을 분석하여 AI 휴먼이 감정적으로 반응하거나, 사용자의 움직임을 인식합니다.",
+    "이러한 기술 요소들은 AI 휴먼이 단순히 정적인 아바타를 넘어 실제 사람처럼 상호작용하며 다양한 역할을 수행할 수 있도록 합니다."
+  ],
+  "characteristics": [
+    "구성 요소: 3D 모델링, 음성 합성(TTS), 립싱크, 표정 생성, LLM 기반 대화",
+    "유형: Virtual Influencer (로지, 릴 미켈라), AI 아나운서, AI 상담원",
+    "Metahuman: Unreal Engine, 초고사실 3D 캐릭터",
+    "Real-time Interaction: 실시간 대화, 웹캠 얼굴 인식, 감정 반응",
+    "음성: AI 보이스, 다국어 지원, 감정 표현",
+    "활용: 고객 서비스, 교육, 광고/마케팅, 엔터테인먼트",
+    "윤리: 딥페이크 악용, 초상권, 저작권, 투명성",
+    "사례: 로지(신한라이프), 릴 미켈라, 김래아, Neon (삼성)"
+  ],
+  "relatedTopics": [
+    "ai-deep-learning-001",
+    "metaverse-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "Generative AI Human",
+    "Real-time Interaction"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

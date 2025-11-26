@@ -1,0 +1,30 @@
+{
+  "id": "db-normalization-001",
+  "title": "정규화 (Database Normalization)",
+  "category": "fundamental",
+  "subcategory": "데이터베이스",
+  "subjectCategories": [
+    "DB"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "1NF",
+    "2NF",
+    "3NF",
+    "BCNF",
+    "중복 제거"
+  ],
+  "definition": "데이터베이스의 중복을 최소화하고 데이터 무결성을 향상시키기 위해 테이블을 분해하는 과정 기술.",
+  "procedure": "데이터베이스 정규화는 중복을 제거하고 데이터 무결성을 높이기 위해 다음과 같은 단계별로 진행됩니다.\n\n1.  **제1 정규형 (1NF, First Normal Form)**:\n    -   **조건**: 모든 속성 값은 원자값(Atomic Value)이어야 합니다. 즉, 하나의 셀에는 하나의 값만 포함되어야 합니다. 또한, 반복되는 그룹(Repeating Group)이 없어야 합니다.\n    -   **목표**: 테이블의 모든 컬럼이 단일 값을 가지도록 합니다.\n    -   **예시**: 한 필드에 여러 전화번호가 있는 경우, 각 전화번호를 별도의 필드 또는 레코드로 분리.\n\n2.  **제2 정규형 (2NF, Second Normal Form)**:\n    -   **조건**: 제1 정규형을 만족하고, 모든 비주요 속성(Non-key Attribute)이 기본키(Primary Key) 전체에 대해 완전 함수 종속을 만족해야 합니다. (부분 함수 종속 제거)\n    -   **목표**: 부분 함수 종속으로 인한 중복 및 이상 현상(Anomaly) 제거.\n    -   **예시**: (학생ID, 과목ID)가 기본키일 때, 학생ID에만 종속되는 학생 이름이 있다면 별도 테이블로 분리.\n\n3.  **제3 정규형 (3NF, Third Normal Form)**:\n    -   **조건**: 제2 정규형을 만족하고, 모든 비주요 속성이 기본키에 대해 이행적 함수 종속(Transitive Functional Dependency)을 만족하지 않아야 합니다. (비주요 속성 간의 종속성 제거)\n    -   **목표**: 이행적 함수 종속으로 인한 중복 및 이상 현상 제거.\n    -   **예시**: (주문ID)가 기본키일 때, 주문ID → 고객ID → 고객 주소와 같은 종속성이 있다면, 고객ID와 고객 주소를 별도 테이블로 분리.\n\n4.  **BCNF (Boyce-Codd Normal Form)**:\n    -   **조건**: 제3 정규형을 만족하고, 모든 결정자(Determinant)가 후보키(Candidate Key)이어야 합니다. (결정자란 다른 속성을 결정하는 속성)\n    -   **목표**: 3NF에서 발생할 수 있는 이상 현상 제거. 특히 여러 개의 후보키가 존재하고 이들이 서로 겹치는 경우에 적용.\n    -   **예시**: (학생ID, 특강이름)이 후보키일 때, 특강이름 → 교수이름과 같은 종속성이 있다면, 특강이름과 교수이름을 별도 테이블로 분리.\n\n5.  **제4 정규형 (4NF, Fourth Normal Form)**:\n    -   **조건**: BCNF를 만족하고, 다치 종속(Multi-valued Dependency)이 제거되어야 합니다.\n    -   **목표**: 다치 종속으로 인한 중복 제거.\n\n6.  **제5 정규형 (5NF, Fifth Normal Form)**:\n    -   **조건**: 4NF를 만족하고, 조인 종속(Join Dependency)이 제거되어야 합니다.\n    -   **목표**: 조인으로 인한 정보 손실 없이 테이블을 분리.\n\n정규화는 데이터의 일관성과 무결성을 높이는 데 기여하지만, 지나친 정규화는 조인 연산을 증가시켜 성능 저하를 야기할 수 있습니다. 따라서 시스템의 요구사항과 성능을 고려하여 적절한 정규화 수준을 선택하는 것이 중요합니다. (반정규화 참조)",
+  "characteristics": [],
+  "relatedTopics": [
+    "transaction-001",
+    "index-001",
+    "dw-dm-etl-001"
+  ],
+  "importance": 5
+}

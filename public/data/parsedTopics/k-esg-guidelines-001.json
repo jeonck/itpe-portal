@@ -1,0 +1,34 @@
+{
+  "id": "k-esg-guidelines-001",
+  "title": "K-ESG 가이드라인",
+  "category": "digital-service",
+  "subcategory": "ESG 경영",
+  "subjectCategories": [
+    "IM"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "K-ESG",
+    "ESG 가이드라인",
+    "한국형 ESG",
+    "지속가능경영"
+  ],
+  "definition": "K-ESG 가이드라인은 국내 기업들이 ESG(환경, 사회, 지배구조) 경영을 효과적으로 도입하고, 관련 정보를 투명하게 공시할 수 있도록 지원하기 위해 국내 실정에 맞게 개발된 표준 지침입니다. 글로벌 ESG 흐름을 반영하면서도 국내 법규 및 기업 환경의 특수성을 고려하여 한국형 ESG 평가 및 공시의 기준을 제시 기술.",
+  "characteristics": [
+    "한국형 ESG 기준: 글로벌 ESG 기준(SASB, GRI, TCFD 등)을 참고하되, 국내 기업의 현실과 규제 환경을 반영하여 개발되었습니다.",
+    "주요 구성: 환경(E), 사회(S), 지배구조(G) 각 영역에 대한 세부 평가 지표 및 공시 권고 사항을 포함합니다."
+  ],
+  "relatedTopics": [
+    "esg-green-it-001",
+    "ax-esg-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "ESG 정보 공개 의무화",
+    "ESG 평가 지표 고도화",
+    "공급망 ESG 관리 강화"
+  ]
+}

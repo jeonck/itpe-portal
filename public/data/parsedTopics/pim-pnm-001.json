@@ -1,0 +1,39 @@
+{
+  "id": "pim-pnm-001",
+  "title": "PIM (Processing In Memory) & PNM",
+  "category": "digital-service",
+  "subcategory": "고성능 메모리",
+  "subjectCategories": [
+    "CA",
+    "DS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "computer-systems"
+  ],
+  "keywords": [
+    "PIM",
+    "PNM",
+    "Processing In Memory",
+    "Processing Near Memory",
+    "메모리 병목",
+    "AI 반도체"
+  ],
+  "definition": "PIM(Processing In Memory)은 중앙 처리 장치(CPU)와 메모리 간의 빈번한 데이터 이동으로 발생하는 병목 현상(폰노이만 병목)을 해결하기 위해 메모리 내부 또는 메모리 근처에서 연산을 수행하는 차세대 컴퓨팅 아키텍처. PNM(Processing Near Memory)은 PIM의 한 형태로, 연산 유닛을 메모리 칩 가까이에 배치하여 데이터 이동 거리를 줄이는 기술. AI 및 빅데이터 처리와 같이 대용량 데이터의 병렬 연산이 많은 작업에서 성능과 에너지 효율을 획기적으로 향상시킬 수 있는 기술.",
+  "operatingPrinciple": "PIM/PNM은 데이터 이동을 최소화하여 폰노이만 병목을 해결합니다:\n\n폰노이만 병목 (Von Neumann Bottleneck)\n- 기존 구조: CPU ↔ 버스 ↔ 메모리 (데이터 이동 병목)\n- 문제점: 대량 데이터 처리 시 버스 대역폭이 한계\n- 예시: AI 모델 학습 시 가중치(Weight)를 메모리에서 반복 읽기\n\nPIM 동작 (HBM-PIM 예시)\n1) 명령 전달: CPU가 PIM에 연산 명령 전송\n2) 데이터 로컬 처리: HBM 내부 연산 유닛이 메모리 데이터 직접 접근\n3) 인메모리 연산: 데이터 이동 없이 메모리 내에서 MAC 연산 수행\n4) 결과 반환: 최종 결과만 CPU로 전송\n\n삼성 HBM-PIM 구조:\n- 각 HBM 채널에 연산 유닛(PE) 배치\n- 행렬-벡터 곱셈(GEMV) 가속\n- 16개 채널이 병렬로 연산\n- 전력 효율 2배, 성능 2배 향상\n\nPNM 동작\n- 메모리 칩 외부, 패키지 내부에 연산 유닛 배치\n- 메모리와 짧은 연결 (마이크로범프)\n- PIM보다 구현 용이, 유연성 높음",
+  "characteristics": [
+    "폰노이만 병목 (Von Neumann Bottleneck): CPU와 메모리가 분리되어 있어 데이터 처리 시 CPU와 메모리 간의 데이터 이동이 빈번하게 발생하고, 이로 인해 전체 시스템 성능 저하 및 에너지 소모 증가를 야기하는 현상.",
+    "PIM (Processing In Memory):"
+  ],
+  "relatedTopics": [
+    "hbm-001",
+    "ai-semiconductor-001",
+    "cache-memory-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "CXL과의 결합",
+    "AI/빅데이터 가속화",
+    "저전력 고성능 컴퓨팅"
+  ]
+}

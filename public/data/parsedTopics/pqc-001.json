@@ -1,0 +1,64 @@
+{
+  "id": "pqc-001",
+  "title": "양자 내성 암호 (PQC)",
+  "category": "digital-service",
+  "subcategory": "암호 기술",
+  "subjectCategories": [
+    "IS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "양자 내성 암호",
+    "Post-Quantum Cryptography",
+    "양자 컴퓨터",
+    "양자 위협"
+  ],
+  "definition": "양자 내성 암호(PQC, Post-Quantum Cryptography)는 고성능 양자 컴퓨터의 공격에도 안전하게 설계된 암호 알고리즘을 말합니다. 현재 사용되는 대부분의 공개키 암호 시스템(RSA, ECC 등)은 쇼어(Shor) 알고리즘과 같은 양자 알고리즘에 의해 쉽게 해독될 수 있어, 양자 컴퓨팅 시대에 대비하기 위한 필수적인 보안 기술.",
+  "technicalElements": [
+    "양자 내성 암호(PQC)는 기존 암호 체계를 무력화할 수 있는 양자 컴퓨터의 등장에 대비하여, 다양한 수학적 난제를 기반으로 새로운 암호 알고리즘을 개발하는 기술 요소들을 포함합니다. 주요 PQC 기술 요소들은 다음과 같습니다.",
+    "**격자 기반 암호 (Lattice-based Cryptography)**:",
+    "**원리**: 짧은 벡터 문제(SVP)나 최단 벡터 문제(CVP)와 같은 격자(Lattice) 상의 수학적 난해함에 기반합니다.",
+    "**특징**: 병렬 처리에 유리하며, 다른 PQC 후보들에 비해 비교적 작은 키 크기를 가집니다. NIST PQC 표준화 경쟁에서 가장 유력한 후보 중 하나입니다.",
+    "**알고리즘**: CRYSTALS-Kyber (키 교환), CRYSTALS-Dilithium (디지털 서명), Falcon.",
+    "**코드 기반 암호 (Code-based Cryptography)**:",
+    "**원리**: 임의 오류 정정 부호(Random Linear Code)를 해독하는 어려움에 기반합니다.",
+    "**특징**: 1978년 맥엘리스(McEliece) 암호 시스템이 제안된 이래 꾸준히 연구되어 왔으며, 상대적으로 큰 키 크기를 가집니다.",
+    "**알고리즘**: McEliece, Classic McEliece.",
+    "**다변수 다항식 암호 (Multivariate Polynomial Cryptography)**:",
+    "**원리**: 유한체 상의 연립 다변수 비선형 방정식의 해를 찾는 어려움에 기반합니다.",
+    "**특징**: 빠르고 효율적인 서명 생성 및 검증이 가능합니다.",
+    "**알고리즘**: Rainbow, GeMSS.",
+    "**해시 기반 암호 (Hash-based Cryptography)**:",
+    "**원리**: 안전한 해시 함수의 단방향성 특성에 기반합니다. 주로 일회용 서명(One-time Signature) 스키마를 확장하여 사용됩니다.",
+    "**특징**: 양자 공격에 대한 강력한 보안성을 가지만, 키 쌍 생성 시 한 번만 사용할 수 있다는 제약이 있습니다. Stateful한 관리가 필요합니다.",
+    "**알고리즘**: SPHINCS+, XMSS.",
+    "**동종 사상 기반 암호 (Isogeny-based Cryptography)**:",
+    "**원리**: 타원 곡선 상의 동종 사상(Isogeny)을 계산하는 어려움에 기반합니다.",
+    "**특징**: 다른 PQC 후보들에 비해 키 크기가 매우 작다는 장점이 있습니다.",
+    "**알고리즘**: SIKE.",
+    "**하이브리드 모드 (Hybrid Mode)**:",
+    "기존 암호 시스템(RSA, ECC)과 PQC 알고리즘을 함께 사용하여 과도기적으로 보안을 강화하는 전략입니다. PQC 알고리즘의 안정성이 완전히 검증되기 전까지 기존 암호의 익숙한 보안성과 PQC의 양자 내성 기능을 동시에 활용합니다.",
+    "이러한 기술 요소들은 양자 컴퓨팅 시대에도 정보의 기밀성, 무결성, 인증을 보장하기 위한 핵심적인 방어 기술로 개발되고 있습니다. NIST(미국 국립표준기술연구소)를 중심으로 표준화가 진행 중이며, 향후 글로벌 암호화 인프라의 주축이 될 것으로 예상됩니다."
+  ],
+  "characteristics": [
+    "양자 컴퓨터 위협: 양자 컴퓨터는 현재의 공개키 암호 체계를 무력화할 수 있는 강력한 계산 능력을 가집니다. 특히, 쇼어 알고리즘은 소인수분해와 이산로그 문제 해결에 탁월하여 RSA 및 ECC 암호화를 위협합니다.",
+    "다양한 수학적 문제 기반: 격자 기반(Lattice-based), 코드 기반(Code-based), 다변수 다항식 기반(Multivariate-based), 해시 기반(Hash-based), 동종 사상 기반(Isogeny-based) 등 다양한 수학적 난제에 기반하여 개발됩니다.",
+    "NIST 표준화: 미국 국립표준기술연구소(NIST)를 중심으로 전 세계적으로 PQC 알고리즘의 표준화가 활발히 진행 중입니다. (예: CRYSTALS-Kyber, CRYSTALS-Dilithium 등)",
+    "마이그레이션 과제: 현재의 암호 인프라를 PQC로 전환하는 것은 막대한 비용과 시간이 소요되는 복잡한 과정입니다. 하이브리드 모드(기존 암호 + PQC)를 통해 점진적 전환을 모색하고 있습니다.",
+    "낮은 성능/큰 키 사이즈: 일부 PQC 알고리즘은 현재의 암호 시스템에 비해 연산 속도가 느리거나 키 사이즈가 매우 크다는 단점이 있습니다."
+  ],
+  "relatedTopics": [
+    "encryption-001",
+    "quantum-computing-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "NIST 표준화",
+    "하이브리드 모드",
+    "PQC 마이그레이션"
+  ]
+}

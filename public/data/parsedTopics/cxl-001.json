@@ -1,0 +1,39 @@
+{
+  "id": "cxl-001",
+  "title": "CXL (Compute Express Link)",
+  "category": "digital-service",
+  "subcategory": "고성능 인터페이스",
+  "subjectCategories": [
+    "CA",
+    "DS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "computer-systems"
+  ],
+  "keywords": [
+    "CXL",
+    "Compute Express Link",
+    "메모리 확장",
+    "풀링",
+    "공유 메모리",
+    "PCIe"
+  ],
+  "definition": "CXL(Compute Express Link)은 CPU, GPU, FPGA, PIM 등 다양한 프로세서 및 메모리 장치 간의 고속, 저지연 연결을 위한 새로운 인터페이스 표준. PCIe(Peripheral Component Interconnect Express) 기반으로 개발되었으며, 메모리 풀링(Memory Pooling) 및 공유 메모리(Memory Sharing) 기능을 통해 이기종 컴퓨팅 환경에서 데이터 이동 병목 현상을 해결하고 메모리 효율성 및 시스템 성능을 극대화하는 것을 목표로 하는 기술.",
+  "operatingPrinciple": "CXL은 3가지 프로토콜을 통해 CPU와 장치 간 통신을 지원합니다:\n\nCXL.io 프로토콜\n- PCIe 5.0 기반 I/O 프로토콜\n- 기존 PCIe 장치와 호환성 유지\n- 장치 초기화, 설정, 제어에 사용\n- Non-coherent 트랜잭션 (일반 I/O)\n\nCXL.cache 프로토콜\n- 가속기(Device)가 CPU의 메모리를 캐싱\n- Host-to-Device (H2D): CPU가 장치 메모리 접근\n- Device-to-Host (D2H): 장치가 CPU 메모리 접근\n- 캐시 일관성 유지 (Snoop 기반)\n- 예시: GPU가 CPU 메모리를 직접 캐싱\n\nCXL.mem 프로토콜\n- CPU가 CXL 장치의 메모리를 직접 접근\n- Memory Expander: CPU의 메모리 공간 확장\n- Load/Store 명령어로 접근 (DMA 불필요)\n- 주소 공간에 직접 매핑\n\n메모리 풀링 동작\n1) 여러 CXL 메모리 장치를 스위치에 연결\n2) 각 서버가 필요에 따라 메모리 할당\n3) Dynamic Capacity Device (DCD): 런타임 메모리 할당/해제\n4) 메모리 활용률 향상 (Stranded Memory 해결)",
+  "characteristics": [
+    "PCIe 기반: 기존 PCIe 물리 계층을 재활용하여 개발되었으므로, 새로운 하드웨어 인프라 구축 없이 기존 PCIe 환경에 통합이 용이합니다.",
+    "메모리 일관성 (Memory Coherency):"
+  ],
+  "relatedTopics": [
+    "hbm-001",
+    "pim-pnm-001",
+    "cpu-architecture-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "메모리 확장 및 공유 표준",
+    "데이터센터 아키텍처 변화",
+    "AI/HPC 워크로드 최적화"
+  ]
+}

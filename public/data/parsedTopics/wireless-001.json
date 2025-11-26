@@ -1,0 +1,45 @@
+{
+  "id": "wireless-001",
+  "title": "무선 네트워크 (Wireless Network)",
+  "category": "fundamental",
+  "subcategory": "네트워크",
+  "subjectCategories": [
+    "NW"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "WiFi 6",
+    "WiFi 7",
+    "5G",
+    "6G",
+    "IoT",
+    "Zigbee",
+    "LoRa",
+    "NB-IoT"
+  ],
+  "definition": "무선 통신 기술을 이용한 네트워크로, WiFi, 이동통신(5G/6G), IoT 통신 등 다양한 기술을 포함 기술.",
+  "operatingPrinciple": "무선 네트워크는 전파를 이용하여 데이터를 전송하며, 각 기술마다 고유한 메커니즘을 사용합니다:\n\nWiFi (OFDMA + MU-MIMO)\n- OFDMA: 주파수 대역을 여러 사용자에게 분할 할당\n- MU-MIMO: 여러 안테나로 동시에 다중 사용자 서비스\n\n5G/6G (Massive MIMO + Beamforming)\n- Massive MIMO: 수십~수백 개 안테나로 공간 다중화\n- Beamforming: 특정 방향으로 신호 집중\n\nIoT (저전력 변조)\n- LoRa: CSS 변조로 장거리 전송\n- Zigbee: IEEE 802.15.4 메쉬 네트워크",
+  "characteristics": [
+    "WiFi 6 (802.11ax): OFDMA, MU-MIMO, Target Wake Time, 2.4/5GHz",
+    "WiFi 7 (802.11be): 320MHz 대역폭, Multi-Link Operation, 최대 46Gbps",
+    "5G: eMBB (초고속 20Gbps), URLLC (초저지연 1ms), mMTC (100만 기기/km²)",
+    "6G: 테라헤르츠 대역 (0.1~10THz), AI 네이티브, 홀로그램 통신, 1Tbps",
+    "IoT: Zigbee (저전력 메시, 10~100m), LoRa (장거리 15km), NB-IoT (셀룰러)"
+  ],
+  "relatedTopics": [
+    "osi-7layer-001",
+    "iot-001",
+    "edge-computing-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "WiFi 7",
+    "6G",
+    "Private 5G",
+    "IoT 보안"
+  ]
+}

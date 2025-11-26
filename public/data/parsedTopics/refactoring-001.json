@@ -1,0 +1,46 @@
+{
+  "id": "refactoring-001",
+  "title": "리팩토링 (Refactoring)",
+  "category": "fundamental",
+  "subcategory": "소프트웨어 공학",
+  "subjectCategories": [
+    "SE"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "코드 개선",
+    "Code Smell",
+    "Extract Method",
+    "Rename",
+    "기술부채"
+  ],
+  "definition": "소프트웨어의 외부 동작을 변경하지 않고 내부 구조를 개선하는 작업으로, 코드의 가독성, 유지보수성, 확장성을 향상시키는 기술.",
+  "procedure": "리팩토링은 다음과 같은 체계적인 프로세스로 진행됩니다:\n\n1. Code Smell 식별\n   개선이 필요한 코드의 문제 패턴을 탐지:\n   - 중복 코드(Duplicated Code): 여러 곳에 같은 코드 구조 반복\n   - 긴 메서드(Long Method): 한 메서드에서 너무 많은 일을 처리 (50줄 이상)\n   - 큰 클래스(Large Class): 너무 많은 책임을 가진 클래스\n   - 긴 매개변수 목록(Long Parameter List): 메서드 매개변수가 3개 이상\n   - 산탄총 수술(Shotgun Surgery): 한 가지 변경을 위해 여러 클래스 수정 필요\n   - 기능에 대한 욕심(Feature Envy): 다른 클래스의 데이터를 지나치게 사용\n\n2. 테스트 코드 작성 또는 확인\n   리팩토링 전 기존 동작을 보장하는 자동화 테스트 준비:\n   - 단위 테스트: 개별 메서드 동작 검증\n   - 통합 테스트: 모듈 간 상호작용 검증\n   - 회귀 테스트: 리팩토링 후 기존 기능 정상 동작 확인\n\n3. 리팩토링 기법 적용\n   작은 단위로 점진적으로 구조 개선:\n   - Extract Method: 긴 메서드를 여러 작은 메서드로 분리\n   - Rename: 의미 없는 변수/메서드명을 명확한 이름으로 변경\n   - Move Method: 메서드를 더 적합한 클래스로 이동\n   - Extract Class: 큰 클래스를 책임별로 여러 클래스로 분리\n   - Inline Method: 불필요하게 간단한 메서드는 호출부에 통합\n   - Replace Conditional with Polymorphism: 조건문을 다형성으로 대체\n\n4. 테스트 실행 및 검증\n   각 리팩토링 단계마다 테스트를 실행하여 동작 보장:\n   - 모든 테스트가 통과하면 다음 리팩토링 진행\n   - 테스트 실패 시 즉시 롤백 후 재시도\n\n5. 지속적 개선\n   리팩토링을 일회성이 아닌 지속적인 활동으로 수행:\n   - 코드 리뷰 시 리팩토링 기회 발견\n   - 기능 추가 전 해당 영역 리팩토링\n   - 기술부채 관리: 누적된 부채 해소 계획 수립",
+  "characteristics": [
+    "Code Smell 제거: 중복 코드, 긴 메서드, 큰 클래스 등 문제 패턴 개선",
+    "주요 기법: Extract Method, Rename, Move Method, Extract Class",
+    "테스트 주도: 리팩토링 전후 동작 검증을 위한 자동화 테스트 필수",
+    "점진적 개선: 작은 단위로 지속적인 개선",
+    "기술부채 관리: 누적된 기술부채 해소",
+    "성능 최적화: 구조 개선을 통한 성능 향상",
+    "디자인 패턴 적용: 재사용 가능한 구조로 개선"
+  ],
+  "relatedTopics": [
+    "design-pattern-001",
+    "test-001",
+    "clean-code-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "AI-Assisted Refactoring",
+    "Automated Code Review",
+    "IDE 통합 리팩토링 도구"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

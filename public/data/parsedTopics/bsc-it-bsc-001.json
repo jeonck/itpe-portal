@@ -1,0 +1,37 @@
+{
+  "id": "bsc-it-bsc-001",
+  "title": "BSC (균형성과표) & IT-BSC",
+  "category": "management-focus",
+  "subcategory": "IT 성과 관리",
+  "subjectCategories": [
+    "IM"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "BSC",
+    "균형성과표",
+    "IT-BSC",
+    "성과 관리",
+    "재무 관점",
+    "고객 관점",
+    "내부 프로세스 관점",
+    "학습과 성장 관점"
+  ],
+  "definition": "BSC(Balanced Score Card, 균형성과표)는 로버트 캐플런과 데이비드 노튼이 개발한 성과 관리 프레임워크로, 기업의 성과를 단순히 재무적인 관점뿐만 아니라 고객, 내부 프로세스, 학습과 성장이라는 4가지 핵심 관점에서 균형 있게 측정하고 관리합니다. IT-BSC는 이러한 BSC 개념을 IT 조직 또는 IT 프로젝트의 성과 평가에 적용하여, IT 활동이 비즈니스 목표 달성에 어떻게 기여하는지 다각적으로 평가하는 도구 프레임워크.",
+  "characteristics": [
+    "BSC (Balanced Score Card):"
+  ],
+  "relatedTopics": [
+    "it-governance-001",
+    "it-investment-evaluation-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "ESG 성과지표 통합",
+    "OKR 연계",
+    "데이터 기반 성과 관리"
+  ]
+}

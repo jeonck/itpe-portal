@@ -1,0 +1,44 @@
+{
+  "id": "synchronization-001",
+  "title": "동기화 (Mutex, Semaphore, Monitor)",
+  "category": "technical-focus",
+  "subcategory": "운영체제",
+  "subjectCategories": [
+    "OS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "computer-systems"
+  ],
+  "keywords": [
+    "Mutex",
+    "Semaphore",
+    "Monitor",
+    "Critical Section",
+    "Race Condition",
+    "동기화"
+  ],
+  "definition": "여러 프로세스/스레드가 공유 자원에 동시 접근할 때 데이터 일관성을 보장하기 위한 기법.",
+  "operatingPrinciple": "동기화 기법들은 다음과 같이 동작합니다:\n\nMutex 동작\n1) lock() 호출\n   - 잠금 변수 확인 (locked = 0 또는 1)\n   - locked = 0이면 1로 설정하고 진입 (Test-and-Set 원자 연산)\n   - locked = 1이면 대기 큐에 추가되고 Sleep\n2) 임계 영역 실행\n3) unlock() 호출\n   - locked = 0으로 설정\n   - 대기 큐에서 스레드 깨움 (Wakeup)\n\nSemaphore 동작\n- 정수 변수 S로 자원 개수 관리\n- P(wait) 연산:\n  ```\n  P(S):\n    S = S - 1\n    if S < 0:\n      현재 스레드를 대기 큐에 추가\n      Sleep\n  ```\n- V(signal) 연산:\n  ```\n  V(S):\n    S = S + 1\n    if S <= 0:\n      대기 큐에서 스레드 깨움\n  ```\n- Binary Semaphore (S=1): Mutex와 유사\n- Counting Semaphore (S=N): 여러 자원 관리\n\nMonitor 동작 (Java synchronized)\n1) Monitor 진입: 한 번에 한 스레드만 진입\n2) Condition Variable 사용:\n   - wait(): 조건 불만족 시 대기, 다른 스레드에게 모니터 양보\n   - signal(): 대기 중인 스레드 하나 깨움\n   - broadcast(): 모든 대기 스레드 깨움\n3) Monitor 퇴출: 자동으로 잠금 해제\n\nSpinlock 동작\n```\nwhile (test_and_set(&lock) == 1) {\n  // Busy waiting (계속 확인)\n}\n// 임계 영역\nlock = 0\n```\n- CPU를 계속 사용하며 대기 (Context Switch 없음)\n- 짧은 임계 영역에 유리 (Mutex보다 빠름)\n- 멀티코어 환경에서 효과적",
+  "characteristics": [
+    "Critical Section (임계 영역): 공유 자원에 접근하는 코드 영역, 한 번에 하나만 실행",
+    "Race Condition (경쟁 상태): 여러 스레드가 동시에 공유 데이터 접근, 결과가 실행 순서에 따라 달라짐",
+    "Mutex (Mutual Exclusion): 상호 배제, 잠금(Lock) 기반, 소유자만 해제 가능",
+    "Semaphore: 정수형 변수로 자원 개수 관리, Binary(0/1), Counting(N), P(wait), V(signal) 연산",
+    "Monitor: 고수준 동기화, 공유 자원과 연산을 캡슐화, Condition Variable 사용",
+    "Spinlock: 바쁜 대기(Busy Waiting), 짧은 임계 영역에 적합",
+    "해결 조건: Mutual Exclusion, Progress, Bounded Waiting"
+  ],
+  "relatedTopics": [
+    "process-thread-001",
+    "process-scheduling-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "Lock-Free Programming",
+    "RCU (Read-Copy-Update)"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "okr-001",
+  "title": "OKR (Objectives and Key Results)",
+  "category": "management-focus",
+  "subcategory": "프로젝트 성과 관리",
+  "subjectCategories": [
+    "PM",
+    "IM"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "OKR",
+    "목표 및 핵심 결과",
+    "성과 관리",
+    "목표 설정",
+    "정렬",
+    "투명성"
+  ],
+  "definition": "OKR(Objectives and Key Results)은 조직의 전략적 목표를 설정하고, 그 목표 달성 여부를 측정 가능한 핵심 결과(Key Results)로 정의하여, 조직과 팀, 개인의 목표를 투명하게 정렬하고 추적하는 성과 관리 프레임워크입니다. 구글(Google) 등 실리콘밸리 기업들이 성장하는 데 핵심적인 역할을 한 것으로 알려져 있습니다 프레임워크.",
+  "characteristics": [
+    "O (Objective, 목표):"
+  ],
+  "relatedTopics": [
+    "bsc-it-bsc-001",
+    "agile-project-management-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "AI 기반 OKR 관리",
+    "애자일 조직의 OKR",
+    "전사적 OKR 도입"
+  ]
+}

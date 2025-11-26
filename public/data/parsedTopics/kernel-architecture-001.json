@@ -1,0 +1,55 @@
+{
+  "id": "kernel-architecture-001",
+  "title": "커널 아키텍처 (모놀리식 vs 마이크로 vs Unikernel)",
+  "category": "technical-focus",
+  "subcategory": "운영체제",
+  "subjectCategories": [
+    "OS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "computer-systems"
+  ],
+  "keywords": [
+    "Monolithic Kernel",
+    "Microkernel",
+    "Unikernel",
+    "Hybrid Kernel",
+    "Kernel Architecture"
+  ],
+  "definition": "운영체제 커널의 설계 방식으로, 기능의 배치와 통신 방식에 따라 모놀리식, 마이크로, Unikernel로 분류됩니다 방식.",
+  "technicalElements": [
+    "Monolithic Kernel (모놀리식 커널):",
+    "구조: 모든 OS 서비스(파일 시스템, 드라이버, 메모리 관리, 프로세스 스케줄링)가 커널 공간에서 실행",
+    "예시: Linux, Unix, FreeBSD",
+    "장점: 함수 직접 호출로 성능 우수, 단점: 오류 시 전체 시스템 장애, 코드 복잡성 증가",
+    "Microkernel (마이크로커널):",
+    "구조: 최소 기능(IPC, 메모리 관리, 스케줄링)만 커널에, 파일 시스템과 드라이버는 사용자 공간 서버로 실행",
+    "예시: Minix, QNX, L4, seL4",
+    "장점: 모듈성, 안정성(서버 장애가 전체 시스템에 영향 없음), 단점: IPC 오버헤드로 성능 저하",
+    "Hybrid Kernel (하이브리드 커널):",
+    "구조: 마이크로커널 원칙 + 성능을 위해 일부 서비스를 커널 공간에 배치",
+    "예시: Windows NT, macOS XNU",
+    "Unikernel (유니커널):",
+    "구조: 단일 주소 공간, 애플리케이션과 OS 라이브러리 통합, 단일 목적 VM",
+    "장점: 빠른 부팅(ms), 작은 이미지 크기, 공격 표면 축소, 단점: 범용성 부족, 디버깅 어려움"
+  ],
+  "characteristics": [
+    "설계 철학 차이: 기능 배치와 모듈성 수준에 따라 구분",
+    "성능 vs 안정성: 각 아키텍처의 트레이드오프 존재",
+    "용도별 최적화: 범용 OS, 임베디드, 클라우드에 따라 선택",
+    "진화 트렌드: 클라우드 네이티브와 엣지 컴퓨팅에 맞춘 새로운 설계"
+  ],
+  "relatedTopics": [
+    "process-thread-001",
+    "virtualization-hypervisor-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "Unikernel",
+    "Rust Kernel"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

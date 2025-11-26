@@ -1,0 +1,50 @@
+{
+  "id": "xai-001",
+  "title": "XAI (SHAP, LIME)",
+  "category": "technical-focus",
+  "subcategory": "알고리즘",
+  "subjectCategories": [
+    "AL",
+    "DS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "XAI",
+    "Explainable AI",
+    "SHAP",
+    "LIME",
+    "Interpretability",
+    "Model Explainability"
+  ],
+  "definition": "블랙박스 AI 모델의 예측 과정을 설명하고 해석 가능하게 만드는 설명 가능한 AI 기술 기술.",
+  "technicalElements": [
+    "LIME (Local Interpretable Model-agnostic Explanations): 예측 주변 데이터 샘플링 → 단순 모델(선형회귀, 결정트리) 학습 → 지역적 해석 제공",
+    "SHAP (SHapley Additive exPlanations): 게임 이론의 Shapley Value 적용, 각 특징의 기여도를 공정하게 계산, 전역+지역 설명 동시 지원",
+    "Feature Importance: 트리 기반 모델에서 특징 중요도 계산, Gini Importance, Permutation Importance",
+    "Attention Visualization: Transformer와 CNN에서 어텐션 가중치 시각화, 모델이 주목하는 영역 표시",
+    "Saliency Map: 입력 이미지의 픽셀별 중요도 시각화, 그래디언트 기반 방법",
+    "Grad-CAM (Gradient-weighted Class Activation Mapping): CNN의 특정 클래스 예측 근거를 히트맵으로 시각화",
+    "Counterfactual Explanations: \"어떤 변화가 있으면 예측이 바뀌는가\" 설명"
+  ],
+  "characteristics": [
+    "투명성 제공: 블랙박스 모델의 의사결정 과정 가시화",
+    "신뢰성 향상: 모델 예측에 대한 신뢰 구축",
+    "규제 준수: GDPR 등 설명 의무 충족",
+    "Model-agnostic: 모델 종류와 무관하게 적용 가능"
+  ],
+  "relatedTopics": [
+    "ai-deep-learning-001",
+    "ensemble-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "Attention Visualization",
+    "Causal AI"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

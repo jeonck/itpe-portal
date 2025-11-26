@@ -1,0 +1,46 @@
+{
+  "id": "cdn-001",
+  "title": "CDN (Content Delivery Network)",
+  "category": "digital-service",
+  "subcategory": "웹 기술",
+  "subjectCategories": [
+    "NW",
+    "DS"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "CDN",
+    "Edge Server",
+    "Caching",
+    "CloudFront",
+    "Akamai",
+    "CloudFlare"
+  ],
+  "definition": "지리적으로 분산된 서버 네트워크를 통해 콘텐츠를 사용자와 가까운 위치에서 제공하여 속도와 가용성을 향상시키는 서비스 기술.",
+  "operatingPrinciple": "CDN은 다음과 같은 메커니즘으로 콘텐츠를 빠르게 전달합니다:\n\n1. 콘텐츠 캐싱 및 배포 프로세스\n\n1단계: 사용자 요청\n- 사용자가 www.example.com/image.jpg 요청\n- DNS가 가장 가까운 CDN 엣지 서버 IP 반환\n\n2단계: 캐시 확인 (Cache Hit/Miss)\n- Cache Hit: 엣지 서버에 콘텐츠 존재\n  → 즉시 사용자에게 전달 (Origin 접근 불필요)\n\n- Cache Miss: 엣지 서버에 콘텐츠 없음\n  → Origin Server에서 콘텐츠 가져오기 (Pull)\n  → 엣지 서버에 캐싱\n  → 사용자에게 전달\n\n3단계: 캐시 저장\n- TTL(Time to Live) 기반으로 캐시 유지\n- Cache-Control 헤더에 따라 캐시 정책 적용\n- LRU(Least Recently Used) 알고리즘으로 캐시 관리\n\n2. 지리적 라우팅 (GeoDNS)\n사용자와 가장 가까운 엣지 서버로 연결합니다:\n\n1) 사용자가 DNS 쿼리 전송\n2) GeoDNS가 사용자 IP의 지리적 위치 파악\n3) 가장 가까운 PoP(Point of Presence)의 IP 반환\n4) 낮은 지연시간으로 콘텐츠 제공\n\n3. 캐싱 전략\n\n캐시 정책 설정\n- Cache-Control: max-age=3600 (1시간 캐싱)\n- Cache-Control: no-cache (매번 검증)\n- Cache-Control: private (브라우저만 캐싱)\n- ETag: 콘텐츠 버전 식별\n\n캐시 무효화 (Purge/Invalidation)\n- 콘텐츠 업데이트 시 캐시 즉시 삭제\n- 방법: URL 기반, Tag 기반, 전체 삭제\n\n4. Origin Shield\nOrigin 서버 부하를 줄이기 위한 중간 캐시 계층입니다:\n\n1) 여러 엣지 서버 → Origin Shield (중간 캐시)\n2) Origin Shield → Origin Server (필요시만)\n3) Origin 요청 수 90% 이상 감소\n\n5. DDoS 방어\n분산 아키텍처로 DDoS 공격을 완화합니다:\n\n- Anycast 네트워크: 공격 트래픽을 전 세계 PoP에 분산\n- Rate Limiting: 과도한 요청 차단\n- WAF (Web Application Firewall): 악성 트래픽 필터링\n\n6. 동영상 스트리밍 최적화\nAdaptive Bitrate Streaming (ABR)\n- 네트워크 속도에 따라 화질 자동 조절\n- HLS (HTTP Live Streaming), DASH 프로토콜\n\nChunked Transfer\n- 동영상을 작은 조각(Chunk)으로 분할\n- 각 조각을 엣지에서 캐싱",
+  "characteristics": [
+    "동작 원리: 엣지 서버에 콘텐츠 캐싱, 가장 가까운 서버에서 제공, GeoDNS 라우팅",
+    "장점: 지연 시간 감소(50~90%), 대역폭 절감, 가용성 향상, DDoS 방어, Origin 부하 감소",
+    "캐싱 전략: TTL (Time to Live), Cache-Control 헤더, ETag, LRU 알고리즘",
+    "주요 업체: Cloudflare (200+ 도시), AWS CloudFront, Akamai, Fastly",
+    "PoP (Point of Presence): CDN 엣지 서버가 위치한 데이터센터",
+    "Origin Server: 원본 콘텐츠를 저장하는 서버",
+    "Purge/Invalidation: 캐시 무효화, URL/Tag 기반",
+    "사용 사례: 동영상 스트리밍(Netflix, YouTube), 정적 파일 배포, API 가속, 게임 패치"
+  ],
+  "relatedTopics": [
+    "http-quic-001",
+    "dns-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "Edge Computing",
+    "CDN-as-Code"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

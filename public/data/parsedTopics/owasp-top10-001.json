@@ -1,0 +1,41 @@
+{
+  "id": "owasp-top10-001",
+  "title": "OWASP Top 10 (웹 보안 취약점)",
+  "category": "digital-service",
+  "subcategory": "웹 보안",
+  "subjectCategories": [
+    "IS",
+    "SE"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "OWASP Top 10",
+    "웹 보안",
+    "취약점",
+    "웹 애플리케이션",
+    "시큐어 코딩"
+  ],
+  "definition": "OWASP(Open Web Application Security Project) Top 10은 웹 애플리케이션 보안에서 가장 중요하고 심각한 10가지 취약점 목록을 의미합니다. OWASP 재단에서 전 세계 웹 보안 전문가들의 경험과 데이터를 바탕으로 주기적으로 발표하며, 개발자와 보안 담당자들이 웹 애플리케이션의 보안을 강화하는 데 우선순위를 두고 집중해야 할 영역을 제시 기술.",
+  "technicalElements": [
+    "[TODO: 기술요소 내용을 여기에 작성하세요.]"
+  ],
+  "characteristics": [
+    "목표: 웹 애플리케이션 보안 취약점에 대한 인식을 높이고, 보안 개발 프로세스를 개선하여 안전한 웹 애플리케이션을 구축하도록 지원.",
+    "주요 10가지 취약점 (2021년 기준):"
+  ],
+  "relatedTopics": [
+    "security-attack-001",
+    "security-solution-001",
+    "sql-injection-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "API 보안 취약점",
+    "서버리스 보안",
+    "AI 기반 취약점 분석"
+  ]
+}

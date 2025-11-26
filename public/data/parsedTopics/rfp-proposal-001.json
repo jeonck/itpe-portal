@@ -1,0 +1,36 @@
+{
+  "id": "rfp-proposal-001",
+  "title": "제안요청서(RFP) & 제안서",
+  "category": "management-focus",
+  "subcategory": "SW 사업 계약",
+  "subjectCategories": [
+    "PM",
+    "IM"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "RFP",
+    "제안요청서",
+    "제안서",
+    "사업자 선정",
+    "기술성 평가",
+    "협상"
+  ],
+  "definition": "RFP(Request for Proposal)는 발주기관이 특정 사업을 수행하기 위해 필요한 솔루션, 서비스, 기술 등을 명확히 정의하고, 사업 수행을 희망하는 사업자에게 제안을 요청하는 공식 문서입니다. 제안서는 이러한 RFP에 대한 응답으로, 사업자가 발주기관의 요구사항을 어떻게 충족시킬 것인지, 어떤 기술과 방법론을 사용하여 사업을 수행할 것인지 등을 상세하게 기술한 문서입니다. 이 두 문서는 SW 사업자 선정 및 계약의 핵심적인 기반이 됩니다 기술.",
+  "characteristics": [
+    "RFP (Request for Proposal):"
+  ],
+  "relatedTopics": [
+    "public-sw-procurement-001",
+    "sw-project-pricing-guide-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "애자일 RFP",
+    "클라우드 서비스 RFP",
+    "AI 기반 제안서 평가"
+  ]
+}

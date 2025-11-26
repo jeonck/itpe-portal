@@ -1,0 +1,36 @@
+{
+  "id": "code-peer-review-001",
+  "title": "코드 리뷰 & 동료 검토",
+  "category": "management-focus",
+  "subcategory": "프로젝트 품질 관리",
+  "subjectCategories": [
+    "PM",
+    "SE"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "코드 리뷰",
+    "동료 검토",
+    "정적 분석",
+    "결함 발견",
+    "품질 향상"
+  ],
+  "definition": "코드 리뷰(Code Review)는 소프트웨어 개발 과정에서 작성된 코드를 다른 개발자가 검토하여 잠재적인 오류, 버그, 취약점, 비효율적인 코드 등을 발견하고 개선하는 활동입니다. 동료 검토(Peer Review)는 코드 리뷰를 포함하여 설계 문서, 요구사항 명세서 등 프로젝트의 다양한 산출물을 동료들이 상호 검토하여 품질을 향상시키는 포괄적인 활동을 의미 기술.",
+  "characteristics": [
+    "목표:"
+  ],
+  "relatedTopics": [
+    "quality-001",
+    "test-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "CI/CD 파이프라인 통합",
+    "AI 기반 코드 분석",
+    "원격 코드 리뷰 도구"
+  ]
+}

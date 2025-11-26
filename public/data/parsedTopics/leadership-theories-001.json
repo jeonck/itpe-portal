@@ -1,0 +1,35 @@
+{
+  "id": "leadership-theories-001",
+  "title": "리더십 이론 (서번트 리더십)",
+  "category": "management-focus",
+  "subcategory": "프로젝트 팀 관리",
+  "subjectCategories": [
+    "PM",
+    "IM"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "리더십",
+    "서번트 리더십",
+    "변혁적 리더십",
+    "거래적 리더십",
+    "프로젝트 리더"
+  ],
+  "definition": "리더십 이론은 조직의 목표 달성을 위해 구성원들에게 영향력을 행사하고 동기를 부여하는 리더의 역할과 행동을 설명하는 학문입니다. 다양한 리더십 이론 중 서번트 리더십(Servant Leadership)은 리더가 구성원의 성장과 발전을 최우선으로 돕고, 그들을 섬김으로써 조직 전체의 성과 향상을 추구하는 접근 방식.",
+  "characteristics": [
+    "리더십의 유형:"
+  ],
+  "relatedTopics": [
+    "motivation-theories-001",
+    "communication-stakeholder-mgt-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "애자일 리더십",
+    "디지털 리더십",
+    "AI 기반 리더십 지원"
+  ]
+}

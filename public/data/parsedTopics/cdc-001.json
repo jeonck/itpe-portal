@@ -1,0 +1,46 @@
+{
+  "id": "cdc-001",
+  "title": "CDC (Change Data Capture)",
+  "category": "digital-service",
+  "subcategory": "데이터 통합",
+  "subjectCategories": [
+    "DB",
+    "DS"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "CDC",
+    "Change Data Capture",
+    "Debezium",
+    "실시간 동기화",
+    "Event Streaming"
+  ],
+  "definition": "데이터베이스의 변경 사항(INSERT, UPDATE, DELETE)을 실시간으로 감지하고 캡처하여 다른 시스템에 전달하는 기술.",
+  "operatingPrinciple": "CDC(Change Data Capture)는 다양한 방식으로 데이터베이스 변경 사항을 감지하고 캡처합니다.\n\n1.  **로그 기반 (Log-Based CDC)**:\n    -   **원리**: 데이터베이스의 트랜잭션 로그(예: MySQL의 Binlog, PostgreSQL의 WAL, Oracle의 Redo Log)를 직접 읽어 변경 사항을 파악합니다. 이 로그 파일에는 모든 데이터베이스 변경 이력이 기록되어 있습니다.\n    -   **장점**: 원본 데이터베이스에 부하를 거의 주지 않고, 데이터의 일관성 및 무결성을 보장하며, 실시간 캡처가 가능합니다. 테이블 스키마 변경에도 강합니다.\n    -   **단점**: 특정 데이터베이스 시스템의 로그 형식에 종속적이며, 로그 파일 접근 권한이 필요합니다.\n    -   **예시 도구**: Debezium, Oracle GoldenGate.\n\n2.  **트리거 기반 (Trigger-Based CDC)**:\n    -   **원리**: 데이터베이스 테이블에 트리거(Trigger)를 설정하여 데이터 변경(INSERT, UPDATE, DELETE)이 발생할 때마다 별도의 변경 이력 테이블에 변경 정보를 기록합니다.\n    -   **장점**: 데이터베이스 시스템에 독립적이며, 구현이 비교적 간단합니다.\n    -   **단점**: 원본 데이터베이스에 부하(트리거 실행 오버헤드)를 줄 수 있으며, 트리거 로직을 직접 관리해야 합니다. 테이블 스키마 변경 시 트리거도 함께 수정해야 합니다.\n\n3.  **스냅샷 비교 기반 (Snapshot-Based CDC)**:\n    -   **원리**: 특정 주기(예: 매일 밤)로 현재 데이터베이스 테이블의 스냅샷(복사본)을 떠서 이전 스냅샷과 비교하여 변경 사항을 식별합니다.\n    -   **장점**: 원본 데이터베이스에 대한 변경 감지 메커니즘 설정이 필요 없습니다.\n    -   **단점**: 실시간 변경 감지가 어렵고, 대용량 데이터의 경우 비교 작업에 많은 시간과 리소스가 소모되며, 변경 이력(누가 언제 어떻게 변경했는지)을 상세히 파악하기 어렵습니다.\n\n이러한 방식으로 캡처된 변경 데이터는 메시지 큐(Kafka 등)를 통해 다운스트림 시스템(데이터 웨어하우스, 데이터 레이크, 마이크로서비스 등)으로 전달되어 실시간 동기화, 분석, 이벤트 처리 등에 활용됩니다.",
+  "characteristics": [
+    "목적: 실시간 데이터 동기화, ETL 대체, 이벤트 스트리밍",
+    "캡처 방식: 로그 기반(트랜잭션 로그), 트리거 기반, 스냅샷 비교",
+    "주요 도구: Debezium, Oracle GoldenGate, AWS DMS, Confluent",
+    "Log-Based CDC: MySQL Binlog, PostgreSQL WAL, Oracle Redo Log",
+    "사용 사례: DW 실시간 동기화, 마이크로서비스 이벤트 소싱, 캐시 무효화",
+    "Debezium: Kafka Connect 기반, 여러 DB 지원",
+    "장점: 낮은 지연 시간, 소스 DB 부하 최소화"
+  ],
+  "relatedTopics": [
+    "kafka-streaming-001",
+    "distributed-db-001",
+    "dw-dm-etl-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "Real-time Data Pipelines",
+    "Event-Driven Architecture"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

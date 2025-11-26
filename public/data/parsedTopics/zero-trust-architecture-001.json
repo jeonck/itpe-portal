@@ -1,0 +1,62 @@
+{
+  "id": "zero-trust-architecture-001",
+  "title": "Zero Trust Architecture (ZTA)",
+  "category": "digital-service",
+  "subcategory": "보안 아키텍처",
+  "subjectCategories": [
+    "IS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "제로 트러스트",
+    "마이크로 세그멘테이션",
+    "지속적 검증",
+    "최소 권한"
+  ],
+  "definition": "Zero Trust Architecture (ZTA)는 '어떤 사용자나 장치도 기본적으로 신뢰하지 않는다'는 원칙에 기반한 보안 접근 방식입니다. 모든 접근 요청에 대해 지속적인 검증과 최소 권한 부여를 요구하며, 네트워크 경계 기반의 전통적인 보안 모델에서 벗어나 내부 네트워크에서도 위협이 존재한다고 가정 방식.",
+  "technicalElements": [
+    "Zero Trust Architecture(ZTA)는 '절대 신뢰하지 않고 항상 검증한다'는 원칙을 구현하기 위해 다음과 같은 기술 요소들을 활용합니다.",
+    "**ID 거버넌스 (Identity Governance)**:",
+    "**강력한 인증**: 다중 인증(MFA), 생체 인증(FIDO), 패스키(Passkey) 등을 사용하여 사용자 신원을 강력하게 확인합니다.",
+    "**IDaaS (Identity as a Service)**: 클라우드 기반의 통합 신원 관리 서비스로, 사용자 인증 및 권한 관리를 중앙화하고 자동화합니다.",
+    "**CIEM (Cloud Infrastructure Entitlement Management)**: 클라우드 환경에서 사용자와 서비스 주체의 권한을 최소화하고 과도한 권한을 탐지하여 관리합니다.",
+    "**마이크로 세그멘테이션 (Micro-segmentation)**:",
+    "**원리**: 네트워크를 매우 작은 논리적 세그먼트(예: 개별 애플리케이션, 서비스, 워크로드 단위)로 나누고, 각 세그먼트 간의 통신을 세밀하게 제어하여 위협의 횡적 이동(Lateral Movement)을 제한합니다.",
+    "**구현**: 네트워크 가상화 기술(NSX-T), 컨테이너 오케스트레이션 도구(Kubernetes Network Policy), 호스트 기반 방화벽 등을 활용합니다.",
+    "**SASE (Secure Access Service Edge)**:",
+    "**원리**: 네트워크 보안 기능(SD-WAN, SWG, CASB, ZTNA, FWaaS)과 WAN 기능을 클라우드 기반 단일 서비스로 통합하여, 사용자나 디바이스가 어디에 있든 안전하고 최적화된 접근을 제공합니다.",
+    "**ZTNA (Zero Trust Network Access)**: VPN을 대체하는 기술로, 특정 리소스에 대한 접근 권한을 명시적으로 부여하며, 사용자, 디바이스, 애플리케이션의 컨텍스트를 지속적으로 검증합니다.",
+    "**EDR (Endpoint Detection and Response) 및 XDR (Extended Detection and Response)**:",
+    "**EDR**: 엔드포인트(PC, 서버)에서 발생하는 모든 활동을 모니터링하고 분석하여 위협을 탐지하고 대응합니다.",
+    "**XDR**: EDR의 범위를 엔드포인트뿐만 아니라 네트워크, 클라우드, 이메일 등 여러 도메인으로 확장하여 위협 가시성과 탐지 능력을 향상시킵니다.",
+    "**API 보안**:",
+    "마이크로서비스 아키텍처에서 API Gateway를 통해 API 접근을 제어하고, API별 인증 및 권한 부여, 속도 제한, 악용 방지 등의 보안 정책을 적용합니다.",
+    "**데이터 보안**:",
+    "데이터 암호화(저장/전송), 데이터 유출 방지(DLP), 데이터 마스킹 등을 통해 데이터의 기밀성과 무결성을 보호합니다.",
+    "**자동화 및 오케스트레이션**:",
+    "보안 정책 적용, 위협 탐지, 침해 대응 등을 자동화하여 보안 운영의 효율성과 대응 속도를 높입니다. (SIEM, SOAR 연동)",
+    "이러한 기술 요소들은 제로 트러스트 원칙을 기반으로 조직의 보안 태세를 강화하고, 현대의 복잡한 사이버 위협에 효과적으로 대응하는 데 필수적입니다."
+  ],
+  "characteristics": [
+    "절대 신뢰 금지: 모든 사용자, 장치, 애플리케이션에 대한 명시적 검증.",
+    "최소 권한 원칙: 필요한 최소한의 권한만 부여하고 지속적으로 모니터링.",
+    "마이크로 세그멘테이션: 네트워크를 작게 분할하여 위협 확산 방지.",
+    "지속적 검증: 한 번 인증되었다고 영원히 신뢰하는 것이 아니라, 지속적으로 인증 및 권한 확인.",
+    "침해 가정(Assume Breach): 항상 침해가 발생할 수 있다고 가정하고 대비.",
+    "중앙화된 가시성 및 분석: 모든 접근 및 활동에 대한 로깅과 분석을 통해 이상 징후 탐지."
+  ],
+  "relatedTopics": [
+    "zero-trust-ai-security-001",
+    "security-solution-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "IDP (Identity Data Platform)",
+    "IDaaS (Identity as a Service)",
+    "SASE (Secure Access Service Edge)"
+  ]
+}

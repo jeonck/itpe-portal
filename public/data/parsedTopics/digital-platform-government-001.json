@@ -1,0 +1,39 @@
+{
+  "id": "digital-platform-government-001",
+  "title": "디지털 플랫폼 정부 (DPG)",
+  "category": "management-focus",
+  "subcategory": "IT 정책 및 규제",
+  "subjectCategories": [
+    "IM"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "디지털 플랫폼 정부",
+    "DPG",
+    "초개인화 서비스",
+    "AI",
+    "데이터",
+    "클라우드"
+  ],
+  "definition": "디지털 플랫폼 정부(DPG)는 모든 데이터가 연결되는 디지털 플랫폼 위에서 인공지능(AI)과 데이터 기반으로 국민, 기업, 정부가 함께 사회문제를 해결하고 새로운 가치를 창출하는 정부를 의미합니다. 단순히 정부 서비스를 디지털화하는 것을 넘어, 민관 협력을 통해 국민 체감형 서비스를 제공하고 정부 운영의 효율성을 극대화하는 것을 목표로 플랫폼.",
+  "characteristics": [
+    "초연결 디지털 플랫폼: 모든 정부 서비스와 데이터가 유기적으로 연동되는 디지털 기반을 구축합니다.",
+    "AI-데이터 기반: 인공지능과 빅데이터 분석을 통해 국민의 필요를 예측하고, 선제적이고 맞춤형 서비스를 제공합니다.",
+    "민관 협력: 정부 주도뿐만 아니라 민간의 혁신적인 아이디어와 기술을 적극 활용하여 다양한 서비스를 개발하고 제공합니다.",
+    "주요 목표:"
+  ],
+  "relatedTopics": [
+    "ax-esg-001",
+    "it-governance-001",
+    "digital-transformation-ax-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "AI 기반 행정 서비스",
+    "마이데이터 (MyData)",
+    "공공 서비스 자동화"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "6g-001",
+  "title": "6G & 테라헤르츠 통신",
+  "category": "digital-service",
+  "subcategory": "무선 통신",
+  "subjectCategories": [
+    "NW",
+    "DS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "6G",
+    "Terahertz",
+    "THz",
+    "홀로그램",
+    "Digital Twin",
+    "AI Native"
+  ],
+  "definition": "5G를 뛰어넘는 테라헤르츠(THz) 대역을 활용한 6세대 이동통신으로, AI 네이티브 및 홀로그램 통신을 목표로 기술.\n\n# 특징\n- 목표 성능: 최대 1Tbps 속도 (5G의 50배), 10μs 이하 지연, 1000만 기기/km²\n- 주파수: 테라헤르츠 대역 (0.1~10THz), 밀리미터파보다 높은 주파수\n- 핵심 기술: THz 통신, AI/ML 네이티브, RIS (Reconfigurable Intelligent Surface)\n- 서비스: 홀로그램 통신, Digital Twin, XR (AR/VR/MR), 초정밀 위치 (cm 단위)\n- AI Native: AI 기반 네트워크 자율 운영, 트래픽 예측 및 최적화\n- 상용화: 2030년대 상용화 목표 (ITU-R IMT-2030)\n- 한국: 6G 선도국 목표, 정부 R&D 투자, 삼성/LG 기술 개발",
+  "operatingPrinciple": "6G는 테라헤르츠 대역과 AI를 활용한 차세대 무선 통신입니다:\n\nTHz 통신 동작\n- 0.1~10THz 초고주파 전파 사용\n- 짧은 파장으로 초고속 데이터 전송 (최대 1Tbps)\n- 직진성 강함 → 지향성 안테나 필수\n\nRIS (Reconfigurable Intelligent Surface)\n- 전파 반사/굴절을 능동적으로 제어\n- 메타표면(Meta-surface)으로 전파 경로 최적화\n- 음영 지역 커버리지 향상\n\nAI Native 네트워크\n- AI가 네트워크 리소스를 실시간 최적화\n- 트래픽 예측, 자동 장애 복구\n- 사용자 경험 기반 QoS 조정",
+  "characteristics": [],
+  "relatedTopics": [
+    "5g-001",
+    "ai-deep-learning-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "6G 표준화 (ITU-R)",
+    "THz 통신 기술"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

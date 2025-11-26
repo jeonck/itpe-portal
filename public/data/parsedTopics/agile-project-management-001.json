@@ -1,0 +1,36 @@
+{
+  "id": "agile-project-management-001",
+  "title": "애자일 프로젝트 관리 (Burn-down chart)",
+  "category": "digital-service",
+  "subcategory": "애자일 방법론",
+  "subjectCategories": [
+    "PM",
+    "SE"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "애자일",
+    "스크럼",
+    "번다운 차트",
+    "스프린트",
+    "백로그"
+  ],
+  "definition": "애자일(Agile) 프로젝트 관리는 변화에 대한 유연한 대응, 반복적이고 점진적인 개발, 고객과의 긴밀한 협업, 그리고 작동하는 소프트웨어 제공을 핵심 가치로 삼는 프로젝트 관리 방법론입니다. 전통적인 폭포수 모델과 달리 예측 불가능한 요구사항 변화에 효과적으로 대응하며, 번다운 차트(Burn-down Chart)는 애자일 프로젝트, 특히 스크럼 스프린트의 진행 상황을 시각적으로 추적하는 데 사용되는 도구 방법.",
+  "characteristics": [
+    "애자일 선언문 (Agile Manifesto) 4대 가치:"
+  ],
+  "relatedTopics": [
+    "agile-devops-001",
+    "pmbok-7th-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "스케일드 애자일",
+    "애자일 코칭",
+    "애자일 성숙도 모델"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "genetic-algorithm-001",
+  "title": "유전 알고리즘 (Genetic Algorithm)",
+  "category": "technical-focus",
+  "subcategory": "알고리즘",
+  "subjectCategories": [
+    "AL"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "computer-systems"
+  ],
+  "keywords": [
+    "Genetic Algorithm",
+    "Evolutionary Algorithm",
+    "Crossover",
+    "Mutation",
+    "Fitness Function"
+  ],
+  "definition": "자연 선택과 유전 법칙을 모방하여 최적해를 찾는 진화 기반 최적화 알고리즘 기법 기법.",
+  "procedure": "- 1단계: 초기 집단(Population) 생성 - 랜덤하게 염색체(해) 생성\n- 2단계: 적합도 평가 - Fitness Function으로 각 개체의 품질 측정\n- 3단계: 선택(Selection) - 적합도 높은 개체 우선 선택 (룰렛 휠, 토너먼트, 순위 기반)\n- 4단계: 교배(Crossover) - 부모 염색체의 유전자 조합 (1점/2점/균등 교배)\n- 5단계: 돌연변이(Mutation) - 랜덤 변이로 유전적 다양성 유지, 지역 최적 탈출\n- 6단계: 새로운 세대 형성 - 자손 개체로 다음 세대 구성\n- 7단계: 종료 조건 확인 - 최대 세대 수, 적합도 목표 달성 시 종료, 아니면 2단계로 반복",
+  "characteristics": [
+    "생물학적 영감: 자연 선택과 유전 메커니즘 모방",
+    "확률적 탐색: 결정론적 알고리즘보다 유연한 탐색",
+    "전역 최적화: 지역 최적에 빠지지 않고 전역 탐색",
+    "병렬 처리: 집단 기반으로 병렬 평가 가능"
+  ],
+  "relatedTopics": [
+    "ai-deep-learning-001",
+    "greedy-algorithm-001"
+  ],
+  "importance": 3,
+  "trends": [
+    "Neuroevolution",
+    "Multi-objective Optimization"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "data-valuation-001",
+  "title": "데이터 가치 평가",
+  "category": "management-focus",
+  "subcategory": "데이터 관리",
+  "subjectCategories": [
+    "IM",
+    "DS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "데이터 가치",
+    "데이터 자산",
+    "데이터 경제",
+    "무형 자산 평가"
+  ],
+  "definition": "데이터 가치 평가는 기업이 보유하거나 활용하는 데이터가 창출하는 경제적, 비즈니스적 가치를 측정하고 분석하는 프로세스입니다. 데이터가 단순한 정보 자원을 넘어 기업의 핵심 자산이자 미래 성장의 동력으로 인식되면서, 데이터의 가치를 객관적으로 평가하는 방법론의 중요성이 증대되고 있습니다 방법.",
+  "characteristics": [
+    "평가 필요성:"
+  ],
+  "relatedTopics": [
+    "data-governance-001",
+    "it-investment-evaluation-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "데이터 마켓플레이스 활성화",
+    "데이터 기반 기업 가치 평가",
+    "AI 기반 데이터 가치 분석"
+  ]
+}

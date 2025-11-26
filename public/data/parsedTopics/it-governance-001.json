@@ -1,0 +1,38 @@
+{
+  "id": "it-governance-001",
+  "title": "IT 거버넌스 (ISO 38500, COBIT)",
+  "category": "management-focus",
+  "subcategory": "IT 거버넌스",
+  "subjectCategories": [
+    "IM"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "IT 거버넌스",
+    "ISO 38500",
+    "COBIT",
+    "IT 전략",
+    "리스크 관리",
+    "IT 성과"
+  ],
+  "definition": "IT 거버넌스는 조직의 전반적인 거버넌스 체계의 필수적인 부분으로, IT가 조직의 목표를 달성하는 데 기여할 수 있도록 IT의 방향성을 설정하고, IT 자원과 프로세스를 효과적으로 통제하며, IT 리스크를 관리하는 활동을 의미합니다. ISO 38500과 COBIT은 IT 거버넌스 구현을 위한 대표적인 국제 표준 및 프레임워크.",
+  "characteristics": [
+    "목표: IT 투자 가치 극대화, IT 리스크 최소화, IT를 통한 비즈니스 목표 달성 지원, 규제 준수.",
+    "주요 영역: IT 전략 정렬, IT 가치 전달, IT 리스크 관리, IT 자원 관리, IT 성과 측정.",
+    "ISO 38500 (IT 거버넌스 국제 표준):"
+  ],
+  "relatedTopics": [
+    "ea-001",
+    "ax-esg-001",
+    "finops-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "AI 거버넌스",
+    "데이터 거버넌스",
+    "클라우드 거버넌스"
+  ]
+}

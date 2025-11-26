@@ -1,0 +1,37 @@
+{
+  "id": "sw-project-pricing-guide-001",
+  "title": "SW 사업 대가 산정 가이드",
+  "category": "management-focus",
+  "subcategory": "SW 원가 산정",
+  "subjectCategories": [
+    "PM",
+    "IM"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "SW 사업 대가",
+    "SW 원가",
+    "기능점수",
+    "직접 인건비",
+    "제경비",
+    "기술료"
+  ],
+  "definition": "SW 사업 대가 산정 가이드는 공공 부문 SW 개발 및 운영/유지보수 사업에서 사업의 유형과 특성을 고려하여 적정 사업비를 산정하기 위한 기준과 절차를 제시하는 지침입니다. 이는 SW 진흥법에 따라 SW 사업자의 수익성을 보장하고 품질 향상을 유도하며, 발주자와 사업자 간의 투명하고 합리적인 계약 관계를 형성하는 데 목적이 있습니다 기술.",
+  "characteristics": [
+    "목표: SW 사업의 적정 대가 보장, 발주 및 계약 과정의 투명성 확보, SW 산업의 건전한 발전 도모.",
+    "주요 구성 요소:"
+  ],
+  "relatedTopics": [
+    "function-point-analysis-001",
+    "public-sw-procurement-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "클라우드 SW 대가 산정",
+    "AI 개발 사업 대가 기준",
+    "품질 기반 대가 산정"
+  ]
+}

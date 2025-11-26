@@ -1,0 +1,34 @@
+{
+  "id": "man-month-001",
+  "title": "투입공수 방식 (Man-Month)",
+  "category": "management-focus",
+  "subcategory": "SW 원가 산정",
+  "subjectCategories": [
+    "PM",
+    "IM"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "맨먼스",
+    "투입공수",
+    "SW 개발비",
+    "원가 산정",
+    "인건비"
+  ],
+  "definition": "투입공수 방식(Man-Month Method)은 SW 개발 프로젝트의 원가를 산정하는 가장 전통적이고 보편적인 방법 중 하나입니다. 프로젝트를 완료하는 데 필요한 총 작업량(Man-Month, 인월)을 예측하고, 여기에 참여 인력의 평균 인건비(노임 단가)를 곱하여 총 사업비를 산정하는 방식입니다. 여기서 Man-Month는 한 사람이 한 달 동안 일한 노동량을 의미 방법.",
+  "characteristics": [
+    "산정 공식:"
+  ],
+  "relatedTopics": [
+    "sw-project-pricing-guide-001",
+    "function-point-analysis-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "애자일 환경에서의 맨먼스 활용",
+    "클라우드 기반 SW 개발 비용 산정"
+  ]
+}

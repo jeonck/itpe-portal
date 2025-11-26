@@ -1,0 +1,48 @@
+{
+  "id": "wifi6-7-001",
+  "title": "WiFi 6E & WiFi 7",
+  "category": "digital-service",
+  "subcategory": "무선 통신",
+  "subjectCategories": [
+    "NW",
+    "DS"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "WiFi 6E",
+    "WiFi 7",
+    "6GHz",
+    "OFDMA",
+    "MU-MIMO",
+    "802.11ax",
+    "802.11be"
+  ],
+  "definition": "WiFi 6의 6GHz 확장판인 WiFi 6E와, 초고속 멀티링크를 지원하는 차세대 WiFi 7 무선랜 표준 기술.",
+  "operatingPrinciple": "WiFi 6/7은 다음 메커니즘으로 성능을 향상시킵니다:\n\nOFDMA (Orthogonal Frequency-Division Multiple Access)\n- 하나의 채널을 여러 Resource Unit (RU)로 분할\n- 각 사용자에게 RU 할당하여 동시 전송\n- 저지연, 고효율 (WiFi 5 대비 4배 향상)\n\nMU-MIMO (Multi-User MIMO)\n- 여러 안테나로 동시에 다중 사용자 서비스\n- 공간 다중화 (Spatial Multiplexing)\n\nTWT (Target Wake Time)\n- 기기가 슬립/활성 시간을 협상\n- 배터리 절감 (IoT 기기에 유용)\n\nMulti-Link Operation (WiFi 7)\n- 2.4GHz + 5GHz + 6GHz 동시 사용\n- 링크 aggregation으로 속도 및 안정성 향상\n- 한 대역 혼잡 시 다른 대역 사용",
+  "characteristics": [
+    "WiFi 6 (802.11ax): OFDMA, MU-MIMO 8x8, TWT, 최대 9.6Gbps",
+    "WiFi 6E: WiFi 6 + 6GHz 대역 (간섭 적음, 14개 80MHz 채널)",
+    "주파수: 2.4GHz (장거리), 5GHz (중거리), 6GHz (단거리 고속, 6E부터)",
+    "OFDMA: 주파수 자원을 여러 기기에 분할 할당, 저지연",
+    "MU-MIMO: 다중 기기 동시 통신 (하향 8x8, 상향 8x8)",
+    "WiFi 7 (802.11be): Multi-Link Operation, 최대 46Gbps, 4K-QAM",
+    "MLO: 2.4/5/6GHz 동시 사용으로 안정성 및 속도 2~3배 향상",
+    "사용 사례: 고밀도 환경 (스타디움), AR/VR, 8K 스트리밍, 클라우드 게임"
+  ],
+  "relatedTopics": [
+    "wireless-001",
+    "5g-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "WiFi 7 상용화",
+    "Multi-Link Operation"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

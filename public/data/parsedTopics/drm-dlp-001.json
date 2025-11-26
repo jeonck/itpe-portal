@@ -1,0 +1,39 @@
+{
+  "id": "drm-dlp-001",
+  "title": "DRM & DLP (내부정보 유출방지)",
+  "category": "digital-service",
+  "subcategory": "내부정보 유출방지",
+  "subjectCategories": [
+    "IS"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "DRM",
+    "DLP",
+    "내부정보 유출방지",
+    "데이터 암호화",
+    "접근 제어",
+    "민감 정보"
+  ],
+  "definition": "DRM(Digital Rights Management)은 디지털 콘텐츠의 저작권을 보호하고 불법 복제 및 유통을 방지하기 위한 기술 및 정책입니다. DLP(Data Loss Prevention)는 조직 내부의 중요 정보(민감 정보, 기밀 데이터)가 외부로 유출되는 것을 탐지하고 차단하여 정보 유출 사고를 예방하는 솔루션입니다. 두 기술 모두 데이터 및 정보 자산의 기밀성과 무결성을 보호하는 데 중점을 둡니다 기술.",
+  "technicalElements": [
+    "[TODO: 기술요소 내용을 여기에 작성하세요.]"
+  ],
+  "characteristics": [
+    "DRM (Digital Rights Management):"
+  ],
+  "relatedTopics": [
+    "encryption-001",
+    "access-control-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "클라우드 DLP",
+    "AI 기반 DLP",
+    "제로 트러스트 DLP"
+  ]
+}

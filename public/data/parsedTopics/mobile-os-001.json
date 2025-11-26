@@ -1,0 +1,55 @@
+{
+  "id": "mobile-os-001",
+  "title": "모바일 OS (Android Runtime, iOS)",
+  "category": "technical-focus",
+  "subcategory": "운영체제",
+  "subjectCategories": [
+    "OS"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "computer-systems"
+  ],
+  "keywords": [
+    "Android",
+    "iOS",
+    "ART",
+    "Dalvik",
+    "Mobile OS"
+  ],
+  "definition": "스마트폰과 태블릿을 위해 최적화된 운영체제로, 터치 인터페이스, 전력 관리, 모바일 앱 생태계를 지원 기술.",
+  "technicalElements": [
+    "Android 아키텍처:",
+    "Linux Kernel: 하드웨어 추상화, 프로세스/메모리 관리",
+    "HAL (Hardware Abstraction Layer): 하드웨어 인터페이스 표준화",
+    "ART (Android Runtime): Dalvik 후속, AOT + JIT 하이브리드 컴파일, DEX 파일 실행",
+    "Native Libraries: C/C++ 라이브러리 (libc, SQLite, OpenGL ES)",
+    "Framework: 앱 개발 API (Activity, Service, Content Provider)",
+    "Android 특징: 오픈소스(AOSP), 다양한 제조사, Google Play 서비스",
+    "iOS 아키텍처:",
+    "XNU Kernel: Mach(마이크로커널) + BSD(유닉스) 하이브리드",
+    "Core OS: 저수준 API (네트워크, 파일 시스템)",
+    "Core Services: 컬렉션, 위치 서비스, iCloud",
+    "Media Layer: 그래픽(Metal), 오디오, 비디오",
+    "Cocoa Touch: UI 프레임워크 (UIKit, SwiftUI)",
+    "iOS 특징: 폐쇄 생태계, Objective-C/Swift, 강력한 보안(Secure Enclave, Face ID)"
+  ],
+  "characteristics": [
+    "모바일 최적화: 터치 UI, 센서 통합, 배터리 효율성",
+    "앱 생태계: App Store/Google Play 중심의 플랫폼",
+    "보안 강화: 샌드박스, 권한 관리, 하드웨어 보안",
+    "제약된 자원: 백그라운드 제한, 메모리 관리 적극적"
+  ],
+  "relatedTopics": [
+    "process-thread-001",
+    "kernel-architecture-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "Fuchsia OS",
+    "HarmonyOS"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

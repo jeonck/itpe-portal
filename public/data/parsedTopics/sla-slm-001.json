@@ -1,0 +1,35 @@
+{
+  "id": "sla-slm-001",
+  "title": "SLA / SLM (서비스 수준 관리)",
+  "category": "management-focus",
+  "subcategory": "IT 서비스 관리",
+  "subjectCategories": [
+    "IM"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "SLA",
+    "SLM",
+    "서비스 수준 협약",
+    "서비스 수준 관리",
+    "서비스 가용성",
+    "성능 지표"
+  ],
+  "definition": "SLA(Service Level Agreement)는 서비스 제공자와 고객 간에 합의된 서비스 수준에 대한 공식적인 협약 문서입니다. SLM(Service Level Management)은 이러한 SLA를 정의, 모니터링, 검토하고 지속적으로 개선하여 고객의 기대치를 충족시키고 서비스 품질을 유지 및 향상시키는 프로세스 기능.",
+  "characteristics": [
+    "SLA (Service Level Agreement):"
+  ],
+  "relatedTopics": [
+    "itsm-itil-001",
+    "it-governance-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "XLA (경험 수준 협약)",
+    "AI 기반 SLM",
+    "클라우드 환경 SLA"
+  ]
+}

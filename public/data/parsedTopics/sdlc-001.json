@@ -1,0 +1,36 @@
+{
+  "id": "sdlc-001",
+  "title": "SDLC (Software Development Life Cycle)",
+  "category": "fundamental",
+  "subcategory": "소프트웨어 공학",
+  "subjectCategories": [
+    "SE"
+  ],
+  "difficulty": "basic",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "생명주기",
+    "폭포수",
+    "반복적",
+    "점진적"
+  ],
+  "mnemonic": "계분설구테유 (계획-분석-설계-구현-테스트-유지보수)",
+  "definition": "소프트웨어 개발의 전체 과정을 체계적으로 관리하기 위한 프레임워크로, 계획-분석-설계-구현-테스트-유지보수 단계 구성 프레임워크.",
+  "operatingPrinciple": "SDLC는 다음 6단계를 순차적 또는 반복적으로 진행합니다:\n\n1. 계획 (Planning)\n   - 프로젝트 목표 및 범위 정의\n   - 자원 계획 및 일정 수립\n   - 타당성 분석 (기술적, 경제적, 운영적)\n\n2. 요구사항 분석 (Requirements Analysis)\n   - 사용자 요구사항 수집 및 분석\n   - 기능적/비기능적 요구사항 정의\n   - 요구사항 명세서(SRS) 작성\n\n3. 설계 (Design)\n   - 시스템 아키텍처 설계\n   - 데이터베이스 설계 (ERD)\n   - UI/UX 설계\n   - 상세 설계서 작성\n\n4. 구현 (Implementation)\n   - 설계 기반 코딩\n   - 코드 리뷰 및 단위 테스트\n   - 버전 관리 (Git)\n\n5. 테스트 (Testing)\n   - 단위 테스트, 통합 테스트, 시스템 테스트\n   - 사용자 인수 테스트 (UAT)\n   - 결함 수정 및 재테스트\n\n6. 유지보수 (Maintenance)\n   - 배포 및 운영\n   - 버그 수정 및 성능 개선\n   - 기능 추가 및 변경 관리\n\n각 단계는 이전 단계의 산출물을 입력으로 받아 다음 단계로 전달하며, 필요시 이전 단계로 피드백합니다.",
+  "characteristics": [
+    "체계적인 단계별 접근: 명확한 단계 구분과 순서",
+    "각 단계별 산출물 정의: 요구사항 명세서, 설계서, 테스트 케이스 등",
+    "품질 관리 체계 포함: 각 단계마다 검증 및 승인 프로세스",
+    "위험 관리 및 통제 가능: 단계별 리뷰를 통한 조기 오류 발견",
+    "모델 종류: 폭포수, 나선형, V-모델, 프로토타입, 애자일"
+  ],
+  "relatedTopics": [
+    "agile-devops-001",
+    "test-001",
+    "design-pattern-001"
+  ],
+  "importance": 5
+}

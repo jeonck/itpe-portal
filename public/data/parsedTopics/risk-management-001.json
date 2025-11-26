@@ -1,0 +1,31 @@
+{
+  "id": "risk-management-001",
+  "title": "리스크 관리 (정량적/정성적 분석)",
+  "category": "management-focus",
+  "subcategory": "프로젝트 리스크 관리",
+  "subjectCategories": [
+    "PM",
+    "IS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "리스크 관리",
+    "리스크 식별",
+    "리스크 분석",
+    "리스크 대응",
+    "정량적 분석",
+    "정성적 분석"
+  ],
+  "definition": "리스크 관리(Risk Management)는 프로젝트 목표 달성에 부정적인(위협) 또는 긍정적인(기회) 영향을 미칠 수 있는 불확실한 사건을 식별하고, 분석하며, 이에 대한 대응 계획을 수립하고 실행하는 일련의 프로세스입니다. 리스크 분석은 식별된 리스크의 발생 가능성과 영향도를 평가하는 과정으로, 정성적 분석과 정량적 분석으로 나뉩니다 기술.",
+  "characteristics": [
+    "리스크 관리 프로세스:"
+  ],
+  "relatedTopics": [
+    "it-governance-001",
+    "cyber-resilience-001"
+  ],
+  "importance": 5
+}

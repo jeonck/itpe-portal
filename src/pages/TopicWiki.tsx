@@ -1,16 +1,17 @@
 import { useState, useMemo } from 'react';
 import { Search, Filter, Tag, BookOpen, Star, TrendingUp } from 'lucide-react';
 import topicsData from '../data/topics.json';
-import type { Topic, DomainCategory, SubjectCategory, DifficultyLevel, CertificationType } from '../types';
+import type { Topic, TopicMetadata, DomainCategory, SubjectCategory, DifficultyLevel, CertificationType } from '../types';
 
 export default function TopicWiki() {
-  const topics = topicsData as Topic[];
+  const topics = topicsData as TopicMetadata[];
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<DomainCategory | 'all' | '2025'>('all');
   const [selectedSubject, setSelectedSubject] = useState<SubjectCategory | 'all'>('all');
   const [selectedDifficulty, setSelectedDifficulty] = useState<DifficultyLevel | 'all'>('all');
   const [selectedCertification, setSelectedCertification] = useState<CertificationType | 'all'>('all');
   const [selectedTopic, setSelectedTopic] = useState<Topic | null>(null);
+  const [isLoadingTopic, setIsLoadingTopic] = useState(false);
 
   const categories: { value: DomainCategory | 'all' | '2025'; label: string; color: string }[] = [
     { value: 'all', label: '전체', color: 'bg-gray-100 text-gray-700' },
@@ -84,6 +85,23 @@ export default function TopicWiki() {
       advanced: '고급',
     };
     return { color: colors[difficulty], label: labels[difficulty] };
+  };
+
+  const loadTopicDetail = async (topicId: string) => {
+    setIsLoadingTopic(true);
+    try {
+      const response = await fetch(`/itpe-portal/data/parsedTopics/${topicId}.json`);
+      if (!response.ok) {
+        throw new Error('Topic not found');
+      }
+      const topicData = await response.json();
+      setSelectedTopic(topicData);
+    } catch (error) {
+      console.error('Failed to load topic:', error);
+      alert('토픽을 불러오는데 실패했습니다.');
+    } finally {
+      setIsLoadingTopic(false);
+    }
   };
 
   return (
@@ -209,7 +227,15 @@ export default function TopicWiki() {
       </div>
 
       {/* Topics Grid or Detail View */}
-      {selectedTopic ? (
+      {isLoadingTopic ? (
+        /* Loading State */
+        <div className="flex items-center justify-center py-12">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4"></div>
+            <p className="text-gray-600">토픽 로딩 중...</p>
+          </div>
+        </div>
+      ) : selectedTopic ? (
         /* Topic Detail View */
         <div className="space-y-6">
           <button
@@ -261,17 +287,19 @@ export default function TopicWiki() {
             </div>
 
             {/* Characteristics */}
-            <div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">특징</h3>
-              <ul className="space-y-2">
-                {selectedTopic.characteristics.map((char, idx) => (
-                  <li key={idx} className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 flex-shrink-0" />
-                    <span className="text-gray-700">{char}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {selectedTopic.characteristics && selectedTopic.characteristics.length > 0 && (
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">특징</h3>
+                <ul className="space-y-2">
+                  {selectedTopic.characteristics.map((char, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 flex-shrink-0" />
+                      <span className="text-gray-700">{char}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* Technical Elements */}
             {selectedTopic.technicalElements && selectedTopic.technicalElements.length > 0 && (
@@ -360,8 +388,9 @@ export default function TopicWiki() {
                     return relatedTopic ? (
                       <button
                         key={relatedId}
-                        onClick={() => setSelectedTopic(relatedTopic)}
+                        onClick={() => loadTopicDetail(relatedId)}
                         className="px-3 py-2 bg-primary-50 text-primary-700 rounded-lg text-sm font-medium hover:bg-primary-100 transition-colors"
+                        disabled={isLoadingTopic}
                       >
                         {relatedTopic.title}
                       </button>
@@ -387,8 +416,9 @@ export default function TopicWiki() {
             return (
               <button
                 key={topic.id}
-                onClick={() => setSelectedTopic(topic)}
+                onClick={() => loadTopicDetail(topic.id)}
                 className="card text-left hover:shadow-lg transition-shadow group"
+                disabled={isLoadingTopic}
               >
                 <div className="space-y-3">
                   <div className="flex items-start justify-between">

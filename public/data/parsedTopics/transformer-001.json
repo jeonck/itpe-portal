@@ -1,0 +1,48 @@
+{
+  "id": "transformer-001",
+  "title": "Transformer (Self-Attention)",
+  "category": "technical-focus",
+  "subcategory": "알고리즘",
+  "subjectCategories": [
+    "AL",
+    "DS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "Transformer",
+    "Self-Attention",
+    "Multi-Head Attention",
+    "Positional Encoding",
+    "Encoder-Decoder"
+  ],
+  "definition": "Self-Attention 메커니즘으로 시퀀스 전체의 관계를 병렬로 학습하는 혁신적인 신경망 아키텍처 메커니즘.",
+  "operatingPrinciple": "Transformer는 Self-Attention으로 시퀀스 전체 관계를 병렬로 학습합니다:\n\n**1. Self-Attention**\n- Q, K, V 생성: Q = X×W_Q, K = X×W_K, V = X×W_V\n- Attention Score: Score = Q×K^T / √d_k\n- Attention Weights: softmax(Score)\n- Output: Attention_Weights × V\n\n**2. Multi-Head Attention**\n- 8개 head 병렬 수행: 다양한 관점 학습\n- Concat 후 선형 변환\n\n**3. Positional Encoding**\n- PE(pos,2i) = sin(pos/10000^(2i/d))\n- 입력 임베딩에 더해 위치 정보 부여\n\n**4. Encoder 구조**\n```\nInput + PE → Multi-Head Self-Attention → Add&Norm → FFN → Add&Norm (× N층)\n```\n\n**5. Decoder 구조**\n```\nOutput → Masked Self-Attention → Cross-Attention (Encoder) → FFN (× N층)\n```\n\n**6. FFN (Feed-Forward)**\n- Position-wise 독립 처리\n- FFN(x) = ReLU(x×W_1)×W_2\n\n**7. Masked Attention**\n- 미래 토큰 masking (-∞)\n- Auto-regressive 생성",
+  "characteristics": [
+    "\"Attention is All You Need\" (2017), RNN 없이 순차 데이터 처리",
+    "Self-Attention: 입력 시퀀스 내 모든 위치 간 관계 계산",
+    "Query, Key, Value: Attention(Q, K, V) = softmax(QKᵀ/√d)V",
+    "Multi-Head Attention: 여러 Attention을 병렬로, 다양한 관점 학습",
+    "Positional Encoding: 위치 정보 추가 (sin/cos 함수)",
+    "Encoder-Decoder: Encoder (입력 이해), Decoder (출력 생성)",
+    "Feed-Forward Network: Position-wise, 각 위치 독립적으로 처리",
+    "Layer Normalization, Residual Connection: 학습 안정화",
+    "장점: 병렬 처리, 장거리 의존성, 단점: 메모리 많이 소비 (O(n²))",
+    "활용: BERT, GPT, T5, Vision Transformer, 번역, 요약, 생성"
+  ],
+  "relatedTopics": [
+    "llm-001",
+    "bert-gpt-001",
+    "rnn-lstm-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "Efficient Transformers",
+    "Sparse Attention"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "scm-vmi-001",
+  "title": "SCM & VMI (공급망 관리)",
+  "category": "management-focus",
+  "subcategory": "공급망 관리",
+  "subjectCategories": [
+    "IM"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "SCM",
+    "VMI",
+    "공급망 관리",
+    "재고 최적화",
+    "수요 예측",
+    "물류 효율화"
+  ],
+  "definition": "SCM(Supply Chain Management)은 제품 및 서비스의 원자재 조달부터 생산, 유통, 최종 소비자에게 전달되는 전 과정의 흐름을 통합적으로 관리하여 효율성을 극대화하는 경영 전략이자 시스템입니다. VMI(Vendor Managed Inventory)는 SCM의 한 전략으로, 공급업체가 고객사의 재고를 직접 관리하고 보충함으로써 공급망 전체의 재고 수준을 최적화하고 비용을 절감하는 방식.",
+  "characteristics": [
+    "SCM (Supply Chain Management):"
+  ],
+  "relatedTopics": [
+    "erp-001",
+    "smart-factory-industry-4-5-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "AI 기반 SCM",
+    "블록체인 기반 공급망 추적",
+    "레질리언스 SCM"
+  ]
+}

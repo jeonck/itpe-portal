@@ -1,0 +1,35 @@
+{
+  "id": "ax-esg-001",
+  "title": "AX와 ESG (AI Transformation & ESG)",
+  "category": "digital-service",
+  "subcategory": "IT 경영 전략",
+  "subjectCategories": [
+    "IM"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "AX",
+    "AI 전환",
+    "ESG 경영",
+    "지속가능성",
+    "Green IT"
+  ],
+  "definition": "AX(AI Transformation)는 기업의 전사적 가치 사슬에 AI 기술을 깊이 있게 통합하여 비즈니스 모델, 프로세스, 고객 경험을 혁신하는 것을 의미합니다. ESG(환경, 사회, 지배구조) 경영은 기업의 지속가능성을 위한 비재무적 요소를 강조하며, AX는 ESG 목표 달성을 위한 강력한 수단이자, AI 기술 자체가 야기할 수 있는 윤리적, 환경적 문제에 대한 책임 있는 접근을 요구 기술.",
+  "characteristics": [
+    "AX (AI Transformation):"
+  ],
+  "relatedTopics": [
+    "digital-transformation-ax-001",
+    "esg-green-it-001",
+    "ai-governance-ethics-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "AI 기반 ESG 데이터 분석",
+    "지속가능한 AI 시스템",
+    "AI 기술을 활용한 에너지 효율 최적화"
+  ]
+}

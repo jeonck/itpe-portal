@@ -1,0 +1,39 @@
+{
+  "id": "hybrid-project-management-001",
+  "title": "하이브리드 프로젝트 관리",
+  "category": "digital-service",
+  "subcategory": "프로젝트 관리 방법론",
+  "subjectCategories": [
+    "PM",
+    "SE"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "하이브리드 프로젝트 관리",
+    "애자일",
+    "폭포수",
+    "상황 적응",
+    "예측형",
+    "적응형"
+  ],
+  "definition": "하이브리드 프로젝트 관리는 예측형(Predictive, 전통적인 폭포수 방식) 접근 방식과 적응형(Adaptive, 애자일 방식) 접근 방식의 장점을 결합하여 프로젝트의 특성과 상황에 가장 적합한 관리 방법을 적용하는 방식입니다. 이는 프로젝트의 불확실성 정도, 요구사항의 안정성, 기술의 성숙도 등을 고려하여 최적의 유연성과 통제력을 확보하는 것을 목표로 기술.",
+  "characteristics": [
+    "통합적 접근: 프로젝트의 일부는 예측형으로, 다른 일부는 적응형으로 관리하거나, 프로젝트의 특정 단계는 예측형으로, 다른 단계는 적응형으로 관리하는 등 다양한 방식으로 두 접근 방식을 혼합합니다.",
+    "유연성과 통제력: 예측형 접근 방식의 강력한 계획 및 통제력과 애자일 접근 방식의 유연하고 빠른 변화 대응 능력을 모두 활용할 수 있습니다.",
+    "적용 기준:"
+  ],
+  "relatedTopics": [
+    "agile-project-management-001",
+    "pmbok-7th-001",
+    "sdlc-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "조직의 애자일 성숙도",
+    "디지털 트랜스포메이션과 하이브리드 PM"
+  ]
+}

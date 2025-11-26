@@ -1,0 +1,71 @@
+{
+  "id": "robotics-amr-001",
+  "title": "로보틱스 (AMR, 협동로봇)",
+  "category": "digital-service",
+  "subcategory": "Robotics",
+  "subjectCategories": [
+    "DS"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "Robotics",
+    "AMR",
+    "Cobot",
+    "ROS",
+    "SLAM",
+    "Collaborative Robot"
+  ],
+  "definition": "자율적으로 작업을 수행하는 로봇 기술로, AMR(자율주행 로봇)과 협동로봇(Cobot)이 대표적 기술.",
+  "technicalElements": [
+    "로보틱스, 특히 자율 이동 로봇(AMR)과 협동 로봇(Cobot)은 다음과 같은 핵심 기술 요소들을 기반으로 자율성과 상호작용 능력을 구현합니다.",
+    "**인지 (Perception) 기술**: 로봇이 주변 환경을 인식하고 이해하는 기술.",
+    "**센서 (Sensors)**:",
+    "**LIDAR (Light Detection And Ranging)**: 레이저를 사용하여 주변 환경의 3D 지도를 생성하고 객체까지의 거리를 정밀하게 측정.",
+    "**카메라 (Camera)**: 이미지 및 비디오 데이터를 통해 객체 인식, 자세 추정, 환경 모니터링. (RGB-D 카메라, 스테레오 카메라)",
+    "**RADAR (Radio Detection And Ranging)**: 전파를 사용하여 장거리 객체 감지 및 속도 측정. 악천후 환경에 강점.",
+    "**초음파 센서 (Ultrasonic Sensor)**: 근거리 객체 감지 및 거리 측정.",
+    "**IMU (Inertial Measurement Unit)**: 가속도, 각속도, 자세 정보를 측정하여 로봇의 움직임을 추정.",
+    "**센서 융합 (Sensor Fusion)**: 여러 센서 데이터를 통합하여 환경 인지의 정확도와 신뢰도를 향상. (칼만 필터, 파티클 필터)",
+    "**SLAM (Simultaneous Localization And Mapping)**: 로봇이 이동하면서 주변 환경 지도를 만들고, 동시에 지도 상에서 자신의 현재 위치를 추정하는 기술.",
+    "**Mapping**: 센서 데이터를 기반으로 환경 지도 생성 (Occupancy Grid Map, Feature Map).",
+    "**Localization**: 생성된 지도 내에서 로봇의 위치를 추정.",
+    "**판단 및 계획 (Decision Making & Planning) 기술**: 로봇이 인지된 정보를 바탕으로 목표 달성을 위한 최적의 행동을 결정하고 경로를 계획하는 기술.",
+    "**경로 계획 (Path Planning)**: 출발점에서 목표 지점까지 충돌 없는 최적 경로 생성 (A* 알고리즘, RRT).",
+    "**동작 계획 (Motion Planning)**: 경로를 따라 로봇의 팔, 바퀴 등의 구동부를 어떻게 움직일지 계획.",
+    "**AI/ML**: 딥러닝(객체 인식), 강화 학습(자율 행동 최적화) 등을 활용하여 복잡한 상황 판단 및 제어.",
+    "**제어 (Control) 기술**: 로봇의 액추에이터(모터 등)를 정밀하게 조작하여 계획된 동작을 수행하는 기술.",
+    "**모터 제어**: DC 모터, 스테핑 모터, 서보 모터 등 다양한 모터 제어.",
+    "**힘/토크 제어**: 협동 로봇에서 사람과의 안전한 상호작용을 위해 로봇의 힘을 정밀하게 제어.",
+    "**로봇 소프트웨어 플랫폼**:",
+    "**ROS (Robot Operating System)**: 로봇 개발을 위한 오픈소스 프레임워크. 하드웨어 추상화, 메시지 통신, 패키지 관리 등 로봇 개발에 필요한 다양한 도구와 라이브러리 제공.",
+    "**협동 로봇 (Cobot) 특화 기술**:",
+    "**안전 센서**: 로봇 주변의 사람이나 장애물을 감지하여 충돌을 회피하거나 정지. (토크 센서, 비전 센서)",
+    "**사용자 친화적 프로그래밍**: 직관적인 그래픽 인터페이스나 직접 교시(Lead-through Programming) 방식을 통해 비전문가도 쉽게 로봇을 프로그래밍.",
+    "이러한 기술 요소들이 통합되어 AMR은 물류 및 창고 자동화, 배달 등에서 인간의 개입 없이 자율적으로 이동하고 작업을 수행하며, 협동 로봇은 제조 현장 등에서 인간과 안전하게 함께 작업할 수 있도록 합니다."
+  ],
+  "characteristics": [
+    "AMR (Autonomous Mobile Robot): 자율 주행, 물류/창고 자동화, SLAM (Localization + Mapping)",
+    "예시: Amazon Kiva, Geek+ (물류), 배달 로봇, 청소 로봇",
+    "Cobot (Collaborative Robot): 사람과 협업, 안전 센서, 힘 제어, 쉬운 프로그래밍",
+    "예시: Universal Robots (UR), ABB YuMi, Doosan Robotics",
+    "ROS (Robot Operating System): 로봇 소프트웨어 프레임워크, 오픈소스",
+    "SLAM: Simultaneous Localization and Mapping, LiDAR, 카메라 기반",
+    "AI 통합: 비전 AI (물체 인식), 강화학습 (작업 최적화)",
+    "활용: 제조(조립, 검사), 물류(피킹, 운반), 서비스(안내, 배달)"
+  ],
+  "relatedTopics": [
+    "ai-deep-learning-001",
+    "autonomous-driving-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "Humanoid Robot",
+    "AI + Robotics"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "hbm-001",
+  "title": "HBM (High Bandwidth Memory)",
+  "category": "digital-service",
+  "subcategory": "고성능 메모리",
+  "subjectCategories": [
+    "CA",
+    "DS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "computer-systems"
+  ],
+  "keywords": [
+    "HBM",
+    "고대역폭 메모리",
+    "AI 가속기",
+    "GPU",
+    "TSV"
+  ],
+  "definition": "HBM(High Bandwidth Memory)은 여러 개의 DRAM 칩을 수직으로 쌓아 올려(3D 스태킹) 데이터 전송 대역폭을 획기적으로 향상시킨 고성능 메모리 기술. AI 반도체(GPU, NPU 등)와 같은 고성능 프로세서 옆에 통합되어, AI 모델 학습 및 추론 시 발생하는 병렬 연산에 필요한 대량의 데이터를 매우 빠르게 공급하여 전체 시스템 성능을 극대화하는 데 필수적인 역할을 하는 기술.",
+  "technicalElements": [
+    "HBM의 핵심 기술 요소는 다음과 같습니다: TSV (Through-Silicon Via) 기술",
+    "실리콘 칩을 관통하는 수직 연결 구조",
+    "직경 5~10μm의 미세한 구멍을 뚫고 도전성 물질(구리) 충전",
+    "DRAM 칩들을 3D로 적층하여 수직 연결",
+    "와이어 본딩 대비 신호 경로 단축 (mm → μm)",
+    "전기적 저항 감소, 신호 지연 최소화",
+    "마이크로범프 (Microbump) 인터페이스",
+    "HBM 스택과 GPU/CPU 칩 연결",
+    "수천 개의 초미세 범프로 병렬 연결 (HBM2: 1024-bit 인터페이스)",
+    "PCB 기판 대신 Interposer(중간 기판) 사용",
+    "짧은 물리적 거리로 고대역폭 구현",
+    "채널 병렬화 구조",
+    "독립적인 메모리 채널 (HBM2: 8채널, HBM3: 16채널)",
+    "각 채널이 동시에 데이터 전송",
+    "채널당 128-bit 인터페이스",
+    "총 대역폭 = 채널 수 × 채널 대역폭"
+  ],
+  "characteristics": [
+    "고대역폭:"
+  ],
+  "relatedTopics": [
+    "cache-memory-001",
+    "ai-semiconductor-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "HBM3, HBM3E",
+    "PIM(Processing-in-Memory) 통합",
+    "AI 서버 핵심 부품"
+  ]
+}

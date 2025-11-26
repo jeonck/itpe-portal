@@ -1,0 +1,35 @@
+{
+  "id": "digital-transformation-ax-001",
+  "title": "디지털 트랜스포메이션 (DX) vs AX",
+  "category": "digital-service",
+  "subcategory": "디지털 혁신 전략",
+  "subjectCategories": [
+    "IM"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "DX",
+    "AX",
+    "디지털 전환",
+    "AI 전환",
+    "비즈니스 모델 혁신"
+  ],
+  "definition": "디지털 트랜스포메이션(DX)은 디지털 기술(클라우드, 빅데이터, 모바일 등)을 활용하여 비즈니스 프로세스, 문화, 고객 경험을 근본적으로 변화시키는 전략입니다. AX(AI Transformation)는 DX의 연장선 또는 심화된 형태로, 특히 AI 기술(머신러닝, 딥러닝, LLM 등)을 핵심 동력으로 삼아 기업의 전반적인 가치 창출 방식을 재정의하고 혁신하는 것을 의미합니다. AX는 단순한 AI 도입을 넘어 AI가 비즈니스 혁신의 중심이 되는 단계 기술.",
+  "characteristics": [
+    "디지털 트랜스포메이션 (DX):"
+  ],
+  "relatedTopics": [
+    "ax-esg-001",
+    "business-strategy-001",
+    "llm-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "전사적 AI 도입",
+    "AI 기반 초개인화 서비스",
+    "AI 거버넌스"
+  ]
+}

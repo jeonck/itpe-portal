@@ -1,0 +1,35 @@
+{
+  "id": "financial-feasibility-analysis-001",
+  "title": "재무 타당성 분석 (BEP, Payback Period)",
+  "category": "management-focus",
+  "subcategory": "프로젝트 원가 관리",
+  "subjectCategories": [
+    "PM",
+    "IM"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "재무 타당성",
+    "BEP",
+    "손익분기점",
+    "Payback Period",
+    "회수 기간",
+    "IT 투자"
+  ],
+  "definition": "재무 타당성 분석은 프로젝트나 투자안의 경제적 가치를 평가하여 투자를 결정하기 위한 과정입니다. 이는 주로 화폐의 시간 가치를 고려하거나 고려하지 않는 다양한 기법을 사용하여 투자로부터 얻을 수 있는 수익과 비용을 비교 분석합니다. BEP(Break-Even Point)와 Payback Period(회수 기간)는 특히 프로젝트의 위험성과 수익성을 직관적으로 평가하는 데 유용한 기법.",
+  "characteristics": [
+    "BEP (Break-Even Point, 손익분기점):"
+  ],
+  "relatedTopics": [
+    "it-investment-evaluation-001",
+    "evm-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "AI 기반 재무 예측",
+    "클라우드 투자 재무 분석"
+  ]
+}

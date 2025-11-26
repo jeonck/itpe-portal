@@ -1,0 +1,59 @@
+{
+  "id": "sre-001",
+  "title": "SRE (Site Reliability Engineering)",
+  "category": "digital-service",
+  "subcategory": "운영 및 신뢰성",
+  "subjectCategories": [
+    "SE",
+    "DS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "SLI",
+    "SLO",
+    "SLA",
+    "Error Budget",
+    "가용성",
+    "신뢰성",
+    "Toil"
+  ],
+  "definition": "시스템의 신뢰성과 확장성을 소프트웨어 엔지니어링 원칙으로 관리하는 Google 발 운영 방법론으로, SLI/SLO/SLA 기반의 정량적 목표 관리 추구 방법.",
+  "technicalElements": [
+    "SLI/SLO/SLA 계층: 측정 지표(SLI) → 목표(SLO) → 계약(SLA)의 체계적 관리",
+    "Monitoring & Observability: Prometheus, Grafana, Datadog을 통한 메트릭/로그/추적 수집",
+    "Error Budget: 목표 신뢰성 대비 허용 가능한 오류율 계산 및 관리",
+    "Alerting System: 임계값 기반 알림, On-call 로테이션, PagerDuty/OpsGenie 통합",
+    "Incident Management: 사고 대응 프로세스, Runbook, Postmortem 문서화",
+    "Automation Framework: Ansible, Terraform을 통한 Toil 제거 및 반복 작업 자동화",
+    "Chaos Engineering: Gremlin, Chaos Monkey를 통한 장애 주입 테스트",
+    "Capacity Planning: 트래픽 예측 기반 리소스 확장 계획"
+  ],
+  "characteristics": [
+    "SLI (Service Level Indicator): 서비스 수준 측정 지표 (가용성, 응답시간, 처리량 등)",
+    "SLO (Service Level Objective): 서비스 수준 목표 (예: 99.9% 가용성)",
+    "SLA (Service Level Agreement): 고객과의 서비스 수준 계약",
+    "Error Budget: 목표 대비 허용 가능한 오류 범위, 혁신과 안정성의 균형",
+    "Toil 자동화: 반복적인 수작업 최소화",
+    "On-call 운영: 24/7 모니터링 및 사고 대응",
+    "Postmortem 문화: 장애 분석 및 재발 방지"
+  ],
+  "relatedTopics": [
+    "agile-devops-001",
+    "kubernetes-001",
+    "msa-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "Observability Engineering",
+    "AIOps",
+    "Chaos Engineering",
+    "Production Excellence"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

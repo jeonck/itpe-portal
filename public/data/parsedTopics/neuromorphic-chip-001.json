@@ -1,0 +1,37 @@
+{
+  "id": "neuromorphic-chip-001",
+  "title": "뉴로모픽 칩 (Neuromorphic Chip)",
+  "category": "digital-service",
+  "subcategory": "차세대 반도체",
+  "subjectCategories": [
+    "CA",
+    "DS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "computer-systems"
+  ],
+  "keywords": [
+    "뉴로모픽 칩",
+    "뇌 모방",
+    "스파이킹 신경망",
+    "인메모리 컴퓨팅",
+    "저전력 AI"
+  ],
+  "definition": "뉴로모픽 칩(Neuromorphic Chip)은 인간 뇌의 구조와 작동 방식을 모방하여 설계된 차세대 인공지능 반도체. 폰노이만 구조의 컴퓨팅 한계(CPU와 메모리 간의 병목 현상)를 극복하고, 저전력으로 효율적인 병렬 연산을 수행하며, 특히 스파이킹 신경망(SNN) 기반의 학습 및 추론에 최적화되어 있는 기술. 엣지 디바이스에서의 AI 구현과 같은 분야에서 높은 잠재력을 보유.",
+  "operatingPrinciple": "뉴로모픽 칩은 뇌의 뉴런과 시냅스를 모방하여 동작합니다:\n\n스파이킹 뉴런 동작 (Leaky Integrate-and-Fire 모델)\n1) 입력 신호 수신: 시냅스를 통해 스파이크 신호 받음\n2) 막전위 누적: 뉴런 내부의 막전위(Membrane Potential)가 상승\n3) 누수(Leak): 시간이 지나면 막전위가 자연스럽게 감소\n4) 발화(Fire): 막전위가 임계값(Threshold) 초과 시 스파이크 발생\n5) 리셋: 막전위를 초기 상태로 리셋\n\n시냅스 가소성 (STDP: Spike-Timing-Dependent Plasticity)\n- 학습 메커니즘: 뉴런 간 연결 강도(Weight) 조정\n- Pre-Synaptic 뉴런이 Post-Synaptic 뉴런보다 먼저 발화 → 시냅스 강화\n- Post-Synaptic 뉴런이 먼저 발화 → 시냅스 약화\n- 생물학적 학습 방식 모방\n\n이벤트 기반 처리 (Event-Driven Processing)\n- 스파이크가 발생할 때만 연산 수행\n- 입력이 없으면 전력 소비 거의 없음\n- 비동기 통신: 클럭 없이 이벤트 발생 시에만 동작\n- 저전력 실시간 처리 구현",
+  "characteristics": [
+    "뇌 모방 아키텍처:"
+  ],
+  "relatedTopics": [
+    "ai-semiconductor-001",
+    "pim-pnm-001",
+    "ai-deep-learning-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "뉴로모픽 컴퓨팅 상용화",
+    "엣지 AI 가속기",
+    "지능형 센서"
+  ]
+}

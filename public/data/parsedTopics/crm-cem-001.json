@@ -1,0 +1,35 @@
+{
+  "id": "crm-cem-001",
+  "title": "CRM & CEM (고객 경험 관리)",
+  "category": "management-focus",
+  "subcategory": "고객 관계 관리",
+  "subjectCategories": [
+    "IM"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "CRM",
+    "CEM",
+    "고객 관계 관리",
+    "고객 경험 관리",
+    "고객 생애 가치",
+    "고객 접점"
+  ],
+  "definition": "CRM(Customer Relationship Management)은 고객과의 관계를 관리하고 고객 데이터를 분석하여 고객 생애 가치(LTV)를 극대화하는 경영 전략이자 시스템입니다. CEM(Customer Experience Management)은 CRM의 발전된 형태로, 고객이 기업의 제품, 서비스, 브랜드와 상호작용하는 모든 접점에서 느끼는 총체적인 경험을 긍정적으로 설계하고 관리하는 데 중점을 둡니다 기술.",
+  "characteristics": [
+    "CRM (Customer Relationship Management):"
+  ],
+  "relatedTopics": [
+    "bigdata-platform-001",
+    "digital-transformation-ax-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "AI 기반 고객 경험 분석",
+    "개인화된 고객 여정",
+    "옴니채널 CEM"
+  ]
+}

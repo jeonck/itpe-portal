@@ -1,0 +1,74 @@
+{
+  "id": "web3-dao-001",
+  "title": "Web 3.0 & DAO",
+  "category": "digital-service",
+  "subcategory": "Blockchain",
+  "subjectCategories": [
+    "DS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "Web3",
+    "DAO",
+    "Decentralization",
+    "Smart Contract",
+    "DApp",
+    "Tokenomics"
+  ],
+  "definition": "블록체인 기반의 탈중앙화된 차세대 웹으로, 사용자가 데이터를 소유하고 DAO(분산 자율 조직)를 통해 거버넌스에 참여 기술.",
+  "technicalElements": [
+    "Web 3.0과 DAO(분산 자율 조직)는 블록체인 및 탈중앙화 기술을 기반으로 다음과 같은 핵심 기술 요소들을 활용하여 새로운 인터넷 패러다임을 구축합니다.",
+    "**블록체인 (Blockchain)**:",
+    "**원리**: 분산된 노드들이 공유하는 변경 불가능한 디지털 원장. 모든 거래 기록을 투명하게 저장하고 위변조를 방지합니다.",
+    "**역할**: Web 3.0의 탈중앙화된 인프라를 제공하며, 디지털 자산의 소유권과 거래 내역을 보장합니다.",
+    "**스마트 컨트랙트 (Smart Contract)**:",
+    "**원리**: 블록체인 상에서 미리 정의된 조건에 따라 자동으로 실행되는 프로그램 코드.",
+    "**역할**: 중개자 없이 계약을 자동 이행하며, DApp과 DAO의 핵심 로직을 구현합니다. (예: 토큰 발행, 자산 전송, 투표 실행)",
+    "**탈중앙화 스토리지 (Decentralized Storage)**:",
+    "**원리**: 데이터를 중앙 서버가 아닌 분산된 네트워크 노드에 저장하여 단일 실패 지점을 제거하고 검열 저항성을 높입니다.",
+    "**기술**: IPFS (InterPlanetary File System), Arweave, Filecoin.",
+    "**역할**: Web 3.0에서 애플리케이션의 데이터 및 콘텐츠를 안전하고 영구적으로 저장합니다.",
+    "**DApp (Decentralized Application)**:",
+    "**정의**: 블록체인과 스마트 컨트랙트 위에서 동작하는 탈중앙화된 애플리케이션.",
+    "**특징**: 백엔드 로직이 블록체인 상에 있어 투명하고, 중단될 위험이 적습니다.",
+    "**암호화폐 및 토큰 (Cryptocurrency & Tokens)**:",
+    "**거버넌스 토큰 (Governance Token)**: DAO의 의사결정 과정에 참여할 수 있는 권리(투표권)를 부여하는 토큰.",
+    "**유틸리티 토큰 (Utility Token)**: 특정 서비스나 플랫폼 내에서 사용될 수 있는 기능적 가치를 지닌 토큰. (예: 수수료 지불, 서비스 이용 권한)",
+    "**토크노믹스 (Tokenomics)**: 토큰의 발행, 분배, 소각 등 토큰 이코노미를 설계하여 생태계 참여자들의 행동을 유도하고 가치를 창출합니다.",
+    "**지갑 (Wallet)**:",
+    "**정의**: 암호화폐 및 NFT 등 디지털 자산을 보관하고 관리하며, 블록체인 네트워크와 상호작용하는 데 사용되는 소프트웨어 또는 하드웨어.",
+    "**역할**: 사용자 인증, 트랜잭션 서명, 자산 조회. (예: MetaMask, WalletConnect)",
+    "**분산 신원 (Decentralized Identity, DID)**:",
+    "**원리**: 개인의 신원 정보를 중앙 기관이 아닌 사용자 본인이 직접 통제하고 관리하는 시스템.",
+    "**역할**: Web 3.0 환경에서 개인 정보 보호와 함께 안전하고 신뢰할 수 있는 디지털 신원 확인을 가능하게 합니다.",
+    "**P2P 네트워크 (Peer-to-Peer Network)**:",
+    "**원리**: 중앙 서버 없이 모든 노드가 동등하게 정보를 주고받는 네트워크 구조.",
+    "**역할**: Web 3.0의 탈중앙화를 가능하게 하는 기본 통신 인프라.",
+    "이러한 기술 요소들은 Web 3.0과 DAO가 사용자에게 데이터 주권과 투명한 거버넌스, 그리고 새로운 형태의 디지털 경제를 제공하는 기반을 이룹니다."
+  ],
+  "characteristics": [
+    "Web 1.0 (읽기), Web 2.0 (읽기+쓰기), Web 3.0 (읽기+쓰기+소유)",
+    "탈중앙화: 중앙 서버 없이 P2P 네트워크, IPFS, Arweave",
+    "DApp (Decentralized App): 스마트 컨트랙트 기반 애플리케이션",
+    "Wallet: MetaMask, WalletConnect, 개인 키로 디지털 자산 관리",
+    "DAO (Decentralized Autonomous Organization): 스마트 컨트랙트로 운영, 토큰 기반 투표",
+    "Tokenomics: 거버넌스 토큰, 유틸리티 토큰, 인센티브 설계",
+    "사례: Uniswap DAO, MakerDAO, GitcoinDAO",
+    "과제: 확장성(TPS), 사용자 경험(UX), 규제, 환경 문제"
+  ],
+  "relatedTopics": [
+    "blockchain-001",
+    "nft-sto-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "DeSoc (Decentralized Society)",
+    "Account Abstraction"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

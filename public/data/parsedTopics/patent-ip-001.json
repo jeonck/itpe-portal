@@ -1,0 +1,36 @@
+{
+  "id": "patent-ip-001",
+  "title": "특허권 & 지식재산권 (IP)",
+  "category": "management-focus",
+  "subcategory": "지식재산권",
+  "subjectCategories": [
+    "IM"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "특허권",
+    "지식재산권",
+    "IP",
+    "특허",
+    "상표",
+    "디자인",
+    "저작권"
+  ],
+  "definition": "지식재산권(Intellectual Property Rights, IP)은 인간의 지적 창작물에 대한 법적 보호 권리입니다. 특허권은 IP의 한 형태로, 발명에 대해 일정 기간 동안 독점적이고 배타적인 권리를 부여하여 발명가의 창작 의욕을 고취하고 기술 발전을 촉진합니다. IT 분야에서는 소프트웨어 특허, 비즈니스 모델 특허, 디자인 특허 등 다양한 형태로 IP가 중요하게 다루어집니다 기술.",
+  "characteristics": [
+    "지식재산권 (IP):"
+  ],
+  "relatedTopics": [
+    "business-strategy-001",
+    "it-law-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "AI 발명 특허 인정 여부",
+    "오픈소스 라이선스 관리",
+    "디지털 콘텐츠 저작권 보호"
+  ]
+}

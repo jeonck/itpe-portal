@@ -1,0 +1,59 @@
+{
+  "id": "cloud-security-001",
+  "title": "클라우드 보안 (CASB, CSPM, CWPP)",
+  "category": "digital-service",
+  "subcategory": "클라우드 보안",
+  "subjectCategories": [
+    "IS",
+    "DS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "클라우드 보안",
+    "CASB",
+    "CSPM",
+    "CWPP",
+    "클라우드 보안 모델",
+    "책임 공유 모델"
+  ],
+  "definition": "클라우드 보안은 클라우드 환경에서 데이터, 애플리케이션, 인프라를 안전하게 보호하는 일련의 기술, 정책, 절차를 의미합니다. 클라우드 컴퓨팅의 특성상 전통적인 온프레미스 환경과는 다른 보안 위협과 도전 과제가 존재하며, CASB, CSPM, CWPP와 같은 전문화된 솔루션들이 클라우드 환경의 복잡한 보안 요구사항을 충족시키기 위해 활용 기술.",
+  "technicalElements": [
+    "클라우드 보안을 위한 주요 기술 요소들은 클라우드 환경의 고유한 특성(공유 책임 모델, 동적 인프라)을 고려하여 설계됩니다.",
+    "**CASB (Cloud Access Security Broker)**:",
+    "**역할**: 클라우드 서비스(주로 SaaS) 사용자와 클라우드 서비스 제공자 사이에 위치하여 보안 정책을 적용하고 클라우드 활동에 대한 가시성을 확보하는 보안 게이트웨이.",
+    "**기능**: Shadow IT 탐지 및 제어, 데이터 유출 방지(DLP), 클라우드 애플리케이션 사용 통제, 접근 제어, 위협 방지, 규정 준수 지원.",
+    "**CSPM (Cloud Security Posture Management)**:",
+    "**역할**: 클라우드 인프라(IaaS, PaaS)의 보안 설정 오류를 지속적으로 모니터링하고, 규제 준수 여부를 평가하며, 취약점을 식별하고 개선 방안을 제시하는 솔루션.",
+    "**기능**: 클라우드 자산 인벤토리, 보안 설정 감사, 규정 준수 평가(CIS 벤치마크, NIST 등), 취약점 스캔, IAM(Identity and Access Management) 정책 검토 및 최적화.",
+    "**CWPP (Cloud Workload Protection Platform)**:",
+    "**역할**: 클라우드 환경의 워크로드(가상 머신, 컨테이너, 서버리스 함수 등)를 운영체제 수준에서 보호하는 솔루션.",
+    "**기능**: 안티바이러스/안티멀웨어, 호스트 기반 방화벽, 침입 방지 시스템(IPS), 애플리케이션 제어, 무결성 모니터링, 취약점 관리.",
+    "**CNAPP (Cloud Native Application Protection Platform)**:",
+    "**개념**: CASB, CSPM, CWPP, CIEM(Cloud Infrastructure Entitlement Management), IaC(Infrastructure as Code) 보안 등 클라우드 네이티브 환경의 보안 기능을 통합하여 애플리케이션 개발부터 운영까지 전 생명주기에 걸친 포괄적인 보안을 제공하는 플랫폼.",
+    "**클라우드 DLP (Data Loss Prevention)**:",
+    "클라우드 스토리지, 클라우드 애플리케이션 등을 통해 민감 데이터가 유출되는 것을 탐지하고 차단합니다.",
+    "**클라우드 WAF (Web Application Firewall)**:",
+    "클라우드 환경의 웹 애플리케이션을 SQL Injection, XSS 등과 같은 웹 공격으로부터 보호하는 방화벽.",
+    "**클라우드 IAM (Identity and Access Management)**:",
+    "클라우드 리소스에 대한 사용자 및 서비스의 접근을 안전하게 관리하고 통제합니다. 최소 권한 원칙을 적용하여 접근 제어를 강화합니다.",
+    "이러한 기술 요소들은 클라우드 환경의 동적이고 분산된 특성에 맞춰 설계되어, 클라우드 자산의 안전성을 효과적으로 확보합니다."
+  ],
+  "characteristics": [
+    "클라우드 책임 공유 모델 (Shared Responsibility Model):"
+  ],
+  "relatedTopics": [
+    "cloud-infra-001",
+    "zero-trust-architecture-001",
+    "security-solution-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "CNAPP (Cloud Native Application Protection Platform)",
+    "SASE (Secure Access Service Edge)",
+    "클라우드 워크로드 보안 자동화"
+  ]
+}

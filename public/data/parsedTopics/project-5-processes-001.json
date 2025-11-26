@@ -1,0 +1,30 @@
+{
+  "id": "project-5-processes-001",
+  "title": "프로젝트 5대 프로세스 (착수-기획-실행-감시및통제-종료)",
+  "category": "digital-service",
+  "subcategory": "프로젝트 관리 프로세스",
+  "subjectCategories": [
+    "PM"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "착수",
+    "기획",
+    "실행",
+    "감시 및 통제",
+    "종료",
+    "프로젝트 생애주기"
+  ],
+  "definition": "프로젝트 관리의 5대 프로세스 그룹은 프로젝트의 생애주기 동안 수행되는 프로젝트 관리 활동들을 논리적으로 분류한 것입니다. 이 5가지 프로세스 그룹(착수, 기획, 실행, 감시 및 통제, 종료)은 모든 프로젝트에서 반복적으로 또는 순차적으로 발생하며, 프로젝트의 성공적인 완수를 위한 체계적인 접근법을 제공 기술.",
+  "characteristics": [
+    "착수 (Initiating):"
+  ],
+  "relatedTopics": [
+    "pmbok-7th-001",
+    "sdlc-001"
+  ],
+  "importance": 5
+}

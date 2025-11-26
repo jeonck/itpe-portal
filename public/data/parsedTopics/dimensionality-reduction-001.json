@@ -1,0 +1,41 @@
+{
+  "id": "dimensionality-reduction-001",
+  "title": "차원 축소 (PCA, LDA, t-SNE)",
+  "category": "technical-focus",
+  "subcategory": "알고리즘",
+  "subjectCategories": [
+    "AL",
+    "DS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "PCA",
+    "LDA",
+    "t-SNE",
+    "UMAP",
+    "Dimensionality Reduction"
+  ],
+  "definition": "고차원 데이터를 저차원으로 변환하여 시각화하거나 노이즈를 제거하는 기법 기법.",
+  "operatingPrinciple": "- PCA (Principal Component Analysis): 공분산 행렬의 고유벡터를 주성분으로 선택, 분산이 최대화되는 방향으로 선형 변환, Explained Variance로 차원 수 결정\n- LDA (Linear Discriminant Analysis): 클래스 간 분산 최대화, 클래스 내 분산 최소화하는 판별 축 탐색, 지도 학습 방식\n- t-SNE (t-distributed Stochastic Neighbor Embedding): 고차원 공간의 유사도를 저차원에 보존, t-분포 사용으로 군집 분리 강화, 지역 구조 우수\n- UMAP (Uniform Manifold Approximation): 리만 기하학 기반, 전역 구조와 지역 구조 동시 보존, t-SNE보다 빠른 속도\n- Autoencoder: Encoder로 차원 축소, Decoder로 복원, 병목층(Bottleneck)이 압축 표현, 비선형 변환 가능",
+  "characteristics": [
+    "고차원의 저주 극복: 계산 효율성 향상",
+    "시각화 지원: 2D/3D로 변환하여 직관적 이해",
+    "노이즈 제거: 중요 특징만 보존",
+    "다양한 기법: 선형(PCA, LDA), 비선형(t-SNE, UMAP)"
+  ],
+  "relatedTopics": [
+    "clustering-001",
+    "ml-learning-types-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "UMAP",
+    "Autoencoders"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

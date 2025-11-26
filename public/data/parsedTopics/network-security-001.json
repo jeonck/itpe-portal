@@ -1,0 +1,42 @@
+{
+  "id": "network-security-001",
+  "title": "네트워크 보안 (F/W, IPS, WAF, NAC)",
+  "category": "digital-service",
+  "subcategory": "네트워크 보안",
+  "subjectCategories": [
+    "IS",
+    "NW"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "방화벽",
+    "IPS",
+    "WAF",
+    "NAC",
+    "네트워크 보안",
+    "침입 탐지",
+    "접근 제어"
+  ],
+  "definition": "네트워크 보안은 데이터가 전송되는 네트워크 인프라와 자원을 무단 접근, 오용, 변경, 파괴로부터 보호하기 위한 일련의 정책, 절차, 기술을 의미합니다. 다양한 네트워크 보안 솔루션이 계층별로 존재하며, 방화벽(Firewall), 침입 방지 시스템(IPS), 웹 방화벽(WAF), 네트워크 접근 제어(NAC)는 네트워크 경계 및 내부 트래픽을 통제하고 위협을 탐지 및 차단하는 대표적인 기술.",
+  "technicalElements": [
+    "[TODO: 기술요소 내용을 여기에 작성하세요.]"
+  ],
+  "characteristics": [
+    "방화벽 (Firewall):"
+  ],
+  "relatedTopics": [
+    "security-solution-001",
+    "osi-7layer-001",
+    "access-control-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "SASE (Secure Access Service Edge)",
+    "Zero Trust Network Access (ZTNA)",
+    "AI 기반 침입 탐지"
+  ]
+}

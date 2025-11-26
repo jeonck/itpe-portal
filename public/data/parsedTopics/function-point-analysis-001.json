@@ -1,0 +1,37 @@
+{
+  "id": "function-point-analysis-001",
+  "title": "기능점수(FP) 측정 및 검증",
+  "category": "management-focus",
+  "subcategory": "SW 원가 산정",
+  "subjectCategories": [
+    "PM",
+    "SE"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "기능점수",
+    "FP",
+    "IFPUG",
+    "SW 원가 산정",
+    "소프트웨어 규모 측정"
+  ],
+  "definition": "기능점수(FP, Function Point)는 소프트웨어의 기능적 요구사항을 기반으로 소프트웨어의 규모를 객관적으로 측정하는 방법론입니다. IFPUG(International Function Point Users Group)에서 정의한 표준화된 절차에 따라 소프트웨어 기능을 사용자 관점에서 측정하며, 이를 통해 SW 개발 프로젝트의 원가, 일정, 생산성 등을 추정하는 데 활용 방법.",
+  "characteristics": [
+    "사용자 관점 측정: 소프트웨어가 사용자에게 제공하는 기능(입력, 출력, 조회, 파일 등)을 중심으로 규모를 측정합니다. 특정 기술이나 구현 방식에 독립적입니다.",
+    "측정 요소:"
+  ],
+  "relatedTopics": [
+    "sw-cost-estimation-001",
+    "pmbok-10-knowledge-areas-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "애자일 환경에서의 FP",
+    "자동화된 FP 측정 도구",
+    "데이터 기반 SW 규모 예측"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "pmo-001",
+  "title": "PMO (Project Management Office)",
+  "category": "management-focus",
+  "subcategory": "프로젝트 조직",
+  "subjectCategories": [
+    "PM",
+    "IM"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "PMO",
+    "프로젝트 관리 사무국",
+    "표준화",
+    "자원 관리",
+    "PMBOK"
+  ],
+  "definition": "PMO(Project Management Office)는 조직 내 프로젝트 관리 역량을 강화하고, 프로젝트의 성공률을 높이기 위해 프로젝트 관리 관련 표준, 프로세스, 도구, 기술 및 인력을 집중적으로 관리하고 지원하는 조직 단위입니다. PMO는 조직의 프로젝트 관리 성숙도를 높이고, 여러 프로젝트 간의 시너지를 창출하며, 자원 배분과 리스크 관리를 최적화하는 역할을 수행 기술.",
+  "characteristics": [
+    "주요 기능:"
+  ],
+  "relatedTopics": [
+    "pmbok-7th-001",
+    "it-governance-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "애자일 PMO",
+    "전략적 PMO",
+    "가상 PMO"
+  ]
+}

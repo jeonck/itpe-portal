@@ -1,0 +1,66 @@
+{
+  "id": "deepfake-watermarking-001",
+  "title": "딥페이크 & 워터마킹",
+  "category": "digital-service",
+  "subcategory": "AI/ML",
+  "subjectCategories": [
+    "DS",
+    "IS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "Deepfake",
+    "GAN",
+    "Face Swap",
+    "Watermarking",
+    "Synthetic Media",
+    "C2PA"
+  ],
+  "definition": "AI로 생성한 가짜 영상/이미지(딥페이크)와 이를 탐지하거나 진위를 보장하는 워터마킹 기술.",
+  "technicalElements": [
+    "딥페이크 기술과 이를 탐지하고 진위성을 보장하는 워터마킹 기술은 다음과 같은 기술 요소들을 기반으로 합니다.",
+    "**딥페이크 생성 기술**:",
+    "**GAN (Generative Adversarial Networks)**: 생성자(Generator)와 판별자(Discriminator)가 서로 경쟁적으로 학습하면서 실제와 구별하기 어려운 가짜 데이터(이미지, 영상, 음성)를 생성합니다. (예: StyleGAN)",
+    "**Autoencoder (오토인코더)**: 입력 데이터를 압축(인코딩)한 후 다시 복원(디코딩)하는 과정에서 특정 특징(예: 얼굴)을 다른 것으로 대체하거나 변형하여 딥페이크를 생성합니다. (예: Face Swap)",
+    "**Diffusion Model (확산 모델)**: 노이즈가 많은 데이터에서 점진적으로 노이즈를 제거하여 실제와 유사한 데이터를 생성하는 방식으로, 이미지 생성, 편집, 딥페이크 생성에 활용됩니다.",
+    "**음성 복제 (Voice Cloning)**: 소량의 음성 데이터만으로 특정 인물의 목소리를 모방하여 새로운 음성을 생성하는 기술.",
+    "**딥페이크 탐지 기술**:",
+    "**미세 물리적 특징 분석**: 딥페이크는 원본 영상과 달리 눈 깜빡임 주기, 얼굴 혈류 변화, 미세한 표정 변화 등에서 부자연스러움이나 일관성 없는 패턴을 보입니다. 이를 분석하여 위변조 여부를 탐지합니다.",
+    "**위변조 흔적 (Artifact) 분석**: 딥페이크 생성 과정에서 발생하는 이미지 압축 흔적, 노이즈 패턴, 특정 영역의 경계선 부자연스러움 등 기술적인 잔여물(artifact)을 찾아냅니다.",
+    "**콘텐츠 일관성 분석**: 오디오와 비디오 간의 립싱크 불일치, 조명 방향의 비정상성, 그림자의 왜곡 등 비논리적인 요소들을 탐지합니다.",
+    "**AI 기반 탐지 모델**: 대량의 딥페이크 및 원본 데이터를 학습한 딥러닝 모델(CNN, RNN 등)이 위변조 여부를 자동으로 판단합니다. 생성 기술의 발전에 맞춰 탐지 모델도 지속적으로 발전합니다.",
+    "**메타데이터 분석**: 파일의 생성 정보, 수정 이력 등 메타데이터를 분석하여 원본성을 확인합니다. (단, 메타데이터는 쉽게 조작될 수 있어 보조적인 수단으로 활용)",
+    "**콘텐츠 진위 확인 및 워터마킹 기술**:",
+    "**디지털 워터마킹 (Digital Watermarking)**: 원본 콘텐츠에 눈에 띄지 않는 형태로 고유한 정보(생성자, 시간, 해시 값 등)를 삽입하여 콘텐츠의 출처를 증명하고 위변조 여부를 확인할 수 있도록 합니다.",
+    "**디지털 서명 및 PKI**: 콘텐츠의 해시 값에 생성자의 개인키로 서명하고, 공개키로 검증하여 콘텐츠의 무결성과 출처를 보장합니다. PKI(Public Key Infrastructure)를 통해 공개키의 신뢰성을 확보합니다.",
+    "**C2PA (Coalition for Content Provenance and Authenticity)**: 콘텐츠의 출처와 이력을 투명하게 기록하고 검증하기 위한 개방형 표준으로, 콘텐츠가 생성, 편집, 배포되는 전 과정의 메타데이터를 안전하게 기록합니다.",
+    "**블록체인 기반 진위 확인**: 콘텐츠의 해시 값이나 출처 정보를 블록체인에 기록하여 위변조 불가능한 형태로 보존하고, 필요 시 진위 여부를 검증합니다.",
+    "이러한 기술 요소들은 딥페이크의 악용을 방지하고 디지털 콘텐츠의 신뢰성을 확보하여 사회적 혼란을 최소화하는 데 중요한 역할을 합니다."
+  ],
+  "characteristics": [
+    "Deepfake: GAN (Generative Adversarial Network), Face Swap, Voice Cloning",
+    "기술: Autoencoder, Diffusion Model, StyleGAN",
+    "악용: 가짜 뉴스, 사기, 명예훼손, 선거 개입",
+    "탐지: 얼굴 불일치, 깜빡임 패턴, 시간적 일관성, AI 탐지 모델",
+    "Watermarking: 원본 증명, 보이지 않는 디지털 서명, 변조 방지",
+    "C2PA (Coalition for Content Provenance and Authenticity): 콘텐츠 출처 표준",
+    "AI Watermark: AI 생성 콘텐츠에 워터마크 삽입, SynthID (Google)",
+    "법적 대응: 딥페이크 처벌법, 플랫폼 규제",
+    "활용: 영화 특수효과, 교육, 역사 복원 (긍정적 활용)"
+  ],
+  "relatedTopics": [
+    "ai-deep-learning-001",
+    "digital-signature-pki-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "Deepfake Detection",
+    "Content Authenticity"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

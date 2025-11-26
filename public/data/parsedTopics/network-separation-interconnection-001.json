@@ -1,0 +1,37 @@
+{
+  "id": "network-separation-interconnection-001",
+  "title": "망분리 & 망연계",
+  "category": "digital-service",
+  "subcategory": "네트워크 보안",
+  "subjectCategories": [
+    "IS",
+    "NW"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "망분리",
+    "망연계",
+    "물리적 망분리",
+    "논리적 망분리",
+    "자료전송",
+    "보안성"
+  ],
+  "definition": "망분리는 외부 인터넷망과 업무망을 분리하여 외부로부터의 위협이 내부 업무망으로 침투하는 것을 원천적으로 차단하는 보안 기술입니다. 망연계는 분리된 망(인터넷망과 업무망) 간에 필요한 데이터만을 안전하게 전송할 수 있도록 하는 기술입니다. 이 두 가지는 특히 금융, 공공 등 높은 수준의 보안이 요구되는 기관에서 내부 정보 유출 및 외부 공격 방어를 위한 핵심적인 보안 인프라로 활용 기술.",
+  "characteristics": [
+    "망분리 (Network Separation):"
+  ],
+  "relatedTopics": [
+    "network-security-001",
+    "access-control-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "클라우드 환경의 망분리/망연계",
+    "제로 트러스트 기반 망분리 대체",
+    "가상 데스크톱 환경 (VDI)"
+  ]
+}

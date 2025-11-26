@@ -1,0 +1,33 @@
+{
+  "id": "pmbok-7th-001",
+  "title": "PMBOK 7판 (12원칙, 8성과영역)",
+  "category": "digital-service",
+  "subcategory": "프로젝트 관리 방법론",
+  "subjectCategories": [
+    "PM"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "PMBOK 7판",
+    "프로젝트 관리 원칙",
+    "프로젝트 성과 영역",
+    "가치 전달 시스템"
+  ],
+  "definition": "PMBOK(Project Management Body of Knowledge) 7판은 프로젝트 관리의 지식 체계를 '프로젝트 관리 원칙(12 Principles)'과 '프로젝트 성과 영역(8 Performance Domains)' 중심으로 재편한 가이드입니다. 전통적인 프로세스 중심에서 벗어나 프로젝트를 통해 '가치(Value)'를 지속적으로 전달하는 데 초점을 맞추고 있으며, 예측(Predictive), 애자일(Agile), 하이브리드(Hybrid) 등 다양한 접근 방식을 포괄 방식.",
+  "characteristics": [
+    "12가지 프로젝트 관리 원칙 (Project Management Principles):"
+  ],
+  "relatedTopics": [
+    "pmbok-001",
+    "agile-devops-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "애자일/하이브리드 통합",
+    "가치 중심 접근",
+    "디지털 트랜스포메이션 시대의 PM"
+  ]
+}

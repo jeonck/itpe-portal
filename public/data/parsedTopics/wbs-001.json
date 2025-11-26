@@ -1,0 +1,33 @@
+{
+  "id": "wbs-001",
+  "title": "WBS (Work Breakdown Structure)",
+  "category": "management-focus",
+  "subcategory": "프로젝트 범위 관리",
+  "subjectCategories": [
+    "PM"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "WBS",
+    "작업 분해 구조",
+    "범위 기준선",
+    "델리버러블",
+    "작업 패키지"
+  ],
+  "definition": "WBS(Work Breakdown Structure)는 프로젝트의 전체 범위를 계층적이고 산출물 지향적으로 분해한 구조입니다. 프로젝트의 모든 작업을 가장 낮은 수준의 작업 패키지(Work Package)까지 세분화하여 프로젝트 팀이 이해하고 관리할 수 있는 형태로 만듭니다. WBS는 프로젝트 범위 기준선(Scope Baseline)의 핵심 요소이며, 이후 일정, 원가, 자원 계획의 기반이 됩니다 기술.",
+  "characteristics": [
+    "계층적 구조: 프로젝트의 최종 산출물(제품, 서비스, 결과)을 중심으로 주요 구성 요소를 식별하고, 이를 점진적으로 하위 수준의 작업으로 분해합니다."
+  ],
+  "relatedTopics": [
+    "pmbok-10-knowledge-areas-001",
+    "project-5-processes-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "애자일 WBS (Product Backlog)",
+    "협업 도구를 통한 WBS 관리"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "uam-001",
+  "title": "UAM (Urban Air Mobility)",
+  "category": "digital-service",
+  "subcategory": "Mobility",
+  "subjectCategories": [
+    "DS"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "UAM",
+    "eVTOL",
+    "Air Taxi",
+    "Drone",
+    "Urban Air Mobility"
+  ],
+  "definition": "전기 수직 이착륙기(eVTOL)를 활용한 도심 항공 교통 시스템으로, 하늘길을 통한 새로운 이동 수단 기술.",
+  "technicalElements": [
+    "UAM(Urban Air Mobility)은 도심 내 항공 이동 서비스를 구현하기 위해 다음과 같은 다양한 기술 요소들을 통합합니다.",
+    "**항공기 기술 (eVTOL)**:",
+    "**eVTOL (electric Vertical Take-Off and Landing)**: 전기 추진 시스템을 사용하여 수직 이착륙이 가능한 항공기.",
+    "**추진 시스템**: 배터리, 모터, 프로펠러 등. 배터리 기술(고밀도, 고출력)이 핵심.",
+    "**항공 역학**: 멀티콥터, 틸트로터, 틸트윙, Lift+Cruise 등 다양한 형태의 항공기 설계.",
+    "**자율 비행 제어**: GPS, IMU, 고도계, 비전 센서 등을 이용한 정밀 항법 및 자율 이착륙, 비행 제어.",
+    "**소음 저감 기술**: 도심 운영을 위한 저소음 프로펠러 및 모터 설계.",
+    "**항법 및 통신 기술**:",
+    "**정밀 항법 (Precise Navigation)**: 고정밀 GPS (RTK-GPS, PPK-GPS), 관성 항법 장치(IMU), 비전 기반 항법 등을 통합하여 고도로 정확한 위치 정보 제공.",
+    "**V2X 통신 (Vehicle-to-Everything)**: 항공기와 항공기(V2V), 항공기와 관제 시스템(V2I), 항공기와 지상 시설 간의 실시간 정보 교환. 5G 통신 기술이 저지연, 고신뢰 통신을 지원.",
+    "**데이터 링크**: 비행 정보, 관제 지시, 센서 데이터 등을 주고받는 안전한 통신 채널.",
+    "**UAM 교통 관리 (UTM, UAM Traffic Management) 시스템**:",
+    "**공역 관리**: 저고도 도심 공역을 효율적으로 관리하고 비행 경로를 최적화.",
+    "**충돌 회피 (Conflict Avoidance)**: 실시간으로 항공기 간 충돌 위험을 감지하고 회피 경로를 제공.",
+    "**AI 기반 라우팅**: AI가 기상, 교통량, 공역 제한 등을 고려하여 최적의 비행 경로를 동적으로 생성.",
+    "**관제 시스템**: 항공기의 이착륙, 비행, 지상 이동을 모니터링하고 통제.",
+    "**지상 인프라 (Ground Infrastructure)**:",
+    "**버티포트 (Vertiport)**: UAM 항공기의 이착륙, 충전, 정비, 승객 탑승 및 하차를 위한 도심형 터미널.",
+    "**충전 시스템**: eVTOL 항공기의 고속 충전을 위한 대용량 충전 인프라.",
+    "**관제 시설**: UAM 교통 관제 및 운영을 위한 지상 시설.",
+    "**안전 및 인증 기술**:",
+    "**안전 설계 및 운항 절차**: 항공기의 설계, 제조, 운항, 유지보수 전반에 걸친 엄격한 안전 기준 및 절차.",
+    "**인증 (Certification)**: FAA(미국), EASA(유럽), 국토교통부 등 항공 당국의 안전성 및 감항성(airworthiness) 인증.",
+    "**보안 기술**: 해킹, 테러 등 사이버 위협으로부터 UAM 시스템 보호.",
+    "이러한 기술 요소들은 UAM이 안전하고 효율적인 차세대 도심 교통 수단으로 자리매김하는 데 필수적입니다."
+  ],
+  "characteristics": [
+    "eVTOL (Electric Vertical Take-Off and Landing): 전기 동력, 수직 이착륙, 저소음",
+    "형태: 멀티콥터, 틸트로터, 틸트윙, Lift+Cruise",
+    "주요 업체: Joby Aviation, Lilium, Volocopter, Hyundai (S-A1)",
+    "운영 모델: Air Taxi (에어택시), 화물 배송, 긴급 구조",
+    "Vertiport (버티포트): 이착륙장, 충전 인프라",
+    "UTM (UAM Traffic Management): 공역 관리, 충돌 방지, AI 기반 라우팅",
+    "기술 과제: 배터리 용량, 안전성, 소음, 인증(FAA, EASA)",
+    "상용화: 2025~2030년 목표, 한국 K-UAM"
+  ],
+  "relatedTopics": [
+    "autonomous-driving-001",
+    "ai-deep-learning-001"
+  ],
+  "importance": 3,
+  "trends": [
+    "AAM (Advanced Air Mobility)",
+    "Vertiport Infrastructure"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

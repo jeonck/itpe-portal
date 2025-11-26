@@ -1,0 +1,37 @@
+{
+  "id": "personal-information-impact-assessment-001",
+  "title": "개인정보 영향평가 (PIA)",
+  "category": "management-focus",
+  "subcategory": "정보보호 관리",
+  "subjectCategories": [
+    "IS",
+    "IM"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "PIA",
+    "개인정보 영향평가",
+    "개인정보보호법",
+    "위험 분석",
+    "침해 예방"
+  ],
+  "definition": "개인정보 영향평가(PIA, Privacy Impact Assessment)는 새로운 정보시스템의 구축 또는 기존 정보시스템의 변경 시, 해당 시스템이 개인정보에 미치는 영향 요인을 분석하고 평가하여 개인정보 침해 위험 요인을 사전에 발굴하고 개선 방안을 도출하는 일련의 과정입니다. '개인정보보호법'에 따라 일정 기준 이상(대량의 민감 정보 처리 등)의 개인정보를 처리하는 공공기관은 의무적으로 수행해야 기술.",
+  "characteristics": [
+    "목표: 개인정보 침해 위험 요소를 사전에 식별하고 완화하여 개인정보보호 수준을 향상시키고, 정보주체의 권리를 보호.",
+    "근거 법률: 개인정보보호법 제33조.",
+    "평가 시점:"
+  ],
+  "relatedTopics": [
+    "isms-p-certification-001",
+    "it-governance-001",
+    "differential-privacy-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "AI 시스템 개인정보 영향평가",
+    "클라우드 서비스 개인정보 영향평가"
+  ]
+}

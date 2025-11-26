@@ -1,0 +1,72 @@
+{
+  "id": "on-device-ai-001",
+  "title": "온디바이스 AI (On-device AI)",
+  "category": "digital-service",
+  "subcategory": "AI/ML",
+  "subjectCategories": [
+    "DS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "On-device AI",
+    "Edge AI",
+    "TinyML",
+    "Model Compression",
+    "Quantization",
+    "NPU"
+  ],
+  "definition": "클라우드 서버 없이 스마트폰, IoT 기기 등 엔드 디바이스에서 직접 AI 추론을 수행하는 기술.",
+  "technicalElements": [
+    "온디바이스 AI는 제한된 컴퓨팅 자원을 가진 엣지 디바이스에서 AI 모델을 효율적으로 실행하기 위해 다양한 기술 요소를 활용합니다.",
+    "**모델 최적화 (Model Optimization) 기술**: 클라우드 기반 AI 모델을 온디바이스 환경에 맞게 경량화하고 효율성을 높이는 기법.",
+    "**양자화 (Quantization)**:",
+    "**원리**: AI 모델의 가중치(Weights)와 활성화 값(Activations)을 기존의 고정밀 부동소수점(FP32, FP16)에서 저정밀 정수(INT8, INT4)로 변환합니다.",
+    "**효과**: 모델 크기를 줄이고, 메모리 사용량 및 연산 속도를 향상시키며, 전력 소모를 감소시킵니다.",
+    "**프루닝 (Pruning)**:",
+    "**원리**: AI 모델의 연산에 미치는 영향이 적은 불필요한 연결(가중치)이나 뉴런을 잘라내어 모델을 희소하게 만듭니다.",
+    "**효과**: 모델의 크기와 연산량을 줄여 성능 향상을 가져옵니다.",
+    "**지식 증류 (Knowledge Distillation)**:",
+    "**원리**: 크고 복잡한 '교사 모델(Teacher Model)'의 지식(추론 결과)을 작고 경량화된 '학생 모델(Student Model)'에게 전달하여, 학생 모델이 교사 모델과 유사한 성능을 내도록 학습시킵니다.",
+    "**효과**: 모델의 크기를 줄이면서도 성능 저하를 최소화합니다.",
+    "**경량 모델 아키텍처**:",
+    "**정의**: 모바일 및 엣지 환경에 최적화되도록 설계된 AI 모델 구조. (예: MobileNet, EfficientNet, TinyBERT)",
+    "**전용 하드웨어 가속기**: 온디바이스 AI 연산을 고속으로 처리하고 전력 효율을 높이기 위한 특수 목적 하드웨어.",
+    "**NPU (Neural Processing Unit, 신경망처리장치)**:",
+    "**특징**: AI 모델의 핵심 연산(행렬 곱셈, 컨볼루션 등)에 특화된 프로세서로, GPU 대비 저전력으로 높은 효율을 제공합니다.",
+    "**예시**: Apple Neural Engine, Qualcomm Hexagon, 삼성 NPU.",
+    "**AI 가속기**: FPGA(Field-Programmable Gate Array)나 ASIC(Application-Specific Integrated Circuit) 등 특정 AI 워크로드에 최적화된 맞춤형 칩.",
+    "**경량 딥러닝 프레임워크 및 런타임**:",
+    "**TensorFlow Lite**: 모바일 및 엣지 기기용으로 최적화된 TensorFlow 버전.",
+    "**Core ML**: Apple 기기에서 AI 모델을 실행하기 위한 프레임워크.",
+    "**ONNX Runtime**: 다양한 딥러닝 프레임워크에서 학습된 모델을 효율적으로 실행할 수 있는 크로스-플랫폼 런타임.",
+    "**TinyML**:",
+    "**정의**: 마이크로컨트롤러와 같은 초저전력, 초소형 디바이스에서 머신러닝 모델을 실행하는 기술.",
+    "**활용**: 웨어러블, 스마트 센서, 스마트 홈 기기 등 극도로 자원이 제한된 환경.",
+    "이러한 기술 요소들은 온디바이스 AI가 낮은 지연 시간, 강화된 프라이버시, 오프라인 작동, 통신 비용 절감 등의 이점을 제공하며 다양한 엣지 디바이스에서 지능형 서비스를 구현할 수 있도록 합니다."
+  ],
+  "characteristics": [
+    "장점: 낮은 지연시간, 프라이버시 보호, 오프라인 작동, 통신 비용 절감",
+    "Model Compression: 양자화(Quantization), 프루닝(Pruning), 지식 증류(Knowledge Distillation)",
+    "경량 모델: MobileNet, EfficientNet, TinyBERT, DistilBERT",
+    "sLLM (Small LLM): Phi-3, Gemma, Llama 3.2, 1B~7B 파라미터",
+    "하드웨어 가속: NPU (Neural Processing Unit), Apple Neural Engine, Qualcomm Hexagon",
+    "TinyML: 초소형 기기(마이크로컨트롤러)에서 실행, 밀리와트 소비",
+    "프레임워크: TensorFlow Lite, Core ML, ONNX Runtime, PyTorch Mobile",
+    "사용 사례: 스마트폰 AI 카메라, 음성 인식, 웨어러블, 스마트 홈"
+  ],
+  "relatedTopics": [
+    "edge-computing-001",
+    "ai-deep-learning-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "sLLM (Small Language Model)",
+    "AI Smartphone"
+  ],
+  "tags": [
+    "2025"
+  ]
+}

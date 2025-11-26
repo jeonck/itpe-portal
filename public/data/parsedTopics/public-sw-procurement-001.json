@@ -1,0 +1,36 @@
+{
+  "id": "public-sw-procurement-001",
+  "title": "공공 SW 사업 발주 제도",
+  "category": "management-focus",
+  "subcategory": "IT 정책 및 규제",
+  "subjectCategories": [
+    "IM"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "공공 SW",
+    "발주 제도",
+    "SW 진흥법",
+    "분리 발주",
+    "제안요청서",
+    "제안서"
+  ],
+  "definition": "공공 SW 사업 발주 제도는 국가, 지방자치단체, 공공기관 등이 소프트웨어 개발, 시스템 구축, 유지보수 등의 사업을 민간 기업에 위탁할 때 적용되는 일련의 법규, 절차, 기준을 의미합니다. 이는 공정하고 투명한 사업자 선정, SW 사업의 품질 확보, 그리고 SW 산업 진흥을 목적으로 합니다. '소프트웨어 진흥법'을 근거로 다양한 제도가 운영되고 있습니다 기술.",
+  "characteristics": [
+    "소프트웨어 진흥법: 공공 SW 사업 발주 제도의 근간이 되는 법률로, SW 사업의 품질 향상 및 SW 산업 경쟁력 강화를 위한 다양한 내용을 포함합니다. (예: 적정 사업비 보장, 기술성 평가 강화, SW 분리 발주 의무화)",
+    "주요 제도:"
+  ],
+  "relatedTopics": [
+    "sw-separated-procurement-001",
+    "rfp-proposal-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "민간 주도형 SW 사업 확대",
+    "클라우드 서비스 우선 도입",
+    "애자일 방식 적용"
+  ]
+}

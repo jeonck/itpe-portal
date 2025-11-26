@@ -1,0 +1,33 @@
+{
+  "id": "sw-separated-procurement-change-001",
+  "title": "SW 분리발주 & 과업변경",
+  "category": "management-focus",
+  "subcategory": "IT 정책 및 규제",
+  "subjectCategories": [
+    "IM"
+  ],
+  "difficulty": "intermediate",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "SW 분리발주",
+    "과업 변경",
+    "과업 심의위원회",
+    "SW 진흥법"
+  ],
+  "definition": "SW 분리발주는 소프트웨어 개발 사업을 하드웨어 구매, 네트워크 구축 등 다른 IT 사업과 분리하여 발주하는 제도를 의미합니다. 이는 SW의 가치를 높이고 전문성을 확보하기 위함입니다. 과업변경은 SW 사업 수행 중 사업의 범위나 내용이 변경되는 경우를 의미하며, 이는 공정하고 투명한 절차(예: 과업 심의위원회)를 통해 관리되어야 합니다. 두 가지 모두 '소프트웨어 진흥법'을 근거로 SW 사업의 품질 및 공정성 확보를 목표로 기술.",
+  "characteristics": [
+    "SW 분리발주:"
+  ],
+  "relatedTopics": [
+    "public-sw-procurement-001",
+    "it-law-001"
+  ],
+  "importance": 4,
+  "trends": [
+    "분리발주 의무 대상 확대",
+    "클라우드 환경의 SW 발주",
+    "애자일 사업에서의 과업 변경 관리"
+  ]
+}

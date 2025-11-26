@@ -1,0 +1,38 @@
+{
+  "id": "ai-governance-ethics-001",
+  "title": "AI 거버넌스 & AI 윤리 (EU AI Act)",
+  "category": "digital-service",
+  "subcategory": "AI 거버넌스",
+  "subjectCategories": [
+    "IM",
+    "IS",
+    "DS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management"
+  ],
+  "keywords": [
+    "AI 거버넌스",
+    "AI 윤리",
+    "EU AI Act",
+    "책임 있는 AI",
+    "설명 가능한 AI",
+    "투명성"
+  ],
+  "definition": "AI 거버넌스는 AI 시스템의 개발, 배포, 운영 전반에 걸쳐 리스크를 관리하고, 윤리적 원칙과 법적 규제를 준수하며, 투명하고 책임 있는 AI 활용을 위한 정책, 절차, 조직 체계를 수립하는 것입니다. AI 윤리는 AI가 인간의 가치와 사회적 규범에 부합하도록 설계되고 사용되도록 하는 도덕적 원칙을 다루며, EU AI Act는 고위험 AI 시스템에 대한 엄격한 규제를 통해 AI의 잠재적 위험을 통제하려는 세계 최초의 포괄적 AI 법안 기술.",
+  "characteristics": [
+    "AI 거버넌스:"
+  ],
+  "relatedTopics": [
+    "ax-esg-001",
+    "it-governance-001",
+    "differential-privacy-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "국내 AI 법 제정 동향",
+    "AI 윤리 감사",
+    "Trustworthy AI"
+  ]
+}

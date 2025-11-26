@@ -11,6 +11,8 @@ const topicsDir = path.join(__dirname, '../src/data/topics');
 const outputJsonPath = path.join(__dirname, '../src/data/topics.json');
 const parsedTopicsDir = path.join(__dirname, '../src/data/parsedTopics'); // New constant for individual topic JSON files
 const categoryTopicsDir = path.join(__dirname, '../src/data/topics-by-category'); // New constant for category-based JSON files
+const publicDataDir = path.join(__dirname, '../public/data'); // Public directory for runtime access
+const publicParsedTopicsDir = path.join(publicDataDir, 'parsedTopics'); // Public directory for individual topic JSON files
 
 // Ensure the output directories exist
 if (!fs.existsSync(parsedTopicsDir)) {
@@ -18,6 +20,9 @@ if (!fs.existsSync(parsedTopicsDir)) {
 }
 if (!fs.existsSync(categoryTopicsDir)) {
   fs.mkdirSync(categoryTopicsDir, { recursive: true });
+}
+if (!fs.existsSync(publicParsedTopicsDir)) {
+  fs.mkdirSync(publicParsedTopicsDir, { recursive: true });
 }
 
 // 마크다운 파일 읽기 (재귀적으로 검색)
@@ -116,8 +121,10 @@ files.forEach((filePath) => { // 'file' -> 'filePath' since globSync returns ful
     ...(data.tags && { tags: data.tags })
   };
 
-  // Save full topic to individual JSON file
-  fs.writeFileSync(path.join(parsedTopicsDir, `${fullTopic.id}.json`), JSON.stringify(fullTopic, null, 2), 'utf-8');
+  // Save full topic to individual JSON file (both src and public)
+  const topicJsonContent = JSON.stringify(fullTopic, null, 2);
+  fs.writeFileSync(path.join(parsedTopicsDir, `${fullTopic.id}.json`), topicJsonContent, 'utf-8');
+  fs.writeFileSync(path.join(publicParsedTopicsDir, `${fullTopic.id}.json`), topicJsonContent, 'utf-8');
 
   // Create metadata object for the main topics.json
   const topicMetadata = {

@@ -1,0 +1,40 @@
+{
+  "id": "sw-safety-review-audit-001",
+  "title": "SW 안전성 검토 (감리 관점)",
+  "category": "management-focus",
+  "subcategory": "프로젝트 품질 관리",
+  "subjectCategories": [
+    "PM",
+    "SE",
+    "IS"
+  ],
+  "difficulty": "advanced",
+  "certifications": [
+    "information-management",
+    "computer-systems"
+  ],
+  "keywords": [
+    "SW 안전성",
+    "감리",
+    "안전성 분석",
+    "위험 평가",
+    "안전 생명 주기"
+  ],
+  "definition": "SW 안전성 검토는 소프트웨어 시스템이 오작동하거나 실패했을 때 인명 손실, 환경 오염, 재산 피해 등 치명적인 사고를 유발할 수 있는 잠재적 위험을 식별하고, 이를 분석 및 평가하여 허용 가능한 수준으로 관리하기 위한 활동입니다. 특히 감리 관점에서는 정보시스템 감리의 일환으로 SW 개발 생애주기 전반에 걸쳐 안전 관련 요구사항이 적절히 반영되고 구현되었는지 독립적으로 점검하고 평가 기술.",
+  "characteristics": [
+    "SW 안전성 (Safety): 시스템의 고장이나 오작동이 허용 불가능한 위험을 야기하지 않도록 보장하는 특성. 보안(Security)은 외부의 악의적인 공격으로부터 시스템을 보호하는 것이라면, 안전성은 시스템 자체의 오작동으로부터 발생하는 위험을 관리하는 것.",
+    "SW 안전 생명 주기 (Software Safety Life Cycle): SW 안전성 확보를 위한 체계적인 절차로, 안전 요구사항 정의, 안전 분석, 안전 설계, 안전 구현, 안전 테스트, 안전성 검증 및 유효성 확인, 유지보수 등을 포함합니다.",
+    "안전성 분석 기법:"
+  ],
+  "relatedTopics": [
+    "it-audit-standards-001",
+    "quality-001",
+    "risk-management-001"
+  ],
+  "importance": 5,
+  "trends": [
+    "AI 시스템 안전성",
+    "자율주행 SW 안전성",
+    "의료기기 SW 안전 규제 강화"
+  ]
+}
