@@ -1,9 +1,12 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, useCallback } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { Search, Filter, Tag, BookOpen, Star, TrendingUp } from 'lucide-react';
 import topicsData from '../data/topics.json';
 import type { Topic, TopicMetadata, DomainCategory, SubjectCategory, DifficultyLevel, CertificationType } from '../types';
 
 export default function TopicWiki() {
+  const { topicId } = useParams<{ topicId?: string }>();
+  const navigate = useNavigate();
   const topics = topicsData as TopicMetadata[];
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<DomainCategory | 'all' | '2025'>('all');
@@ -87,10 +90,10 @@ export default function TopicWiki() {
     return { color: colors[difficulty], label: labels[difficulty] };
   };
 
-  const loadTopicDetail = async (topicId: string) => {
+  const loadTopicDetail = useCallback(async (id: string) => {
     setIsLoadingTopic(true);
     try {
-      const response = await fetch(`/itpe-portal/data/parsedTopics/${topicId}.json`);
+      const response = await fetch(`/itpe-portal/data/parsedTopics/${id}.json`);
       if (!response.ok) {
         throw new Error('Topic not found');
       }
@@ -99,10 +102,20 @@ export default function TopicWiki() {
     } catch (error) {
       console.error('Failed to load topic:', error);
       alert('토픽을 불러오는데 실패했습니다.');
+      navigate('/topics');
     } finally {
       setIsLoadingTopic(false);
     }
-  };
+  }, [navigate]);
+
+  // URL 파라미터가 변경되면 토픽 로드
+  useEffect(() => {
+    if (topicId) {
+      loadTopicDetail(topicId);
+    } else {
+      setSelectedTopic(null);
+    }
+  }, [topicId, loadTopicDetail]);
 
   return (
     <div className="space-y-6">
@@ -140,7 +153,7 @@ export default function TopicWiki() {
                   key={cat.value}
                   onClick={() => {
                     setSelectedCategory(cat.value);
-                    setSelectedTopic(null);
+                    if (topicId) navigate('/topics');
                   }}
                   className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${
                     selectedCategory === cat.value
@@ -166,7 +179,7 @@ export default function TopicWiki() {
                   key={subj.value}
                   onClick={() => {
                     setSelectedSubject(subj.value);
-                    setSelectedTopic(null);
+                    if (topicId) navigate('/topics');
                   }}
                   className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${
                     selectedSubject === subj.value
@@ -190,7 +203,7 @@ export default function TopicWiki() {
                 value={selectedDifficulty}
                 onChange={(e) => {
                   setSelectedDifficulty(e.target.value as DifficultyLevel | 'all');
-                  setSelectedTopic(null);
+                  if (topicId) navigate('/topics');
                 }}
                 className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
               >
@@ -211,7 +224,7 @@ export default function TopicWiki() {
                 value={selectedCertification}
                 onChange={(e) => {
                   setSelectedCertification(e.target.value as CertificationType | 'all');
-                  setSelectedTopic(null);
+                  if (topicId) navigate('/topics');
                 }}
                 className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
               >
@@ -239,7 +252,7 @@ export default function TopicWiki() {
         /* Topic Detail View */
         <div className="space-y-6">
           <button
-            onClick={() => setSelectedTopic(null)}
+            onClick={() => navigate('/topics')}
             className="text-primary-600 hover:text-primary-700 font-medium"
           >
             ← 목록으로 돌아가기
@@ -388,7 +401,7 @@ export default function TopicWiki() {
                     return relatedTopic ? (
                       <button
                         key={relatedId}
-                        onClick={() => loadTopicDetail(relatedId)}
+                        onClick={() => navigate(`/topics/${relatedId}`)}
                         className="px-3 py-2 bg-primary-50 text-primary-700 rounded-lg text-sm font-medium hover:bg-primary-100 transition-colors"
                         disabled={isLoadingTopic}
                       >
@@ -416,7 +429,7 @@ export default function TopicWiki() {
             return (
               <button
                 key={topic.id}
-                onClick={() => loadTopicDetail(topic.id)}
+                onClick={() => navigate(`/topics/${topic.id}`)}
                 className="card text-left hover:shadow-lg transition-shadow group"
                 disabled={isLoadingTopic}
               >

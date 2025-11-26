@@ -15,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/topics" element={<TopicWiki />} />
+          <Route path="/topics/:topicId" element={<TopicWiki />} />
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/mindmap" element={<MindMap />} />
           <Route path="/answer-examples" element={<AnswerExamples />} />
