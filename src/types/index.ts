@@ -24,8 +24,8 @@ export type SubjectCategory =
 // 토픽 난이도
 export type DifficultyLevel = 'basic' | 'intermediate' | 'advanced';
 
-// 토픽 인터페이스
-export interface Topic {
+// 토픽 메타데이터 인터페이스 (topics.json에 저장될 내용)
+export interface TopicMetadata {
   id: string;
   title: string;
   category: DomainCategory;
@@ -34,18 +34,36 @@ export interface Topic {
   difficulty: DifficultyLevel;
   certifications: CertificationType[]; // 어느 기술사에 해당하는지
   keywords: string[];
-  mnemonic?: string; // 암기 두음
-  definition: string;
-  technicalElements?: string[]; // 기술요소 (선택)
-  operatingPrinciple?: string; // 동작원리 (선택)
-  functions?: string[]; // 기능 (선택)
-  procedure?: string; // 절차 (선택)
-  characteristics: string[];
-  diagram?: string; // 구성도 URL 또는 설명
-  relatedTopics: string[]; // 연관 토픽 ID들
+  definition: string; // 정의는 리스트 화면에서 사용되므로 포함
+  relatedTopics: string[]; // 연관 토픽 ID들은 메타데이터에 포함 (나중에 상세 토픽 로드 시 활용)
   importance: number; // 1-5 중요도
   trends?: string[]; // 최신 트렌드 정보
   tags?: string[]; // 토픽 태그 (예: 2025, 신규 등)
+}
+
+
+// 상세 토픽 데이터 인터페이스 (개별 JSON 파일에 저장될 내용)
+export interface Topic {
+  id: string;
+  title: string;
+  category: DomainCategory;
+  subcategory: string;
+  subjectCategories: SubjectCategory[];
+  difficulty: DifficultyLevel;
+  certifications: CertificationType[];
+  keywords: string[];
+  mnemonic?: string; // 암기 두음
+  definition: string;
+  technicalElements?: string[]; // 기술요소 (선택) - parseDetailedSection returns string[]
+  operatingPrinciple?: string; // 동작원리 (선택)
+  functions?: string[]; // 기능 (선택) - parseDetailedSection returns string[]
+  procedure?: string; // 절차 (선택)
+  characteristics: string[];
+  diagram?: string; // 구성도 URL 또는 설명
+  relatedTopics: string[];
+  importance: number;
+  trends?: string[];
+  tags?: string[];
 }
 
 // 학습 로드맵 단계
