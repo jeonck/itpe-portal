@@ -58,97 +58,79 @@ def process_definition_in_file(file_path):
     def_match = re.search(r'(# 정의\s*)(.+?)(?=\n##|$)', body, re.DOTALL)
 
     if def_match:
-        old_definition_text = def_match.group(2).strip()
+        old_definition_full_text = def_match.group(2).strip()
         
-        # Split into sentences to rephrase the last one
-        sentences_raw = re.split(r'([.?!])', old_definition_text)
-        sentences_raw = [s.strip() for s in sentences_raw if s.strip()] # Filter empty strings
+        # Split into individual lines to check for multi-line definitions
+        lines = [line.strip() for line in old_definition_full_text.split('\n') if line.strip()]
 
-        if not sentences_raw:
-            print(f"No sentences found in definition for {file_path}. Skipping.")
+        new_definition_final_sentence = ""
+        if len(lines) > 1:
+            # If multiple lines, prioritize the last one
+            new_definition_final_sentence = lines[-1]
+        else:
+            # If single line, use it
+            new_definition_final_sentence = lines[0] if lines else ""
+
+        if not new_definition_final_sentence:
+            print(f"No definition text found for {file_path}. Skipping.")
             return False
 
-        # Recombine sentences with their punctuation
-        sentences = []
-        i = 0
-        while i < len(sentences_raw):
-            if sentences_raw[i] in ['.', '!', '?']:
-                if sentences:
-                    sentences[-1] += sentences_raw[i]
-            else:
-                sentences.append(sentences_raw[i])
-            i += 1
-        
-        if not sentences:
-            print(f"No valid sentences processed for definition in {file_path}. Skipping.")
-            return False
-
-        last_sentence = sentences[-1]
-        
-        # Define common noun endings
+        # Apply the noun-ending refactoring logic to the chosen sentence
         noun_endings = ("기술", "기법", "기능", "동작", "메커니즘", "아키텍처", "프레임워크", "플랫폼", "솔루션", "방법", "방식", "규약", "표준", "모델", "체계", "시스템", "개념", "원리", "분야", "활용", "패러다임", "의미")
 
-        new_last_sentence = last_sentence.strip()
+        new_sentence_processed = new_definition_final_sentence.strip()
         
-        # Try to apply replacements, aiming for a noun ending
         # Remove common verb endings and '입니다/합니다' etc.
-        new_last_sentence = re.sub(r'(는|은|이|가)\s*(것|활동|분야|단계|수단|프로세스|체계|시스템|기법|기술|기능|동작|방식|원리|개념|패러다임|솔루션|플랫폼|프레임워크|아키텍처)\s*이다\s*\.?$', r'\1', new_last_sentence).strip() # Remove '이다'
-        new_last_sentence = re.sub(r'제공하는 기술입니다\s*\.?$', '제공하는 기술', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'강화하는 분야입니다\s*\.?$', '강화하는 분야', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'해결하는 기법입니다\s*\.?$', '해결하는 기법', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'입니다\s*\.?$', '', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'합니다\s*\.?$', '', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'제공합니다\s*\.?$', '제공하는 기능', new_last_sentence).strip() # "제공하는 기능"으로 변경
-        new_last_sentence = re.sub(r'나타냅니다\s*\.?$', '의미', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'의미합니다\s*\.?$', '의미', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'패러다임입니다\s*\.?$', '패러다임', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'아키텍처입니다\s*\.?$', '아키텍처', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'솔루션입니다\s*\.?$', '솔루션', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'기술입니다\s*\.?$', '기술', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'기법입니다\s*\.?$', '기법', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'기능입니다\s*\.?$', '기능', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'동작입니다\s*\.?$', '동작', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'규약입니다\s*\.?$', '규약', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'표준입니다\s*\.?$', '표준', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'플랫폼입니다\s*\.?$', '플랫폼', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'모델입니다\s*\.?$', '모델', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'체계입니다\s*\.?$', '체계', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'시스템입니다\s*\.?$', '시스템', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'개념입니다\s*\.?$', '개념', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'원리입니다\s*\.?$', '원리', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'방식입니다\s*\.?$', '방식', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'분야입니다\s*\.?$', '분야', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'활용됩니다\s*\.?$', '활용', new_last_sentence).strip()
-        new_last_sentence = re.sub(r'것입니다\s*\.?$', '것', new_last_sentence).strip()
-
+        new_sentence_processed = re.sub(r'제공하는 기술입니다\s*\.?$', '제공하는 기술', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'강화하는 분야입니다\s*\.?$', '강화하는 분야', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'해결하는 기법입니다\s*\.?$', '해결하는 기법', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'입니다\s*\.?$', '', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'합니다\s*\.?$', '', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'제공합니다\s*\.?$', '제공하는 기능', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'나타냅니다\s*\.?$', '의미', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'의미합니다\s*\.?$', '의미', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'패러다임입니다\s*\.?$', '패러다임', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'아키텍처입니다\s*\.?$', '아키텍처', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'솔루션입니다\s*\.?$', '솔루션', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'기술입니다\s*\.?$', '기술', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'기법입니다\s*\.?$', '기법', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'기능입니다\s*\.?$', '기능', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'동작입니다\s*\.?$', '동작', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'규약입니다\s*\.?$', '규약', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'표준입니다\s*\.?$', '표준', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'플랫폼입니다\s*\.?$', '플랫폼', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'모델입니다\s*\.?$', '모델', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'체계입니다\s*\.?$', '체계', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'시스템입니다\s*\.?$', '시스템', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'개념입니다\s*\.?$', '개념', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'원리입니다\s*\.?$', '원리', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'방식입니다\s*\.?$', '방식', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'분야입니다\s*\.?$', '분야', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'활용됩니다\s*\.?$', '활용', new_sentence_processed).strip()
+        new_sentence_processed = re.sub(r'것입니다\s*\.?$', '것', new_sentence_processed).strip()
+        
+        # Fallback for remaining '다' endings
+        new_sentence_processed = re.sub(r'다\s*\.?$', '', new_sentence_processed).strip()
+        
         # If it doesn't end with a noun ending, append a context-appropriate one
-        if not new_last_sentence.endswith(noun_endings):
-            suggested_noun = refactor_definition_noun(old_definition_text, title)
+        if not new_sentence_processed.endswith(noun_endings):
+            suggested_noun = refactor_definition_noun(old_definition_full_text, title)
             # Avoid appending if the suggested_noun is already implicitly there or redundant
-            if not new_last_sentence.endswith(suggested_noun):
-                new_last_sentence = new_last_sentence.rstrip('.').strip() + " " + suggested_noun
+            if not new_sentence_processed.endswith(suggested_noun):
+                new_sentence_processed = new_sentence_processed.rstrip('.').strip() + " " + suggested_noun
 
         # Ensure it ends with a period for consistency
-        new_last_sentence = new_last_sentence.rstrip('.').strip() + "."
-
-        # Reconstruct the definition text
-        new_definition_text = ""
-        if len(sentences) > 1:
-            new_definition_text = " ".join(sentences[:-1]).strip() + " " + new_last_sentence
-        else:
-            new_definition_text = new_last_sentence
-
-        new_definition_text = re.sub(r'\s*\.\s*\.', '.', new_definition_text) # Fix double periods if any
-        new_definition_text = new_definition_text.replace("..", ".") # Remove any double periods from processing
+        final_definition_text = new_sentence_processed.rstrip('.').strip() + "."
 
         # Reconstruct the body
-        new_body = body.replace(old_definition_text, new_definition_text, 1) # Only replace first occurrence
+        # Replace only the exact old full definition text to avoid altering other parts
+        new_body = body.replace(old_definition_full_text, final_definition_text, 1)
         
         post.content = new_body
-        final_content = frontmatter.dumps(post)
+        final_file_content = frontmatter.dumps(post)
 
-        if final_content != content:
-            write_markdown_file(file_path, final_content)
+        if final_file_content != content:
+            write_markdown_file(file_path, final_file_content)
             print(f"Refactored definition in: {file_path}")
             return True
     return False

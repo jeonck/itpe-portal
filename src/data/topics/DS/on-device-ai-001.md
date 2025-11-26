@@ -29,6 +29,7 @@ trends:
 # 정의
 클라우드 서버 없이 스마트폰, IoT 기기 등 엔드 디바이스에서 직접 AI 추론을 수행하는 기술.
 
+
 ## 특징
 - 장점: 낮은 지연시간, 프라이버시 보호, 오프라인 작동, 통신 비용 절감
 - Model Compression: 양자화(Quantization), 프루닝(Pruning), 지식 증류(Knowledge Distillation)

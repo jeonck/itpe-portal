@@ -29,6 +29,7 @@ trends:
 # 정의
 현실과 가상을 융합하는 확장현실 기술로, AR(증강현실), VR(가상현실), MR(혼합현실)을 포괄 기술.
 
+
 ## 특징
 - AR (Augmented Reality): 현실에 가상 오버레이, 스마트폰, 스마트글래스 (포켓몬GO, AR 네비게이션)
 - VR (Virtual Reality): 완전 가상 환경, HMD (헤드셋), Meta Quest, PSVR2

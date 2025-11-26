@@ -30,6 +30,7 @@ trends:
 # 정의
 보안 관제는 정보 시스템에 대한 사이버 위협을 실시간으로 탐지하고 분석하며, 적절히 대응하여 시스템을 보호하는 활동입니다. SIEM(Security Information and Event Management)은 다양한 보안 시스템과 네트워크 장비에서 발생하는 로그 및 이벤트를 통합 수집, 분석하여 위협을 탐지하는 솔루션이며, SOAR(Security Orchestration, Automation and Response)는 SIEM에서 탐지된 위협에 대한 대응 프로세스를 자동화하고 오케스트레이션하여 보안 운영의 효율성과 대응 속도를 높이는 플랫폼.
 
+
 ## 특징
 - 보안 관제 (Security Operations):
     - 목표: 정보 시스템의 가용성, 기밀성, 무결성 유지. 위협을 조기에 탐지하고 신속하게 대응하여 피해 최소화.

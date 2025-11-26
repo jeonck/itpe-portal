@@ -29,6 +29,7 @@ trends:
 # 정의
 OT(Operational Technology, 운영 기술) 보안은 산업 시설 및 인프라의 운영을 제어하고 모니터링하는 하드웨어 및 소프트웨어(예: ICS, Industrial Control Systems)를 사이버 위협으로부터 보호하는 분야입니다. ICS는 SCADA(Supervisory Control And Data Acquisition), DCS(Distributed Control System), PLC(Programmable Logic Controller) 등을 포함하며, 물리적 시스템의 안전하고 안정적인 운영을 보장하는 것이 최우선 목표 기술.
 
+
 ## 특징
 - OT/ICS 환경의 특성:
     - 가용성 최우선: 24/7 중단 없는 운영이 핵심. 보안 기능으로 인한 가용성 저하는 치명적.

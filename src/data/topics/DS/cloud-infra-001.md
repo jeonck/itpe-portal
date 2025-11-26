@@ -31,6 +31,7 @@ trends:
 # 정의
 클라우드 컴퓨팅의 핵심 기술인 가상화와 컨테이너화를 통해 물리 자원을 효율적으로 활용하고 격리된 실행 환경을 제공 기술.
 
+
 ## 특징
 - 가상화(Virtualization): 물리 서버를 여러 가상 머신(VM)으로 분할. Hypervisor가 핵심: Type 1(Bare-metal, KVM, Xen, VMware ESXi, 직접 하드웨어 제어, 고성능), Type 2(Hosted, VirtualBox, VMware Workstation, OS 위에서 실행, 편리)
 - Container vs VM: VM은 하드웨어 가상화(독립 OS, 무거움, 강한 격리), Container는 OS 가상화(커널 공유, 가벼움, 빠른 시작). Container는 namespaces(격리), cgroups(자원 제한) 사용

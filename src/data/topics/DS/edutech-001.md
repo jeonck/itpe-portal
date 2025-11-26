@@ -26,7 +26,7 @@ trends:
 ---
 
 # 정의
-교육과 기술의 융합으로, AI, 데이터, 플랫폼을 활용하여 학습 경험을 혁신하는 분야.
+교육과 기술의 융합으로, AI, 데이터, 플랫폼을 활용하여 학습 경험을 혁신하는 분야 기술.
 
 ## 특징
 - LMS (Learning Management System): 학습 관리, Moodle, Canvas, Google Classroom

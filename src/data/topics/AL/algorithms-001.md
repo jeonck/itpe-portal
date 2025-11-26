@@ -30,7 +30,7 @@ trends:
 정탐해
 
 # 정의
-문제를 해결하기 위한 체계적이고 효율적인 절차로, 정렬과 탐색 알고리즘이 대표적 기술.
+문제를 해결하기 위한 체계적이고 효율적인 절차로, 정렬과 탐색 알고리즘이 대표적 기술 기술.
 
 ## 특징
 - 정렬 알고리즘: Quick Sort(평균 O(n log n), 최악 O(n²), 불안정, 제자리), Merge Sort(O(n log n), 안정, 추가 메모리), Heap Sort(O(n log n), 불안정, 제자리), Bubble/Selection/Insertion(O(n²), 간단)

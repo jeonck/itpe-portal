@@ -28,6 +28,7 @@ trends:
 # 정의
 스마트폰과 태블릿을 위해 최적화된 운영체제로, 터치 인터페이스, 전력 관리, 모바일 앱 생태계를 지원 기술.
 
+
 ## 특징
 - Android: Linux 커널 기반, 오픈소스 (AOSP), Google Play
 - Android 구조: Linux Kernel → HAL → ART/Native Libraries → Framework → Apps

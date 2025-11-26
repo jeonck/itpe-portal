@@ -29,6 +29,7 @@ trends:
 # 정의
 인터넷을 통해 영상 콘텐츠를 실시간으로 전송하는 OTT(Over-The-Top) 서비스와 스트리밍 기술.
 
+
 ## 특징
 - OTT: 인터넷 기반 동영상 서비스, Netflix, YouTube, Disney+, Tving
 - 스트리밍 프로토콜: HLS (HTTP Live Streaming), DASH, RTMP (실시간)

@@ -28,6 +28,7 @@ trends:
 # 정의
 운영체제 커널의 설계 방식으로, 기능의 배치와 통신 방식에 따라 모놀리식, 마이크로, Unikernel로 분류됩니다 방식.
 
+
 ## 특징
 - Monolithic Kernel (모놀리식): 모든 OS 서비스가 커널 공간에서 실행, 빠름, 복잡
 - 예시: Linux, Unix, FreeBSD

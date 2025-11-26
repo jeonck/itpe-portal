@@ -29,6 +29,7 @@ trends:
 # 정의
 Linux/Unix 시스템에서 파일과 디렉토리에 대한 접근 권한을 관리하는 보안 메커니즘.
 
+
 ## 특징
 - 권한 구조: User(소유자), Group(그룹), Others(기타), rwx (읽기/쓰기/실행)
 - 표기: -rwxr-xr-- (파일 타입 + User(rwx) + Group(r-x) + Others(r--))

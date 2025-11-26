@@ -28,7 +28,7 @@ trends:
 ---
 
 # 정의
-Self-Attention 메커니즘으로 시퀀스 전체의 관계를 병렬로 학습하는 혁신적인 신경망 아키텍처.
+Self-Attention 메커니즘으로 시퀀스 전체의 관계를 병렬로 학습하는 혁신적인 신경망 아키텍처 메커니즘.
 
 ## 특징
 - "Attention is All You Need" (2017), RNN 없이 순차 데이터 처리

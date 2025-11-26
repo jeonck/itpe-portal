@@ -29,6 +29,7 @@ trends:
 # 정의
 디스크에 파일을 저장, 관리, 검색하는 체계로, 메타데이터와 데이터 블록을 효율적으로 구조화 기술.
 
+
 ## 특징
 - Inode (Index Node): Unix/Linux 파일 메타데이터 (권한, 소유자, 크기, 블록 주소), 파일명은 디렉토리에 저장
 - FAT (File Allocation Table): MS-DOS/Windows, 간단한 구조, 플래시 메모리 호환

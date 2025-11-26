@@ -29,6 +29,7 @@ trends:
 # 정의
 CPU 자원을 여러 프로세스에 효율적으로 할당하기 위한 알고리즘과 정책으로, 시스템 성능과 응답성을 최적화 기술.
 
+
 ## 특징
 - 선점형 vs 비선점형: 선점형(Preemptive)은 실행 중인 프로세스를 강제로 중단 가능(RR, Priority 등, 응답성 좋음), 비선점형(Non-preemptive)은 프로세스가 자발적으로 CPU 반납(FCFS, SJF, 단순함)
 - 주요 알고리즘: 1) FCFS(First Come First Served) - 도착 순서 2) SJF(Shortest Job First) - 실행시간 짧은 것 우선, 기아 발생 가능 3) RR(Round Robin) - 시간 할당량(Time Quantum)마다 교체, 대화형 시스템에 적합

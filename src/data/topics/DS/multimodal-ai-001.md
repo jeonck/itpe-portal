@@ -29,6 +29,7 @@ trends:
 # 정의
 텍스트, 이미지, 오디오, 비디오 등 여러 모달리티(형태)의 데이터를 통합적으로 이해하고 생성하는 AI 기술.
 
+
 ## 특징
 - 입력 통합: 텍스트+이미지, 오디오+비디오 등 다양한 조합
 - Vision-Language Model: CLIP, GPT-4V (Vision), Gemini, LLaVA

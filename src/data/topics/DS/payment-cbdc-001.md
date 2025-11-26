@@ -30,6 +30,7 @@ trends:
 # 정의
 스마트폰 기반 간편결제와 중앙은행이 발행하는 디지털 화폐(CBDC)로 금융 거래를 혁신 기술.
 
+
 ## 특징
 - 간편결제: QR 코드, NFC (Apple Pay, Samsung Pay), 생체인증
 - 종류: 앱 간편결제 (Toss, Kakao Pay), 모바일 지갑, 무인 결제 (Amazon Go)

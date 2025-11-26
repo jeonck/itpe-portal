@@ -30,6 +30,7 @@ trends:
 # 정의
 AI로 생성한 가짜 영상/이미지(딥페이크)와 이를 탐지하거나 진위를 보장하는 워터마킹 기술.
 
+
 ## 특징
 - Deepfake: GAN (Generative Adversarial Network), Face Swap, Voice Cloning
 - 기술: Autoencoder, Diffusion Model, StyleGAN

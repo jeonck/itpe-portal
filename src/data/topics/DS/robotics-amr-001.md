@@ -29,6 +29,7 @@ trends:
 # 정의
 자율적으로 작업을 수행하는 로봇 기술로, AMR(자율주행 로봇)과 협동로봇(Cobot)이 대표적 기술.
 
+
 ## 특징
 - AMR (Autonomous Mobile Robot): 자율 주행, 물류/창고 자동화, SLAM (Localization + Mapping)
 - 예시: Amazon Kiva, Geek+ (물류), 배달 로봇, 청소 로봇

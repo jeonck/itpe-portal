@@ -29,6 +29,7 @@ trends:
 # 정의
 서버 관리 없이 코드만 배포하여 실행하는 클라우드 컴퓨팅 모델로, 사용한 만큼만 과금되는 이벤트 기반 아키텍처.
 
+
 ## 특징
 
 - FaaS(Function as a Service): 함수 단위 실행. AWS Lambda, Azure Functions, Google Cloud Functions. 이벤트(HTTP, DB 변경, 메시지) 발생 시 자동 실행
